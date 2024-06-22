@@ -49,16 +49,19 @@ function SpecialitiesWeOffer() {
             link: "Link to General Practice services"
         }
     ];
-    
-
-
 
     return (
-        <div className='flex flex-wrap justify-around'>
-            <p className='text-3xl'>Specialties We Offer</p>
-            {data.map((item) => (
-                <SpecialityCard data={item}/>
-            ))}
+        <div className='flex flex-col justify-center'>
+            <p className='text3xl text-center'>Specialties We Offer</p>
+            <div className='flex flex-wrap justify-around'>
+                {data.map((item) => (
+                    <SpecialityCard data={item} />
+                ))}
+            </div>
+            <div className='flex justify-center items-center'>
+                <button className='px-3 py-4 bg-primary rounded-md text-white'>Explore More</button>
+
+            </div>
         </div>
     )
 }

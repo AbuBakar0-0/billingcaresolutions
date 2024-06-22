@@ -6,7 +6,7 @@ function WhoWeAre() {
             <div className='w-screen flex flex-col lg:flex-row justify-around p-10'>
                 <img src="./assets/img.jpg" alt="" className='w-full lg:w-1/4 h-auto' />
                 <div className='flex flex-col w-full lg:w-2/3 justify-start items-start lg:p-10 space-y-10'>
-                    <p className='text-3xl text-left mt-10'>
+                    <p className='text3xl text-left mt-10'>
                         Who We Are?
                     </p>
                     <p className='text-justify'>

@@ -55,13 +55,13 @@ function WhyChooseUs() {
 
     return (
         <>
-            <div className='w-full flex flex-col md:flex-row justify-between p-10 items-center'>
-                <div className='w-full md:w-2/4 flex flex-col p-10 space-y-4'>
+            <div className='w-full flex flex-col lg:flex-row justify-between p-10 items-center'>
+                <div className='w-full lg:w-2/4 flex flex-col p-2 space-y-4'>
                     <p className='text-3xl'>Why Choose Billing Care Solutions?</p>
                     <p className='mt-5 text-justify'>
                         We provide extensive Medical Billing and Credentialing Services tailored to a wide range of medical specialties, including behavioral health, dental care, and various medical disciplines such as Physiotherapy, Orthopedics, Dermatology, Neurology, Psychology, Cardiology, Oncology, Family Practice, Internal Medicine, Surgeons, Allergy and Immunology, Neonatology, Pathology, Urology, Anesthesiology, Endocrinology, Gynecology, Pediatrics, Radiology, Psychiatry, Pulmonology, Gastroenterology, Rheumatology, Ophthalmology, Nephrology, Infectious Diseases, Emergency Medicine, Hematology, Plastic Surgery, Geriatrics, Otorhinolaryngology (ENT), Dentistry, Podiatry, Chiropractic Medicine, Andrology and more. Our services offer both affordability and flexibility, ensuring seamless integration into your practice's workflow. Moreover, we prioritize patient care through our dedicated Patient Support System, enabling you to concentrate on delivering exceptional healthcare. Experience the advantages of our weekly Practice Health Presentations, which provide insightful demonstrations of your practice's ongoing health and performance metrics.
                     </p>
-                    <p className='text-3xl'>Why Do Healthcare Professionals Choose Our Medical Billing Services?</p>
+                    <p className='text3xl'>Why Do Healthcare Professionals Choose Our Medical Billing Services?</p>
                     <div className='flex flex-wrap justify-around items-center'>
                         {data.map((item) => (
                             <ServicesCard data={item} />

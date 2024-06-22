@@ -5,6 +5,7 @@ import WhoWeAre from '../components/WhoWeAre';
 import WhatDoWeOffer from '../components/WhatDoWeOffer';
 import WhyChooseUs from '../components/WhyChooseUs';
 import SpecialitiesWeOffer from '../components/SpecialitiesWeOffer';
+import Softwares from '../components/Softwares';
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
         <WhatDoWeOffer/>
         <WhyChooseUs/>
         <SpecialitiesWeOffer/>
+        <Softwares/>
     </>
 
   )

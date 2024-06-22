@@ -74,7 +74,7 @@ function WhatDoWeOffer() {
     return (
         <>
             <div className='w-screen flex flex-col justify-center items-center p-4'>
-                <p className='text-3xl'>What Do We Offer?</p>
+                <p className='text3xl'>What Do We Offer?</p>
                 <div className='w-full flex flex-wrap justify-evenly mt-5'>
                 {data.map((item) => (
                     <OfferCards data={item}/>
