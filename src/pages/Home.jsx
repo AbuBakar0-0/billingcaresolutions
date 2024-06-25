@@ -6,6 +6,10 @@ import WhatDoWeOffer from '../components/WhatDoWeOffer';
 import WhyChooseUs from '../components/WhyChooseUs';
 import SpecialitiesWeOffer from '../components/SpecialitiesWeOffer';
 import Softwares from '../components/Softwares';
+import Testimonials from '../components/Testimonials';
+import BillingServices from '../components/BillingServices';
+import HoverSlider from '../components/HoverSlider';
+
 
 function Home() {
     return (
@@ -17,6 +21,9 @@ function Home() {
         <WhyChooseUs/>
         <SpecialitiesWeOffer/>
         <Softwares/>
+        <Testimonials/>
+        <BillingServices/>
+        <HoverSlider/>
     </>
 
   )

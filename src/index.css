@@ -30,10 +30,6 @@
   transform: rotateY(180deg); /* Flips the back side initially */
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .text5xl {
   font-size: clamp(24px, 10vw, 48px);
 }
@@ -95,4 +91,29 @@
 
 .logo-slide {
   /* min-width: calc(100% / 8); */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8c8c8c;
+  border-radius: 100px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+  border-radius: 100px;
 }

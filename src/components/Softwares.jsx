@@ -14,15 +14,15 @@ function Softwares() {
 
 
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <p className='text-3xl'>Softwares</p>
-      <div className="bg-gray-100 flex items-center justify-center">
+    <div className='flex flex-col justify-center items-center my-10'>
+      <p className='text-3xl mb-10'>Softwares</p>
+      <div className="flex items-center justify-center my-4">
         <LogoSlider logos={logos} direction={"left"} />
       </div>
-      <div className="bg-gray-100 flex items-center justify-center">
+      <div className="flex items-center justify-center my-4">
         <LogoSlider logos={logos} direction={"right"}/>
       </div>
-      <div className="bg-gray-100 flex items-center justify-center">
+      <div className="flex items-center justify-center my-4">
         <LogoSlider logos={logos} direction={"left"}/>
       </div>
     </div>

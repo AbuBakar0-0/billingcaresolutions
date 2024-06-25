@@ -59,7 +59,7 @@ function SpecialitiesWeOffer() {
                 ))}
             </div>
             <div className='flex justify-center items-center'>
-                <button className='px-3 py-4 bg-primary rounded-md text-white'>Explore More</button>
+                <button className='px-3 py-4 bg-primary rounded-2xl text-white'>Explore More</button>
 
             </div>
         </div>
