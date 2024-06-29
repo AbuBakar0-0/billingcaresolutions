@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['CustomFont', 'sans-serif'],
+      },
       colors: {
         primary: '#4ec39e', // green
         secondary: '#0073b9', // blue

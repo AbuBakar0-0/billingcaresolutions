@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // Import required modules
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import TestimonialCard from './TestimonialCard';
 
 const Testimonials = () => {
@@ -45,8 +45,8 @@ const Testimonials = () => {
 
     return (
         <>
-            <div className='text-3xl font-semibold flex justify-center p-10'>Client's Reviews</div>
-            <div className='px-10'>
+            <div className="text-3xl text-center font-custom p-10">Client's Reviews</div>
+            <div className='px-10 py-14' style={{ backgroundImage: `url("./assets/img.jpg")`,backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
                 <Swiper
                     modules={[Navigation, Autoplay]}
                     spaceBetween={30}

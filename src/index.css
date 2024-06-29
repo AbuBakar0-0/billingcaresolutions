@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/index.css */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../public/assets/fonts/Gabarito-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .flip-container {
   perspective: 1000px; /* Depth of the 3D effect */
 }
@@ -30,29 +39,6 @@
   transform: rotateY(180deg); /* Flips the back side initially */
 }
 
-.text5xl {
-  font-size: clamp(24px, 10vw, 48px);
-}
-
-.text4xl {
-  font-size: clamp(18px, 4vw, 36px);
-}
-
-.text3xl {
-  font-size: clamp(15px, 3vw, 30px);
-}
-
-.text2xl {
-  font-size: clamp(12px, 2vw, 24px);
-}
-
-.textxl {
-  font-size: clamp(10px, 1vw, 20px);
-}
-
-.textsm {
-  font-size: clamp(7px, 1vw, 14px);
-}
 
 @keyframes scroll-left {
   0% {

@@ -33,7 +33,7 @@ function Contact() {
 
     return (
         <>
-            <div className=' bg-green-200 flex flex-col space-y-4 p-6 border-y-4 border-red-400 mx-4'>
+            <div className=' bg-green-200 flex flex-col space-y-4 p-6 border-y-4 mx-4' style={{ backgroundImage: `url("./assets/img2.jpg")`,backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
                 <p className='text2xl font-semibold text-secondary'>Talk to an Expert</p>
                 <p className='font-semibold'>We're available 24/7 - Schedule a call with one of our experts now.</p>
                 <form action="" className='flex flex-col justify-around space-y-2'>

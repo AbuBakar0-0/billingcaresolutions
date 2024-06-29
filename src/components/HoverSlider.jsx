@@ -10,51 +10,68 @@ const HoverSlider = () => {
     setSliderWidth(widthPercent);
   };
 
-  const handleMouseLeave = () => {
-    setSliderWidth(30); // Default to middle when mouse leaves
+  const handleMouseLeave = (event) => {
+    const containerRect = event.currentTarget.getBoundingClientRect();
+    const offsetX = event.clientX - containerRect.left;
+    const widthPercent = (offsetX / containerRect.width) * 100;
+    if(widthPercent < 50){
+      setSliderWidth(0); // Default to middle when mouse leaves
+    } else{
+      setSliderWidth(100);
+    }
+  };
+
+  const handleTouchMove = (event) => {
+    const containerRect = event.currentTarget.getBoundingClientRect();
+    const touch = event.touches[0];
+    const offsetX = touch.clientX - containerRect.left;
+    const widthPercent = (offsetX / containerRect.width) * 100;
+    setSliderWidth(widthPercent);
   };
 
   return (
     <div className='flex flex-col justify-center items-center p-10'>
-      <div
-        className="relative w-full h-[400px] overflow-hidden mx-auto bg-gray-100"
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div className="absolute top-0 left-0 w-full h-full">
-          <img
-            src="./assets/img2.jpg"
-            alt="2"
-            className="absolute top-0 left-0 w-full h-full object-cover"
-          />
-        </div>
+      <div className='w-full flex flex-row justify-between items-center'>
+        <img src="./assets/hover_slider/user billingcaresolutions.com.webp" alt="" className='w-1/6 mt-[0.132rem]' />
         <div
-          className="absolute top-0 left-0 w-full h-full"
-          style={{
-            clipPath: `polygon(0 0, ${sliderWidth}% 0, ${sliderWidth}% 100%, 0 100%)`,
-          }}
+          className="relative w-4/6 h-[400px] overflow-hidden mx-auto object-cover"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          onTouchMove={handleTouchMove}
         >
-          <img
-            src="./assets/img.jpg"
-            alt="1"
-            className="absolute top-0 left-0 w-full h-full object-cover"
-          />
+          <div className="absolute top-0 left-0 w-full h-full">
+            <img
+              src="./assets/hover_slider/Without BCS billingcaresolutions.com.webp"
+              alt="Without BCS billingcaresolutions.com"
+              className="absolute top-0 left-0 w-full h-full object-contain lg:object-cover"
+            />
+          </div>
+          <div
+            className="absolute top-0 left-0 w-full h-full"
+            style={{
+              clipPath: `polygon(0 0, ${sliderWidth}% 0, ${sliderWidth}% 100%, 0 100%)`,
+            }}
+          >
+            <img
+              src="./assets/hover_slider/With BCS billingcaresolutions.com.webp"
+              alt="With BCS billingcaresolutions.com"
+              className="absolute top-0 left-0 w-full h-full object-contain lg:object-cover"
+            />
+          </div>
+          <div
+            className="absolute top-0 left-0 h-full w-[1px] bg-primary pointer-events-none flex flex-col justify-center items-center"
+            style={{ left: `${sliderWidth}%` }}
+          >
+            <div className='h-1/3 bg-secondary w-2 rounded-2xl'></div>
+          </div>
         </div>
-        <div
-          className="absolute top-0 left-0 h-full w-[1px] bg-red-500 pointer-events-none flex flex-col justify-center items-center"
-          style={{ left: `${sliderWidth}%` }}
-        >
-          <div className='h-1/3 bg-blue-700 w-2 rounded-2xl'></div>
-        </div>
+        <img src="./assets/hover_slider/success billingcaresolutions.com.webp" alt="" className='w-1/6 mt-[0rem]' />
       </div>
-      <div className='bg-secondary rounded-2xl px-8 py-2 text-white text-sm my-4'>
-          Talk to an Expert --
+      <div className='px-6 py-3 bg-primary rounded-2xl text-white mt-4'>
+        Talk to an Expert --
       </div>
     </div>
   );
 };
 
 export default HoverSlider;
-
-
-

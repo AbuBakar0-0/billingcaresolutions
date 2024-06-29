@@ -15,7 +15,7 @@ function Softwares() {
 
   return (
     <div className='flex flex-col justify-center items-center my-10'>
-      <p className='text-3xl mb-10'>Softwares</p>
+      <p className='text-3xl text-center md:text-left font-custom'>Softwares</p>
       <div className="flex items-center justify-center my-4">
         <LogoSlider logos={logos} direction={"left"} />
       </div>

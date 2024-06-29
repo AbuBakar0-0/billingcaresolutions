@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 import Hero from './../components/Hero';
 import Contact from '../components/Contact';
 import WhoWeAre from '../components/WhoWeAre';
@@ -12,18 +12,21 @@ import HoverSlider from '../components/HoverSlider';
 
 
 function Home() {
-    return (
+  return (
     <>
-        <Hero/>
-        <Contact/>
-        <WhoWeAre/>
-        <WhatDoWeOffer/>
-        <WhyChooseUs/>
-        <SpecialitiesWeOffer/>
-        <Softwares/>
-        <Testimonials/>
-        <BillingServices/>
-        <HoverSlider/>
+      <div className='container mx-auto'>
+        <Hero />
+        <Contact />
+        <WhoWeAre />
+        <WhatDoWeOffer />
+        <WhyChooseUs />
+        <SpecialitiesWeOffer />
+        <Softwares />
+        <Testimonials />
+        <BillingServices />
+        <HoverSlider />
+      </div>
+
     </>
 
   )
