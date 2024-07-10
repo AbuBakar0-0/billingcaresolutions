@@ -58,7 +58,7 @@ const Counter = ({ title, number, image }) => {
                 <p className="text-5xl font-bold">
                     {counter}
                 </p>
-                <p>
+                <p className='font-bold text-center'>
                     {title}
                 </p>
             </div>

@@ -58,9 +58,6 @@
   }
 }
 
-.logo-slider-container {
-  /* height: 6rem; */
-}
 
 .logo-slider-track {
   display: flex;
@@ -73,10 +70,6 @@
 
 .scroll-right {
   animation: scroll-right 20s linear infinite;
-}
-
-.logo-slide {
-  /* min-width: calc(100% / 8); */
 }
 
 
@@ -102,4 +95,20 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #fff; 
   border-radius: 100px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.slide-content.fade-up {
+  opacity: 1;
+  transform: translateY(0);
 }

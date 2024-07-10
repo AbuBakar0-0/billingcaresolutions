@@ -1,12 +1,95 @@
 // MySwiper.js
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 import HeroSlide from './HeroSlide';
 
 const Hero = () => {
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
+  const options = useMemo(
+    () => ({
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: true,
+            mode: "push",
+          },
+          onHover: {
+            enable: true,
+            mode: "repulse",
+          },
+        },
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#4ec39e",
+
+        },
+        links: {
+          color: "#0073b9",
+          distance: 100,
+          enable: true,
+          opacity: 0.8,
+          width: 1.5,
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: {
+            default: "bounce",
+          },
+          random: false,
+          speed: 2,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+          },
+          value: 150,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          value: { min: 2, max: 5 },
+        },
+      },
+      detectRetina: true,
+    }),
+    [],
+  );
+
 
   const data = [
     {
@@ -39,6 +122,32 @@ const Hero = () => {
   return (
     <>
       <Swiper
+        onSlideChangeTransitionStart={(swiper) => {
+          swiper.slides.forEach((slide) => {
+            const contentElements = slide.querySelectorAll('.slide-content');
+            contentElements.forEach((content) => {
+              content.classList.remove('fade-up');
+            });
+          });
+        }}
+        onSlideChangeTransitionEnd={(swiper) => {
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const contentElements = activeSlide.querySelectorAll('.slide-content');
+          contentElements.forEach((content, index) => {
+            content.classList.remove('fade-up');
+            void content.offsetWidth; // Trigger reflow
+            content.style.animationDelay = `${index * 0.5}s`; // Adjust delay for each element
+            content.classList.add('fade-up');
+          });
+        }}
+        onInit={(swiper) => {
+          const activeSlide = swiper.slides[swiper.activeIndex];
+          const contentElements = activeSlide.querySelectorAll('.slide-content');
+          contentElements.forEach((content, index) => {
+            content.style.animationDelay = `${index * 0.5}s`; // Adjust delay for each element
+            content.classList.add('fade-up');
+          });
+        }}
         modules={[Pagination, Navigation, Autoplay]}
         spaceBetween={30}
         pagination={{
@@ -50,14 +159,24 @@ const Hero = () => {
         // navigation={true}
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
 
         className="mySwiper"
       >
+
         <SwiperSlide>
-          <div className='w-screen h-96 text-white text-6xl flex flex-col justify-center items-center' style={{ backgroundImage: `url("./assets/hero/img.jpg")` }}>asadasdasdsaasdasdasd</div>
+          <Particles
+            id="tsparallax"
+            particlesLoaded={particlesLoaded}
+            options={options}
+            className='z-0'
+          />
+          <div className='z-10 w-full h-[37rem] flex flex-col justify-center items-center p-10' style={{ backgroundImage: `url("./assets/hero/Logo Slide 1 billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain' }}>
+            <img src="./assets/BCS Logo billingcaresolutions.com.svg" alt="" className='w-1/2 h-auto animate-bounce slide-content' />
+            <p className='text-3xl slide-content'>Get hassle-free payments with Billing Care Solutions.</p>
+          </div>
         </SwiperSlide>
         {data.map((item) => (
           <SwiperSlide>

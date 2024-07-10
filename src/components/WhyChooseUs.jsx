@@ -55,22 +55,33 @@ function WhyChooseUs() {
 
     return (
         <>
-            <div className='w-full flex flex-col lg:flex-row justify-between p-10 items-center'>
-                <div className='w-full lg:w-2/4 flex flex-col p-2 space-y-4'>
-                    <p className='text-3xl text-center md:text-left font-custom'>Why Choose Billing Care Solutions?</p>
+            <div className='w-full flex flex-col lg:flex-row justify-between items-center p-10' style={{ backgroundImage: `url("./assets/billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                <div className='w-full lg:w-2/4 flex flex-col space-y-4 p-10'>
+                    <div className='flex flex-row justify-start items-center space-x-3 text-secondary font-custom text-2xl font-medium'>
+                        <p>Why Choose Billing Care Solutions?</p>
+                        <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
+                    </div>
                     <p className='mt-5 text-justify'>
                         We provide extensive Medical Billing and Credentialing Services tailored to a wide range of medical specialties, including behavioral health, dental care, and various medical disciplines such as Physiotherapy, Orthopedics, Dermatology, Neurology, Psychology, Cardiology, Oncology, Family Practice, Internal Medicine, Surgeons, Allergy and Immunology, Neonatology, Pathology, Urology, Anesthesiology, Endocrinology, Gynecology, Pediatrics, Radiology, Psychiatry, Pulmonology, Gastroenterology, Rheumatology, Ophthalmology, Nephrology, Infectious Diseases, Emergency Medicine, Hematology, Plastic Surgery, Geriatrics, Otorhinolaryngology (ENT), Dentistry, Podiatry, Chiropractic Medicine, Andrology and more. Our services offer both affordability and flexibility, ensuring seamless integration into your practice's workflow. Moreover, we prioritize patient care through our dedicated Patient Support System, enabling you to concentrate on delivering exceptional healthcare. Experience the advantages of our weekly Practice Health Presentations, which provide insightful demonstrations of your practice's ongoing health and performance metrics.
                     </p>
-                    <p className='text-3xl text-center md:text-left font-custom'>Why Do Healthcare Professionals Choose Our Medical Billing Services?</p>
-                    <div className='flex flex-wrap justify-around items-center'>
-                        {data.map((item) => (
-                            <ServicesCard data={item} />
-                        ))}
 
-                    </div>
                 </div>
                 <img src="./assets/why_choose_billing_care_solutions/why_choose_.svg" alt="" className='w-full md:w-2/4 py-10 lg:py-0 object-fit h-max' />
             </div>
+            <div className='flex flex-col justify-center items-center w-full p-10'>
+                <div className='flex flex-row justify-start items-center space-x-3 text-secondary font-custom text-3xl font-medium'>
+                    <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
+                    <p className='text-3xl text-center md:text-left font-custom'>Why Do Healthcare Professionals Choose Our Medical Billing Services?</p>
+                    <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
+                </div>
+                <div className='w-full flex flex-wrap justify-between items-center'>
+                    {data.map((item) => (
+                        <ServicesCard data={item} />
+                    ))}
+
+                </div>
+            </div>
+
         </>
     )
 }

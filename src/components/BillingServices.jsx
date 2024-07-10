@@ -42,17 +42,21 @@ function BillingServices() {
         }
     ];
     return (
-        <div className='flex flex-col justify-center items-center p-8' style={{ backgroundImage: `url("./assets/img2.jpg")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-            <p className='text-3xl text-center font-custom'>Let Us Handle Your Billing Services!</p>
+        <div className='flex flex-col justify-center items-center p-10' style={{ backgroundImage: `url("./assets/billingcaresolutions.com (2).webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+            <div className='flex flex-row justify-center items-center space-x-3 text-white font-custom text-3xl font-medium'>
+                <div className='bg-white w-[2rem] h-[0.2rem]'></div>
+                    <p>Let Us Handle Your Billing Services!</p>
+                <div className='bg-white w-[2rem] h-[0.2rem]'></div>
+            </div>
             <div className='flex flex-wrap justify-center items-center md:p-8'>
                 {data.map((item) => (
-                    <div className='w-full md:w-1/2 lg:w-1/4 flex flex-row justify-start items-center'>
+                    <div className='w-full md:w-1/2 lg:w-1/4 flex flex-row justify-start items-center text-white'>
                         <img src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='w-4 h-4' />
                         <p className='p-2'>{item}</p>
                     </div>
                 ))}
             </div>
-            <div className='flex flex-wrap justify-around items-center rounded-2xl border-4 border-white w-full bg-white p-10 shadow-xl'>
+            <div className='flex flex-wrap justify-around items-center rounded-2xl border-4 border-white w-full bg-white p-10 shadow-3xl'>
                 {counterData.map((item) => (
                     <Counter title={item.title} number={item.number} image={item.image} />
                 ))}

@@ -6,12 +6,12 @@ const LogoSlider = ({ logos, direction}) => {
       <div className={`logo-slider-track flex ${direction === 'left' ? 'scroll-left' : 'scroll-right'}`}>
         {logos.map((logo, index) => (
           <div key={index} className="logo-slide flex items-center justify-center p-1 md:p-4">
-            <img src={logo.url} alt={logo.alt} className="" />
+            <img src={logo.img} alt={logo.alt} className="w-40 h-auto object-contain"/>
           </div>
         ))}
         {logos.map((logo, index) => (
           <div key={index + logos.length} className="logo-slide flex items-center justify-center p-1 md:p-4">
-            <img src={logo.url} alt={logo.alt} className="" />
+            <img src={logo.img} alt={logo.alt} className="w-40 h-auto object-contain"/>
           </div>
         ))}
       </div>

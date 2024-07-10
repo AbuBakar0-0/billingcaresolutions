@@ -45,8 +45,12 @@ const Testimonials = () => {
 
     return (
         <>
-            <div className="text-3xl text-center font-custom p-10">Client's Reviews</div>
-            <div className='px-10 py-14' style={{ backgroundImage: `url("./assets/img.jpg")`,backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
+            <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-3xl font-medium p-10'>
+                <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
+                <p>Client's Reviews</p>
+                <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
+            </div>
+            <div className='px-10 py-14' style={{ backgroundImage: `url("./assets/img.jpg")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                 <Swiper
                     modules={[Navigation, Autoplay]}
                     spaceBetween={30}
