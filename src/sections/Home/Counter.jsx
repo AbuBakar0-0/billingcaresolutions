@@ -52,13 +52,13 @@ const Counter = ({ title, number, image }) => {
     }, [isVisible]);
 
     return (
-        <div className='w-full md:w-1/6 flex flex-row justify-center md:justify-center items-center'>
+        <div className='w-full md:w-1/6 flex flex-row justify-center md:justify-center items-center space-y-4 md:space-y-0'>
             <img src={image} alt="" className='w-12 h-12 mx-4' />
             <div className="flex flex-col items-center justify-center w-4/5" ref={counterRef}>
                 <p className="text-5xl font-bold">
                     {counter}
                 </p>
-                <p className='font-bold text-center'>
+                <p className='font-bold text-center font-custom'>
                     {title}
                 </p>
             </div>

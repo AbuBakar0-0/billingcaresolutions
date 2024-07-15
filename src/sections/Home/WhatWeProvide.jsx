@@ -1,5 +1,5 @@
 import React from 'react'
-import OfferCards from './OfferCards'
+import OfferCards from '../../components/OfferCards'
 
 function WhatWeProvide() {
 
@@ -73,18 +73,18 @@ function WhatWeProvide() {
 
     return (
         <>
-            <div className='flex flex-col justify-center items-center p-10'>
-                <div className='flex flex-row justify-between items-center lg:p-10'>
+            <div className='flex flex-col justify-center items-center'>
+                <div className='flex flex-col md:flex-row justify-between items-center  p-8 lg:p-10'>
                     <div>
                         <div className='flex flex-row justify-start items-center space-x-3 text-primary font-custom text-2xl font-medium'>
                             <p>What We Provide?</p>
                             <div className='bg-primary w-[2rem] h-[0.2rem]'></div>
                         </div>
-                        <p className='text-4xl md:text-6xl text-center md:text-left font-custom font-semibold text-secondary'>
+                        <p className='text-2xl md:text-6xl md:text-left font-custom font-semibold text-secondary'>
                             Our BCS Solutions
                         </p>
                     </div>
-                    <p className='w-3/5 text-justify'>We provide advanced infrastructure and strategies to identify issues in your revenue cycle
+                    <p className='md:w-3/5 text-justify'>We provide advanced infrastructure and strategies to identify issues in your revenue cycle
                         management, thus improving the medical billing cycle with precisely streamlined processes. By
                         analyzing your practice health financial reports, denials, weekly reports, unpaid claims,
                         credentialing matters, PM and Clearinghouse configuration, we offer increased revenue and
@@ -93,7 +93,7 @@ function WhatWeProvide() {
                         showcasing constant improvement in your accounts receivable and financial growth.
                     </p>
                 </div>
-                <div className='w-full flex flex-wrap justify-between lg:p-10'>
+                <div className='w-full flex flex-wrap justify-center md:justify-between md:px-10 lg:px-28'>
                     {data.map((item) => (
                         <OfferCards data={item} />
                     ))}

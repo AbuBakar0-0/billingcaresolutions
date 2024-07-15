@@ -3,7 +3,7 @@ import React from 'react'
 const OfferCards = ({ data }) => {
 
   return (
-    <div class="flip-container w-72 h-[22rem] relative my-10">
+    <div class="flip-container w-72 h-[22rem] relative my-3">
       <div class="flipper absolute w-72 h-[22rem] object-fit">
         {/* <!-- Front of the card --> */}
         <div class="front flex flex-col justify-between">

@@ -1,5 +1,5 @@
 import React from 'react'
-import SpecialityCard from './SpecialityCard'
+import SpecialityCard from '../../components/SpecialityCard'
 
 function SpecialitiesWeOffer() {
     const data = [
@@ -61,7 +61,7 @@ function SpecialitiesWeOffer() {
 
     return (
         <div className='flex flex-col justify-center p-10'>
-            <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-3xl font-medium mb-10'>
+            <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-xl md:text-3xl text-center font-medium mb-10'>
                 <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
                     <p>Specialities We Offer</p>
                 <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
@@ -71,9 +71,8 @@ function SpecialitiesWeOffer() {
                     <SpecialityCard data={item} />
                 ))}
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center mt-6'>
                 <button className='px-6 py-3 bg-primary rounded-2xl text-white'>Explore More</button>
-
             </div>
         </div>
     )

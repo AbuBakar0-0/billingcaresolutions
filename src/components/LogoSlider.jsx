@@ -1,17 +1,21 @@
 import React from 'react';
 
-const LogoSlider = ({ logos, direction}) => {
+const LogoSlider = ({ logos, direction = 'left' }) => {
+
+  const animationClass = direction === 'right' ? 'animate-slide-right' : 'animate-slide-left';
+
+
   return (
-    <div className="relative w-full overflow-hidden logo-slider-container">
-      <div className={`logo-slider-track flex ${direction === 'left' ? 'scroll-left' : 'scroll-right'}`}>
+    <div className="relative overflow-hidden w-full">
+      <div className={`flex items-center ${animationClass}`}>
         {logos.map((logo, index) => (
-          <div key={index} className="logo-slide flex items-center justify-center p-1 md:p-4">
-            <img src={logo.img} alt={logo.alt} className="w-40 h-auto object-contain"/>
+          <div key={index} className="flex-shrink-0 p-4">
+            <img src={logo['img']} alt={`Logo ${index + 1}`} className="w-24 h-auto" />
           </div>
         ))}
         {logos.map((logo, index) => (
-          <div key={index + logos.length} className="logo-slide flex items-center justify-center p-1 md:p-4">
-            <img src={logo.img} alt={logo.alt} className="w-40 h-auto object-contain"/>
+          <div key={`duplicate-${index}`} className="flex-shrink-0 p-4">
+            <img src={logo['img']} alt={`Logo duplicate ${index + 1}`} className="w-24 h-auto" />
           </div>
         ))}
       </div>

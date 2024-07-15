@@ -14,7 +14,7 @@ const TestimonialCard = ({ data }) => {
     return (
         <>
             <SwiperSlide className="flex items-center justify-center">
-                <div className='h-44 w-full flex flex-col justify-start items-start border-4 border-primary bg-black rounded-2xl p-4'>
+                <div className='h-44 w-full flex flex-col justify-start items-start border-4 border-primary rounded-2xl p-4'>
                     <div className='flex flex-row items-center justify-between text-white w-full'>
                         <p>{data.name}</p>
                         <img src="./assets/google.png" alt="" className='w-8 h-8' />

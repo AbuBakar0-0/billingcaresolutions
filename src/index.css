@@ -4,12 +4,12 @@
 
 /* src/index.css */
 @font-face {
-  font-family: 'CustomFont';
-  src: url('../public/assets/fonts/Gabarito-VariableFont_wght.ttf') format('truetype');
+  font-family: "CustomFont";
+  src: url("../public/assets/fonts/Gabarito-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 .flip-container {
   perspective: 1000px; /* Depth of the 3D effect */
@@ -39,40 +39,6 @@
   transform: rotateY(180deg); /* Flips the back side initially */
 }
 
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-
-.logo-slider-track {
-  display: flex;
-  width: 200%; /* Double the width to accommodate the repeated logos */
-}
-
-.scroll-left {
-  animation: scroll-left 20s linear infinite;
-}
-
-.scroll-right {
-  animation: scroll-right 20s linear infinite;
-}
-
-
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
@@ -82,18 +48,18 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: #8c8c8c;
-  border-radius: 100px; 
+  border-radius: 100px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fff; 
+  background: #fff;
   border-radius: 100px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff; 
+  background: #fff;
   border-radius: 100px;
 }
 
@@ -111,4 +77,63 @@
 .slide-content.fade-up {
   opacity: 1;
   transform: translateY(0);
+}
+
+.max-h-0 {
+  max-height: 0;
+}
+
+.max-h-screen {
+  max-height: 100vh; 
+}
+
+.transition-all {
+  transition: max-height 0.3s ease-in-out, opacity 1s ease-in-out;
+}
+
+
+.animate-slide-left {
+  animation: slide-left 20s linear infinite;
+}
+
+.animate-slide-right {
+  animation: slide-right 20s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-slide-left {
+    animation: slide-left 10s linear infinite;
+  }
+
+  .animate-slide-right {
+    animation: slide-right 10s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .animate-slide-left {
+    animation: slide-left 5s linear infinite;
+  }
+
+  .animate-slide-right {
+    animation: slide-right 5s linear infinite;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

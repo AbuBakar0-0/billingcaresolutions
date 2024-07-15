@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesCard from './ServicesCard';
+import ServicesCard from '../../components/ServicesCard';
 
 function WhyChooseUs() {
     const data = [
@@ -56,8 +56,8 @@ function WhyChooseUs() {
     return (
         <>
             <div className='w-full flex flex-col lg:flex-row justify-between items-center p-10' style={{ backgroundImage: `url("./assets/billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                <div className='w-full lg:w-2/4 flex flex-col space-y-4 p-10'>
-                    <div className='flex flex-row justify-start items-center space-x-3 text-secondary font-custom text-2xl font-medium'>
+                <div className='w-full lg:w-1/2 flex flex-col space-y-4 lg:p-10'>
+                    <div className='flex flex-row justify-start items-center space-x-3 text-secondary font-custom text-xl md:text-3xl font-medium'>
                         <p>Why Choose Billing Care Solutions?</p>
                         <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
                     </div>
@@ -66,15 +66,18 @@ function WhyChooseUs() {
                     </p>
 
                 </div>
-                <img src="./assets/why_choose_billing_care_solutions/why_choose_.svg" alt="" className='w-full md:w-2/4 py-10 lg:py-0 object-fit h-max' />
+                <div className='w-full lg:w-1/2 flex justify-center items-center'>
+                    <img src="./assets/why choose billing care solutions-01.webp" alt="" className='w-full md:w-3/5 py-10 lg:py-0 ' />
+                </div>
+
             </div>
             <div className='flex flex-col justify-center items-center w-full p-10'>
-                <div className='flex flex-row justify-start items-center space-x-3 text-secondary font-custom text-3xl font-medium'>
+                <div className='flex flex-row justify-start items-center space-x-3 text-secondary font-custom text-xl md:text-3xl font-medium'>
                     <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
-                    <p className='text-3xl text-center md:text-left font-custom'>Why Do Healthcare Professionals Choose Our Medical Billing Services?</p>
+                    <p className='text-center md:text-left font-custom'>Why Do Healthcare Professionals Choose Our Medical Billing Services?</p>
                     <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
                 </div>
-                <div className='w-full flex flex-wrap justify-between items-center'>
+                <div className='w-full flex flex-wrap justify-center md:justify-between items-center'>
                     {data.map((item) => (
                         <ServicesCard data={item} />
                     ))}

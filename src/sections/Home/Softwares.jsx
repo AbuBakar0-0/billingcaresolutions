@@ -1,12 +1,12 @@
 import React from 'react'
-import LogoSlider from './LogoSlider';
+import LogoSlider from '../../components/LogoSlider';
 
 function Softwares() {
 
   const logos1 = [
     { "img": "./assets/slider/1.svg", "link": "", "alt": "1.svg" },
     { "img": "./assets/slider/2.svg", "link": "", "alt": "2.svg" },
-    { "img": "./assets/slider/3.svg", "link": "", "alt": "3.svg" },
+    { "img": "./assets/slider/3.png", "link": "", "alt": "3.png" },
     { "img": "./assets/slider/4.svg", "link": "", "alt": "4.svg" },
     { "img": "./assets/slider/5.svg", "link": "", "alt": "5.svg" },
     { "img": "./assets/slider/6.webp", "link": "", "alt": "6.webp" },
@@ -39,7 +39,7 @@ function Softwares() {
     { "img": "./assets/slider/30.png", "link": "", "alt": "30.png" },
     { "img": "./assets/slider/31.png", "link": "", "alt": "31.png" },
     { "img": "./assets/slider/32.png", "link": "", "alt": "32.png" },
-    { "img": "./assets/slider/33.svg", "link": "", "alt": "33.svg" }
+    { "img": "./assets/slider/33.png", "link": "", "alt": "33.png" }
   ];
 
   const logos3 = [
@@ -64,20 +64,14 @@ function Softwares() {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-3xl font-medium p-10'>
+      <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-xl md:text-3xl font-medium p-10'>
         <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
         <p>Softwares</p>
         <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
       </div>
-      <div className="flex items-center justify-center my-4">
-        <LogoSlider logos={logos1} direction={"left"} />
-      </div>
-      <div className="flex items-center justify-center my-4">
-        <LogoSlider logos={logos2} direction={"right"} />
-      </div>
-      <div className="flex items-center justify-center my-4">
-        <LogoSlider logos={logos3} direction={"left"} />
-      </div>
+      <LogoSlider logos={logos1} />
+      <LogoSlider logos={logos2} direction='right' />
+      <LogoSlider logos={logos3} />
     </div>
   )
 }

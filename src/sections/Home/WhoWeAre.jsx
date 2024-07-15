@@ -20,11 +20,11 @@ function WhoWeAre() {
                     </p>
                     <div className='w-full flex flex-col md:flex-row justify-evenly items-center pt-5'>
 
-                        <button className='flex flex-row justify-between items-center mt-0 md:w-max px-6 py-4 bg-gradient-to-r from-[#95ca4c] to-[#2cb34b] rounded-full shadow-xl border-[0.15rem] border-white text-white font-semibold text-xs md:text-sm'>
+                        <button className='flex flex-row justify-between items-center mt-0 md:w-max px-6 py-4 bg-gradient-to-r from-[#4fc29f] to-[#46c063] rounded-full shadow-xl border-[0.15rem] border-white text-white font-semibold text-xs md:text-sm'>
                             <img className='w-6 h-6 mx-2' src="./assets/download icon billingcaresolutions.com.svg" alt="download icon billingcaresolutions.com.svg" />
                             Download BCS Brochure
                         </button>
-                        <button className='flex flex-row justify-between items-center mt-4 md:mt-0 md:w-max px-6 py-4 bg-gradient-to-r from-[#278cc1] to-[#644d97] rounded-full  shadow-xl border-[0.15rem] border-white text-white font-semibold text-xs md:text-sm'>
+                        <button className='flex flex-row justify-between items-center mt-4 md:mt-0 md:w-max px-6 py-4 bg-gradient-to-r from-[#0072b9] to-[#766cca] rounded-full  shadow-xl border-[0.15rem] border-white text-white font-semibold text-xs md:text-sm'>
                             <img className='w-6 h-6 mx-2' src="./assets/download icon billingcaresolutions.com.svg" alt="download icon billingcaresolutions.com.svg" />
                             Download BCS Company Profile
                         </button>

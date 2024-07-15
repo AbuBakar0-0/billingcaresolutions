@@ -8,8 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // Import required modules
-import { Navigation, Autoplay } from 'swiper/modules';
-import TestimonialCard from './TestimonialCard';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
+import TestimonialCard from '../../components/TestimonialCard';
 
 const Testimonials = () => {
     const data = [
@@ -45,12 +45,13 @@ const Testimonials = () => {
 
     return (
         <>
-            <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-3xl font-medium p-10'>
-                <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
-                <p>Client's Reviews</p>
-                <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
-            </div>
-            <div className='px-10 py-14' style={{ backgroundImage: `url("./assets/img.jpg")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+
+            <div className='px-10 py-14' style={{ backgroundImage: `url("./assets/Testimonial billingcaresolution.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                <div className='flex flex-row justify-center items-center space-x-3 text-white font-custom text-xl md:text-3xl font-medium pb-6'>
+                    <div className='bg-white w-[2rem] h-[0.2rem]'></div>
+                    <p>Client's Reviews</p>
+                    <div className='bg-white w-[2rem] h-[0.2rem]'></div>
+                </div>
                 <Swiper
                     modules={[Navigation, Autoplay]}
                     spaceBetween={30}

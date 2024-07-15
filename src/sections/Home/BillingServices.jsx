@@ -43,7 +43,7 @@ function BillingServices() {
     ];
     return (
         <div className='flex flex-col justify-center items-center p-10' style={{ backgroundImage: `url("./assets/billingcaresolutions.com (2).webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-            <div className='flex flex-row justify-center items-center space-x-3 text-white font-custom text-3xl font-medium'>
+            <div className='flex flex-row justify-center items-center space-x-3 text-white font-custom text-xl md:text-3xl text-center font-medium'>
                 <div className='bg-white w-[2rem] h-[0.2rem]'></div>
                     <p>Let Us Handle Your Billing Services!</p>
                 <div className='bg-white w-[2rem] h-[0.2rem]'></div>
