@@ -1,5 +1,6 @@
 import React from 'react'
-import LogoSlider from '../../components/LogoSlider';
+import LogoSlider from './../../components/Home/LogoSlider';
+import Heading from './../../components/Heading';
 
 function Softwares() {
 
@@ -64,11 +65,7 @@ function Softwares() {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-xl md:text-3xl font-medium p-10'>
-        <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
-        <p>Softwares</p>
-        <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
-      </div>
+      <Heading data="Softwares" />
       <LogoSlider logos={logos1} />
       <LogoSlider logos={logos2} direction='right' />
       <LogoSlider logos={logos3} />

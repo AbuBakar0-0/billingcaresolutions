@@ -1,5 +1,6 @@
 import React from 'react'
-import OfferCards from '../../components/OfferCards'
+import OfferCards from './../../components/Home/OfferCards';
+import HeadingLine from './../../components/HeadingLine';
 
 function WhatWeProvide() {
 
@@ -76,10 +77,7 @@ function WhatWeProvide() {
             <div className='flex flex-col justify-center items-center'>
                 <div className='flex flex-col md:flex-row justify-between items-center  p-8 lg:p-10'>
                     <div>
-                        <div className='flex flex-row justify-start items-center space-x-3 text-primary font-custom text-2xl font-medium'>
-                            <p>What We Provide?</p>
-                            <div className='bg-primary w-[2rem] h-[0.2rem]'></div>
-                        </div>
+                        <HeadingLine data={"What We Provide?"}/>
                         <p className='text-2xl md:text-6xl md:text-left font-custom font-semibold text-secondary'>
                             Our BCS Solutions
                         </p>

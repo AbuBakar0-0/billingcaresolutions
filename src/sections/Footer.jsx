@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterLine from '../../components/FooterLine'
+import FooterLine from './../components/Home/FooterLine';
 
 function Footer() {
   const quicklinks = [

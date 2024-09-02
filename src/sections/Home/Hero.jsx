@@ -5,8 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import HeroSlide from './../../components/Home/HeroSlide';
 
-import HeroSlide from '../../components/HeroSlide';
 
 const Hero = () => {
   const [init, setInit] = useState(false);

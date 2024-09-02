@@ -1,4 +1,5 @@
 import React from 'react'
+import HeadingLine from '../../components/HeadingLine'
 
 function WhoWeAre() {
     return (
@@ -7,10 +8,7 @@ function WhoWeAre() {
                 <img src="./assets/About Us billingcaresolutions.com.webp" alt="" className='w-full lg:w-1/3 h-auto' />
                 <div className='flex flex-col w-full lg:w-2/3 justify-start items-start lg:p-10 space-y-4'>
                     <div>
-                        <div className='flex flex-row justify-start items-center space-x-3 text-primary font-custom text-2xl font-medium'>
-                            <p>Introduction</p>
-                            <div className='bg-primary w-[2rem] h-[0.2rem]'></div>
-                        </div>
+                        <HeadingLine data={"Introduction"}/>
                         <p className='text-4xl md:text-6xl text-center md:text-left font-custom font-semibold'>
                             Who We Are?
                         </p>

@@ -1,5 +1,6 @@
 import React from 'react'
-import SpecialityCard from '../../components/SpecialityCard'
+import SpecialityCard from './../../components/Home/SpecialityCard';
+import Heading from './../../components/Heading';
 
 function SpecialitiesWeOffer() {
     const data = [
@@ -61,11 +62,8 @@ function SpecialitiesWeOffer() {
 
     return (
         <div className='flex flex-col justify-center p-10'>
-            <div className='flex flex-row justify-center items-center space-x-3 text-secondary font-custom text-xl md:text-3xl text-center font-medium mb-10'>
-                <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
-                    <p>Specialities We Offer</p>
-                <div className='bg-secondary w-[2rem] h-[0.2rem]'></div>
-            </div>
+            <Heading data="Specialities We Offer" />
+
             <div className='flex flex-wrap justify-around'>
                 {data.map((item) => (
                     <SpecialityCard data={item} />

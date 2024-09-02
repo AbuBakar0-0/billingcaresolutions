@@ -8,8 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // Import required modules
-import { Navigation, Autoplay, Pagination } from 'swiper/modules';
-import TestimonialCard from '../../components/TestimonialCard';
+import { Navigation, Autoplay } from 'swiper/modules';
+import TestimonialCard from './../../components/Home/TestimonialCard';
 
 const Testimonials = () => {
     const data = [
@@ -56,7 +56,6 @@ const Testimonials = () => {
                     modules={[Navigation, Autoplay]}
                     spaceBetween={30}
                     pagination={{ clickable: true }}
-                    // navigation={true}
                     loop={true}
                     autoplay={{
                         delay: 2500,

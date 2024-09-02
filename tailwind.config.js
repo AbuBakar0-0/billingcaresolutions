@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: '#4ec39e', // green
         secondary: '#0073b9', // blue
-        gray:'#b2b2b2'
+        grayss:'#b2b2b2'
         },
         animation: {
           'glow-border': 'glow-border 1s infinite',

@@ -38,15 +38,15 @@ function Contact() {
                 <p className='font-semibold'>We're available 24/7 - Schedule a call with one of our experts now.</p>
                 <form action="" className='flex flex-col justify-around space-y-2'>
                     <div className='flex flex-wrap justify-between space-y-2 lg:space-y-0'>
-                        <input type="text" className='px-3 py-2 border-2 border-gray-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-4/12' name='company_name' placeholder='Practice or Company Name*' required />
-                        <input type="text" className='px-3 py-2 border-2 border-gray-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-2/12' name='last_name' placeholder='Last Name*' required />
-                        <input type="text" className='px-3 py-2 border-2 border-gray-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-2/12' name='first_name' placeholder='First Name*' required />
-                        <input type="text" className='px-3 py-2 border-2 border-gray-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-2/12' name='phone' value={phoneNumber}
+                        <input type="text" className='px-3 py-2 border-2 border-grays-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-4/12' name='company_name' placeholder='Practice or Company Name*' required />
+                        <input type="text" className='px-3 py-2 border-2 border-grays-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-2/12' name='last_name' placeholder='Last Name*' required />
+                        <input type="text" className='px-3 py-2 border-2 border-grays-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-2/12' name='first_name' placeholder='First Name*' required />
+                        <input type="text" className='px-3 py-2 border-2 border-grays-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-2/12' name='phone' value={phoneNumber}
                             onChange={handleInputChange} placeholder='+1 (555) 555-1234*' required />
-                        <input type="email" className='px-3 py-2 border-2 border-gray-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-1/12' name='email' placeholder='Email*' required />
+                        <input type="email" className='px-3 py-2 border-2 border-grays-400 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-none lg:w-1/12' name='email' placeholder='Email*' required />
                     </div>
                     <div className='flex flex-wrap justify-between space-y-2 lg:space-y-0'>
-                        <input type="text" className='px-3 py-2 border-2 border-gray-400 rounded-2xl w-full focus:border-secondary lg:w-[89.5%]' name='message' placeholder='Message*' required />
+                        <input type="text" className='px-3 py-2 border-2 border-grays-400 rounded-2xl w-full focus:border-secondary lg:w-[89.5%]' name='message' placeholder='Message*' required />
                         <input type="submit" className='px-3 py-2  rounded-2xl w-full lg:w-1/12 animate-glow-border  border-2 bg-primary p-4 text-white' name='submit' placeholder='Submit' />
 
                     </div>

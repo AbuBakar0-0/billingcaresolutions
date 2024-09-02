@@ -8,7 +8,7 @@ const OfferCards = ({ data }) => {
         {/* <!-- Front of the card --> */}
         <div class="front flex flex-col justify-between">
           <img src={data.img} alt={data.title} className='w-max h-full' />
-          <div className='flex flex-row justify-start bg-gray-300 items-center'>
+          <div className='flex flex-row justify-start bg-grays-300 items-center'>
             <img className='w-16 h-16 p-4  bg-secondary' src={data.icon} alt={data.title} />
             <p className='w-4/5 px-4 font-bold'>{data.title}</p>
           </div>
