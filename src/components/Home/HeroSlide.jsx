@@ -1,13 +1,13 @@
 import React from 'react'
 
-const HeroSlide = ({ title, description, link, image }) => {
+const HeroSlide = ({ title, description, link, image, titleColor, descriptionColor }) => {
     return (
-        <div className='w-full h-[20rem] lg:h-[37rem] p-10 flex flex-col justify-center items-start' style={{ backgroundImage: `url("${image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-            <div className='md:w-[45%] slide-content'>
-                <p className='text-xl lg:text-4xl font-semibold'>
+        <div className="w-full h-[20rem] lg:h-[37rem] p-10 flex flex-col justify-center items-start font-custom" style={{ backgroundImage: `url("${image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+            <div className='md:w-[45%] slide-content flex gap-3 flex-col'>
+                <p className="text-xl lg:text-4xl font-black" style={{ color: titleColor }}>
                     {title}
                 </p>
-                <p className='text-sm lg:text-lg'>
+                <p className='text-md lg:text-xl' style={{ color: descriptionColor }}>
                     {description}
                 </p>
                 <div className='mt-3 flex flex-row space-x-4 justify-start items-center'>

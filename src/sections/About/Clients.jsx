@@ -4,7 +4,7 @@ function Clients() {
   return (
     <>
         <div className='w-full flex flex-col md:flex-row justify-between items-center gap-3 my-10 p-10'>
-            <img src="./assets/img.jpg" alt="" className='' />
+            <img src="./assets/about-us/Reasons-clients-remain-with-us-billingcaresolutions.com.webp" alt="" className='w-1/2 p-10' />
             <div className='w-full md:w-1/2 flex flex-col justify-center items-start gap-3'>
             <p className='text-3xl font-semibold text-secondary'>Reasons clients remain with us</p>
             <div className={`bg-primary w-2/3 h-[0.2rem]`}></div>

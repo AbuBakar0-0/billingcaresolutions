@@ -79,18 +79,9 @@
   transform: translateY(0);
 }
 
-.max-h-0 {
-  max-height: 0;
-}
-
-.max-h-screen {
-  max-height: 100vh; 
-}
-
 .transition-all {
   transition: max-height 0.3s ease-in-out, opacity 1s ease-in-out;
 }
-
 
 .animate-slide-left {
   animation: slide-left 20s linear infinite;
@@ -136,4 +127,8 @@
   to {
     transform: translateX(0);
   }
+}
+
+.diagonalimg{
+  background-image: linear-gradient(320deg, #4ec39e 70%, #0073b9 30%);
 }

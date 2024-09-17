@@ -69,6 +69,7 @@ function Softwares() {
       <LogoSlider logos={logos1} />
       <LogoSlider logos={logos2} direction='right' />
       <LogoSlider logos={logos3} />
+      <div className='h-16 w-full'></div>
     </div>
   )
 }

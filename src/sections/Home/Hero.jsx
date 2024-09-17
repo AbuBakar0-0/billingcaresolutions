@@ -94,25 +94,33 @@ const Hero = () => {
   const data = [
     {
       title: "Expert Medical Billing and Coding through Billing Care Solutions.",
+      titleColor: "#ffffff",
       description: "Expert Medical Billing and Coding Services Optimize Revenue Cycle Management with Precision and Efficiency, Ensuring Streamlined Healthcare Operations.",
+      descriptionColor: "#ffffff",
       link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
       image: "./assets/hero/Medical Billing Slide 2 billingcaresolutions.com.webp",
     },
     {
       title: "Billing Care Solutions is Excellent in Provider Enrollment & Credentialing",
+      titleColor: "#ffffff",
       description: "Our Comprehensive Provider Enrollment and Credentialing Services Ensure Seamless Integration into Healthcare Billing Systems, Optimizing Efficiency and Compliance.",
+      descriptionColor: "#ffffff",
       link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
       image: "./assets/hero/Credentialing Slide 3 billingcaresolutions.com.webp",
     },
     {
       title: "Simplify Prior Authorization with Billing Care Solutions.",
+      titleColor: "#ffffff",
       description: "Transforming Healthcare Billing with Streamlined Prior Authorization Solutions, Ensuring Efficient and Effective Patient Care Management.",
+      descriptionColor: "#ffffff",
       link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
       image: "./assets/hero/Prior Authorization Slide 4 billingcaresolutions.com.webp",
     },
     {
       title: "Business Intelligence Reporting Made Easy with Billing Care Solutions.",
+      titleColor: "#4ec39e",
       description: "Our Business Intelligence Reporting Service Offers Deep Data Analysis, Empowering Informed Decision-Making and Operational Efficiency.",
+      descriptionColor: "#0073b9",
       link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
       image: "./assets/hero/Business Intelligence Reporting Slide 5 billingcaresolutions.com.webp",
     }
@@ -180,7 +188,7 @@ const Hero = () => {
         </SwiperSlide>
         {data.map((item) => (
           <SwiperSlide>
-            <HeroSlide title={item.title} description={item.description} link={item.link} image={item.image} />
+            <HeroSlide title={item.title} description={item.description} link={item.link} image={item.image} titleColor={item.titleColor} descriptionColor={item.descriptionColor}/>
           </SwiperSlide>
         ))}
       </Swiper>

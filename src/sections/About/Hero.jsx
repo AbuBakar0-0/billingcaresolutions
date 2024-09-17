@@ -4,19 +4,19 @@ function Hero() {
     const data = [
         {
             title: "Compliance and Regulatory Adherence",
-            img: ""
+            img: "./assets/about-us/Compliance and Regulatory Adherence billingcaresolutions.com.svg"
         },
         {
             title: "24/7 Support and Transparency",
-            img: ""
+            img: "./assets/about-us/247 Support and Transparency billingcaresolutions.com.svg"
         },
         {
             title: "Cost-Effective Solutions",
-            img: ""
+            img: "./assets/about-us/Cost-Effective Solutions billingcaresolutions.com.svg"
         },
         {
             title: "Client-Centric Approach",
-            img: ""
+            img: "./assets/about-us/Client-Centric Approach billingcaresolutions.com.svg"
         },
     ]
     return (
@@ -28,12 +28,10 @@ function Hero() {
                 </div>
             </div>
             <div className='w-full flex justify-center items-center p-10'>
-                <div className='container min-h-20 flex flex-col md:flex-row justify-center items-center rounded-2xl bg-white shadow-2xl p-10 md:p-20 -mt-20 gap-3'>
+                <div className='container flex flex-col md:flex-row justify-center items-center rounded-2xl bg-white shadow-2xl p-10 md:p-10 -mt-32 gap-3'>
                     {data.map((item) => (
                         <div className='w-1/4 flex flex-col justify-center items-center'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 text-primary">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
-                            </svg>
+                            <img src={item.img} alt="" className='size-20'/>
                             <p className='text-secondary font-semibold text-center'>{item.title}</p>
                         </div>
                     ))}

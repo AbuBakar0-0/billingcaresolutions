@@ -35,7 +35,7 @@ function Achievements() {
         {
             title: "Electronic Payment Processing Rate",
             description: "95%",
-            width: "95%",
+            width: "95",
         },
         {
             title: "Client Retention Rate",
@@ -45,7 +45,7 @@ function Achievements() {
         {
             title: "Revenue Growth Rate",
             description: "30%",
-            width: "30%",
+            width: "30",
         },
         
     ]
@@ -64,12 +64,12 @@ function Achievements() {
                     ))}
                 </div>
                 <div className='w-1/2 flex flex-col justify-center items-center'>
-                    <img src="./assets/img2.jpg" alt="" className='h-56' />
+                    <img src="./assets/about-us/Accuracy-and-Precision-billingcaresolutions.com.webp" alt="" className='p-10' />
                 </div>
             </div>
             <div className='w-full flex flex-col md:flex-row justify-between items-center'>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
-                    <img src="./assets/img2.jpg" alt="" className='h-56' />
+                    <img src="./assets/about-us/Expansion-and-Advancement-billingcaresolutions.com.webp" alt="" className='p-10' />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center border-r-8 border-secondary p-5 gap-3'>
                     <p className='w-full text-3xl font-semibold text-left text-secondary'>Expansion and Advancement </p>

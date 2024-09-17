@@ -34,7 +34,7 @@ const HoverSlider = () => {
       <div className='w-full flex flex-row justify-between items-center'>
         <img src="./assets/hover_slider/user billingcaresolutions.com.webp" alt="" className='w-1/6 mt-[0.132rem]' />
         <div
-          className="relative w-4/6 h-[400px] overflow-hidden mx-auto object-cover"
+          className="relative w-4/6 h-[500px] overflow-hidden mx-auto object-cover"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           onTouchMove={handleTouchMove}
