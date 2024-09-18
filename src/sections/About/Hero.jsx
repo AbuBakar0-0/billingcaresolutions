@@ -23,8 +23,8 @@ function Hero() {
         <>
             <div className='bg-secondary text-white'>
                 <div className='container mx-auto min-h-[30rem] flex flex-col justify-center items-center gap-4 text-center'>
-                    <h1 className='text-3xl font-semibold'>Why Billing Care Solutions Stands Out</h1>
-                    <p className='text-lg w-full md:w-1/2 p-2'>Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes.</p>
+                    <h1 className='text-5xl font-bold font-custom'>Why Billing Care Solutions Stands Out</h1>
+                    <p className='text-lg w-full md:w-1/2 p-2 font-custom'>Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes.</p>
                 </div>
             </div>
             <div className='w-full flex justify-center items-center p-10'>

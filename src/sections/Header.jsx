@@ -90,9 +90,9 @@ const Header = () => {
                         <div className="hidden lg:flex lg:space-x-8 items-center w-3/5 justify-center">
                             <Link to='/' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Home</Link>
                             <Link to='/whybcs' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Why BCS</Link>
-                            <Link to='' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Services</Link>
-                            <Link to='' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Specialities</Link>
-                            <Link to='' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Domain Area</Link>
+                            <Link to='/services' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Services</Link>
+                            <Link to='/specialities' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Specialities</Link>
+                            <Link to='/domain' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Domain Area</Link>
                             <div className="relative group">
                                 <button className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary" onMouseOver={() => displaySubMenu(1)} onMouseOut={() => displaySubMenu(2)}>
                                     <p>Resources</p>
@@ -147,11 +147,11 @@ const Header = () => {
                     <div className="relative group">
 
                     </div>
-                    <a href="#" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Home</a>
-                    <a href="#" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Why BCS</a>
-                    <a href="#" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Services</a>
-                    <a href="#" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Specialities</a>
-                    <a href="#" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Domain Area</a>
+                    <Link to="/" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Home</Link>
+                    <Link to="/whybcs" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Why BCS</Link>
+                    <Link to="/services" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Services</Link>
+                    <Link to="/specialities" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Specialities</Link>
+                    <Link to="/domain" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Domain Area</Link>
                     <button className="flex flex-row items-center text-grays-900 px-3 py-2 rounded-md text-base font-medium hover:text-secondary" onClick={() => displaySubMenu(4)}>
                         <p>Resources</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">

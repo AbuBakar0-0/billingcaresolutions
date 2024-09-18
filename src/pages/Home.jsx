@@ -26,9 +26,9 @@ function Home() {
         <WhyChooseUs />
         <SpecialitiesWeOffer />
         <Softwares />
-        <Testimonials />
         <BillingServices />
         <HoverSlider />
+        <Testimonials />
         <Footer/>
       </div>
 

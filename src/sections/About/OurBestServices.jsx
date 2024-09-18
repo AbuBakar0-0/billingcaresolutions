@@ -20,14 +20,14 @@ function OurBestServices() {
             img: "./assets/about-us/Medical Credentialing Services billingcaresolutions.com.svg",
         },
         {
-            title: "Verification & Prior Authorization",
+            title: "VOB & Prior Authorization",
             description: "Billing Care Solutions ensures unparalleled precision in verification and prior authorization. Rigorous patient eligibility checks and meticulous management of authorization requests streamline approvals, reduce claim rejections, and accelerate patient access to services. BCS’s expert handling supports optimal revenue flow and operational excellence.",
             img: "./assets/about-us/Verification & Prior Authorization billingcaresolutions.com.svg",
         },
         {
             title: "AR & Denial Management",
             description: "Billing Care Solutions enhances financial performance with expert AR and denial management services. By meticulously managing accounts receivable and strategically resolving denials, Billing Care Solutions ensures streamlined revenue cycles and maximized cash flow. Proactive denial management and sophisticated analytics turn financial challenges into growth opportunities.",
-            img: "./assets/about-us/AR & Denial Management billingcaresolutions.com.svg",
+            img: "./assets/about-us/AR & Denial Management Services.svg",
         },
         {
             title: "Reporting and Analytics",

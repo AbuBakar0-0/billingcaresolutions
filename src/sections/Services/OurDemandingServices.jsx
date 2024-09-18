@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Heading from './../../components/Heading';
 import OfferCards from './../../components/Home/OfferCards';
 
-function WhatWeProvide() {
-
-    const [showMore, setShowMore] = useState(false);
-
+function OurDemandingServices() {
     const data = [
         {
             title: "Medical Billing & Coding",
@@ -25,7 +23,7 @@ function WhatWeProvide() {
             description: "BCS streamlines the credentialing process with precision and efficiency. From verifying qualifications to conducting comprehensive compliance assessments, BCS ensures seamless and expedited credentialing.",
         },
         {
-            title: "Medical Billing and Coding Audits",
+            title: "Billing and Coding Audits",
             img: './assets/what_do_we_offer/3. Revenue Cycle Management billingcaresolutions.com.webp',
             icon: "./assets/what_do_we_offer/3. Revenue Cycle Management icon billingcaresolutions.com.svg",
             description: "At BCS, our medical billing and coding audits play a crucial role in helping healthcare providers maintain compliance with regulatory standards, enhance billing accuracy, and maximize revenue.",
@@ -38,7 +36,7 @@ function WhatWeProvide() {
         },
 
         {
-            title: "AR & Denial Management Services",
+            title: "AR & Denial Management",
             img: './assets/what_do_we_offer/4. AR & Denial Management billingcaresolutions.com.webp',
             icon: "./assets/what_do_we_offer/4. AR & Denial Management Icon billingcaresolutions.com.svg",
             description: "BCS enhances financial performance with expert AR and denial management services. By meticulously managing accounts receivable and strategically resolving denials, BCS ensures streamlined revenue cycles and maximized cash flow.",
@@ -69,43 +67,31 @@ function WhatWeProvide() {
         },
 
     ]
-
-    const toggleShowMore = () => {
-        setShowMore(!showMore);
-    };
-
-    // Conditionally render either first 5 items or all items based on showMore state
-    const itemsToDisplay = showMore ? data : data.slice(0, 5);
-
-
     return (
         <>
-            <div className='flex flex-col justify-center items-center'>
-                <div className='flex flex-col md:flex-row justify-between items-center p-8 lg:p-10'>
-                    <div>
-                        <div className={`w-full flex flex-row justify-center items-center space-x-3 text-primary font-custom text-2xl font-medium`}>
-                            <div className={`bg-primary w-[2rem] h-[0.2rem]`}></div>
-                            <p>What We Provide?</p>
-                            <div className={`bg-primary w-[2rem] h-[0.2rem]`}></div>
+            <Heading data={"Our Demanding Services"} />
+            <div className='w-full flex flex-wrap justify-center gap-4 md:px-10 lg:px-28 mb-10 transition-all duration-300 ease-in-out'>
+                {data.map((item, index) => (
+                    <div class="flip-container size-80 relative my-3">
+                        <div class="flipper absolute size-80 object-fit">
+                            {/* <!-- Front of the card --> */}
+                            <div class="front flex flex-col justify-center shadow-xl p-5 rounded-xl">
+                                <div className='w-full flex flex-col justify-center items-center gap-4 rounded-xl'>
+                                    <img src="./assets/google.png" alt="" className='size-20 my-5'/>
+                                    <p className='text-xl text-center '>{item.title}</p>
+                                </div>
+                            </div>
+                            {/* <!-- Back of the card --> */}
+                            <div class="back w-80 h-[22rem]  flex flex-col justify-center items-start text-white rounded-xl" style={{ backgroundImage: `url("${item.img}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                                <div className='bg-primary w-full h-full flex flex-col justify-center items-start p-10 bg-opacity-80 rounded-xl'>
+                                </div>
+                            </div>
                         </div>
-                        <p className='text-2xl md:text-6xl md:text-left font-custom font-semibold text-secondary'>
-                            Our BCS Solutions
-                        </p>
                     </div>
-                </div>
-                <div className='w-full flex flex-wrap justify-center md:justify-between md:px-10 lg:px-28 mb-10 transition-all duration-300 ease-in-out'>
-                    {itemsToDisplay.map((item, index) => (
-                        <OfferCards key={index} data={item} />
-                    ))}
-                </div>
-                <button
-                    onClick={toggleShowMore}
-                    className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out mb-10'>
-                    {showMore ? 'Show Less' : 'Show More'}
-                </button>
+                ))}
             </div>
         </>
-    );
+    )
 }
 
-export default WhatWeProvide;
+export default OurDemandingServices

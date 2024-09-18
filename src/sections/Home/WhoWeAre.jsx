@@ -9,7 +9,7 @@ function WhoWeAre() {
                 <div className='flex flex-col w-full lg:w-2/3 justify-start items-start lg:p-10 space-y-4'>
                     <div>
                         <HeadingLine data={"Introduction"}/>
-                        <p className='text-4xl md:text-6xl text-center md:text-left font-custom font-semibold'>
+                        <p className='text-4xl md:text-6xl text-center md:text-left font-custom font-semibold text-secondary'>
                             Who We Are?
                         </p>
                     </div>

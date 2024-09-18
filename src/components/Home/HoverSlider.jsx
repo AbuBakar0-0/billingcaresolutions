@@ -67,7 +67,7 @@ const HoverSlider = () => {
         </div>
         <img src="./assets/hover_slider/success billingcaresolutions.com.webp" alt="" className='w-1/6 mt-[0rem]' />
       </div>
-      <div className='px-6 py-3 bg-primary rounded-2xl text-white mt-4'>
+      <div className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>
         Talk to an Expert --
       </div>
     </div>

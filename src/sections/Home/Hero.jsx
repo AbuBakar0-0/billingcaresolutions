@@ -102,9 +102,9 @@ const Hero = () => {
     },
     {
       title: "Billing Care Solutions is Excellent in Provider Enrollment & Credentialing",
-      titleColor: "#ffffff",
+      titleColor: "#4ec39e",
       description: "Our Comprehensive Provider Enrollment and Credentialing Services Ensure Seamless Integration into Healthcare Billing Systems, Optimizing Efficiency and Compliance.",
-      descriptionColor: "#ffffff",
+      descriptionColor: "#0073b9",
       link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
       image: "./assets/hero/Credentialing Slide 3 billingcaresolutions.com.webp",
     },

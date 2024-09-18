@@ -70,7 +70,7 @@ function SpecialitiesWeOffer() {
                 ))}
             </div>
             <div className='flex justify-center items-center mt-6'>
-                <button className='px-6 py-3 bg-primary rounded-2xl text-white'>Explore More</button>
+                <button className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>Explore More</button>
             </div>
         </div>
     )
