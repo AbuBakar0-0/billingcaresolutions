@@ -103,7 +103,7 @@ const Header = () => {
                                 </button>
                                 <div className={`p-2 absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-20 transition-all duration-100 ${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`} onMouseOver={() => displaySubMenu(1)} onMouseOut={() => displaySubMenu(0)}>
                                     <a href="#" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Blog</a>
-                                    <a href="#" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">FAQ's</a>
+                                    <a href="/faqs" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">FAQ's</a>
                                     <a href="#" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Career</a>
                                     <a href="#" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Terms & Conditions</a>
                                     <a href="#" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Privacy Policy</a>
@@ -160,7 +160,7 @@ const Header = () => {
                     </button>
                     <div className={`${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                         <a href="#" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Blog</a>
-                        <a href="#" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">FAQ's</a>
+                        <a href="/faqs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">FAQ's</a>
                         <a href="#" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Career</a>
                         <a href="#" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Terms& Conditions</a>
                         <a href="#" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Privacy Policy</a>
