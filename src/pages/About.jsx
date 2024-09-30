@@ -11,6 +11,7 @@ import Stats from '../sections/About/Stats';
 import Clients from '../sections/About/Clients';
 
 function About() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Header />

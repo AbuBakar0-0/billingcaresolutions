@@ -6,6 +6,8 @@ import NewCategories from '../sections/Faqs/NewCategories';
 import Footer from './../sections/Footer';
 
 function Faqs() {
+    window.scrollTo(0, 0);
+
     return (
         <>
             <Header />

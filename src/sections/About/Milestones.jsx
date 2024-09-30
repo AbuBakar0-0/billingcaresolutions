@@ -16,8 +16,8 @@ function Achievements() {
         },
         {
             title: "Denial & Rejection Rate",
-            description: "5%-10%",
-            width: "7.5",
+            description: "1% to 3%",
+            width: "1.5",
         },
         {
             title: "Processing Turnaround Time",
@@ -29,13 +29,13 @@ function Achievements() {
     const addata = [
         {
             title: "Electronic Claims Processing Rate",
-            description: "95%",
-            width: "95",
+            description: "99%",
+            width: "99",
         },
         {
             title: "Electronic Payment Processing Rate",
-            description: "95%",
-            width: "95",
+            description: "99%",
+            width: "99",
         },
         {
             title: "Client Retention Rate",
@@ -44,8 +44,8 @@ function Achievements() {
         },
         {
             title: "Revenue Growth Rate",
-            description: "30%",
-            width: "30",
+            description: "95%",
+            width: "95",
         },
         
     ]

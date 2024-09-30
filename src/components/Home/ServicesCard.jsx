@@ -6,11 +6,11 @@ const ServicesCard = ({data}) => {
             <img src={data.img} alt="" className='w-16 h-16'/>
             {
                 data.id<5?
-                <p className='text-xs mt-2 h-6' >{data.title}</p>
+                <p className='text-lg mt-2 h-6' >{data.title}</p>
                 :
-                <p className='text-xs mt-2 h-8'>{data.title}</p>
+                <p className='text-lg mt-2 h-8'>{data.title}</p>
             }
-            <p className='text-xs'>{data.description!==''?data.description:"‎ "}</p>
+            <p className='text-lg'>{data.description!==''?data.description:"‎ "}</p>
             {
                 data.id<5?
                 <div className='w-3/5 h-1 bg-primary mb-2'></div>

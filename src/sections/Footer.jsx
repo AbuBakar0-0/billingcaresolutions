@@ -13,11 +13,11 @@ function Footer() {
     },
     {
       title: "Specialities",
-      link: "",
+      link: "/specialitits",
     },
     {
       title: "About Us",
-      link: "",
+      link: "/whybcs",
     },
     {
       title: "Why Billing Care Solutions",
@@ -29,11 +29,11 @@ function Footer() {
     },
     {
       title: "FAQs",
-      link: "",
+      link: "/faqs",
     },
     {
       title: "Blog",
-      link: "",
+      link: "/blogs",
     },
   ];
 
@@ -79,18 +79,18 @@ function Footer() {
           <div className='w-full md:w-1/3 flex flex-col justify-center items-start space-y-2'>
             <p className='text-2xl text-left uppercase font-bold'>Quick Links</p>
             <FooterLine />
-            <div className='flex flex-col gap-3 text-lg'>
+            <div className='flex flex-col gap-2 text-lg'>
               {quicklinks.map((item) => (
-                <a href="">{item.title}</a>
+                <a href="#">{item.title}</a>
               ))}
             </div>
           </div>
           <div className='w-full md:w-1/3 flex flex-col justify-center items-start space-y-2'>
             <p className='text-2xl text-left uppercase font-bold'>Our Services</p>
             <FooterLine />
-            <div className='flex flex-col gap-3 text-lg'>
+            <div className='flex flex-col gap-2 text-lg'>
               {services.map((item) => (
-                <a href="">{item.title}</a>
+                <a href="#">{item.title}</a>
               ))}
             </div>
           </div>
@@ -160,7 +160,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='border-t-2 border-white flex items-center justify-center w-full bg-secondary text-white p-2 text-xs text-center'>
+      <div className='border-t-2 border-white flex items-center justify-center w-full bg-secondary text-white p-2 text-sm text-center'>
         Copyright © 2024 All rights reserved | Designed and Developed by Billing Care Solutions
       </div>
     </>

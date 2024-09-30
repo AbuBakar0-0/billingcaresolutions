@@ -1,5 +1,4 @@
 import React from 'react'
-import HeadingLine from '../../components/HeadingLine'
 import TopCategoriesCard from './../../components/Faqs/TopCategoriesCard';
 
 function NewCategories() {

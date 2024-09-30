@@ -25,10 +25,17 @@ const Counter = ({ title, number, image }) => {
             }
         };
     }, []);
-    var intervalTime = 80;
-    if (number > 100) {
-        intervalTime = 5;
+    var intervalTime = 200;
+    if (number == 25) {
+        intervalTime = 120
     }
+    if (number == 30) {
+        intervalTime = 100
+    }
+    if (number > 100) {
+        intervalTime = -10000;
+    }
+
     useEffect(() => {
         let interval;
         if (isVisible) {
@@ -55,10 +62,10 @@ const Counter = ({ title, number, image }) => {
         <div className='w-full md:w-1/6 flex flex-row justify-center md:justify-center items-center space-y-4 md:space-y-0'>
             <img src={image} alt="" className='w-12 h-12 mx-4' />
             <div className="flex flex-col items-center justify-center w-4/5" ref={counterRef}>
-                <p className="text-5xl font-bold text-primary">
+                <p className="text-6xl font-bold text-primary">
                     {counter}
                 </p>
-                <p className='font-bold text-center font-custom text-secondary'>
+                <p className='font-bold text-center font-custom text-secondary text-xl'>
                     {title}
                 </p>
             </div>

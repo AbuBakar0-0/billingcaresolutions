@@ -4,19 +4,22 @@ import Header from './../sections/Header';
 import FaqQuestions from '../sections/FaqDetails/FaqQuestions';
 import NewCategories from '../sections/Faqs/NewCategories';
 import Footer from '../sections/Footer';
+import faqs from '../sections/Faqs/data';
 import { useLocation } from 'react-router-dom';
 
 function FaqsDetails() {
-    const location = useLocation();
+    window.scrollTo(0, 0);
 
-    const { title ,description } = location.state || {};
-    
+    const query = new URLSearchParams(useLocation().search);
+    const index = query.get('index');
+
+    const data = faqs[index];
 
     return (
         <>
             <Header />
-            <Hero title={title} description={description}/>
-            <FaqQuestions />
+            <Hero title={data.title} description={data.description}/>
+            <FaqQuestions data={data}/>
             <NewCategories />
             <Footer />
         </>

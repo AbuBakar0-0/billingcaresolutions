@@ -10,6 +10,8 @@ import Testimonials from './../sections/Home/Testimonials';
 import Footer from './../sections/Footer';
 
 function Services() {
+    window.scrollTo(0, 0);
+
     return (
         <>
             <Header />

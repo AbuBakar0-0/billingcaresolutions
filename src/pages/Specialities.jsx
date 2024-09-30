@@ -1,77 +1,242 @@
 import React from 'react'
-import Hero from './../sections/Services/Hero';
 import Header from './../sections/Header';
 import SpecialityCard from '../components/Specialities/SpecialityCard';
 import Footer from './../sections/Footer';
+import Hero from '../sections/Specialities/Hero';
+import { Link } from 'react-router-dom';
 
 function Specialities() {
+    window.scrollTo(0, 0);
+
+    
     const data = [
-        { title: "Anesthesiology", image: "", icon: "" },
-        { title: "Behavioral Health", image: "", icon: "" },
-        { title: "Cardiology", image: "", icon: "" },
-        { title: "Chiropractic", image: "", icon: "" },
-        { title: "Dental", image: "", icon: "" },
-        { title: "Dermatology", image: "", icon: "" },
-        { title: "DME", image: "", icon: "" },
-        { title: "Emergency Medicine", image: "", icon: "" },
-        { title: "Endocrinology", image: "", icon: "" },
-        { title: "Family Medicine", image: "", icon: "" },
-        { title: "Gastroenterology", image: "", icon: "" },
-        { title: "General Surgery", image: "", icon: "" },
-        { title: "Gynecology", image: "", icon: "" },
-        { title: "Geriatrics", image: "", icon: "" },
-        { title: "Home Health", image: "", icon: "" },
-        { title: "Internal Medicine", image: "", icon: "" },
-        { title: "Laboratory", image: "", icon: "" },
-        { title: "Neurology", image: "", icon: "" },
-        { title: "Neurosurgery", image: "", icon: "" },
-        { title: "Obstetrics and Gynecology (OB/GYN)", image: "", icon: "" },
-        { title: "Ophthalmology", image: "", icon: "" },
-        { title: "Oncology", image: "", icon: "" },
-        { title: "Orthopedics", image: "", icon: "" },
-        { title: "Otolaryngology (ENT)", image: "", icon: "" },
-        { title: "Pain Management", image: "", icon: "" },
-        { title: "Pediatrics", image: "", icon: "" },
-        { title: "Physical Therapy", image: "", icon: "" },
-        { title: "Plastic Surgery", image: "", icon: "" },
-        { title: "Podiatry", image: "", icon: "" },
-        { title: "Psychiatry", image: "", icon: "" },
-        { title: "Pulmonology", image: "", icon: "" },
-        { title: "Radiology", image: "", icon: "" },
-        { title: "Rheumatology", image: "", icon: "" },
-        { title: "Urology", image: "", icon: "" },
-        { title: "Vascular Surgery", image: "", icon: "" },
-        { title: "Allergy and Immunology", image: "", icon: "" },
-        { title: "Critical Care Medicine", image: "", icon: "" },
-        { title: "Infectious Diseases", image: "", icon: "" },
-        { title: "Nephrology", image: "", icon: "" },
-        { title: "Physical Medicine and Rehabilitation", image: "", icon: "" },
-        { title: "Sleep Medicine", image: "", icon: "" },
-        { title: "Urgent Care", image: "", icon: "" },
-        { title: "Doula / Midwife", image: "", icon: "" }
-      ];
+        {
+            title: "Allergy and Immunology",
+            icon: "./assets/specialities/icons/Allergy and Immunology.svg",
+            img: "./assets/specialities/images/AllergyandImmunology.webp"
+        },
+        {
+            title: "Anesthesiology",
+            icon: "./assets/specialities/icons/Anesthesiology.svg",
+            img: "./assets/specialities/images/Anesthesiology.webp"
+        },
+        {
+            title: "Behavioral Health",
+            icon: "./assets/specialities/icons/Behavioral Health.svg",
+            img: "./assets/specialities/images/BehavioralHealth.webp"
+        },
+        {
+            title: "Cardiology",
+            icon: "./assets/specialities_we_offer/5. Cardiology billingcaresolutions.com.svg",
+            img: "./assets/specialities/images/cardiology.webp"
+        },
+        {
+            title: "Chiropractic",
+            icon: "./assets/specialities/icons/Chiropractic.svg",
+            img: "./assets/specialities/images/Chiropractic.webp"
+        },
+        {
+            title: "Critical Care Medicine",
+            icon: "./assets/specialities/icons/Critical Care Medicine.svg",
+            img: "./assets/specialities/images/CriticalCareMedicine.webp"
+        },
+        {
+            title: "Dental",
+            icon: "./assets/specialities/icons/Dental.svg",
+            img: "./assets/specialities/images/Dental.webp"
+        },
+        {
+            title: "Dermatology",
+            icon: "./assets/specialities/icons/Dermatology.svg",
+            img: "./assets/specialities/images/Dermatology.webp"
+        },
+        {
+            title: "DME",
+            icon: "./assets/specialities_we_offer/1. DME billingcaresolutions.com.svg",
+            img: "./assets/specialities/images/DME.webp"
+        },
+        {
+            title: "Doula / Midwife",
+            icon: "./assets/specialities/icons/Doula.svg",
+            img: "./assets/specialities/images/doula.webp"
+        },
+        {
+            title: "Emergency Medicine",
+            icon: "./assets/specialities/icons/Emergency Medicine.svg",
+            img: "./assets/specialities/images/EmergencyMedicine.webp"
+        },
+        {
+            title: "Endocrinology",
+            icon: "./assets/specialities/icons/Endocrinology.svg",
+            img: "./assets/specialities/images/Endocrinology.webp"
+        },
+        {
+            title: "Family Medicine",
+            icon: "./assets/specialities/icons/Family Medicine.svg",
+            img: "./assets/specialities/images/familypractice.webp"
+        },
+        {
+            title: "Gastroenterology",
+            icon: "./assets/specialities/icons/Gastroenterology.svg",
+            img: "./assets/specialities/images/Gastroentrology.webp"
+        },
+        {
+            title: "General Surgery",
+            icon: "./assets/specialities/icons/General Surgery.svg",
+            img: "./assets/specialities/images/GeneralSurgery.webp"
+        },
+        {
+            title: "Gynecology",
+            icon: "./assets/specialities/icons/Gynecology.svg",
+            img: "./assets/specialities/images/Gynecology.webp"
+        },
+        {
+            title: "Geriatrics",
+            icon: "./assets/specialities/icons/Geriatrics.svg",
+            img: "./assets/specialities/images/Geriatrics.webp"
+        },
+        {
+            title: "Home Health",
+            icon: "./assets/specialities/icons/Home Health.svg",
+            img: "./assets/specialities/images/HomeHealth.webp"
+        },
+        {
+            title: "Infectious Diseases",
+            icon: "./assets/specialities/icons/Infectious Diseases.svg",
+            img: "./assets/specialities/images/InfectiousDiseases.webp"
+        },
+        {
+            title: "Internal Medicine",
+            icon: "./assets/specialities_we_offer/4. Internal Medicine billingcaresolutions.com.svg",
+            img: "./assets/specialities/images/internalmedicine-1.webp"
+        },
+        {
+            title: "Laboratory",
+            icon: "./assets/specialities/icons/Laboratory.svg",
+            img: "./assets/specialities/images/Laboratory.webp"
+        },
+        {
+            title: "Nephrology",
+            icon: "./assets/specialities/icons/nephrology.svg",
+            img: "./assets/specialities/images/Nephrology.webp"
+        },
+        {
+            title: "Neurology",
+            icon: "./assets/specialities/icons/Neurology.svg",
+            img: "./assets/specialities/images/Neurology.webp"
+        },
+        {
+            title: "Neurosurgery",
+            icon: "./assets/specialities/icons/Neurosurgery.svg",
+            img: "./assets/specialities/images/Neurosurgery.webp"
+        },
+        {
+            title: "Obstetrics and Gynecology (OB/GYN)",
+            icon: "./assets/specialities/icons/Obstetrics and Gynecology.svg",
+            img: "./assets/specialities/images/ObstetricsandGynecology.webp"
+        },
+        {
+            title: "Ophthamology",
+            icon: "./assets/specialities/icons/Ophthalmology.svg",
+            img: "./assets/specialities/images/ophthamology.webp"
+        },
+        {
+            title: "Oncology",
+            icon: "./assets/specialities/icons/oncology.svg",
+            img: "./assets/specialities/images/oncology.webp"
+        },
+        {
+            title: "Orthopedics",
+            icon: "./assets/specialities/icons/Orthopedics.svg",
+            img: "./assets/specialities/images/orthopedic.webp"
+        },
+        {
+            title: "Otolaryngology (ENT)",
+            icon: "./assets/specialities/icons/Otolaryngology.svg",
+            img: "./assets/specialities/images/Otolaryngology.webp"
+        },
+        {
+            title: "Pain Management",
+            icon: "./assets/specialities/icons/Pain Management.svg",
+            img: "./assets/specialities/images/PainManagement.webp"
+        },
+        {
+            title: "Pediatrics",
+            icon: "./assets/specialities/icons/Pediatrics.svg",
+            img: "./assets/specialities/images/pediatrics.webp"
+        },
+        // {
+        //     title: "Physical Medicine and Rehabilitation",
+        //     icon: "./assets/specialities/icons/Physical Medicine and Rehabilitation.svg",
+        //     img: "./assets/specialities/images/PhysicalMedicineandRehabilitation.webp"
+        // },
+        {
+            title: "Physical Therapy",
+            icon: "./assets/specialities_we_offer/6. Physical Therapy billingcaresolution.com.svg",
+            img: "./assets/specialities/images/PhysicalTherapy.webp"
+        },
+        {
+            title: "Plastic Surgery",
+            icon: "./assets/specialities_we_offer/7. Plastic Surgery billingcaresolutions.com.svg",
+            img: "./assets/specialities/images/PlasticSurgery.webp"
+        },
+        {
+            title: "Podiatry",
+            icon: "./assets/specialities/icons/Podiatry.svg",
+            img: "./assets/specialities/images/Podiatry.webp"
+        },
+        {
+            title: "Psychiatry",
+            icon: "./assets/specialities/icons/Psychiatry.svg",
+            img: "./assets/specialities/images/Psychiatry.webp"
+        },
+        {
+            title: "Pulmonology",
+            icon: "./assets/specialities/icons/Pulmonology.svg",
+            img: "./assets/specialities/images/Pulmonology.webp"
+        },
+        {
+            title: "Radiology",
+            icon: "./assets/specialities_we_offer/3. Radiology billingcaresolutions.com.svg",
+            img: "./assets/specialities/images/Radiology.webp"
+        },
+        {
+            title: "Rheumatology",
+            icon: "./assets/specialities/icons/Rheumatology.svg",
+            img: "./assets/specialities/images/Rheumatology.webp"
+        },
+        {
+            title: "Sleep Medicine",
+            icon: "./assets/specialities/icons/Sleep Medicine.svg",
+            img: "./assets/specialities/images/SleepMedicine.webp"
+        },
+        {
+            title: "Urgent Care",
+            icon: "./assets/specialities/icons/Urgent Care.svg",
+            img: "./assets/specialities/images/UrgentCare.webp"
+        },
+        {
+            title: "Urology",
+            icon: "./assets/specialities/icons/Urology.svg",
+            img: "./assets/specialities/images/urology.webp"
+        },
+        {
+            title: "Vascular Surgery",
+            icon: "./assets/specialities/icons/Vascular Surgery.svg",
+            img: "./assets/specialities/images/VascularSurgery.webp"
+        }
+    ];
+
 
     return (
         <>
             <Header />
-            <div className='bg-secondary text-white'>
-                <div className='container mx-auto min-h-[30rem] flex flex-col md:flex-row justify-start items-center gap-4 text-center p-5'>
-                    <div className='w-full md:w-1/2 flex flex-col justify-start items-start text-left gap-4'>
-                        <p className='w-full uppercase text-2xl font-semibold'>Quality First</p>
-                        <p className='w-full uppercase text-6xl font-bold'>BCS SERVICES</p>
-                        <p className='text-justify'>We understand that every healthcare practice is different, so we
-                            work closely with our clients to develop bespoke solutions that
-                            help them achieve their goals. Whether you want to improve
-                            your practice's financial performance, increase patient
-                            satisfaction, or streamline your operations, our comprehensive
-                            healthcare management services can help you achieve it.</p>
-                        <button className='px-3 py-2 rounded-2xl md:w-1/2 lg:w-1/4  border-[1px] bg-primary p-4 text-white'>Talk to an Expert</button>
-                    </div>
-                </div>
-            </div>
+            <Hero />
             <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
-                {data.map((item) => (
-                    <SpecialityCard data={item} />
+                {data.map((item, index) => (
+                    <Link to={`/specialitiesDetails?index=${index}`}>
+                        <SpecialityCard data={item} />
+                    </Link>
                 ))}
             </div>
             <Footer />

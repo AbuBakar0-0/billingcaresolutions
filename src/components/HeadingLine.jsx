@@ -2,8 +2,8 @@ import React from 'react'
 
 const HeadingLine = ({data}) => {
     let color='primary text-3xl';
-    if(data=="Why Choose"){
-        color='secondary text-4xl';
+    if(data==="Why Choose"){
+        color='primary text-4xl';
     }
     return (
         <>
