@@ -1,6 +1,10 @@
+import behavioralHealthFaqs from "../specialitiesFaqs/behavioralFaqs";
+
 const behavioralHealthBillingData = {
+  faqs: behavioralHealthFaqs,
   title: "Behavioral Health Billing Services",
-  image: "Behavioral Health.webp", // Placeholder image reference
+  header:"./assets/specialities/headers/Behavioral Health.webp",
+  image: "./assets/specialities/cardImages/Behavioral Health.webp", // Placeholder image reference
   short_description:
     "Behavioral health billing is complex, requiring specialized knowledge to navigate the unique challenges of coding and reimbursement for mental health services. Outsourcing to experts allows practices to streamline the billing process, ensuring accurate claims and faster payments while providers focus on delivering care.",
 
@@ -25,19 +29,23 @@ const behavioralHealthBillingData = {
         data: [
           {
             title: "Increased Efficiency",
-            detail: "Dedicated billing professionals handle the entire claims process, allowing in-house staff to concentrate on patient care.",
+            detail:
+              "Dedicated billing professionals handle the entire claims process, allowing in-house staff to concentrate on patient care.",
           },
           {
             title: "Faster Payments",
-            detail: "Timely and accurate claims submission reduces the time between service delivery and payment, improving cash flow.",
+            detail:
+              "Timely and accurate claims submission reduces the time between service delivery and payment, improving cash flow.",
           },
           {
             title: "Enhanced Accuracy",
-            detail: "Specialized knowledge in behavioral health coding minimizes errors that can lead to claim denials or underpayments.",
+            detail:
+              "Specialized knowledge in behavioral health coding minimizes errors that can lead to claim denials or underpayments.",
           },
           {
             title: "Cost-Effectiveness",
-            detail: "Avoid the expenses associated with hiring, training, and maintaining in-house billing staff while minimizing revenue losses.",
+            detail:
+              "Avoid the expenses associated with hiring, training, and maintaining in-house billing staff while minimizing revenue losses.",
           },
         ],
       },
@@ -50,15 +58,18 @@ const behavioralHealthBillingData = {
         data: [
           {
             title: "Claim Monitoring",
-            detail: "Continuous tracking of claims from submission to payment, identifying denials quickly.",
+            detail:
+              "Continuous tracking of claims from submission to payment, identifying denials quickly.",
           },
           {
             title: "Detailed Root Cause Analysis",
-            detail: "Each denial is reviewed to pinpoint issues, allowing for corrective measures to be implemented.",
+            detail:
+              "Each denial is reviewed to pinpoint issues, allowing for corrective measures to be implemented.",
           },
           {
             title: "Prevention Strategies",
-            detail: "Ongoing training and feedback help reduce common denial causes, ensuring smoother operations and improved cash flow.",
+            detail:
+              "Ongoing training and feedback help reduce common denial causes, ensuring smoother operations and improved cash flow.",
           },
         ],
       },
@@ -68,19 +79,23 @@ const behavioralHealthBillingData = {
   testimonials: [
     {
       title: "Improved Reimbursement",
-      detail: "Quicker processing times and reduced claim rejection rates lead to faster payments and improved financial outcomes.",
+      detail:
+        "Quicker processing times and reduced claim rejection rates lead to faster payments and improved financial outcomes.",
     },
     {
       title: "Increased Revenue",
-      detail: "Many clients notice significant revenue growth shortly after outsourcing their billing.",
+      detail:
+        "Many clients notice significant revenue growth shortly after outsourcing their billing.",
     },
     {
       title: "Transparent Communication",
-      detail: "Regular updates and prompt responses to inquiries enhance client relationships and trust.",
+      detail:
+        "Regular updates and prompt responses to inquiries enhance client relationships and trust.",
     },
     {
       title: "Regulatory Compliance",
-      detail: "Clients value the assurance that their practice complies with current regulations, reducing the risk of audits and penalties.",
+      detail:
+        "Clients value the assurance that their practice complies with current regulations, reducing the risk of audits and penalties.",
     },
   ],
 

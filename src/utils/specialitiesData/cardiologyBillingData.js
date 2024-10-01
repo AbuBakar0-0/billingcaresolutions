@@ -1,6 +1,9 @@
+import cardiologyFaqs from "./../specialitiesFaqs/cardiologyFaqs";
 const cardiologyBillingData = {
+  faqs: cardiologyFaqs,
   title: "Cardiology Billing Services",
-  image: "Cardiology.webp", // Placeholder image reference
+  header:"./assets/specialities/headers/Cardiology.webp",
+  image: "./assets/specialities/cardImages/Cardiology.webp", // Placeholder image reference
   short_description:
     "Cardiology billing is intricate and requires specialized expertise to navigate the complexities of coding and reimbursement for cardiovascular services. Outsourcing to professionals ensures accurate billing, allowing providers to focus on patient care while optimizing revenue.",
 

@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Heading from '../../components/Heading';
 import Stats from './../About/Stats';
 import Footer from './../Footer';
 import HeadingLine from './../../components/HeadingLine';
+import SpecialityFaqCard from './../../components/Specialities/SpecialityFaqCard';
+import { useState } from 'react';
 
 const SpecialitiesDetailsContent = ({ data }) => {
 
-    window.scrollTo(0, 0);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // })
+
+    const [openIndex, setOpenIndex] = useState(null);
+
+
+    const handleToggle = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
     return (
         <>
             <div className='w-full flex flex-col md:flex-row justify-center items-center p-10 container mx-auto gap-4'>
                 <div className='md:w-1/2'>
-                    <img src="./assets/img.jpg" alt="" />
+                    <img src={data.image} alt="" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-start gap-4'>
                     <Heading data={data.content.sub_content_1.title} />
@@ -105,6 +116,18 @@ const SpecialitiesDetailsContent = ({ data }) => {
 
                 </div>
             </div>
+
+            <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10'>
+                {data.faqs.map((item, index) => (
+                    <SpecialityFaqCard
+                        key={index}
+                        data={item}
+                        isOpen={openIndex === index}
+                        onClick={() => handleToggle(index)}
+                    />
+                ))}
+            </div>
+
             <Footer />
 
         </>

@@ -1,6 +1,9 @@
+import dentalCareFaqs from "./../specialitiesFaqs/dentalFaqs";
 const dentalBillingData = {
+  faqs: dentalCareFaqs,
   title: "Dental Billing Services",
-  image: "Dental.webp", // Placeholder image reference
+  header:"./assets/specialities/headers/Dental.webp",
+  image: "./assets/specialities/cardImages/Dental.webp", // Placeholder image reference
   short_description:
     "Dental practices face unique challenges in managing billing and insurance claims. Billing Care Solutions offers specialized dental billing services to streamline your revenue cycle, reduce errors, and maximize reimbursements.",
 

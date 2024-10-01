@@ -1,6 +1,10 @@
+import anesthesiologyFaqs from "./../specialitiesFaqs/anesthesiologyFaqs";
+
 const anesthesiologyBillingData = {
+  faqs: anesthesiologyFaqs,
+  header:"./assets/specialities/headers/Anesthesiology.webp",
   title: "Anesthesiology Billing Services",
-  image: "Anesthesiology.webp", // Placeholder image reference
+  image: "./assets/specialities/cardImages/Anesthesiology.webp", // Placeholder image reference
   short_description:
     "Outsource your anesthesiology billing to experts for improved accuracy, faster payments, and minimized compliance risks.",
 
@@ -26,20 +30,23 @@ const anesthesiologyBillingData = {
         title: `Outsourcing provides significant advantages, including`,
         data: [
           {
-            title:"Reduced Administrative Burden",
-            detail:"Frees in-house staff to focus on patient care"
+            title: "Reduced Administrative Burden",
+            detail: "Frees in-house staff to focus on patient care",
           },
           {
-            title:"Improved Cash Flow",
-            detail:"Accurate and timely claims submissions speed up reimbursements"
+            title: "Improved Cash Flow",
+            detail:
+              "Accurate and timely claims submissions speed up reimbursements",
           },
           {
-            title:"Enhanced Accuracy",
-            detail:"Specialized knowledge in anesthesiology billing reduces denials and errors",
+            title: "Enhanced Accuracy",
+            detail:
+              "Specialized knowledge in anesthesiology billing reduces denials and errors",
           },
           {
-            title:"Cost Savings",
-            detail:"Avoid costs associated with maintaining in-house billing staff and reduce revenue leakage from errors",
+            title: "Cost Savings",
+            detail:
+              "Avoid costs associated with maintaining in-house billing staff and reduce revenue leakage from errors",
           },
         ],
       },
@@ -51,16 +58,18 @@ const anesthesiologyBillingData = {
         title: `Our proactive denial management focuses on:`,
         data: [
           {
-            title:"Real-Time Monitoring",
-            detail:"Tracking claims and addressing denials in real time."
+            title: "Real-Time Monitoring",
+            detail: "Tracking claims and addressing denials in real time.",
           },
           {
-            title:"Root Cause Analysis",
-            detail:"Identifying causes of denials and preventing future occurrences."
+            title: "Root Cause Analysis",
+            detail:
+              "Identifying causes of denials and preventing future occurrences.",
           },
           {
-            title:"Prevention Strategies",
-            detail:"Reducing denial rates through continuous training, feedback loops, and predictive analytics."
+            title: "Prevention Strategies",
+            detail:
+              "Reducing denial rates through continuous training, feedback loops, and predictive analytics.",
           },
         ],
       },
@@ -69,17 +78,20 @@ const anesthesiologyBillingData = {
 
   testimonials: [
     {
-      title:"Faster Payments",
-      detail:"Our rejection rates have dropped, and payments come in faster, leading to better cash flow.",
+      title: "Faster Payments",
+      detail:
+        "Our rejection rates have dropped, and payments come in faster, leading to better cash flow.",
     },
     {
-      title:"Increased Revenue",
-      detail:"We saw a measurable revenue increase in the first few months of outsourcing.",
+      title: "Increased Revenue",
+      detail:
+        "We saw a measurable revenue increase in the first few months of outsourcing.",
     },
     {
-      title:"Compliance Confidence",
-      detail:"The team ensures our practice is compliant with healthcare regulations, reducing audit risks.",
-    },    
+      title: "Compliance Confidence",
+      detail:
+        "The team ensures our practice is compliant with healthcare regulations, reducing audit risks.",
+    },
   ],
 
   conclusion: {

@@ -1,6 +1,7 @@
 const oncologyBillingData = {
     title: "Oncology Billing Services",
-    image: "Oncology.webp", // Placeholder image reference
+    header:"./assets/specialities/headers/Oncology.webp",
+    image: "./assets/specialities/cardImages/Oncology.webp", // Placeholder image reference
     short_description:
       "Billing for oncology involves unique challenges due to the complexity of cancer treatments, varied service types, and the intricacies of coding and compliance. At Billing Care Solutions, we specialize in oncology billing services designed to enhance your revenue cycle, improve claim accuracy, and maximize reimbursements for your practice.",
   

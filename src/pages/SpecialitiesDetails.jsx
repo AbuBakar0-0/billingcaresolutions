@@ -15,7 +15,7 @@ function SpecialitiesDetails() {
     return (
         <>
             <Header />
-            <Hero title={data.title} img={data.image} short_description={data.short_description} />
+            <Hero title={data.title} img={data.header} short_description={data.short_description} />
             <SpecialitiesDetailsContent data={data}/>
         </>
     )
