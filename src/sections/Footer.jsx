@@ -1,31 +1,20 @@
 import React from 'react'
 import FooterLine from './../components/Home/FooterLine';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const quicklinks = [
     {
       title: "Schedule a Demo",
-      link: "",
-    },
-    {
-      title: "Let's Connect",
-      link: "",
+      link: "/contact",
     },
     {
       title: "Specialities",
-      link: "/specialitits",
-    },
-    {
-      title: "About Us",
-      link: "/whybcs",
+      link: "/specialities",
     },
     {
       title: "Why Billing Care Solutions",
-      link: "",
-    },
-    {
-      title: "Outsourcing",
-      link: "",
+      link: "/whybcs",
     },
     {
       title: "FAQs",
@@ -40,35 +29,27 @@ function Footer() {
   const services = [
     {
       title: "Medical Billing and Coding Services",
-      link: "",
+      link: "/servicesDetails?index=0",
     },
     {
       title: "Physician Credentialing Services",
-      link: "",
+      link: "/serviceDetails?index=1",
     },
     {
       title: "Revenue Cycle Management Services",
-      link: "",
+      link: "/serviceDetails?index=2",
     },
     {
       title: "AR & Denial Management Services",
-      link: "",
+      link: "/serviceDetails?index=5",
     },
     {
       title: "Billing & Coding Audit Services",
-      link: "",
+      link: "/serviceDetails?index=3",
     },
     {
-      title: "Verification & Prioi Authorization Services",
-      link: "",
-    },
-    {
-      title: "Ambulatory Surgical Center Billing (ASC)",
-      link: "",
-    },
-    {
-      title: "Contact Center & Patient Scheduling Services",
-      link: "",
+      title: "Verification & Prior Authorization Services",
+      link: "/serviceDetails?index=6",
     },
   ];
 
@@ -81,7 +62,7 @@ function Footer() {
             <FooterLine />
             <div className='flex flex-col gap-2 text-lg'>
               {quicklinks.map((item) => (
-                <a href="#">{item.title}</a>
+                <Link to={item.link}>{item.title}</Link>
               ))}
             </div>
           </div>
@@ -90,7 +71,7 @@ function Footer() {
             <FooterLine />
             <div className='flex flex-col gap-2 text-lg'>
               {services.map((item) => (
-                <a href="#">{item.title}</a>
+                <Link to={item.link}>{item.title}</Link>
               ))}
             </div>
           </div>

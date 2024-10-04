@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../sections/Header'
 import Hero from '../sections/Services/Hero'
 import Clients from '../sections/About/Clients';
@@ -10,8 +10,9 @@ import Testimonials from './../sections/Home/Testimonials';
 import Footer from './../sections/Footer';
 
 function Services() {
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <>
             <Header />

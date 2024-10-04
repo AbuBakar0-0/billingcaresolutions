@@ -6,13 +6,17 @@ import vobData from "../../utils/services/vobData";
 import consultationData from "./../../utils/services/consultationData";
 import complianceData from "./../../utils/services/complianceData";
 import patientHelpData from "./../../utils/services/patientHelpData";
+import medicalBillingAndCodingData from "../../utils/services/medicalServicesData";
+import revenueCycleManagementData from "../../utils/services/revenueCycleData";
 
 const services = [
   {
     title: "Medical Billing & Coding",
+    header:
+      "./assets/services/headers/medical billing billingcaresolution.com.webp",
     img: "./assets/what_do_we_offer/1.webp",
     icon: "./assets/services/icons/1.svg",
-    data: {},
+    data: medicalBillingAndCodingData,
   },
   {
     title: "Credentialing Services",
@@ -22,9 +26,11 @@ const services = [
   },
   {
     title: "Revenue Cycle Management",
+    header:
+      "./assets/services/headers/Revenue cycle management billingcaresolution.com.webp",
     img: "./assets/what_do_we_offer/2.webp",
     icon: "./assets/services/icons/3.svg",
-    data: {},
+    data: revenueCycleManagementData,
   },
   {
     title: "Billing and Coding Audits",

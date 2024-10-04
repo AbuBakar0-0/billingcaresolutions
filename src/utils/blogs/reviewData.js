@@ -1,7 +1,8 @@
 const reviewData = {
     id:7,
+    date:"2024/09/24",
     title: "Review Contracts Between Health Care Providers and Payers",
-    image: "Review-Contracts-Between-Health-Care-Providers-and-Payers.webp",
+    image: "./assets/blogs/Review-Contracts-Between-Health-Care-Providers-and-Payers.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>In the healthcare industry, the relationship between healthcare providers and payers (such as insurance companies or government health programs) is governed by contracts. These contracts outline the terms of reimbursement for the services provided to patients. Understanding these contracts is crucial for healthcare providers to ensure they receive fair compensation for their services and manage their billing processes effectively. Billing Care Solutions guides the nature of these contracts, the reasons for negotiating them, and the impact they have on billing services under the guidance of the Centers for Medicare & Medicaid Services (CMS).</p>

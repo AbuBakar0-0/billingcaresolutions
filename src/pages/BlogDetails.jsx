@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../sections/Header';
-import Hero from './../sections/BlogDetails/Hero';
-import Heading from '../components/Heading';
 import HeadingLine from './../components/HeadingLine';
 import Footer from './../sections/Footer';
 import { Link, useLocation } from 'react-router-dom';
 import blogs from '../sections/Blogs/data';
+import ContactForm from '../components/Contact/ContactForm';
 
 function BlogDetails() {
 
@@ -34,17 +33,23 @@ function BlogDetails() {
         }
     }, [data.description]);
 
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <>
             <Header />
-            <Hero title={data.title} />
+            {/* <Hero title={"BCS Insights"} /> */}
             <div className="w-full container mx-auto flex flex-col justify-center items-center p-10">
-                <Heading data="BLOG TITLE" />
+                
+                <div className='w-full flex flex-row justify-center items-center space-x-3 text-primary font-custom text-3xl md:text-5xl font-medium p-4'>
+                    <div className='bg-secondary w-[3rem] h-[0.3rem] rounded-full'></div>
+                    <p className='text-center md:text-left font-custom'>{data.title}</p>
+                    <div className='bg-secondary w-[3rem] h-[0.3rem] rounded-full'></div>
+                </div>
                 <div className="w-full flex flex-col md:flex-row justify-between items-start gap-4 mt-5">
                     <div className="w-full md:w-3/4 flex flex-col justify-center items-start">
-                        <img src={`./assets/blogs/${data.image}`} alt="" className="w-full" />
+                        <img src={`${data.image}`} alt="" className="w-full" />
 
                         {/* Render Blog Content */}
                         <div className="mt-10">
@@ -60,7 +65,7 @@ function BlogDetails() {
                         {/* Table of Contents Section */}
                         <div className="w-full flex flex-col justify-center items-center gap-4 p-5 shadow-lg rounded-lg border-[1px] border-gray-100">
                             <HeadingLine data="Table of Contents" />
-                            <ul className="list-disc list-inside space-y-2">
+                            <ul className="list-disc list-inside space-y-2 ">
                                 {tocItems.map((item, index) => (
                                     <li key={index}>
                                         <a href={`#${item.id}`} className="text-secondary hover:underline">
@@ -77,7 +82,7 @@ function BlogDetails() {
                             {itemsToDisplay.map((item, index) => (
                                 <Link to={`/blogdetails?index=${item.id}`}>
                                     <div className="w-full p-2 flex flex-row justify-start items-center gap-4">
-                                        <img src={`./assets/blogs/${item.image}`} alt="" className="w-28" />
+                                        <img src={`${item.image}`} alt="" className="w-28" />
                                         <p className="text-secondary text-xs font-semibold underline">{item.title}</p>
                                     </div>
                                 </Link>
@@ -86,49 +91,7 @@ function BlogDetails() {
 
                         {/* Contact Us Section */}
                         <div className="w-full flex flex-col justify-center items-center gap-4 p-5 shadow-lg rounded-lg border-[1px] border-gray-100">
-                            <HeadingLine data="Contact Us" />
-                            <form className="w-full flex flex-col justify-between items-center gap-3">
-                                <div className="w-full flex flex-col justify-between items-center text-black gap-3">
-                                    <select className="px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary">
-                                        <option selected>Choose a Provider</option>
-                                    </select>
-                                    <input
-                                        type="text"
-                                        className="px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary"
-                                        placeholder="Full Name"
-                                        required
-                                    />
-                                    <input
-                                        type="text"
-                                        className="px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary"
-                                        placeholder="Phone Number"
-                                        required
-                                    />
-                                    <input
-                                        type="email"
-                                        className="px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary"
-                                        placeholder="Email"
-                                        required
-                                    />
-                                    <select className="px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary">
-                                        <option selected>Select State</option>
-                                    </select>
-                                    <select className="px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary">
-                                        <option selected>Service Type</option>
-                                    </select>
-                                    <textarea
-                                        className="px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary"
-                                        placeholder="Describe your message here..."
-                                    />
-                                </div>
-                                <div className="w-full">
-                                    <input
-                                        type="submit"
-                                        className="px-3 py-2 rounded-2xl w-full bg-primary text-white"
-                                        value="Submit"
-                                    />
-                                </div>
-                            </form>
+                            <ContactForm/>
                         </div>
                     </div>
                 </div>

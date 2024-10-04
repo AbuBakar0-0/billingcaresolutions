@@ -1,10 +1,9 @@
 // src/components/Header.js
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const menuRef = useRef(null);
 
     const [display, setDisplay] = useState(false);
 
@@ -103,7 +102,7 @@ const Header = () => {
                                 <div className={`p-2 absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-20 transition-all duration-100 ${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`} onMouseOver={() => displaySubMenu(1)} onMouseOut={() => displaySubMenu(0)}>
                                     <Link to="/blogs" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Blog</Link>
                                     <Link to="/faqs" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">FAQ's</Link>
-                                    <Link to="#" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Career</Link>
+                                    <Link to="/articles" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Articles</Link>
                                     <Link to="/termsandconditions" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Terms & Conditions</Link>
                                     <Link to="/privacypolicy" className="block px-4 py-2 text-sm text-grays-700 hover:text-secondary">Privacy Policy</Link>
                                 </div>
@@ -111,7 +110,7 @@ const Header = () => {
 
                         </div>
                         <div className='hidden lg:flex items-center w-1/5 justify-end'>
-                            <button className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>Contact Us</button>
+                            <Link to="/contact" className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>Contact Us</Link>
                         </div>
                     </div>
                     <div className="flex items-center lg:hidden">
@@ -160,12 +159,12 @@ const Header = () => {
                     <div className={`${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                         <Link to="/blogs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Blog</Link>
                         <Link to="/faqs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">FAQ's</Link>
-                        <Link to="#" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Career</Link>
+                        <Link to="/articles" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Articles</Link>
                         <Link to="/termsandconditions" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Terms& Conditions</Link>
                         <Link to="/privacypolicy" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Privacy Policy</Link>
                     </div>
                     <div className='w-full flex items-center'>
-                        <button className='w-full bg-secondary text-white px-3 py-2 rounded-xl'>Contact Us</button>
+                        <Link to="/contact"  className='w-full bg-secondary text-white px-3 py-2 rounded-xl'>Contact Us</Link>
                     </div>
                 </div>
             </div>

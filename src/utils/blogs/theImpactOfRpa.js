@@ -1,7 +1,8 @@
 const theImpactOfRpa = {
   id: 9,
+  date:"2024/09/27",
   title: "The Impact of RPA on Healthcare",
-  image: "The-Impact-of-RPA-on-Healthcare.webp",
+  image: "./assets/blogs/The-Impact-of-RPA-on-Healthcare.webp",
   description: `
         <div class="flex flex-col gap-4">
             <p>Consider the extensive amount of data and administrative tasks that are foundational to the healthcare industry. In this intricate system, Robotic Process Automation (RPA) proves to be a potent tool. It streamlines processes that previously demanded considerable human time and effort. Adopting RPA in healthcare goes beyond merely introducing new technology. It represents a shift in operational practices to enhance accuracy, patient care, and cost-efficiency.</p>

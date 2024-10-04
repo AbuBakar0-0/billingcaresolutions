@@ -1,5 +1,6 @@
 const reportingAndAnalyticsData = {
   title: "Reporting and Analytics",
+  header:"./assets/services/headers/Reporting & Analytics billingcaresolution.com.webp",
   content: {
     title: "Unlock Strategic Insights with Advanced Reporting and Analytics",
     description:

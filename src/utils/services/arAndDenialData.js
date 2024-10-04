@@ -1,5 +1,6 @@
 const arAndDenialData = {
   title: "Advanced AR & Denial Management",
+  header:"./assets/services/headers/AR & Denial Management Services billingcaresolution.com.webp",
   content: {
     title:
       "Optimize Collections and Minimize Denials with Expert AR Management",

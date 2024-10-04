@@ -1,5 +1,6 @@
 const patientHelpData = {
   title: "Patient Help Support",
+  header:"./assets/services/headers/patient help support billingcaresolution.com.webp",
   content: {
     title: "Enhance Patient Experience with Comprehensive Help Support",
     description:

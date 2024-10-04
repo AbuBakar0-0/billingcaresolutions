@@ -1,7 +1,8 @@
 const cybersecurityData = {
     id:2,
+    date:"2024/09/16",
     title: "Cybersecurity Essentials for Small Medical Offices",
-    image: "Healthcare-Providers-Beware-Ransomware.webp",
+    image: "./assets/blogs/Healthcare-Providers-Beware-Ransomware.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>Protecting healthcare data is a multifaceted challenge that involves balancing patient privacy, quality care, and compliance with regulations like HIPAA and GDPR. Here’s a comprehensive look at best practices for enhancing healthcare data protection:</p>

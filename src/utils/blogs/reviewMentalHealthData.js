@@ -1,7 +1,8 @@
 const reviewMentalHealthData = {
     id:8,
+    date:"2024/09/26",
     title: "Review Mental Health Eligibility Verification Data",
-    image: "ReviewMentalHealthEligibilityVerificationData.webp",
+    image: "./assets/blogs/Review_Mental_Health_Eligibility_Verification_Data-02.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>Navigating insurance procedures can be one of the more frustrating aspects of mental health practice. Even with diligent preparation, providers often face claims denials, which can deter them from accepting new clients. However, understanding how to read and analyze mental health eligibility verification data can help prevent these issues and ensure a smoother process.</p>

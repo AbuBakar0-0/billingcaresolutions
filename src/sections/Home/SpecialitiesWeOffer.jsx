@@ -1,6 +1,7 @@
 import React from 'react'
 import SpecialityCard from './../../components/Home/SpecialityCard';
 import Heading from './../../components/Heading';
+import { Link } from 'react-router-dom';
 
 function SpecialitiesWeOffer() {
     const data = [
@@ -70,7 +71,7 @@ function SpecialitiesWeOffer() {
                 ))}
             </div>
             <div className='flex justify-center items-center mt-6'>
-                <button className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>Explore More</button>
+                <Link to="/specialities" className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>Explore More</Link>
             </div>
         </div>
     )

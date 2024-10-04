@@ -1,7 +1,8 @@
 const rcmData = {
     id:6,
+    date:"2024/09/23",
     title: "Rethinking RCM Strategies in 2024",
-    image: "Rethinking-RCM-Strategies-in-2024.webp", // Replace with the appropriate image filename
+    image: "./assets/blogs/Rethinking-RCM-Strategies-in-2024.webp", // Replace with the appropriate image filename
     description: `
         <div class="flex flex-col gap-4">
             <p>The year 2024 has brought significant economic challenges across various sectors, with the healthcare industry being notably impacted. The ongoing effects of the COVID-19 pandemic, coupled with inflation and workforce shifts, have placed substantial strain on healthcare operations. In this evolving landscape, Revenue Cycle Management (RCM) has become more critical than ever, focusing on maximizing revenue opportunities while adapting to new financial realities.</p>

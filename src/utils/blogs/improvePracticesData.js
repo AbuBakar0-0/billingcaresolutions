@@ -1,7 +1,8 @@
 const improvePracticesData = {
     id:3,
+    date:"2024/09/17",
     title: "Improve Practice's Financial Health with RCM Consulting",
-    image: "Improve-Practices-Financial-Health-With-RCM-Consulting.webp",
+    image: "./assets/blogs/Improve-Practices-Financial-Health-With-RCM-Consulting.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>Healthcare providers face the intricate challenge of delivering high-quality patient care while navigating complex administrative tasks. Billing Care Solutions enhances financial health through comprehensive Revenue Cycle Management (RCM). RCM encompasses various processes such as patient registration, insurance verification, charge capture, claims submission, and payment posting. By ensuring precision and efficiency in each of these areas, Billing Care Solutions mitigates financial risks, reduces claim denials, and ensures consistent revenue flow, allowing healthcare providers to focus more on patient care.</p>

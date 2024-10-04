@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../sections/Header';
 import Hero from '../sections/TermsAndConditions/Hero';
 import TermsAndConditionsCard from '../components/TermsAndConditions/TermsAndConditionsCard';
@@ -6,8 +6,9 @@ import HeadingLine from './../components/HeadingLine';
 import Footer from './../sections/Footer';
 
 function TermsaAndConditions() {
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <>
             <Header />

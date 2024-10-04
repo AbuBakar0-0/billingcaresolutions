@@ -1,5 +1,6 @@
 const physiciansCredentialingData = {
   title: "Physicians Credentialing Services",
+  header:"./assets/services/headers/medical credentailing billingcaresolution.com.webp",
   content: {
     title:
       "Streamline Your Provider Onboarding with Expert Credentialing Support",

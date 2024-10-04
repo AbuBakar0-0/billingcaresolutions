@@ -13,6 +13,10 @@ import SpecialitiesDetails from "./pages/SpecialitiesDetails";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ServiceDetails from "./pages/ServiceDetails";
+import ServiceDetails2 from "./pages/ServicesDetails2";
+import Contact from "./pages/Contact";
+import Articles from "./pages/Articles";
+import ArticleDetails from './pages/ArticleDetails';
 
 function App() {
   return (
@@ -23,6 +27,7 @@ function App() {
           <Route path="/whybcs" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/servicedetails" element={<ServiceDetails />} />
+          <Route path="/servicesdetails" element={<ServiceDetails2 />} />
           <Route path="/specialities" element={<Specialities />} />
           <Route
             path="/specialitiesDetails"
@@ -33,8 +38,12 @@ function App() {
           <Route path="/faqDetails" element={<FaqsDetails />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogdetails" element={<BlogDetails />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/articledetails" element={<ArticleDetails />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<Contact />} />
+
         </Routes>
       </BrowserRouter>
     </>

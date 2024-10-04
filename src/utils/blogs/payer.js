@@ -1,7 +1,8 @@
 const payerData = {
     id:5,
+    date:"2024/09/19",
     title: "Payer E/M Downcoding",
-    image: "Payer.webp",
+    image: "./assets/blogs/Payer.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>Evaluation and Management (E/M) services are a significant aspect of healthcare billing, but one of the challenges providers often face is downcoding by payers. Payers sometimes reduce the level of a submitted E/M code, leading to lower reimbursements. This article explores what downcoding is, why it happens, and how healthcare providers can effectively address it to ensure fair compensation.</p>

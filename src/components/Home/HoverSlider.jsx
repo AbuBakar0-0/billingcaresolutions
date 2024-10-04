@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const HoverSlider = () => {
   const [sliderWidth, setSliderWidth] = useState(50);
@@ -67,9 +68,9 @@ const HoverSlider = () => {
         </div>
         <img src="./assets/hover_slider/success billingcaresolutions.com.webp" alt="" className='w-1/6 mt-[0rem]' />
       </div>
-      <div className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>
+      <Link to="/contact" className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>
         Talk to an Expert --
-      </div>
+      </Link>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './../sections/Header';
 import Footer from './../sections/Footer';
 import Hero from '../sections/About/Hero';
@@ -11,19 +11,22 @@ import Stats from '../sections/About/Stats';
 import Clients from '../sections/About/Clients';
 
 function About() {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <>
       <Header />
       <Hero />
       <div className='container mx-auto'>
         <AboutCompany />
-        <OurVisionAndMission/>
-        <Payoff/>
-        <OurBestServices/>
-        <Milestones/>
-        <Stats/>
-        <Clients/>
+        <OurVisionAndMission />
+        <Payoff />
+        <OurBestServices />
+        <Milestones />
+        <Stats />
+        <Clients />
       </div>
       <Footer />
     </>

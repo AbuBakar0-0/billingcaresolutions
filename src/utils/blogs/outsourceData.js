@@ -1,7 +1,8 @@
 const outsourceData = {
     id:4,
+    date:"2024/09/18",
     title: "Outsourced Recruitment Assistance for PQRS",
-    image: "Outsourced-Recruitment-Assistance.webp",
+    image: "./assets/blogs/Outsourced-Recruitment-Assistance.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>RPO, or Recruitment Process Outsourcing, is a strategic alliance between a company and a third-party vendor to oversee all or part of its recruitment activities. This collaborative approach streamlines hiring efforts, enhances efficiency, and reduces costs.</p>

@@ -40,11 +40,11 @@ const FaqQuestions = ({ data }) => {
                 <Heading data={data.title} />
                 <div className='w-full flex flex-col md:flex-row justify-between items-start gap-4 mt-5'>
                     <div className='w-1/5 flex flex-col justify-center items-center'>
-                        <div className='flex flex-row justify-start items-center gap-3 text-primary text-3xl font-custom font-medium'>
+                        <div className='hidden md:flex flex-row justify-start items-center gap-3 text-primary text-3xl font-custom font-medium'>
                             <p>Top Categories</p>
                             <div className={`bg-primary w-[2rem] h-[0.2rem]`}></div>
                         </div>
-                        <div className='w-full flex flex-wrap justify-center items-center p-10 gap-5 container mx-auto'>
+                        <div className='hidden md:flex w-full flex-wrap justify-center items-center p-10 gap-5 container mx-auto'>
                             {itemsToDisplay.map((item, index) => (
                                 <Link to={`/faqDetails?index=${item.id}`}>
                                     <TopCategoriesCard key={index} data={item} onClick={handleTopCategoriesClick} />
@@ -52,7 +52,7 @@ const FaqQuestions = ({ data }) => {
                             ))}
                         </div>
                     </div>
-                    <div className='w-3/4 flex flex-col justify-between items-center gap-4'>
+                    <div className='w-full md:w-3/4 flex flex-col justify-between items-center gap-4'>
                         {data.questions.map((item, index) => (
                             <ExpansionTile
                                 key={index}

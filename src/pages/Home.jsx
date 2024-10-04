@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './../sections/Header';
 import Hero from './../sections/Home/Hero';
 import Contact from './../sections/Home/Contact';
@@ -15,8 +15,9 @@ import Footer from './../sections/Footer';
 
 
 function Home() {
-  window.scrollTo(0, 0);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, [])
   return (
     <>
       <div className=''>

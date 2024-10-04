@@ -24,7 +24,7 @@ const SpecialityCard = ({ data }) => {
                             <p className='my-2  text-secondary font-semibold'>{data.title}</p>
                         </div>
                     </div>
-                    <p className='text-xs text-left'>{data.description}</p>
+                    <p className=' text-left'>{data.description}</p>
                     <div className='w-full h-1 bg-primary my-2'>
                     </div>
                 </div>

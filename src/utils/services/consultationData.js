@@ -1,5 +1,6 @@
 const consultationData = {
   title: "Consultation Services",
+  header:"./assets/services/headers/Consultation services billingcaresolution.com.webp",
   content: {
     title:
       "Elevate Your Practice with Expert Consultation and Strategic Guidance",

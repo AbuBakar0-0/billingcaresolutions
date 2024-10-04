@@ -1,7 +1,8 @@
 const credentialingData = {
     id:1,
+    date:"2024/09/11",
     title: "Common Issues to Overcome with Credentialing Services",
-    image: "Common-Issues-To-Overcome-With-Credentialing-Services.webp",
+    image: "./assets/blogs/Common-Issues-To-Overcome-With-Credentialing-Services.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>Credentialing services are essential for verifying and maintaining healthcare providers' qualifications. Billing Care Solutions addresses common issues in credentialing with effective solutions tailored to your needs:</p>

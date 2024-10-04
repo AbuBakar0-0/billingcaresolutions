@@ -1,5 +1,6 @@
 const complianceData = {
   title: "Compliance Assistance",
+  header:"./assets/services/headers/compliance billingcaresolution.com.webp",
   content: {
     title: "Achieve Seamless Compliance with Expert Assistance",
     description:

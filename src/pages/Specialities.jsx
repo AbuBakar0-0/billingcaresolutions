@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './../sections/Header';
 import SpecialityCard from '../components/Specialities/SpecialityCard';
 import Footer from './../sections/Footer';
@@ -6,8 +6,9 @@ import Hero from '../sections/Specialities/Hero';
 import { Link } from 'react-router-dom';
 
 function Specialities() {
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     
     const data = [
         {

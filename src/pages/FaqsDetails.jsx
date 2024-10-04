@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../sections/FaqDetails/Hero'
 import Header from './../sections/Header';
 import FaqQuestions from '../sections/FaqDetails/FaqQuestions';
@@ -8,8 +8,9 @@ import faqs from '../sections/Faqs/data';
 import { useLocation } from 'react-router-dom';
 
 function FaqsDetails() {
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     const query = new URLSearchParams(useLocation().search);
     const index = query.get('index');
 

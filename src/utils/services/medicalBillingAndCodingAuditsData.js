@@ -1,5 +1,6 @@
 const medicalBillingAndCodingAuditsData = {
   title: "Medical Billing and Coding for Audits",
+  header:"./assets/services/headers/medical billing audit billingcaresolution.com.webp",
   content: {
     title:
       "Ensure Precision and Compliance with Expert Billing and Coding Services",

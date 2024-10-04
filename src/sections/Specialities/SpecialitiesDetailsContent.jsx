@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Heading from '../../components/Heading';
 import Stats from './../About/Stats';
 import Footer from './../Footer';
@@ -7,10 +7,6 @@ import SpecialityFaqCard from './../../components/Specialities/SpecialityFaqCard
 import { useState } from 'react';
 
 const SpecialitiesDetailsContent = ({ data }) => {
-
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // })
 
     const [openIndex, setOpenIndex] = useState(null);
 
@@ -117,16 +113,19 @@ const SpecialitiesDetailsContent = ({ data }) => {
                 </div>
             </div>
 
-            <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10'>
-                {data.faqs.map((item, index) => (
-                    <SpecialityFaqCard
-                        key={index}
-                        data={item}
-                        isOpen={openIndex === index}
-                        onClick={() => handleToggle(index)}
-                    />
-                ))}
-            </div>
+            {
+                data.faqs !== undefined ? <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10'>
+                    <Heading data="Frequently Asked Questions" />
+                    {data.faqs.map((item, index) => (
+                        <SpecialityFaqCard
+                            key={index}
+                            data={item}
+                            isOpen={openIndex === index}
+                            onClick={() => handleToggle(index)}
+                        />
+                    ))}
+                </div> : <></>
+            }
 
             <Footer />
 

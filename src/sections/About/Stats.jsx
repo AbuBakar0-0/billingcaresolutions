@@ -6,27 +6,27 @@ function Stats() {
     const data = [
         {
             title: "Geographic Reach",
-            img: "./assets/about-us/Geographic-Reach-billingcaresolutions.com.svg",
-            description: "48 states",
+            img: "./assets/about-us/48 states billingcaresolution.com.svg",
+            description: "50 states",
         },
         {
             title: "Healthcare Network",
-            img: "./assets/about-us/Healthcare-Network-billingcaresolutions.com.svg",
+            img: "./assets/about-us/1,200+ healthcare providers billingcaresolution.com.svg",
             description: "1,200+ healthcare providers",
         },
         {
             title: "Specialty Expertise",
-            img: "./assets/about-us/Specialty-Expertise-billingcaresolutions.com.svg",
+            img: "./assets/about-us/over 35 medical specialties billingcaresolution.com.svg",
             description: "Over 35 medical specialties",
         },
         {
             title: "Claim Approval Rate",
-            img: "./assets/about-us/Claim-Approval-Rate billingcaresolutions.com.svg",
+            img: "./assets/about-us/acceptance rate billingcaresolution.com.svg",
             description: "97% acceptance rate",
         },
         {
             title: "Regulatory Compliance",
-            img: "./assets/about-us/Regulatory-Compliance-billingcaresolutions.com.svg",
+            img: "./assets/about-us/compliance record billingcaresolution.com.svg",
             description: "100% compliance record",
         },
     ]

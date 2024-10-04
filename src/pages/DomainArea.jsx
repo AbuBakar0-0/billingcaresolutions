@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './../sections/Header';
 import DomainCard from '../components/DomainArea/DomainCard';
 import Contact from './../sections/Home/Contact';
@@ -6,8 +6,9 @@ import Footer from '../sections/Footer';
 import Hero from '../sections/DomainArea/Hero';
 
 function DomainArea() {
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     const data = [
         { title: "Alabama", img: "./assets/domain_area/images/alabama.webp", flag: "./assets/domain_area/flags/Flag_of_Alabama.svg" },
         { title: "Alaska", img: "./assets/domain_area/images/alaska.webp", flag: "./assets/domain_area/flags/Flag_of_Alaska.svg" },
@@ -60,12 +61,12 @@ function DomainArea() {
         { title: "Wisconsin", img: "./assets/domain_area/images/wisconsin.webp", flag: "./assets/domain_area/flags/Flag_of_Wisconsin.svg" },
         { title: "Wyoming", img: "./assets/domain_area/images/wyoming.webp", flag: "./assets/domain_area/flags/Flag_of_Wyoming.svg" }
     ];
-    
+
 
     return (
         <>
             <Header />
-            <Hero/>
+            <Hero />
             <Contact />
             <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
                 {data.map((item) => (

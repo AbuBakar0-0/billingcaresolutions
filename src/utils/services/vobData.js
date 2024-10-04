@@ -1,5 +1,6 @@
 const vobData = {
   title: "Verification & Prior Authorization Services",
+  header:"./assets/services/headers/verification and piror authorization billingcaresolution.com.webp",
   content: {
     title:
       "Streamline Verification and Prior Authorization with Expert Solutions",

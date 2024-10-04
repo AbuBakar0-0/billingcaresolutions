@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../sections/Header'
 import Hero from './../sections/PrivacyPolicy/Hero';
 import Footer from './../sections/Footer';
@@ -6,8 +6,9 @@ import HeadingLine from '../components/HeadingLine';
 import TermsAndConditionsCard from './../components/TermsAndConditions/TermsAndConditionsCard';
 
 function PrivacyPolicy() {
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <>
             <Header />
@@ -62,7 +63,7 @@ function PrivacyPolicy() {
                     <TermsAndConditionsCard tagline={"Deletion: "} data={"You can request the deletion of your information, subject to any legal retention requirements."} />
                     <TermsAndConditionsCard tagline={"Restrictions: "} data={"You can request that we limit how we use or share your personal information."} />
                     <TermsAndConditionsCard tagline={"Complaints:"} data={"You have the right to file a complaint if you believe we have violated your privacy rights."} />
-                    <p className='w-full'> To exercise any of these rights, please contact us at <a href="" className='underline text-secondary'>info@billingcaresolutions.com</a>  or (302) 244-0434.</p>
+                    <p className='w-full'> To exercise any of these rights, please contact us at <a href="mailto:info@billingcaresolutions.com" className='underline text-secondary'>info@billingcaresolutions.com</a>  or (302) 244-0434.</p>
 
                     <HeadingLine data={"Retention of Data"} />
                     <TermsAndConditionsCard data={"We retain personal and billing information for as long as necessary to fulfill the purposes outlined in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. Upon request, we can delete your information, provided that it is not required for legal or regulatory purposes."} />

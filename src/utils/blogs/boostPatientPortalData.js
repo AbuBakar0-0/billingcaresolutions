@@ -1,7 +1,8 @@
 const boostPatientPortalData = {
     id:0,
+    date:"2024/09/09",
     title: "Boost Patient Portal Usage for Better Health Outcomes",
-    image: "Boost-Patient-Portal-Usage-for-Better-Health.webp",
+    image: "./assets/blogs/Boost_Patient_Portal_Usage_for_Better_Health_Outcomes-01.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>A patient portal is a secure online platform that allows patients to access their personal health information and communicate directly with healthcare providers. These portals typically provide features such as viewing medical records, scheduling appointments, checking test results, requesting prescription refills, and making payments. By offering easy access to this vital information, patient portals empower individuals to actively participate in their own healthcare.</p>
