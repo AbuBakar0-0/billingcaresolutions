@@ -31,7 +31,7 @@ function Articles() {
                 {currentArticle.map((item, index) => (
                     <Link to={`/articleDetails?index=${item.id}`} key={index}>
                         <div className='w-96 min-h-[31rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
-                            <img src={`${item.image}`} alt="" className='rounded-t-lg' />
+                            <img src={`${item.image}`} alt="" className='rounded-t-lg min-h-[18rem]' />
                             <div className='w-full p-4 flex flex-col'>
                                 <p className='w-full text-lg font-custom font-semibold text-secondary h-20'>{item.title}</p>
                                 <div
