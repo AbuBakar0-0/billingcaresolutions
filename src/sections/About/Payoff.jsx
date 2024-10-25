@@ -1,7 +1,9 @@
 import React from 'react'
 import PayoffCard from '../../components/About/PayoffCard';
 
+
 function Payoff() {
+    
     const data = [
         {
             id: 1,

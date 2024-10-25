@@ -1,111 +1,136 @@
 import gynecologyFaqs from "./../specialitiesFaqs/gynecologyFaqs";
+
 const gynecologyBillingData = {
   faqs: gynecologyFaqs,
   title: "Gynecology Billing Services",
-  header:"./assets/specialities/headers/Gynecology.webp",
+  header: "./assets/specialities/headers/Gynecology.webp",
   image: "./assets/specialities/cardImages/Gynecology.webp", // Placeholder image reference
   short_description:
-    "Gynecology billing requires a deep understanding of specialized codes, procedures, and payer requirements. With frequent updates in coding rules and complex documentation demands, handling billing in-house can lead to costly errors, claim denials, and delayed reimbursements. Billing Care Solutions streamlines the process, ensuring accurate claims submission and optimal revenue management, allowing your gynecology practice to thrive.",
+    "Gynecology billing is a specialized area of medical billing focused on the financial aspects of women’s health services. With a wide range of procedures and codes related to gynecology, accurate coding and billing are crucial for proper reimbursement and compliance with healthcare regulations.",
 
   content: {
     sub_content_1: {
-      title: "The Ins & Outs of Gynecology Billing Expertise",
+      title: "Key Codes",
       image: "",
       details: {
-        title: `Effective gynecology billing demands proficiency in a wide range of areas, including:`,
+        title: `Understanding the key codes in gynecology billing is essential for efficient claim management.`,
         data: [
-          "CPT and ICD-10 Code Accuracy: Correct coding for services such as routine gynecological exams, prenatal care, and surgical procedures (e.g., hysterectomies, laparoscopy) ensures accurate claims submission.",
-          "Appropriate Modifier Use: Applying proper billing modifiers for global periods, post-operative care, and multiple surgeries avoids denials and underpayments.",
-          "Comprehensive Documentation: Ensuring detailed and accurate documentation to support each claim, reducing the risk of denials for insufficient information.",
+          {
+            title: "Evaluation and Management (E/M) Codes",
+            description: [
+              `<br /><strong>New Patient Visits:</strong> 99202-99205. <br />
+              <strong>Established Patient Visits:</strong> 99211-99215. <br />`
+            ],
+          },
+          {
+            title: "Obstetrical Care Codes",
+            description: [
+              ` <br /><strong>Routine Care: </strong>CPT 59400. <br />
+              <strong>Cesarean Section:</strong> CPT 59510. <br />`
+            ],
+          },
+          {
+            title: "Gynecological Procedures",
+            description: [
+              `<br /><strong>Hysterectomy (Abdominal):</strong> CPT 58150. <br />
+              <strong>Myomectomy (Laparoscopic):</strong> CPT 58545. <br />
+              <strong>IUD Insertion:</strong> CPT 58301. <br />`
+            ],
+          },
         ],
       },
     },
     sub_content_2: {
-      title:
-        "What Outsourcing Insurance Billing Services Benefits Your Practice",
+      title: "Best Practices",
       image: "",
       details: {
-        title: `Outsourcing your gynecology billing provides your practice with several key advantages:`,
+        title: `To optimize gynecology billing, consider implementing these best practices:`,
         data: [
           {
-            title: "Improved Cash Flow",
-            detail:
-              "Accurate and timely claim submissions ensure faster reimbursements, significantly improving your revenue cycle.",
+            title: "Accurate Documentation",
+            description:
+              "Maintain comprehensive records of patient visits, including chief complaints, medical history, and treatment plans.",
           },
           {
-            title: "Error Reduction",
-            detail:
-              "With billing experts handling coding and compliance, errors that lead to denials are drastically minimized.",
+            title: "Stay Updated",
+            description:
+              "Regularly review coding guidelines and updates to ensure compliance with the latest regulations.",
           },
           {
-            title: "Reduced Administrative Burden",
-            detail:
-              "Free your staff from the complexities of insurance billing, allowing them to focus on patient care and practice growth.",
+            title: "Understand Bundled Services",
+            description:
+              "Recognize which services can be billed separately and which are included in global packages.",
           },
           {
-            title: "Regulatory Compliance",
-            detail:
-              "Stay aligned with changing healthcare regulations, avoiding audits and penalties that can affect your bottom line.",
+            title: "Utilize Appropriate Modifiers",
+            description:
+              "Apply modifiers correctly to indicate any changes or complexities in the procedures performed.",
           },
           {
-            title: "Cost Efficiency",
-            detail:
-              "Save on operational costs related to staffing, billing software, and training by outsourcing your billing operations.",
+            title: "Legacy Accounts Management",
+            description:
+              "Implement strategies to address outstanding claims from previous periods to enhance cash flow.",
           },
         ],
       },
     },
     sub_content_3: {
-      title: "Proactive Denial Management for Lost Revenue Recovery",
+      title: "Our Expertise",
       image: "",
       details: {
-        title: `Denials in gynecology billing can severely impact your practice’s financial health. We focus on proactive denial management to ensure claims are processed smoothly:`,
+        title: ` `,
         data: [
           {
-            title: "Continuous Monitoring and Real-Time Updates",
-            detail:
-              "Tracking claims throughout the entire submission process helps us catch and resolve potential issues before they result in a denial.",
+            title: "Specialized Knowledge",
+            description:
+              "We have extensive experience in OB/GYN billing, ensuring compliance and accuracy in coding.",
           },
           {
-            title: "Detailed Root Cause Analysis for Denials",
-            detail:
-              "We conduct thorough investigations for each denied claim, identifying and addressing root causes such as missing modifiers or incomplete documentation.",
+            title: "Timely Claims Submission",
+            description:
+              "We prioritize quick turnaround times for claims to optimize reimbursement cycles.",
           },
           {
-            title: "Preventative Measures",
-            detail:
-              "We implement feedback loops, staff training, and regular audits to prevent common causes of denials, keeping your revenue intact.",
+            title: "Dedicated Support",
+            description:
+              "Our team offers personalized assistance to clients for resolving any billing-related inquiries.",
+          },
+          {
+            title: "Advanced Technology",
+            description:
+              "We utilize cutting-edge billing software for efficient claims processing and tracking.",
+          },
+          {
+            title: "Continuous Education",
+            description:
+              "Our coders regularly participate in training to stay informed about changes in coding and billing practices.",
           },
         ],
       },
     },
   },
-
   testimonials: [
     {
       title: "Increased Revenue",
-      detail:
+      description:
         "Since partnering with Billing Care Solutions, we’ve seen a marked improvement in our revenue, with fewer claim rejections and faster payments.",
     },
     {
       title: "Efficient Denial Management",
-      detail:
+      description:
         "Their proactive approach to denial prevention has minimized our denials and improved our collections.",
     },
     {
       title: "Simplified Billing Process",
-      detail:
+      description:
         "The team’s knowledge and transparency have made our billing process much smoother and easier to manage.",
     },
     {
       title: "Enhanced Compliance Confidence",
-      detail:
+      description:
         "We feel secure knowing our billing is handled by experts who ensure full compliance with healthcare regulations.",
     },
   ],
-
-  conclusion:
-    "Partner with Billing Care Solutions to elevate your gynecology practice’s billing efficiency and financial performance, giving you the freedom to focus on delivering exceptional care to your patients.",
 };
 
 export default gynecologyBillingData;

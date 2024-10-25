@@ -1,45 +1,44 @@
 const gynecologyFaqs = [
-    {
-      question: "What is gynecology, and what areas does it cover?",
-      answer: "Gynecology is a medical specialty focused on the female reproductive system, addressing a wide range of conditions related to the ovaries, fallopian tubes, uterus, vagina, and breasts. It covers areas such as reproductive health, pregnancy, menstruation, menopause, and gynecologic cancers."
-    },
-    {
-      question: "What are the common reasons for a woman to visit a gynecologist?",
-      answer: "Common reasons include routine pelvic examinations, Pap smears for cervical cancer screening, menstrual irregularities, contraceptive counseling, pregnancy care, and evaluation of symptoms such as pelvic pain, abnormal bleeding, or vaginal discharge."
-    },
-    {
-      question: "What is a Pap smear, and why is it important?",
-      answer: "A Pap smear is a screening test that collects cells from the cervix to detect abnormal changes that could lead to cervical cancer. It is essential for early detection and prevention of cervical cancer, and it is typically recommended every three years for women aged 21-65."
-    },
-    {
-      question: "How are gynecologic cancers diagnosed and treated?",
-      answer: "Diagnosis of gynecologic cancers (such as ovarian, uterine, or cervical cancer) often involves pelvic examinations, imaging studies (ultrasound, CT scans), and biopsies. Treatment may include surgery, chemotherapy, radiation therapy, or a combination of these approaches, tailored to the specific cancer type and stage."
-    },
-    {
-      question: "What is the role of hormonal therapy in gynecology?",
-      answer: "Hormonal therapy is used to manage various conditions, including menopausal symptoms, hormonal imbalances, and conditions like endometriosis or polycystic ovary syndrome (PCOS). It can involve estrogen, progesterone, or other hormonal medications to alleviate symptoms and restore balance."
-    },
-    {
-      question: "What are the indications for performing a hysterectomy?",
-      answer: "A hysterectomy, the surgical removal of the uterus, may be indicated for conditions such as uterine fibroids, endometriosis, abnormal uterine bleeding, or certain gynecologic cancers. The decision is made based on the patient's symptoms, medical history, and overall health."
-    },
-    {
-      question: "How do gynecologists address fertility issues?",
-      answer: "Gynecologists evaluate fertility issues through a comprehensive assessment, including medical history, physical examination, and tests (such as hormone levels and imaging). They may recommend treatments such as medications, lifestyle changes, or referrals to fertility specialists for assisted reproductive technologies."
-    },
-    {
-      question: "What are the signs and symptoms of common gynecological disorders?",
-      answer: "Common gynecological disorders may present with symptoms such as pelvic pain, irregular or heavy menstrual bleeding, abnormal vaginal discharge, pain during intercourse, and changes in urinary habits. Prompt evaluation is essential for appropriate diagnosis and treatment."
-    },
-    {
-      question: "How does a gynecologist manage menopause and its symptoms?",
-      answer: "Gynecologists help manage menopause through counseling and treatment options, including lifestyle modifications, hormonal therapy (if appropriate), and non-hormonal medications to alleviate symptoms such as hot flashes, mood changes, and vaginal dryness."
-    },
-    {
-      question: "What preventive health measures do gynecologists recommend for women?",
-      answer: "Gynecologists recommend regular health screenings, including Pap smears, breast exams, and mammograms, as well as vaccinations (such as the HPV vaccine). They also emphasize the importance of a healthy lifestyle, including regular exercise, balanced nutrition, and maintaining a healthy weight to prevent reproductive health issues."
-    }
-  ];
-  
-  export default gynecologyFaqs;
-  
+  {
+    question: "What is gynecology billing?",
+    answer: "Gynecology billing involves coding and billing for services in women's health to ensure accurate reimbursement for gynecological procedures."
+  },
+  {
+    question: "Why is accurate coding important in gynecology?",
+    answer: "Accurate coding is essential for proper reimbursement, reducing audit risks, and avoiding legal issues related to billing errors."
+  },
+  {
+    question: "What is the CPT code for a routine gynecological examination?",
+    answer: "Use CPT codes 99384-99387 for new patients or 99394-99397 for established patients, depending on age."
+  },
+  {
+    question: "How do I bill for a colposcopy with biopsy?",
+    answer: "Use CPT code 57454 for colposcopy with biopsy of the cervix and endocervical curettage."
+  },
+  {
+    question: "What's the correct CPT code for inserting an intrauterine device (IUD)?",
+    answer: "Use CPT code 58300 for insertion, plus the appropriate HCPCS code for the device (e.g., J7298 for Mirena)."
+  },
+  {
+    question: "How should I code for a transvaginal ultrasound?",
+    answer: "Use CPT code 76830; for both transabdominal and transvaginal ultrasounds, bill 76856 with modifier -59."
+  },
+  {
+    question: "What CPT code is used for endometrial ablation?",
+    answer: "Use 58353 for thermal ablation and 58356 for cryoablation."
+  },
+  {
+    question: "How do I bill for a Pap smear collection?",
+    answer: "Typically included in E/M service, but separately bill lab analysis with CPT code 88175 for liquid-based cytology."
+  },
+  {
+    question: "What's the appropriate CPT code for a hysteroscopy with endometrial biopsy?",
+    answer: "Use CPT code 58558 for hysteroscopy with endometrial sampling."
+  },
+  {
+    question: "How should I code for the removal of an implantable contraceptive device?",
+    answer: "Use CPT code 11982 for removal of a non-palpable implant; for removal and reinsertion, use 11983."
+  }
+];
+
+export default gynecologyFaqs;

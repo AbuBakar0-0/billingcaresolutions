@@ -7,7 +7,6 @@ import { loadSlim } from "@tsparticles/slim";
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import HeroSlide from './../../components/Home/HeroSlide';
 
-
 const Hero = () => {
   const [init, setInit] = useState(false);
 
@@ -183,7 +182,7 @@ const Hero = () => {
           />
           <div className='z-10 w-full h-[20rem] lg:h-[37rem] flex flex-col justify-center items-center p-10' style={{ backgroundImage: `url("./assets/hero/Logo Slide 1 billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             <img src="./assets/BCS Logo billingcaresolutions.com.svg" alt="" className='w-full md:w-1/2 h-auto animate-bounce slide-content' />
-            <p className='text-md md:text-3xl slide-content text-center'>Get hassle-free payments with Billing Care Solutions.</p>
+            <h1 className='text-md md:text-3xl slide-content text-center'>Get hassle-free payments with Billing Care Solutions.</h1>
           </div>
         </SwiperSlide>
         {data.map((item) => (

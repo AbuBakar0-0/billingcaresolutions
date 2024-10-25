@@ -1,54 +1,44 @@
 const criticalCareFaqs = [
   {
-    question: "What is Critical Care Medicine?",
-    answer:
-      "Critical Care Medicine is a medical specialty focused on providing care for patients with life-threatening illnesses or injuries. This care is typically delivered in an <strong>Intensive Care Unit (ICU)</strong>, where patients receive continuous monitoring, advanced treatments, and life-supporting interventions.",
+    question: "What Is the Importance of Critical Care Medicine Billing?",
+    answer: "Critical care medicine billing is crucial for ensuring healthcare providers receive proper compensation for the intensive and often complex services provided to critically ill patients. Accurate billing supports the sustainability of healthcare practices and enhances patient care quality."
   },
   {
-    question: "What types of patients require critical care?",
-    answer:
-      "<p>Patients who need critical care often have severe or complex conditions, such as:</p><ul class='list-disc list-inside space-y-2'><li>Septic shock or severe infections</li><li>Respiratory failure (e.g., due to pneumonia, COPD, or COVID-19)</li><li>Heart failure or cardiac arrest</li><li>Traumatic injuries (e.g., car accidents, falls)</li><li>Stroke or brain injury</li><li>Acute kidney failure</li><li>Post-operative care after major surgery</li></ul>",
+    question: "How Do I Identify the Correct CPT Codes for Critical Care Services?",
+    answer: "Identifying the correct CPT codes for critical care services involves understanding the specific procedures performed and their duration. Referencing the CPT codebook and using coding software can help ensure accurate coding that reflects the care provided."
   },
   {
-    question: "What is an Intensive Care Unit (ICU)?",
-    answer:
-      "An ICU is a specialized hospital unit designed to treat critically ill patients. It is equipped with advanced technology and staffed by critical care physicians, nurses, and respiratory therapists. In the ICU, patients receive:<ul class='list-disc list-inside space-y-2'><li>Mechanical ventilation for respiratory support</li><li>Hemodynamic monitoring for heart and blood pressure management</li><li>Continuous dialysis for kidney support</li><li>Invasive monitoring (e.g., central lines, arterial lines) for real-time data on vital signs</li></ul>",
+    question: "What CPT Codes Are Used for Critical Care Services in the Emergency Department?",
+    answer: "Critical care services in the emergency department are billed using CPT codes 99291-99292. Code 99291 represents the first 30-74 minutes of critical care, while 99292 represents each additional 30-minute increment. These codes require documentation of intensive interventions, continuous monitoring, and life-threatening conditions."
   },
   {
-    question: "What types of life support are used in critical care?",
-    answer:
-      "<ul class='list-disc list-inside space-y-2'><li><strong>Mechanical ventilation:</strong> A machine that helps patients breathe when they cannot do so on their own.</li><li><strong>Extracorporeal Membrane Oxygenation (ECMO):</strong> A machine that pumps and oxygenates blood outside the body for patients with severe heart or lung failure.</li><li><strong>Dialysis:</strong> For patients whose kidneys are not functioning properly, dialysis removes waste and excess fluid from the blood.</li><li><strong>Vasoactive medications:</strong> Drugs that support blood pressure and heart function.</li></ul>",
+    question: "How Do I Determine the Level of Critical Care Required for a Patient?",
+    answer: "To determine the level of critical care required, assess the patient’s condition, vital signs, and need for intensive interventions. Consider factors such as respiratory failure, cardiac arrest, or severe trauma. Document carefully to support critical care billing."
   },
   {
-    question: "What is mechanical ventilation, and when is it needed?",
-    answer:
-      "Mechanical ventilation is a form of life support that helps patients breathe by delivering oxygen and removing carbon dioxide through a ventilator. It is commonly used for patients with:<ul class='list-disc list-inside space-y-2'><li>Respiratory failure (e.g., from pneumonia, COVID-19, or ARDS)</li><li>Severe trauma affecting the lungs or airways</li><li>Neurological conditions impairing the ability to breathe</li></ul>Patients are usually sedated while on mechanical ventilation.",
+    question: "What Documentation Is Required for Critical Care Billing?",
+    answer: "For critical care billing, document the patient’s condition, treatments, medications, and time spent providing critical care. Key elements include:\n• Patient’s diagnosis and condition\n• Vital signs and laboratory results\n• Intensive interventions and treatments\n• Time spent providing critical care\n• Medical decision-making complexity"
   },
   {
-    question: "How do critical care teams manage sepsis?",
-    answer:
-      "Sepsis is a life-threatening condition caused by the body’s extreme response to infection, which can lead to organ failure. In the ICU, sepsis is managed with:<ul class='list-disc list-inside space-y-2'><li>Intravenous (IV) fluids to support blood pressure and organ perfusion</li><li>Broad-spectrum antibiotics to treat infection</li><li>Vasopressors to stabilize blood pressure if IV fluids are not enough</li><li>Continuous monitoring for changes in vital signs, organ function, and the progression of the infection</li></ul>Early detection and aggressive treatment are crucial for survival.",
+    question: "Can I Bill Critical Care and Evaluation and Management (E/M) Services Together?",
+    answer: "Yes, but only if separate E/M services are provided beyond critical care. Use modifier 25 to distinguish separate services. Ensure distinct documentation for E/M and critical care services."
   },
   {
-    question:
-      "What is the difference between an intensivist and a hospitalist?",
-    answer:
-      "An intensivist is a physician who is specially trained in critical care medicine and manages critically ill patients in the ICU. They provide advanced treatments and coordinate care across multiple specialties. A hospitalist, on the other hand, is a doctor who manages the care of hospitalized patients outside the ICU. Hospitalists often work with intensivists to ensure continuity of care when patients are moved from the ICU to regular hospital floors.",
+    question: "How Do I Bill for Prolonged Critical Care Services?",
+    answer: "For prolonged critical care services, use 99292 for each additional 30 minutes beyond the initial 30-74 minutes. Document total time spent providing critical care."
   },
   {
-    question: "What is a multi-disciplinary approach in critical care?",
-    answer:
-      "Critical care medicine employs a multi-disciplinary approach involving a team of specialists to manage complex conditions. This team may include:<ul class='list-disc list-inside space-y-2'><li>Intensivists (critical care physicians)</li><li>Critical care nurses</li><li>Respiratory therapists</li><li>Pharmacists</li><li>Physical and occupational therapists</li><li>Nutritionists</li><li>Social workers and case managers</li></ul>This collaborative approach ensures comprehensive care, addressing all aspects of the patient’s health.",
+    question: "What Are the Guidelines for Billing Critical Care Services in Multiple Settings?",
+    answer: "Critical care codes 99291-99292 can be used in various settings, including emergency departments, ICUs, and hospital wards. Ensure documentation supports critical care intensity."
   },
   {
-    question: "What is organ failure, and how is it treated in the ICU?",
-    answer:
-      "Organ failure occurs when one or more organs (e.g., heart, lungs, kidneys) stop functioning properly. In the ICU, treatments for organ failure may include:<ul class='list-disc list-inside space-y-2'><li>Mechanical ventilation for lung failure</li><li>Dialysis for kidney failure</li><li>Inotropic medications or ECMO for heart failure</li><li>Liver support systems or transplantation for liver failure</li></ul>The goal is to stabilize the patient, prevent further organ damage, and support recovery.",
+    question: "Can Critical Care Services Be Billed by Non-Physician Practitioners?",
+    answer: "Yes, non-physician practitioners (NPPs) can bill critical care services under physician supervision. Ensure NPP documentation supports critical care intensity."
   },
   {
-    question: " How is end-of-life care handled in the ICU?",
-    answer:
-      "For patients with terminal illnesses or those who are unlikely to recover, ICU teams work closely with families to make decisions about end-of-life care. This may involve:<ul class='list-disc list-inside space-y-2'><li>Palliative care consultations to manage pain and symptoms</li><li>Withdrawing or withholding life support if it is determined that further treatment will not improve the patient’s condition</li><li>Do-not-resuscitate (DNR) orders in cases where resuscitation efforts would not be beneficial</li></ul>The focus is on providing comfort and dignity while respecting the patient’s wishes.",
-  },
+    question: "How Do I Differentiate Between Critical Care and Routine Hospital Care?",
+    answer: "Critical care requires intensive interventions and continuous monitoring for life-threatening conditions. Routine hospital care involves less intensive interventions."
+  }
 ];
+
 export default criticalCareFaqs;

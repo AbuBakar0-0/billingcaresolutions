@@ -1,117 +1,141 @@
 import physicalTherapyFaqs from "./../specialitiesFaqs/physicalFaqs";
+
 const physicalTherapyBillingData = {
   faqs: physicalTherapyFaqs,
   title: "Physical Therapy Billing Services",
   header:"./assets/specialities/headers/Physical Therapy.webp",
-  image: "./assets/specialities/cardImages/Physical Therapy.webp", // Placeholder for the image reference
+  image: "./assets/specialities/cardImages/Physical Therapy.webp", 
   short_description:
-    "Billing for physical therapy services requires specialized knowledge due to the complexity of procedures, varied treatment plans, and specific coding requirements. At Billing Care Solutions, we offer dedicated physical therapy billing services designed to optimize your revenue cycle and support your practice's financial success.",
+    "Physical therapy billing is a vital component of the healthcare system, ensuring that therapists receive fair compensation for their essential services. This process involves a series of coding and documentation practices designed to help healthcare providers navigate the complexities of reimbursement. As healthcare regulations and policies evolve, understanding physical therapy billing is crucial for success in this field.",
 
   content: {
     sub_content_1: {
-      title: "In-Depth Exploration of Physical Therapy Billing Services",
-      image: "",
+      title: "Key Codes",
+      image: "", // Add an image if necessary
       details: {
-        title: `Physical therapy practices encompass a wide range of services, from evaluations to rehabilitative treatments. Our expertise includes:`,
+        title: "In physical therapy billing, several key codes are frequently used:",
         data: [
-          "Comprehensive Coding: Proficiency in CPT, ICD-10, and HCPCS coding tailored for physical therapy, including modalities, therapeutic exercises, and manual therapy techniques.",
-          "Modifier Application: Skillful use of modifiers to ensure accurate billing for multiple services and treatment sessions.",
-          "Evaluation & Management (E&M) Coding: Expertise in coding E&M services specific to physical therapy evaluations, ensuring thorough documentation and compliance.",
-          "Patient Documentation: Assistance with maintaining detailed patient records that support billing claims and enhance care quality.",
+          {
+            title: "CPT Codes",
+            description: [
+              `<br /> <strong>Key CPT codes include:</strong> <br />
+              <strong>97110:</strong> Therapeutic exercises to enhance strength and endurance. <br />
+              <strong>97112:</strong> Neuromuscular re-education aimed at improving coordination and movement. <br />
+              <strong>97530:</strong> Therapeutic activities designed to facilitate functional performance. <br />
+              <strong>97001:</strong> Initial evaluation for physical therapy services. <br />`,
+            ],
+          },
+          {
+            title: "ICD-10 Codes",
+            description: [
+              `<br /> <strong>Key ICD-10 codes include:</strong> <br />
+              <strong>M54.5:</strong> Low back pain. <br />
+              <strong>G56.0:</strong> Carpal tunnel syndrome. <br />`,
+            ],
+          },
+          {
+            title: "Modifiers",
+            description: [
+              `<br /> <strong>Common modifiers include:</strong> <br />
+              <strong>-59:</strong> Denotes a distinct procedural service. <br />
+              <strong>-RT:</strong> Indicates that the service was performed on the right side of the body. <br />`,
+            ],
+          },
         ],
       },
     },
     sub_content_2: {
-      title:
-        "Transforming Your Practice with Outsourced Physical Therapy Billing Solutions",
-      image: "",
+      title: "Best Practices",
+      image: "", // Add an image if necessary
       details: {
-        title: `Outsourcing your physical therapy billing to Billing Care Solutions offers numerous benefits:`,
+        title: "To optimize your physical therapy billing processes, consider these best practices:",
         data: [
           {
-            title: "Focused Patient Care",
-            detail:
-              "With billing managed by specialists, your staff can devote more time to patient care and recovery.",
+            title: "Detailed Documentation",
+            description:
+              "Accurately record all patient interactions and treatment details to support claims effectively.",
           },
           {
-            title: "Faster Payments",
-            detail:
-              "Our streamlined claims submission process leads to quicker reimbursement, improving cash flow for your practice.",
+            title: "Stay Current on Coding Changes",
+            description:
+              "Regularly review updates in CPT and ICD-10 codes to ensure compliance and accuracy.",
           },
           {
-            title: "Cost Efficiency",
-            detail:
-              "Reducing the overhead associated with in-house billing allows you to leverage expert knowledge and resources.",
+            title: "Verify Patient Insurance",
+            description:
+              "Always confirm a patient’s insurance coverage before treatment to avoid claim rejections.",
           },
           {
-            title: "Minimized Errors",
-            detail:
-              "Our in-depth understanding of physical therapy billing significantly reduces coding errors and claim denials.",
+            title: "Submit Claims Promptly",
+            description:
+              "Timely submission of claims reduces payment delays and minimizes the chance of denials.",
+          },
+          {
+            title: "Have a Clear Appeals Process",
+            description:
+              "Establish a structured method for appealing denied claims to optimize your revenue cycle.",
           },
         ],
       },
     },
     sub_content_3: {
-      title: "Enhancing Revenue Cycle Management for Physical Therapy",
-      image: "",
+      title: "Our Expertise",
+      image: "", // Add an image if necessary
       details: {
-        title: `Effective revenue cycle management is essential for the financial health of physical therapy practices. Our services include:`,
+        title: "At Billing Care Solutions, we specialize in physical therapy billing. Here’s how we can support your practice:",
         data: [
           {
-            title: "Charge Capture",
-            detail:
-              "Ensuring all services rendered are documented accurately and billed accordingly.",
+            title: "Skilled Professionals",
+            description:
+              "Our team has extensive experience navigating the complexities of physical therapy billing, ensuring accurate claims submission.",
           },
           {
-            title: "Claims Submission",
-            detail:
-              "Streamlined processes for timely and accurate claims submission, increasing approval rates.",
+            title: "Tailored Approaches",
+            description:
+              "We customize our services to meet the unique needs of your practice, providing personalized solutions.",
           },
           {
-            title: "Denial Management",
-            detail:
-              "Proactive strategies to address and resolve claim denials, focusing on root causes to prevent recurrence.",
+            title: "Focus on Compliance",
+            description:
+              "We prioritize adherence to regulations, ensuring a smooth and compliant billing process.",
           },
           {
-            title: "Payment Posting",
-            detail:
-              "Accurate processing of payments and prompt resolution of discrepancies.",
+            title: "Staff Training",
+            description:
+              "We offer training sessions for your team to enhance billing efficiency and accuracy, empowering your practice.",
           },
           {
-            title: "Analytics and Reporting",
-            detail:
-              "Comprehensive reporting tools that help monitor performance and identify areas for improvement.",
+            title: "Advanced Technology",
+            description:
+              "Our innovative tools streamline the billing process and improve overall accuracy, maximizing your revenue potential.",
           },
         ],
       },
     },
   },
-
   testimonials: [
     {
       title: "Dr. Alex R., Physical Therapist",
-      detail:
+      description:
         "“Billing Care Solutions has streamlined our billing process, resulting in a noticeable increase in revenue. We can now focus more on our patients’ rehabilitation.”",
     },
     {
       title: "Dr. Jessica M., Rehabilitation Specialist",
-      detail:
+      description:
         "“Since we partnered with BCS, our claim denials have significantly decreased. Their expertise in physical therapy billing is evident.”",
     },
     {
       title: "Dr. Kevin T., Sports Rehabilitation Expert",
-      detail:
+      description:
         "“The team at Billing Care Solutions is responsive and knowledgeable. Their support has transformed our billing operations.”",
     },
     {
       title: "Dr. Laura S., Outpatient Physical Therapy Director",
-      detail:
+      description:
         "“With BCS managing our billing, our financial health has improved dramatically. We trust them completely with our billing needs.”",
     },
   ],
 
-  conclusion:
-    "Partnering with Billing Care Solutions provides specialized expertise tailored for physical therapy practices. Our commitment to compliance, revenue enhancement, and customized services allows you to focus entirely on patient care while we efficiently manage your billing processes.",
 };
 
 export default physicalTherapyBillingData;

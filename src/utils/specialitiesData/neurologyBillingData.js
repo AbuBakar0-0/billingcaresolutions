@@ -1,140 +1,133 @@
 import neurologyFaqs from "./../specialitiesFaqs/neurologyFaqs";
+
 const neurologyBillingData = {
   faqs: neurologyFaqs,
   title: "Neurology Billing Services",
-  header:"./assets/specialities/headers/Neurology.webp",
+  header: "./assets/specialities/headers/Neurology.webp",
   image: "./assets/specialities/cardImages/Neurology.webp", // Placeholder image reference
   short_description:
-    "Neurology billing is one of the most challenging specialties due to its complexity, diverse procedures, and evolving regulatory landscape. At Billing Care Solutions, we offer specialized neurology billing services that streamline your revenue cycle, ensuring timely reimbursements, error-free claims, and compliance with the latest coding standards.",
+    "Neurology billing involves the submission of claims to insurance providers for reimbursement related to neurological conditions. Accurate coding is vital, as it directly impacts payment and can prevent claim denials. The two primary coding systems used are the International Classification of Diseases, Tenth Revision (ICD-10) and the Current Procedural Terminology (CPT).",
 
   content: {
     sub_content_1: {
-      title: "Expertise in Neurology Billing",
+      title: "Key Neurology Codes",
       image: "",
       details: {
-        title: `Neurological procedures encompass a wide range of treatments, from diagnostic services to intricate surgeries, each requiring specific coding expertise. Our services include:`,
+        title:
+          "ICD-10 codes categorize diagnoses. Here are some commonly used codes in neurology:",
         data: [
-          "Precise Coding: Correct application of CPT, ICD-10, and HCPCS codes for diagnostic procedures such as EEGs, EMGs, and sleep studies, ensuring accurate reimbursement.",
-          "E&M Coding: Expert handling of Evaluation and Management (E&M) coding for both inpatient and outpatient neurological consultations.",
-          "Specialty-Specific Compliance: Understanding payer-specific rules for neurology services, including Medicare and Medicaid, reducing denial rates and ensuring compliance.",
-          "Billing for Surgical Procedures: Comprehensive billing for neurological surgeries, including detailed documentation and precise use of surgical modifiers.",
+          {
+            title: "ICD-10 Codes",
+            description: [
+              `<br /> <strong>F90.9:</strong> Attention-Deficit Hyperactivity Disorder, Unspecified <br />
+              <strong>G30.9:</strong> Alzheimer’s Disease, Unspecified <br />
+              <strong>G20:</strong> Parkinson’s Disease <br />
+              <strong>G40.101:</strong> Focal Epilepsy with Simple Partial Seizures <br />`,
+            ],
+          },
+          {
+            title: "CPT Codes",
+            description: [
+              `<br /> <strong>95860-95872:</strong> Electromyography (EMG) Procedures <br />
+              <strong>95812-95836:</strong> Routine Electroencephalography (EEG) <br />
+              <strong>95905-95913:</strong> Nerve Conduction Studies <br />`,
+            ],
+          },
         ],
       },
     },
     sub_content_2: {
-      title: "Benefits of Outsourcing Neurology Billing",
+      title: "Best Practices for Successful Neurology Billing",
       image: "",
       details: {
-        title: `Neurology practices require a billing team with in-depth knowledge of the specialty's nuances. By outsourcing to Billing Care Solutions, you enjoy these advantages:`,
+        title:
+          "To optimize your neurology billing processes, consider these best practices:",
         data: [
           {
-            title: "Increased Focus on Patient Care",
-            detail:
-              "Let our billing experts handle the complexities of neurology billing so your team can concentrate on delivering top-notch care to patients.",
+            title: "Stay Informed on Coding Updates",
+            description:
+              "Regularly review updates to ICD-10 and CPT codes to ensure compliance.",
           },
           {
-            title: "Faster Reimbursements",
-            detail:
-              "Accurate claim submissions and efficient follow-up lead to quicker payment cycles and reduced delays.",
+            title: "Emphasize Thorough Documentation",
+            description:
+              "Maintain detailed records of patient encounters, including diagnoses, treatments, and clinical decision-making processes.",
           },
           {
-            title: "Cost-Effective Solutions",
-            detail:
-              "Outsourcing eliminates the need for in-house billing staff, saving on hiring, training, and operational costs.",
+            title: "Invest in Training and Education",
+            description:
+              "Provide continuous training for your billing staff to enhance their understanding of neurology-specific coding and regulations.",
           },
           {
-            title: "Error Reduction",
-            detail:
-              "Our expertise in neurology billing reduces claim rejections due to coding errors, ensuring your practice receives the full reimbursement it deserves.",
+            title: "Utilize Advanced Technology",
+            description:
+              "Implement medical billing software that automates coding and claims submission, reducing errors and improving efficiency.",
+          },
+          {
+            title: "Conduct Regular Audits",
+            description:
+              "Perform routine audits of your billing practices to identify and address discrepancies, ensuring compliance and maximizing revenue.",
           },
         ],
       },
     },
     sub_content_3: {
-      title: "Revenue Cycle Management for Neurology",
+      title: "Our Expertise in Neurology Billing",
       image: "",
       details: {
-        title: `Maximizing revenue in a neurology practice requires proactive revenue cycle management. Billing Care Solutions offers comprehensive RCM services designed specifically for neurology:`,
+        title: " ",
         data: [
           {
-            title: "Comprehensive Charge Capture",
-            detail:
-              "Ensuring that all procedures and services, from initial diagnosis to follow-up care, are accurately documented and billed.",
+            title: "In-Depth Coding Knowledge",
+            description:
+              "Our team is skilled in neurology-specific codes and practices, ensuring accurate billing.",
           },
           {
-            title: "Denial Management",
-            detail:
-              "Proactively addressing and resolving denials, ensuring that no revenue is lost due to avoidable errors.",
+            title: "Efficiency Improvements",
+            description:
+              "We implement streamlined processes that enhance billing efficiency and reduce administrative burdens.",
           },
           {
-            title: "Accurate Payment Posting",
-            detail:
-              "Ensuring all payments are posted correctly, with any discrepancies identified and resolved promptly.",
+            title: "Ongoing Education",
+            description:
+              "We prioritize training to keep our billing staff updated on the latest coding changes and regulations.",
           },
           {
-            title: "Revenue Tracking and Reporting",
-            detail:
-              "Detailed analytics allow your practice to monitor revenue trends and identify areas for optimization.",
-          },
-        ],
-      },
-    },
-    sub_content_4: {
-      title: "Ensuring Compliance with Neurology Billing Regulations",
-      image: "",
-      details: {
-        title: `Neurology billing is highly regulated, with strict requirements around documentation, coding, and patient data privacy. Billing Care Solutions ensures that your practice remains fully compliant:`,
-        data: [
-          {
-            title: "HIPAA Compliance",
-            detail:
-              "Protecting patient data through secure handling practices that adhere to HIPAA standards.",
+            title: "Regulatory Compliance",
+            description:
+              "Our practices adhere to the latest guidelines, minimizing the risk of penalties or denials.",
           },
           {
-            title: "Coding Accuracy",
-            detail:
-              "Keeping up-to-date with the latest changes in CPT, ICD-10, and HCPCS codes to ensure compliance and avoid costly audits.",
-          },
-          {
-            title: "Payer Policy Expertise",
-            detail:
-              "Navigating the specific requirements of Medicare, Medicaid, and private payers to ensure claims meet all necessary guidelines.",
-          },
-          {
-            title: "Audit Support",
-            detail:
-              "In the event of an audit, we provide full support, ensuring that your documentation and billing practices meet regulatory standards.",
+            title: "Technology Integration",
+            description:
+              "We utilize cutting-edge billing software to improve claim processing times and accuracy.",
           },
         ],
       },
     },
   },
-
   testimonials: [
     {
       title: "Improved Cash Flow",
-      detail:
+      description:
         "Reduced claim rejections and faster processing times lead to quicker reimbursements.",
     },
     {
       title: "Increased Revenue",
-      detail:
+      description:
         "Many of our clients see a noticeable improvement in revenue within the first few months of outsourcing their billing.",
     },
     {
       title: "Effortless Communication",
-      detail:
+      description:
         "We provide regular updates, transparent reports, and quick responses to any questions or concerns.",
     },
     {
       title: "Regulatory Confidence",
-      detail:
+      description:
         "Peace of mind knowing that their billing practices are fully compliant with the latest healthcare regulations, minimizing the risk of audits or penalties.",
     },
   ],
-
-  conclusion:
-    "Billing Care Solutions offers a unique combination of experience, expertise, and tailored solutions that make us the ideal partner for your neurology practice. Our neurology-specific expertise ensures optimized revenue, comprehensive services, and custom solutions tailored to your practice's needs.",
 };
 
 export default neurologyBillingData;

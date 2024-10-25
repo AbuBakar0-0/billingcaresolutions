@@ -5,6 +5,7 @@ import Footer from './../Footer';
 import HeadingLine from './../../components/HeadingLine';
 import SpecialityFaqCard from './../../components/Specialities/SpecialityFaqCard';
 import { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SpecialitiesDetailsContent = ({ data }) => {
 
@@ -19,17 +20,22 @@ const SpecialitiesDetailsContent = ({ data }) => {
         <>
             <div className='w-full flex flex-col md:flex-row justify-center items-center p-10 container mx-auto gap-4'>
                 <div className='md:w-1/2'>
-                    <img src={data.image} alt="" />
+                    <LazyLoadImage  src={data.image} alt="" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-start gap-4'>
                     <Heading data={data.content.sub_content_1.title} />
                     <p>{data.content.sub_content_1.details.title}</p>
-                    <ul className='w-full flex flex-col justify-center items-start gap-4 text-justify'>
+                    <ul className='w-full flex flex-col justify-center items-start gap-4 '>
                         {data.content.sub_content_1.details.data.map((item) => (
                             <>
                                 <li className='flex flex-row gap-3 justify-center items-center'>
-                                    <img src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='size-4' />
-                                    <p>{item}</p>
+                                    <LazyLoadImage  src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='size-4' />
+                                    <p className='font-semibold text-secondary'>{item.title}: &nbsp;
+                                        <span
+                                            className=" text-black font-normal"
+                                            dangerouslySetInnerHTML={{ __html:  item.description }}
+                                        />
+                                    </p>
                                 </li>
                             </>
                         ))}
@@ -37,7 +43,6 @@ const SpecialitiesDetailsContent = ({ data }) => {
                     <button className='w-36 bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>Call us</button>
                 </div>
             </div>
-            <Stats />
 
             <div className='w-full flex flex-col justify-between items-center gap-4'>
                 <Heading data={data.content.sub_content_2.title} />
@@ -45,7 +50,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
                 <div className='w-full flex flex-wrap justify-center md:justify-center items-start gap-4 text-justify container mx-auto p-5'>
                     {data.content.sub_content_2.details.data.map((item) => (
                         <>
-                            <div className='size-80 bg-gray-200 flex flex-col justify-start items-center p-5 pt-10 text-center gap-2 group hover:bg-secondary hover:transition-all hover:duration-300 hover:ease-in-out rounded-2xl'>
+                            <div className='w-64 min-h-80 bg-gray-200 flex flex-col justify-start items-center p-5 pt-10 text-center gap-2 group hover:bg-secondary hover:transition-all hover:duration-300 hover:ease-in-out rounded-2xl'>
                                 <div className='h-12 w-12 flex justify-center items-center'>
                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="146.000000pt" height="215.000000pt" viewBox="0 0 146.000000 215.000000"
@@ -71,7 +76,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
                                 <div className='w-full h-20 flex flex-col justify-center items-center'>
                                     <p className='text-secondary text-2xl font-semibold group-hover:text-white'>{item.title}</p>
                                 </div>
-                                <p className='group-hover:text-white'>{item.detail}</p>
+                                <p className='group-hover:text-white'>{item.description}</p>
                             </div>
                         </>
                     ))}
@@ -86,9 +91,8 @@ const SpecialitiesDetailsContent = ({ data }) => {
                             {data.content.sub_content_3.details.data.map((item) => (
                                 <>
                                     <li className='w-full flex flex-col md:flex-row gap-2 justify-start items-center'>
-                                        <img src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='size-4' />
-                                        <p className='w-full text-secondary font-semibold text-xl'>{item.title}:</p>
-                                        <p className='w-full'>{item.detail}</p>
+                                        <LazyLoadImage  src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='size-4' />
+                                        <p className='w-full text-secondary font-semibold text-xl'>{item.title}: <span className='font-normal text-black'>{item.description}</span></p>
                                     </li>
                                 </>
                             ))}
@@ -102,16 +106,17 @@ const SpecialitiesDetailsContent = ({ data }) => {
                 <div className='w-full flex flex-wrap justify-center items-start gap-4 text-justify p-10'>
                     {data.testimonials.map((item) => (
                         <div className='md:w-[49.2%] bg-gray-100 flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start p-8 rounded-lg gap-4'>
-                            <img src="./assets/specialities/testimonial.png" alt="" className='size-20' />
+                            <LazyLoadImage  src="./assets/specialities/testimonial.png" alt="" className='size-20' />
                             <div className='w-full flex flex-col gap-2'>
                                 <p className='text-secondary font-semibold font-custom'>{item.title}</p>
-                                <p>{item.detail}</p>
+                                <p>{item.description}</p>
                             </div>
                         </div>
                     ))}
 
                 </div>
             </div>
+            <Stats />
 
             {
                 data.faqs !== undefined ? <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10'>

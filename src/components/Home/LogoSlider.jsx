@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const LogoSlider = ({ logos, direction = 'left' }) => {
 
@@ -10,12 +11,12 @@ const LogoSlider = ({ logos, direction = 'left' }) => {
       <div className={`flex items-center ${animationClass}`}>
         {logos.map((logo, index) => (
           <div key={index} className="flex-shrink-0 p-4">
-            <img src={logo['img']} alt={`Logo ${index + 1}`} className="w-36 h-auto" />
+            <LazyLoadImage src={logo['img']} alt={`Logo ${index + 1}`} className="w-36 h-auto" />
           </div>
         ))}
         {logos.map((logo, index) => (
           <div key={`duplicate-${index}`} className="flex-shrink-0 p-4">
-            <img src={logo['img']} alt={`Logo duplicate ${index + 1}`} className="w-36 h-auto" />
+            <LazyLoadImage src={logo['img']} alt={`Logo duplicate ${index + 1}`} className="w-36 h-auto" />
           </div>
         ))}
       </div>

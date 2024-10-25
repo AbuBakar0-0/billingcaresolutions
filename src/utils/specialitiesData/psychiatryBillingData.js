@@ -1,117 +1,133 @@
 import psychiatryFaqs from "./../specialitiesFaqs/psychiatryFaqs";
+
 const psychiatryBillingData = {
   faqs: psychiatryFaqs,
   title: "Psychiatry Billing Services",
   header:"./assets/specialities/headers/Psychiatry.webp",
   image: "./assets/specialities/cardImages/Psychiatry.webp", // Placeholder for the image reference
   short_description:
-    "Billing for psychiatric services requires specialized knowledge to address the complexities of mental health treatment, coding practices, and regulatory compliance. At Billing Care Solutions, we provide comprehensive psychiatry billing services designed to optimize your revenue cycle and support the financial success of your practice.",
+    "Psychiatry billing is a vital component of mental health care that ensures psychiatrists receive appropriate reimbursement for their services. This intricate process involves coding, documentation, and submission of claims to insurance providers, which can often be complex due to varying regulations and insurance policies. As mental health awareness grows, understanding the nuances of psychiatry billing is essential for healthcare providers and administrative staff alike.",
 
   content: {
     sub_content_1: {
-      title: "In-Depth Exploration of Psychiatry Billing Services",
-      image: "",
+      title: "Key Codes",
+      image: "", // Add an image if necessary
       details: {
-        title: `Psychiatry encompasses a range of services, from evaluations to psychotherapy and medication management. Our expertise includes:`,
+        title: "In psychiatry billing, several key codes are frequently used:",
         data: [
-          "Accurate Coding: Proficiency in CPT, ICD-10, and HCPCS coding specific to psychiatric services, including therapy sessions, diagnostic evaluations, and medication management.",
-          "Modifier Application: Skilled use of modifiers to ensure accurate billing for various procedures and services, particularly when multiple sessions or interventions occur.",
-          "Evaluation & Management (E&M) Coding: Expertise in coding E&M services related to psychiatric evaluations and ongoing patient care, ensuring compliance with documentation requirements.",
-          "Patient Documentation: Support in maintaining detailed patient records that enhance treatment quality and support billing claims.",
+          {
+            title: "CPT Codes",
+            description: [
+              `<br /> <strong>Commonly used CPT codes include:</strong> <br />
+              <strong>90791:</strong> Psychiatric diagnostic evaluation. <br />
+              <strong>90834:</strong> Psychotherapy, 45 minutes with the patient. <br />
+              <strong>90837:</strong> Psychotherapy, 60 minutes with the patient. <br />
+              <strong>99213:</strong> Established patient office visit, typically 15-29 minutes. <br />`,
+            ],
+          },
+          {
+            title: "ICD-10 Codes",
+            description: [
+              `<br /> <strong>Relevant ICD-10 codes include:</strong> <br />
+              <strong>F32.9:</strong> Major depressive disorder, single episode, unspecified. <br />
+              <strong>F41.1:</strong> Generalized anxiety disorder. <br />
+              <strong>F50.9:</strong> Eating disorder, unspecified. <br />`,
+            ],
+          },
         ],
       },
     },
     sub_content_2: {
-      title:
-        "Transforming Your Practice with Outsourced Psychiatry Billing Solutions",
-      image: "",
+      title: "Best Practices",
+      image: "", // Add an image if necessary
       details: {
-        title: `Outsourcing your psychiatry billing to Billing Care Solutions offers numerous benefits:`,
+        title: "To optimize your psychiatry billing processes, consider these best practices:",
         data: [
           {
-            title: "Enhanced Focus on Patient Care",
-            detail:
-              "With billing managed by specialists, your team can devote more time to patient interactions and therapeutic outcomes.",
+            title: "Thorough Documentation",
+            description:
+              "Maintain detailed records of patient interactions, diagnoses, and treatment plans to effectively support your claims.",
           },
           {
-            title: "Faster Payments",
-            detail:
-              "Our streamlined claims submission process leads to quicker reimbursements, improving cash flow for your practice.",
+            title: "Stay Updated on Coding Changes",
+            description:
+              "Regularly review updates in CPT and ICD-10 codes to ensure compliance and accuracy in billing.",
           },
           {
-            title: "Cost Efficiency",
-            detail:
-              "Reducing overhead costs associated with in-house billing while leveraging our specialized knowledge and resources.",
+            title: "Verify Insurance Benefits",
+            description:
+              "Confirm patients’ insurance coverage before treatment to avoid unexpected claim denials.",
           },
           {
-            title: "Minimized Errors",
-            detail:
-              "Our in-depth understanding of psychiatry billing significantly reduces coding errors and claim denials, protecting your revenue.",
+            title: "Timely Submission of Claims",
+            description:
+              "Submit claims promptly to reduce delays in reimbursement and minimize the risk of denials.",
+          },
+          {
+            title: "Establish an Appeals Process",
+            description:
+              "Create a structured procedure for appealing denied claims to maximize revenue recovery.",
           },
         ],
       },
     },
     sub_content_3: {
-      title: "Enhancing Revenue Cycle Management for Psychiatry",
-      image: "",
+      title: "Our Expertise",
+      image: "", // Add an image if necessary
       details: {
-        title: `Effective revenue cycle management is essential for the financial health of psychiatric practices. Our comprehensive services include:`,
+        title: "At Billing Care Solutions, we specialize in psychiatry billing. Here’s how we can support your practice:",
         data: [
           {
-            title: "Charge Capture",
-            detail:
-              "Ensuring all services provided are accurately documented and billed.",
+            title: "Specialized Knowledge",
+            description:
+              "Our team at Billing Care Solutions has extensive experience in navigating the complexities of psychiatry billing, ensuring accurate and compliant submissions.",
           },
           {
-            title: "Claims Submission",
-            detail:
-              "Optimized processes that expedite claims and enhance approval rates.",
+            title: "Customized Solutions",
+            description:
+              "We tailor our services to meet the unique needs of your psychiatric practice, enhancing operational efficiency.",
           },
           {
-            title: "Proactive Denial Management",
-            detail:
-              "Identification and resolution of claim denials, focusing on root causes to prevent future occurrences.",
+            title: "Regulatory Compliance Focus",
+            description:
+              "We prioritize adherence to healthcare regulations, minimizing audit risks and ensuring smooth billing processes.",
           },
           {
-            title: "Payment Posting",
-            detail:
-              "Accurate processing of payments and prompt resolution of discrepancies.",
+            title: "Staff Training Programs",
+            description:
+              "We provide ongoing training for your team to improve billing practices and accuracy.",
           },
           {
-            title: "Analytics and Reporting",
-            detail:
-              "Detailed reporting tools to monitor performance and identify areas for improvement.",
+            title: "Advanced Technology Utilization",
+            description:
+              "Our state-of-the-art billing software streamlines processes and enhances overall accuracy.",
           },
         ],
       },
     },
   },
-
   testimonials: [
     {
       title: "Dr. Jane M., Psychiatrist",
-      detail:
+      description:
         "“Billing Care Solutions has revolutionized our billing process. We’ve seen a significant increase in revenue and can now concentrate on our patients’ mental health.”",
     },
     {
       title: "Dr. Robert T., Child and Adolescent Psychiatrist",
-      detail:
+      description:
         "“Since we started working with BCS, our claim denials have dropped substantially. Their expertise in psychiatric billing is unmatched.”",
     },
     {
       title: "Dr. Sarah W., Adult Psychiatrist",
-      detail:
+      description:
         "“The BCS team is highly knowledgeable and responsive. Their support has greatly improved our billing operations.”",
     },
     {
       title: "Dr. Michael R., Psychiatry Practice Director",
-      detail:
+      description:
         "“With Billing Care Solutions managing our billing, our financial health has improved significantly. We trust them completely with our billing needs.”",
     },
   ],
-
-  conclusion:
-    "Partnering with Billing Care Solutions provides specialized expertise tailored for psychiatric practices. Our commitment to compliance, revenue growth, and customized solutions allows you to focus entirely on delivering quality patient care while we efficiently manage your billing processes.",
 };
 
 export default psychiatryBillingData;

@@ -4,6 +4,8 @@ import Heading from './../components/Heading';
 import { Link } from 'react-router-dom';
 import Hero from './../sections/Articles/Hero';
 import articles from '../sections/Articles/data';
+import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Articles() {
     const [currentPage, setCurrentPage] = useState(1);
@@ -24,6 +26,13 @@ function Articles() {
 
     return (
         <>
+            <Helmet>
+                <title>Articles - Billing Care Solutions</title>
+                <meta name="description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
+                <meta property="og:title" content="Articles - Billing Care Solutions" />
+                <meta property="og:description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
+                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+            </Helmet>
             <Header />
             <Hero />
             <Heading data={"Latest Articles"} />
@@ -31,7 +40,7 @@ function Articles() {
                 {currentArticle.map((item, index) => (
                     <Link to={`/articleDetails?index=${item.id}`} key={index}>
                         <div className='w-96 min-h-[31rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
-                            <img src={`${item.image}`} alt="" className='rounded-t-lg min-h-[18rem]' />
+                            <LazyLoadImage  src={`${item.image}`} alt="" className='rounded-t-lg min-h-[18rem]' />
                             <div className='w-full p-4 flex flex-col'>
                                 <p className='w-full text-lg font-custom font-semibold text-secondary h-20'>{item.title}</p>
                                 <div

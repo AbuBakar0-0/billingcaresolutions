@@ -2,104 +2,104 @@ import anesthesiologyFaqs from "./../specialitiesFaqs/anesthesiologyFaqs";
 
 const anesthesiologyBillingData = {
   faqs: anesthesiologyFaqs,
-  header:"./assets/specialities/headers/Anesthesiology.webp",
+  header: "./assets/specialities/headers/Anesthesiology.webp",
   title: "Anesthesiology Billing Services",
-  image: "./assets/specialities/cardImages/Anesthesiology.webp", // Placeholder image reference
+  image: "./assets/specialities/cardImages/Anesthesiology.webp",
   short_description:
-    "Outsource your anesthesiology billing to experts for improved accuracy, faster payments, and minimized compliance risks.",
+    "Anesthesia billing and coding requires precision and expertise to navigate complex reimbursement regulations, ensuring accurate payment for life-saving procedures. Effective anesthesia billing harmonizes medical coding (CPT, ICD-10), patient eligibility verification, and insurance payer guidelines.",
 
   content: {
     sub_content_1: {
-      title: "In-Depth Exploration of Anesthesiology Billing Services",
+      title: "Calculating Anesthesia Charges",
       image: "",
       details: {
-        title: `Anesthesiology billing relies heavily on time units, base units, and anesthesia-specific modifiers (e.g., physical status modifiers, qualifying circumstances). Our billing services include:`,
+        title: `To accurately determine anesthesia charges, apply the following formula:`,
         data: [
-          "Accurate time calculations for anesthesia start and stop times.",
-          "Application of concurrency rules for overlapping cases.",
-          "CPT and ICD-10 compliance, ensuring no delays from coding errors.",
-          "Proper documentation and coding for medical direction, supervision, and personal performance scenarios.",
+          {
+            title: "Anesthesia Charge Calculation",
+            description: `Anesthesia Charge = (Base Units + Time Units + Modifying Units) x Conversion Factor <br /> <p class="text-secondary font-semibold">Common CPT Codes for Anesthesia Services</p>
+              <p>Familiarity with the following CPT codes is vital for effective anesthesia billing</p>
+              <ul class='list-disc list-inside'>
+                <li><span>00100-01999: General anesthesia procedures.</span></li>
+                <li><span>00902-00974: Codes for critical care services.</span></li>
+                <li><span>99100-99140: Modifying units for special circumstances.</span></li>
+              </ul>`,
+          },
         ],
       },
     },
     sub_content_2: {
-      title:
-        "Transforming Your Practice with Outsourced Anesthesiology Billing Solutions",
+      title: "Our Anesthesia Billing Expertise",
       image: "",
       details: {
-        title: `Outsourcing provides significant advantages, including`,
+        title: `  `,
         data: [
           {
-            title: "Reduced Administrative Burden",
-            detail: "Frees in-house staff to focus on patient care",
+            title: "Accurate Calculation",
+            description:
+              "Mastery of the formula for calculating anesthesia charges.",
           },
           {
-            title: "Improved Cash Flow",
-            detail:
-              "Accurate and timely claims submissions speed up reimbursements",
+            title: "Base Unit Assignment",
+            description:
+              "Knowledge of base unit assignments for various procedures (CPT codes 00100-01999)",
           },
           {
-            title: "Enhanced Accuracy",
-            detail:
-              "Specialized knowledge in anesthesiology billing reduces denials and errors",
+            title: "Time Unit Tracking",
+            description:
+              "Expertise in tracking time units in 15-minute increments and applying modifying units (CPT 99100-99140).",
           },
           {
-            title: "Cost Savings",
-            detail:
-              "Avoid costs associated with maintaining in-house billing staff and reduce revenue leakage from errors",
+            title: "Conversion Factor Management",
+            description:
+              "Understanding Medicare and commercial conversion rates.",
           },
         ],
       },
     },
     sub_content_3: {
-      title: "Proactive Denial Management for Lost Revenue Recovery",
+      title: "Coding Expertise",
       image: "",
       details: {
-        title: `Our proactive denial management focuses on:`,
+        title: `  `,
         data: [
           {
-            title: "Real-Time Monitoring",
-            detail: "Tracking claims and addressing denials in real time.",
+            title: "CPT Code Selection",
+            description: "Proficient selection of CPT codes for anesthesia procedures (00100-01999).",
           },
           {
-            title: "Root Cause Analysis",
-            detail:
-              "Identifying causes of denials and preventing future occurrences.",
+            title: "Critical Care Services Coding",
+            description: "Expertise in coding critical care services (00902-00974).",
           },
           {
-            title: "Prevention Strategies",
-            detail:
-              "Reducing denial rates through continuous training, feedback loops, and predictive analytics.",
+            title: "Modifying Unit Application",
+            description: "Knowledge of modifying unit applications (99100-99140).",
+          },
+          {
+            title: "Modifier Proficiency",
+            description: "Effective use of relevant modifiers (QX, QY, QK, AA, AD) to denote various anesthesia service conditions.",
           },
         ],
       },
     },
   },
-
   testimonials: [
     {
       title: "Faster Payments",
-      detail:
+      description:
         "Our rejection rates have dropped, and payments come in faster, leading to better cash flow.",
     },
     {
       title: "Increased Revenue",
-      detail:
+      description:
         "We saw a measurable revenue increase in the first few months of outsourcing.",
     },
     {
       title: "Compliance Confidence",
-      detail:
+      description:
         "The team ensures our practice is compliant with healthcare regulations, reducing audit risks.",
     },
   ],
-
-  conclusion: {
-    title: "Why Choose Billing Care Solutions for Anesthesiology Billing",
-    summary: `
-        <p>By outsourcing your anesthesiology billing to Billing Care Solutions, you’re entrusting specialists to maximize your practice’s financial outcomes while staying fully compliant with the latest regulations. Experience faster payments, increased revenue, and peace of mind.</p>
-      `,
-  },
 };
 
 export default anesthesiologyBillingData;

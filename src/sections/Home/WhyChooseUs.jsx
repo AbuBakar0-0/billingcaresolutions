@@ -1,6 +1,7 @@
 import React from 'react'
 import HeadingLine from './../../components/HeadingLine';
 import WhyDoHealthcareProfessionals from '../../components/Home/WhyDoHealthcareProfessionals';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function WhyChooseUs() {
 
@@ -20,7 +21,7 @@ function WhyChooseUs() {
 
                 </div>
                 <div className='w-full lg:w-1/2 flex justify-center items-center'>
-                    <img src="./assets/why choose billing care solutions-01.webp" alt="" className='w-full md:w-3/5 py-10 lg:py-0 ' />
+                    <LazyLoadImage src="./assets/why choose billing care solutions-01.webp" alt="" className='w-full md:w-3/5 py-10 lg:py-0 ' />
                 </div>
 
             </div>

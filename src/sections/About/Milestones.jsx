@@ -1,8 +1,11 @@
 import React from 'react'
 import Heading from '../../components/Heading';
 import MilestoneCard from '../../components/About/MilestoneCard';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 function Achievements() {
+    
     const acdata = [
         {
             title: "Average Time to Resolution",
@@ -64,12 +67,12 @@ function Achievements() {
                     ))}
                 </div>
                 <div className='w-1/2 flex flex-col justify-center items-center'>
-                    <img src="./assets/about-us/Accuracy-and-Precision-billingcaresolutions.com.webp" alt="" className='p-10' />
+                    <LazyLoadImage src="./assets/about-us/Accuracy-and-Precision-billingcaresolutions.com.webp" alt="" className='p-10' />
                 </div>
             </div>
             <div className='w-full flex flex-col md:flex-row justify-between items-center'>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
-                    <img src="./assets/about-us/Expansion-and-Advancement-billingcaresolutions.com.webp" alt="" className='p-10' />
+                    <LazyLoadImage src="./assets/about-us/Expansion-and-Advancement-billingcaresolutions.com.webp" alt="" className='p-10' />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center border-r-8 border-secondary p-5 gap-3'>
                     <p className='w-full text-3xl font-semibold text-left text-secondary'>Expansion and Advancement </p>

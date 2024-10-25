@@ -1,45 +1,44 @@
 const endocrinologyFaqs = [
-    {
-      question: "What is the role of the endocrine system in the body?",
-      answer: "The endocrine system is responsible for producing and regulating hormones, which are chemical messengers that control various bodily functions, including metabolism, growth, reproduction, and response to stress."
-    },
-    {
-      question: "What are common disorders treated by endocrinologists?",
-      answer: "Common disorders include diabetes mellitus (Type 1 and Type 2), thyroid disorders (hypothyroidism and hyperthyroidism), adrenal insufficiency, polycystic ovary syndrome (PCOS), and hormonal imbalances affecting growth or sexual development."
-    },
-    {
-      question: "How is diabetes diagnosed and managed in endocrinology?",
-      answer: "Diabetes is diagnosed using blood tests to measure glucose levels (e.g., fasting blood glucose, A1C test). Management involves lifestyle changes (diet and exercise), monitoring blood glucose, and medication (oral hypoglycemics or insulin) to maintain target glucose levels."
-    },
-    {
-      question: "What are the differences between Type 1 and Type 2 diabetes?",
-      answer: "Type 1 diabetes is an autoimmune condition where the body does not produce insulin, typically diagnosed in childhood. Type 2 diabetes is characterized by insulin resistance and often occurs in adults, usually related to obesity and lifestyle factors."
-    },
-    {
-      question: "What is the significance of thyroid function tests?",
-      answer: "Thyroid function tests, including TSH (thyroid-stimulating hormone), Free T4, and Free T3, assess thyroid gland activity. Abnormal results can indicate hypo- or hyperthyroidism and help guide treatment decisions."
-    },
-    {
-      question: "How is osteoporosis diagnosed and treated in endocrinology?",
-      answer: "Osteoporosis is diagnosed using bone density scans (DEXA scans) to measure bone mineral density. Treatment may include medications (bisphosphonates, calcium, vitamin D), lifestyle changes (exercise, diet), and monitoring bone health over time."
-    },
-    {
-      question: "What is the role of hormonal therapy in managing menopausal symptoms?",
-      answer: "Hormonal therapy, including estrogen and progesterone, can help alleviate menopausal symptoms such as hot flashes, night sweats, and vaginal dryness. Endocrinologists assess the risks and benefits before prescribing hormonal treatments."
-    },
-    {
-      question: "How do adrenal glands affect the body's response to stress?",
-      answer: "The adrenal glands produce hormones such as cortisol and adrenaline, which play a crucial role in the body's stress response, regulating metabolism, immune function, and blood pressure, and preparing the body for 'fight or flight' situations."
-    },
-    {
-      question: "What is the approach to managing polycystic ovary syndrome (PCOS)?",
-      answer: "Management of PCOS often involves lifestyle modifications (diet, exercise), hormonal treatments (oral contraceptives), and medications (metformin) to regulate menstrual cycles, improve insulin sensitivity, and address symptoms like excessive hair growth and acne."
-    },
-    {
-      question: "How is growth hormone deficiency diagnosed and treated?",
-      answer: "Growth hormone deficiency is diagnosed through clinical evaluation and tests measuring growth hormone levels in response to stimulation (e.g., exercise, fasting). Treatment involves administering synthetic growth hormone to promote growth and development in affected children and improve body composition in adults."
-    }
-  ];
-  
-  export default endocrinologyFaqs;
-  
+  {
+    question: "What Is Endocrinology Medical Billing and Why Is It Important?",
+    answer: "Endocrinology medical billing refers to the process of submitting claims for services related to hormone-related disorders and treatments. Accurate billing is essential for ensuring that healthcare providers receive appropriate reimbursement for their services, which ultimately supports patient care."
+  },
+  {
+    question: "Which CPT Codes Are Commonly Used in Endocrinology Billing?",
+    answer: "Common CPT codes in endocrinology billing include those for consultations, hormone level testing, and diabetes management services. Familiarity with codes such as 99213 for established patient office visits and 83036 for hemoglobin A1c tests is vital for accurate billing."
+  },
+  {
+    question: "What CPT Code Is Used for Thyroid-Stimulating Hormone (TSH) Testing?",
+    answer: "The CPT code for TSH testing is 84443. Accurate coding ensures proper reimbursement for this essential diagnostic tool in assessing thyroid function."
+  },
+  {
+    question: "How Do I Bill for Comprehensive Metabolic Panels in Endocrinology?",
+    answer: "Use CPT code 80053 for comprehensive metabolic panels, which provide valuable insights into patients’ overall metabolic health. Document medical necessity to support billing."
+  },
+  {
+    question: "What’s the Correct Coding for Vitamin D Testing in Endocrinology Practice?",
+    answer: "Vitamin D testing is coded using 82306. This test plays a significant role in calcium metabolism and bone health. Link the test to an appropriate ICD-10 code to justify medical necessity."
+  },
+  {
+    question: "How Should I Bill for Initial Endocrinology Consultations?",
+    answer: "Initial consultations require Evaluation and Management (E/M) codes based on complexity and time spent. Typically, use 99205 for new patients or 99245 for consultations. Ensure documentation supports the level of service billed."
+  },
+  {
+    question: "What CPT Code Is Used for Thyroid Ultrasound?",
+    answer: "Thyroid ultrasound is coded using 76536. Accurate coding and documentation of findings are essential for proper reimbursement."
+  },
+  {
+    question: "How Do I Bill for Hormone Replacement Therapy Management?",
+    answer: "Hormone replacement therapy management involves using E/M codes (99213-99215) based on visit complexity. Additional codes may be needed for hormone injections or implants."
+  },
+  {
+    question: "What’s the Correct CPT Code for Bone Density Scans (DEXA)?",
+    answer: "Use 77080 for DEXA scans of the axial skeleton (hips and spine). Proper documentation of medical necessity is crucial."
+  },
+  {
+    question: "How Should I Code for Continuous Glucose Monitoring (CGM) in Diabetes Management?",
+    answer: "CGM involves codes 95250 for sensor placement and initial setup, and 95251 for data interpretation."
+  }
+];
+
+export default endocrinologyFaqs;

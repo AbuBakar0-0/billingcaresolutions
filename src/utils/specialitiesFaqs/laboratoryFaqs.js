@@ -1,45 +1,44 @@
-const laboratoryServicesFaqs = [
-    {
-      question: "What types of tests are commonly performed in a clinical laboratory?",
-      answer: "Clinical laboratories perform a wide variety of tests, including blood tests (complete blood counts, metabolic panels), urine tests (urinalysis), microbiology cultures (bacterial and viral identification), and molecular diagnostics (PCR tests for infectious diseases)."
-    },
-    {
-      question: "How are laboratory tests ordered and processed?",
-      answer: "Laboratory tests are typically ordered by healthcare providers based on patient symptoms and medical history. Samples are collected (blood, urine, tissue), labeled, and sent to the lab, where technicians process them using standardized procedures and equipment for accurate results."
-    },
-    {
-      question: "What is the significance of laboratory accreditation?",
-      answer: "Laboratory accreditation ensures that the lab meets specific quality and safety standards set by regulatory bodies (like the College of American Pathologists). Accreditation indicates that the lab follows strict protocols, uses validated methods, and maintains high-quality testing processes."
-    },
-    {
-      question: "How do laboratories ensure the accuracy and reliability of test results?",
-      answer: "Laboratories ensure accuracy through quality control procedures, including regular calibration of equipment, running control samples, participating in proficiency testing, and adhering to standardized operating procedures for sample handling and analysis."
-    },
-    {
-      question: "What is the difference between diagnostic and screening tests in the laboratory?",
-      answer: "Diagnostic tests are used to confirm or rule out a specific disease based on clinical symptoms, while screening tests are performed on asymptomatic individuals to detect potential health issues early (e.g., cholesterol tests, mammograms). Screening aims for early intervention and prevention."
-    },
-    {
-      question: "How do laboratories handle potentially infectious specimens?",
-      answer: "Laboratories follow strict biosafety protocols for handling infectious specimens, including using personal protective equipment (PPE), following proper specimen transport guidelines, and disposing of biohazardous waste according to regulatory standards to minimize exposure risks."
-    },
-    {
-      question: "What role does laboratory data play in patient management?",
-      answer: "Laboratory data is crucial for diagnosing conditions, monitoring disease progression, assessing treatment effectiveness, and guiding clinical decision-making. Timely and accurate test results help healthcare providers tailor treatment plans to individual patient needs."
-    },
-    {
-      question: "What is the significance of laboratory result turnaround times?",
-      answer: "Turnaround times refer to the period from sample collection to result reporting. Prompt turnaround times are essential for timely diagnosis and treatment, particularly in critical cases (e.g., emergency departments) where delayed results can impact patient outcomes."
-    },
-    {
-      question: "How are laboratory tests interpreted, and who is responsible for this?",
-      answer: "Laboratory tests are interpreted by pathologists or clinical laboratory scientists, who analyze the results in the context of clinical information. They provide guidance to healthcare providers on the implications of the results and any necessary follow-up actions."
-    },
-    {
-      question: "What advancements are currently shaping the future of laboratory medicine?",
-      answer: "Advancements include the development of point-of-care testing (POCT), integration of artificial intelligence for data analysis, improvements in molecular diagnostics (such as next-generation sequencing), and the use of electronic health records (EHR) for seamless data sharing and management, all enhancing patient care and laboratory efficiency."
-    }
-  ];
-  
-  export default laboratoryServicesFaqs;
-  
+const laboratoryFaqs = [
+  {
+    question: "What does laboratory billing involve?",
+    answer: "Laboratory billing is the process of coding and submitting claims for laboratory services rendered to patients, ensuring that healthcare facilities receive proper reimbursement."
+  },
+  {
+    question: "What are common CPT codes for organ or disease panel tests?",
+    answer: "CPT codes between 80048 and 80081 are used for coding panel tests that consist of specific components. For example, CPT code 80061 is for lipid panels, while 80055 is for obstetric panels."
+  },
+  {
+    question: "How are drug testing CPT codes organized?",
+    answer: "Drug testing CPT codes are divided into three categories: presumptive drug class screening, definitive drug testing, and therapeutic drug assays, encompassing various testing methods and specimen types."
+  },
+  {
+    question: "What are the CPT codes for evocative or suppression testing?",
+    answer: "Codes 80400 to 80439 are designated for laboratory components of evocative or suppression testing, where specific agents are administered by a physician to evaluate patient responses."
+  },
+  {
+    question: "How are clinical pathology consultation services billed?",
+    answer: "To indicate that a pathologist has reviewed and interpreted a clinical pathology test, CPT codes 80500 and 80502 are utilized, along with a written report requested by the treating physician."
+  },
+  {
+    question: "What CPT codes apply to urinalysis?",
+    answer: "The range 81000 to 81099 includes various types of urinalysis testing, covering both automated and manual methods, with or without microscopy."
+  },
+  {
+    question: "How are molecular pathology tests billed?",
+    answer: "Molecular pathology CPT codes are categorized into tiers based on test complexity, covering a broad range of genetic analyses for both germline and somatic conditions."
+  },
+  {
+    question: "What are key CPT codes in the chemistry subsection?",
+    answer: "The chemistry subsection, covering CPT codes 82000 to 84999, includes tests such as protein electrophoresis for serum (84165) and other fluids (84166)."
+  },
+  {
+    question: "How are hematology and coagulation tests billed?",
+    answer: "Codes from 85002 to 85999 are used for complete blood count (CBC) components and tests related to blood clotting factors."
+  },
+  {
+    question: "What CPT codes are used for immunology testing?",
+    answer: "The immunology subsection, spanning CPT codes 86000 to 86804, covers a variety of tests related to the immune system, including allergy testing and specific antibody assays."
+  }
+];
+
+export default laboratoryFaqs;

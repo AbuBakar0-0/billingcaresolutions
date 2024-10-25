@@ -1,45 +1,44 @@
-const dentalCareFaqs = [
-    {
-      question: "What is the difference between composite and amalgam fillings?",
-      answer: "Composite fillings are tooth-colored resins that bond to the tooth structure, providing a more aesthetic result, while amalgam fillings are made from a mixture of metals, including mercury, and are durable but less cosmetic."
-    },
-    {
-      question: "How does digital X-ray technology improve dental diagnostics?",
-      answer: "Digital X-rays use lower radiation than traditional X-rays and provide immediate, high-resolution images, allowing dentists to detect cavities, bone loss, and other oral health issues more efficiently."
-    },
-    {
-      question: "What is the role of fluoride in preventing tooth decay?",
-      answer: "Fluoride strengthens tooth enamel and makes it more resistant to acid attacks from bacteria and sugars in the mouth, effectively reducing the risk of cavities and promoting overall oral health."
-    },
-    {
-      question: "How does a dental implant work, and what materials are used?",
-      answer: "A dental implant is a titanium post surgically placed into the jawbone, which acts as a replacement for the root of a missing tooth. Over time, the bone fuses with the implant, providing a stable foundation for a crown, bridge, or denture."
-    },
-    {
-      question: "What is the process of root canal treatment, and when is it necessary?",
-      answer: "Root canal treatment involves removing infected or damaged pulp from inside the tooth, cleaning and disinfecting the root canal, and sealing it with a filling. It is necessary when the tooth's pulp becomes infected due to decay or injury."
-    },
-    {
-      question: "How do orthodontic braces straighten teeth, and what materials are commonly used?",
-      answer: "Orthodontic braces use brackets, wires, and bands to apply controlled pressure to teeth, gradually shifting them into proper alignment. Materials used for braces include metal, ceramic, and clear plastic for less visible options."
-    },
-    {
-      question: "What is the difference between scaling and root planning in periodontal treatment?",
-      answer: "Scaling removes plaque and tartar from the surface of teeth above and below the gum line, while root planning smooths the root surfaces to eliminate bacteria and promote reattachment of the gums to the teeth, preventing periodontal disease progression."
-    },
-    {
-      question: "What are veneers, and how do they enhance the appearance of teeth?",
-      answer: "Veneers are thin, custom-made porcelain or resin shells bonded to the front of teeth to improve their appearance. They are used to correct discoloration, chips, gaps, or misaligned teeth, offering a natural-looking smile."
-    },
-    {
-      question: "How does laser dentistry benefit patients during soft tissue procedures?",
-      answer: "Laser dentistry uses focused light beams to perform soft tissue procedures like gum reshaping or removing excess tissue with greater precision, minimal bleeding, and faster healing compared to traditional scalpel methods."
-    },
-    {
-      question: "How does teeth whitening work, and what are the different types of treatments available?",
-      answer: "Teeth whitening involves the use of bleaching agents such as hydrogen peroxide to break down stains on the enamel. Professional options include in-office treatments with high-concentration bleaching gels and take-home kits with custom trays."
-    }
-  ];
-  
-  export default dentalCareFaqs;
-  
+const dentalFaqs = [
+  {
+    question: "What Are Dental Billing Services?",
+    answer: "Dental billing services encompass a range of financial management tasks that ensure dental practices receive accurate and timely reimbursement. These services include submitting insurance claims, managing patient accounts, and handling collections. By streamlining these processes, dental billing services help practices maintain financial health. This allows dental professionals to focus on providing quality care rather than administrative tasks, enhancing the overall operational efficiency of dental practices."
+  },
+  {
+    question: "What does the D0120 code cover in a dental assessment?",
+    answer: "The D0120 code is utilized for a comprehensive oral assessment, allowing dentists to evaluate a patient's dental health. This process includes reviewing medical histories, conducting a thorough dental examination, and formulating an individualized diagnosis and treatment plan."
+  },
+  {
+    question: "When is the D2150 code applied in dental procedures?",
+    answer: "The D2150 code is specifically used for the application of a silver amalgam filling, which serves as a primary restoration for a tooth cavity. This procedure involves filling a single surface of either a primary or permanent tooth to restore its functionality."
+  },
+  {
+    question: "What procedure does the D2330 code refer to in dentistry?",
+    answer: "The D2330 code pertains to the filling of a cavity in an anterior tooth using resin-based composite material. This procedure focuses on restoring only one side of the tooth while ensuring a natural appearance and effective function."
+  },
+  {
+    question: "How does the D1110 code relate to dental hygiene?",
+    answer: "The D1110 code is designated for preventative maintenance, specifically the cleaning of teeth and gums. This essential procedure involves scraping away plaque and tartar buildup, followed by polishing the teeth to enhance oral hygiene and prevent future issues."
+  },
+  {
+    question: "What is the significance of the D2740 code in restorative dentistry?",
+    answer: "The D2740 code signifies the placement of a crown made from porcelain or ceramic material on a tooth. This restoration is crucial for repairing fractured or decayed teeth, providing strength and improving the tooth's appearance."
+  },
+  {
+    question: "What does the D2140 code encompass in filling procedures?",
+    answer: "The D2140 code encompasses the application of a silver amalgam filling, covering the entire process from cleaning the affected tooth to placing and finishing the filling. This code is vital for restoring the integrity of a tooth affected by decay."
+  },
+  {
+    question: "In what scenarios would the D3330 code be utilized?",
+    answer: "The D3330 code is employed for conducting a root canal procedure on an anterior tooth. This complex treatment involves the removal of infected pulp, followed by cleaning, contouring the root canal, and ultimately filling the canal to preserve the tooth."
+  },
+  {
+    question: "What is the purpose of the D8070 code in orthodontics?",
+    answer: "The D8070 code is designated for orthodontic treatment aimed at children with developing teeth and jaws. This code addresses the need for orthodontic care that accommodates a combination of primary and permanent teeth, promoting proper alignment and oral health."
+  },
+  {
+    question: "Why Is Accurate Coding Important in Dental Billing?",
+    answer: "Accurate coding is critical in dental billing as it directly affects the reimbursement process. Each dental procedure has specific codes that must be used to represent the services rendered correctly. Inaccurate coding can lead to claim denials or delays, impacting the practice's revenue cycle. Ensuring proper coding also enhances compliance with insurance requirements and regulations, maximizing reimbursements and minimizing financial losses."
+  }
+];
+
+export default dentalFaqs;

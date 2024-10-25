@@ -1,86 +1,108 @@
 import podiatryFaqs from "./../specialitiesFaqs/podiatryFaqs";
+
 const podiatryBillingData = {
   faqs: podiatryFaqs,
   title: "Podiatry Billing Services",
-  header:"./assets/specialities/headers/Podiatry.webp",
-  image: "./assets/specialities/cardImages/Podiatry.webp", // Placeholder for the image reference
+  header: "./assets/specialities/headers/Podiatry.webp",
+  image: "./assets/specialities/cardImages/Podiatry.webp",
   short_description:
-    "Billing for podiatry services requires specialized knowledge to navigate the complexities of various procedures, coding practices, and compliance regulations. At Billing Care Solutions, we provide comprehensive podiatry billing services designed to optimize your revenue cycle and enhance your practice’s financial health.",
+    "Podiatry billing is a crucial element in ensuring that podiatrists are properly compensated for their specialized services. At Billing Care Solutions, we focus on precise coding and thorough documentation to navigate the complexities of insurance reimbursement effectively. Understanding the intricacies of podiatry billing is essential for both healthcare providers and administrative teams, especially as the healthcare landscape evolves.",
 
   content: {
     sub_content_1: {
-      title: "In-Depth Exploration of Podiatry Billing Services",
-      image: "",
+      title: "Key Codes",
+      image: "", // Add an image if necessary
       details: {
-        title: `Podiatry practices encompass a wide range of services, from routine foot care to complex surgical procedures. Our expertise includes:`,
+        title: "In podiatry billing, several key codes are frequently used:",
         data: [
-          "Accurate Coding: Proficiency in CPT, ICD-10, and HCPCS coding specific to podiatry, covering treatments like diabetic foot care, orthotics, and surgical interventions.",
-          "Modifier Application: Skilled use of modifiers to ensure accurate billing for multiple procedures and specific patient scenarios.",
-          "Evaluation & Management (E&M) Coding: Expertise in coding E&M services related to podiatric evaluations, ensuring compliance with documentation requirements.",
-          "Patient Documentation: Support in maintaining thorough patient records that enhance care quality and support billing claims.",
+          {
+            title: "CPT Codes",
+            description: [
+              `<br /> <strong>Commonly used CPT codes include:</strong> <br />
+              <strong>99201:</strong> Office visit for a new patient. <br />
+              <strong>11721:</strong> Debridement of nails, applicable for multiple nails. <br />
+              <strong>28005:</strong> Arthroplasty involving the toe joint. <br />
+              <strong>28485:</strong> Surgical intervention for foot fractures. <br />`,
+            ],
+          },
+          {
+            title: "ICD-10 Codes",
+            description: [
+              `<br /> <strong>Relevant ICD-10 codes include:</strong> <br />
+              <strong>M20.11:</strong> Hallux valgus (bunions) on the right foot. <br />
+              <strong>E11.9:</strong> Type 2 diabetes mellitus without complications. <br />
+              <strong>G57.9:</strong> Unspecified neuropathy related to podiatric conditions. <br />`,
+            ],
+          },
         ],
       },
     },
     sub_content_2: {
-      title:
-        "Transforming Your Practice with Outsourced Podiatry Billing Solutions",
-      image: "",
+      title: "Best Practices",
+      image: "", // Add an image if necessary
       details: {
-        title: `Outsourcing your podiatry billing to Billing Care Solutions offers numerous benefits:`,
+        title:
+          "To optimize your podiatry billing processes, consider these best practices:",
         data: [
           {
-            title: "Focused Patient Care",
-            detail:
-              "With billing managed by specialists, your team can dedicate more time to patient interactions and treatment outcomes.",
+            title: "Comprehensive Documentation",
+            description:
+              "Maintain meticulous records of patient encounters, treatments, and diagnoses to support your claims effectively.",
           },
           {
-            title: "Improved Cash Flow",
-            detail:
-              "Our streamlined claims submission process leads to faster reimbursements, ensuring your practice remains financially healthy.",
+            title: "Stay Informed on Coding Updates",
+            description:
+              "Regularly monitor and adapt to changes in CPT and ICD-10 codes to ensure compliance and precision in billing.",
           },
           {
-            title: "Cost Efficiency",
-            detail:
-              "Reduce overhead costs associated with in-house billing while leveraging our specialized knowledge and resources.",
+            title: "Confirm Insurance Benefits",
+            description:
+              "Verify patients' insurance coverage prior to treatment to prevent claim denials and ensure smooth reimbursement.",
           },
           {
-            title: "Minimized Errors",
-            detail:
-              "Our deep understanding of podiatry billing reduces coding errors and claim denials, safeguarding your revenue.",
+            title: "Timely Submission of Claims",
+            description:
+              "Submit claims promptly to accelerate the reimbursement process and reduce delays in payments.",
+          },
+          {
+            title: "Implement a Clear Appeals Procedure",
+            description:
+              "Establish a defined process for appealing denied claims to optimize revenue recovery.",
           },
         ],
       },
     },
     sub_content_3: {
-      title: "Enhancing Revenue Cycle Management for Podiatry",
-      image: "",
+      title: "Our Expertise",
+      image: "", // Add an image if necessary
       details: {
-        title: `Effective revenue cycle management is crucial for the financial success of podiatry practices. Our comprehensive services include:`,
+        title:
+          "At Billing Care Solutions, we specialize in podiatry billing. Here’s how we can support your practice:",
         data: [
           {
-            title: "Charge Capture",
-            detail:
-              "Ensuring all services and procedures are accurately documented and billed.",
+            title: "In-Depth Knowledge",
+            description:
+              "Our team specializes in the unique aspects of podiatry billing, ensuring compliance and accuracy in all submissions.",
           },
           {
-            title: "Claims Submission",
-            detail:
-              "Optimized processes that expedite claims and enhance approval rates.",
+            title: "Customized Solutions",
+            description:
+              "We tailor our services to meet the specific needs of your practice, enhancing operational efficiency and effectiveness.",
           },
           {
-            title: "Proactive Denial Management",
-            detail:
-              "Identification and resolution of claim denials, focusing on root causes to prevent future occurrences.",
+            title: "Regulatory Compliance Focus",
+            description:
+              "We prioritize adherence to all relevant regulations, minimizing audit risks and streamlining your billing operations.",
           },
           {
-            title: "Payment Posting",
-            detail:
-              "Accurate processing of payments and prompt resolution of discrepancies.",
+            title: "Training Programs",
+            description:
+              "We offer comprehensive training for your staff, aimed at improving billing accuracy and overall efficiency.",
           },
           {
-            title: "Analytics and Reporting",
-            detail:
-              "Detailed reporting tools to monitor performance and identify areas for improvement.",
+            title: "Innovative Technology",
+            description:
+              "Our advanced billing software automates processes and enhances overall precision, reducing the potential for errors.",
           },
         ],
       },
@@ -90,28 +112,25 @@ const podiatryBillingData = {
   testimonials: [
     {
       title: "Dr. Lisa K., Podiatrist",
-      detail:
+      description:
         "“Billing Care Solutions has made a remarkable difference in our billing process. Our revenue has increased significantly, allowing us to focus more on patient care.”",
     },
     {
       title: "Dr. Tom H., Foot and Ankle Specialist",
-      detail:
+      description:
         "“Since we partnered with BCS, our claim denials have drastically decreased. Their expertise in podiatry billing has been a game changer for our practice.”",
     },
     {
       title: "Dr. Megan S., Podiatric Surgeon",
-      detail:
+      description:
         "“The BCS team is professional and knowledgeable. Their tailored approach has improved our billing operations tremendously.”",
     },
     {
       title: "Dr. David P., Podiatry Clinic Director",
-      detail:
+      description:
         "“With Billing Care Solutions managing our billing, our financial health has improved dramatically. We trust them completely with our billing needs.”",
     },
   ],
-
-  conclusion:
-    "Partnering with Billing Care Solutions provides specialized expertise tailored for podiatry practices. Our commitment to compliance, revenue growth, and customized solutions allows you to focus entirely on delivering quality patient care while we efficiently manage your billing processes.",
 };
 
 export default podiatryBillingData;

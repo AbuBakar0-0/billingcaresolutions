@@ -1,6 +1,7 @@
 // src/components/Header.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +84,7 @@ const Header = () => {
                 <div className="flex justify-between h-16">
                     <div className="w-full flex flex-row justify-between">
                         <div className="w-4/5 lg:w-1/5 flex-shrink-0 flex items-center">
-                            <img className="h-full w-auto" src="./assets/BCS Logo billingcaresolutions.com.svg" alt="Logo" />
+                            <LazyLoadImage  className="h-full w-auto" src="./assets/BCS Logo billingcaresolutions.com.svg" alt="Logo" />
                         </div>
                         <div className="hidden lg:flex lg:space-x-8 items-center w-3/5 justify-center">
                             <Link to='/' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Home</Link>
@@ -160,7 +161,7 @@ const Header = () => {
                         <Link to="/blogs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Blog</Link>
                         <Link to="/faqs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">FAQ's</Link>
                         <Link to="/articles" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Articles</Link>
-                        <Link to="/termsandconditions" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Terms& Conditions</Link>
+                        <Link to="/termsandconditions" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Terms & Conditions</Link>
                         <Link to="/privacypolicy" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Privacy Policy</Link>
                     </div>
                     <div className='w-full flex items-center'>

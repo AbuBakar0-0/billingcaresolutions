@@ -1,111 +1,137 @@
 import generalSurgeryFaqs from "./../specialitiesFaqs/generalSurgeryFaqs";
+
 const generalSurgeryBillingData = {
   faqs: generalSurgeryFaqs,
   title: "General Surgery Billing Services",
   header:"./assets/specialities/headers/General Surgery.webp",
-  image: "./assets/specialities/cardImages/General Surgery.webp", // Placeholder image reference
+  image: "./assets/specialities/cardImages/General Surgery.webp",
   short_description:
-    "Billing for general surgery is highly complex, with intricate coding, stringent compliance regulations, and varying payer requirements. Mistakes in documentation, coding, or claims submission can lead to denied claims and revenue loss, which can strain your practice’s financial health. Billing Care Solutions specializes in managing these complexities with precision, ensuring your general surgery practice maximizes revenue while minimizing administrative burdens.",
+    "General surgery billing is a vital component of modern healthcare systems, ensuring prompt reimbursement for surgical practices. This complex process involves the meticulous submission and tracking of medical claims with health insurance providers. Streamlining general surgery billing optimizes revenue and reduces claim denials, allowing healthcare providers to focus on delivering exceptional patient care.",
 
   content: {
     sub_content_1: {
-      title: "The Ins & Outs of General Surgery Billing Expertise",
+      title: "Key Codes",
       image: "",
       details: {
-        title: `Handling general surgery billing requires specialized knowledge in areas like:`,
+        title: `Understanding key codes is essential for accurate and efficient general surgery billing.`,
         data: [
-          "CPT and ICD-10 Code Expertise: Properly coding for surgical procedures such as appendectomies, hernia repairs, and cholecystectomies ensures claims are submitted accurately.",
-          "Modifier Application: Correct use of surgical modifiers, such as global period modifiers or multiple surgery indicators, prevents costly claim denials.",
-          "Pre-Authorization and Payer Rules Compliance: Navigating insurance requirements, including pre-authorization and payer-specific guidelines, to avoid claim rejection.",
+          {
+            title: "ICD-10 Codes",
+            description: [
+              `<br /><strong>K21.9:</strong> Gastroesophageal reflux disease (GERD). <br />
+              <strong>K80.00:</strong> Gallstones without complications. <br />
+              <strong>C18.9:</strong> Unspecified malignant neoplasm of the colon. <br />`
+            ],
+          },
+          {
+            title: "CPT Codes",
+            description: [
+              `<br /><strong>44120:</strong> Partial colectomy for malignancy. <br />
+              <strong>49505:</strong> Open inguinal hernia repair. <br />
+              <strong>47600:</strong> Laparoscopic cholecystectomy. <br />`
+            ],
+          },
+          {
+            title: "HCPCS Codes",
+            description: [
+              `<br /><strong>A4262:</strong> Surgical dressings. <br />
+              <strong>J1030:</strong> Injection of testosterone, up to 200 mg. <br />`
+            ],
+          },
         ],
       },
     },
     sub_content_2: {
-      title:
-        "What Outsourcing Insurance Billing Services Benefits Your Practice",
+      title: "Best Practices",
       image: "",
       details: {
-        title: `Outsourcing your billing to professionals provides numerous advantages, including:`,
+        title: `To optimize general surgery billing, consider these best practices:`,
         data: [
           {
-            title: "Increased Operational Efficiency",
-            detail:
-              "Free up your in-house team from time-consuming billing tasks, allowing them to focus on patient care.",
+            title: "Stay Updated with Coding Changes",
+            description:
+              "Regularly review updates from organizations like the CDC, CMS, and AMA to remain compliant with the latest coding standards.",
           },
           {
-            title: "Reduced Claim Errors",
-            detail:
-              "Experts in general surgery billing use advanced software and manual checks to reduce coding errors, leading to fewer denials.",
+            title: "Prioritize Comprehensive Documentation",
+            description:
+              "Detailed documentation of all surgical procedures is crucial for supporting coding decisions and safeguarding against audits.",
           },
           {
-            title: "Faster Reimbursement Cycles",
-            detail:
-              "Accurate and prompt claim submissions ensure quicker payments, improving your practice’s cash flow.",
+            title: "Verify Patient Insurance Coverage",
+            description:
+              "Always check a patient’s insurance eligibility before performing procedures to reduce claim rejections.",
           },
           {
-            title: "Cost Savings",
-            detail:
-              "Save on staffing, training, and software expenses associated with in-house billing by partnering with a dedicated billing team.",
+            title: "Utilize Technology",
+            description:
+              "Invest in advanced billing software that integrates with practice management systems. Automation minimizes errors and speeds up the billing process.",
           },
           {
-            title: "Regulatory Compliance",
-            detail:
-              "Stay updated on the latest industry regulations and avoid costly penalties by ensuring your practice remains compliant with Medicare, Medicaid, and commercial payer rules.",
+            title: "Conduct Regular Staff Training",
+            description:
+              "Ongoing training sessions for billing personnel keep them informed about the latest coding practices and insurance policies.",
           },
         ],
       },
     },
     sub_content_3: {
-      title: "Proactive Denial Management for Lost Revenue Recovery",
+      title: "Our Expertise",
       image: "",
       details: {
-        title: `Denials in general surgery billing can be frustrating and costly. Our proactive approach ensures denials are minimized and resolved quickly:`,
+        title: ` `,
         data: [
           {
-            title: "Real-Time Claims Monitoring",
-            detail:
-              "We monitor claims from submission through the entire payment process, allowing us to catch issues before they become denials.",
+            title: "Expert Coding Proficiency",
+            description:
+              "We specialize in ICD-10, CPT, and HCPCS coding tailored to general surgery, ensuring accuracy and compliance throughout the billing process.",
           },
           {
-            title: "Detailed Root Cause Analysis",
-            detail:
-              "For each denied claim, we conduct a thorough investigation to identify underlying issues, whether it’s missing documentation or incorrect coding.",
+            title: "Knowledge of Payer Compliance",
+            description:
+              "Our understanding of Medicare, Medicaid, and private insurance guidelines allows us to manage claims efficiently and reduce denial rates.",
           },
           {
-            title: "Continuous Prevention Strategies",
-            detail:
-              "We implement staff training and regular audits to prevent recurring denial causes, keeping your claims clean and improving your revenue cycle performance.",
+            title: "Revenue Cycle Enhancement",
+            description:
+              "Using advanced data analytics, we enhance financial performance, identify trends, and maximize revenue recovery for surgical practices.",
+          },
+          {
+            title: "Insight into Surgical Procedures",
+            description:
+              "Our deep knowledge of the billing intricacies for surgical procedures guarantees timely and accurate reimbursements.",
+          },
+          {
+            title: "Optimized Billing Workflows",
+            description:
+              "We provide customized solutions that enhance billing efficiency, reduce administrative tasks, and improve accuracy, allowing surgical teams to focus on patient care.",
           },
         ],
       },
     },
   },
-
   testimonials: [
     {
       title: "Faster Reimbursements",
-      detail:
+      description:
         "Within weeks of outsourcing our billing to Billing Care Solutions, we saw quicker payments and a reduction in outstanding claims.",
     },
     {
       title: "Revenue Boost",
-      detail:
+      description:
         "Our revenue improved significantly as we eliminated frequent denials and underpayments.",
     },
     {
       title: "Seamless Communication",
-      detail:
+      description:
         "The team provides clear and timely reports, keeping us informed of every step in the billing process.",
     },
     {
       title: "Peace of Mind",
-      detail:
+      description:
         "Knowing that our billing is handled by professionals gives us the confidence to focus more on patient care and less on revenue concerns.",
     },
   ],
-
-  conclusion:
-    "By choosing Billing Care Solutions for your general surgery billing needs, you ensure your practice runs smoothly, financially stable, and in compliance, all while you continue to deliver exceptional care to your patients.",
 };
 
 export default generalSurgeryBillingData;

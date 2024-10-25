@@ -1,45 +1,44 @@
 const plasticSurgeryFaqs = [
-    {
-      question: "What is plastic surgery, and what are its main objectives?",
-      answer: "Plastic surgery is a surgical specialty that focuses on the reconstruction, restoration, or alteration of the human body. Its main objectives include improving appearance (cosmetic surgery), restoring function (reconstructive surgery), and enhancing quality of life after trauma, illness, or congenital defects."
-    },
-    {
-      question: "What are the differences between cosmetic and reconstructive plastic surgery?",
-      answer: "Cosmetic plastic surgery aims to enhance or improve aesthetic appearance (e.g., facelifts, breast augmentation, liposuction). In contrast, reconstructive plastic surgery focuses on restoring form and function after injury, surgery, or congenital conditions (e.g., breast reconstruction after mastectomy, cleft lip and palate repair)."
-    },
-    {
-      question: "What are common procedures performed in cosmetic plastic surgery?",
-      answer: "Common procedures include breast augmentation, rhinoplasty (nose reshaping), facelift, abdominoplasty (tummy tuck), liposuction, and eyelid surgery (blepharoplasty). These procedures are designed to enhance physical appearance according to the patient’s preferences."
-    },
-    {
-      question: "How do plastic surgeons assess candidates for surgery?",
-      answer: "Plastic surgeons assess candidates through comprehensive consultations, evaluating medical history, physical health, psychological readiness, and specific aesthetic goals. They discuss potential risks, benefits, and realistic expectations to determine if the patient is a suitable candidate for the desired procedure."
-    },
-    {
-      question: "What are the risks and complications associated with plastic surgery?",
-      answer: "Risks may include infection, scarring, anesthesia complications, and dissatisfaction with aesthetic results. Specific procedures can also carry unique risks, such as implant-related complications in breast surgery or hematoma formation in facelifts. A thorough consultation helps patients understand these risks."
-    },
-    {
-      question: "What is the typical recovery process following plastic surgery?",
-      answer: "Recovery varies by procedure but generally involves a period of rest and limited activity. Patients may experience swelling, bruising, and discomfort, which can be managed with prescribed medications. Follow-up appointments are necessary to monitor healing and ensure optimal results."
-    },
-    {
-      question: "How can patients prepare for plastic surgery?",
-      answer: "Patients can prepare by following pre-operative instructions provided by their surgeon, which may include avoiding certain medications, quitting smoking, and arranging for post-operative care and assistance during recovery. Being physically and mentally prepared helps facilitate a smoother recovery."
-    },
-    {
-      question: "What advancements are currently influencing plastic surgery techniques?",
-      answer: "Advancements include minimally invasive techniques (e.g., endoscopic surgery), enhanced imaging technologies for preoperative planning, improved anesthesia options, and innovative materials for implants and grafts. These advancements lead to reduced recovery times, less scarring, and improved outcomes."
-    },
-    {
-      question: "What role does patient education play in plastic surgery?",
-      answer: "Patient education is vital in plastic surgery to ensure informed decision-making. Surgeons provide detailed information about procedures, expected outcomes, recovery processes, and potential risks, empowering patients to set realistic expectations and actively participate in their surgical journey."
-    },
-    {
-      question: "How do plastic surgeons address concerns about body image and self-esteem?",
-      answer: "Plastic surgeons often engage in discussions about body image and self-esteem during consultations. They assess psychological readiness and may refer patients to mental health professionals if needed. A supportive approach helps address concerns and fosters realistic expectations for surgical outcomes."
-    }
-  ];
-  
-  export default plasticSurgeryFaqs;
-  
+  {
+    question: "What are CPT codes in plastic surgery?",
+    answer: "CPT (Current Procedural Terminology) codes in plastic surgery are standardized numeric codes used to describe specific surgical procedures and services provided to patients."
+  },
+  {
+    question: "How are CPT codes important for plastic surgery billing?",
+    answer: "They ensure accurate billing and reimbursement for procedures, helping to minimize claim denials and ensuring compliance with healthcare regulations."
+  },
+  {
+    question: "What is the most common CPT code used for cosmetic procedures?",
+    answer: "Commonly used codes include 19325 for breast augmentation and 15823 for cheek augmentation."
+  },
+  {
+    question: "What CPT code should I use for a facelift?",
+    answer: "The CPT code for a facelift is 15830, which covers a rhytidectomy (facelift) procedure."
+  },
+  {
+    question: "How do I code for breast reconstruction?",
+    answer: "Breast reconstruction procedures typically use CPT codes like 19357 for reconstruction with implant and 19340 for flap techniques."
+  },
+  {
+    question: "What is the CPT code for liposuction?",
+    answer: "Liposuction is billed using CPT code 15877, which describes suction-assisted lipectomy."
+  },
+  {
+    question: "How are revisions coded in plastic surgery?",
+    answer: "Revisions are typically coded with CPT codes such as 19316 for breast implant removal or 17999 for unlisted procedures."
+  },
+  {
+    question: "What is the CPT code for abdominoplasty (tummy tuck)?",
+    answer: "The CPT code for abdominoplasty is 15830, which covers the surgical removal of excess skin and fat from the abdomen."
+  },
+  {
+    question: "How do I code for a nose job (rhinoplasty)?",
+    answer: "Use CPT code 30462 for rhinoplasty, specifically for reconstructive procedures."
+  },
+  {
+    question: "What CPT code should I use for ear reconstruction?",
+    answer: "Ear reconstruction is billed using CPT code 69300 for the surgical correction of congenital defects of the ear."
+  }
+];
+
+export default plasticSurgeryFaqs;

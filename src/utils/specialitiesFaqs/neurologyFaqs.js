@@ -1,45 +1,44 @@
 const neurologyFaqs = [
-    {
-      question: "What is neurology, and what conditions do neurologists treat?",
-      answer: "Neurology is a medical specialty focused on diagnosing and treating disorders of the nervous system, which includes the brain, spinal cord, and peripheral nerves. Neurologists treat conditions such as epilepsy, stroke, multiple sclerosis, Parkinson's disease, migraines, and neuropathies."
-    },
-    {
-      question: "What diagnostic tests are commonly used in neurology?",
-      answer: "Common diagnostic tests in neurology include magnetic resonance imaging (MRI) to visualize brain structures, computed tomography (CT) scans for assessing stroke or tumors, electroencephalography (EEG) to monitor electrical activity in the brain, and lumbar puncture (spinal tap) for cerebrospinal fluid analysis."
-    },
-    {
-      question: "How is a neurological examination conducted?",
-      answer: "A neurological examination involves assessing a patient's cognitive function, motor skills, sensory perception, coordination, reflexes, and cranial nerve function. The neurologist uses a combination of patient history, physical examination, and specialized tests to evaluate neurological health."
-    },
-    {
-      question: "What are the signs and symptoms of a stroke, and how is it treated?",
-      answer: "Signs of a stroke include sudden onset of weakness or numbness (especially on one side of the body), confusion, trouble speaking, vision problems, and severe headache. Treatment may involve clot-busting medications (thrombolytics), endovascular procedures, or rehabilitation therapy, depending on the stroke type and severity."
-    },
-    {
-      question: "What role do neurologists play in managing epilepsy?",
-      answer: "Neurologists diagnose epilepsy through patient history, neurological exams, and EEG monitoring. They develop individualized treatment plans, which may include anti-epileptic medications, lifestyle modifications, and surgical options for patients with drug-resistant epilepsy."
-    },
-    {
-      question: "How do neurologists diagnose and manage headaches, including migraines?",
-      answer: "Diagnosis of headaches involves detailed patient history, symptom assessment, and ruling out secondary causes through imaging or blood tests. Management may include lifestyle modifications, pharmacologic treatments (abortive and preventive medications), and alternative therapies such as biofeedback or cognitive behavioral therapy."
-    },
-    {
-      question: "What is multiple sclerosis (MS), and how is it treated?",
-      answer: "Multiple sclerosis is a chronic autoimmune disease affecting the central nervous system, characterized by demyelination of nerve fibers. Treatment may involve disease-modifying therapies (DMTs), symptomatic treatments (e.g., for muscle spasticity), and lifestyle adjustments to manage symptoms and improve quality of life."
-    },
-    {
-      question: "What is Parkinson's disease, and how is it managed?",
-      answer: "Parkinson's disease is a progressive neurodegenerative disorder affecting movement control. Management includes medications such as levodopa for symptom control, physical and occupational therapy to improve functionality, and, in some cases, surgical interventions like deep brain stimulation."
-    },
-    {
-      question: "How do neurologists approach dementia and cognitive decline?",
-      answer: "Neurologists evaluate dementia through cognitive testing, imaging studies, and thorough medical histories. They manage symptoms through medications (e.g., cholinesterase inhibitors), cognitive therapies, and support for caregivers, emphasizing quality of life and safety."
-    },
-    {
-      question: "What advancements are currently shaping the field of neurology?",
-      answer: "Advancements include the development of new pharmacologic therapies (such as monoclonal antibodies for migraine prevention), improved diagnostic imaging techniques, telemedicine for remote consultations, and research into neuroregenerative therapies that aim to repair or replace damaged neural tissues."
-    }
-  ];
-  
-  export default neurologyFaqs;
-  
+  {
+    question: "How do I bill for an EEG lasting 45 minutes?",
+    answer: "Use CPT code 95819 for a comprehensive EEG lasting between 41 and 60 minutes. Ensure accurate documentation of the duration to support your coding."
+  },
+  {
+    question: "What’s the difference between CPT codes 95885 and 95886 for EMG studies?",
+    answer: "CPT code 95885 is for a limited EMG study of one extremity, while 95886 is for a complete study. Choose the code based on the extent of the examination performed."
+  },
+  {
+    question: "Can I bill separately for interpretation of neuroimaging studies?",
+    answer: "Yes, you can! Use codes 70551-70553 for MRI interpretations, ensuring there’s no duplication of services included in other billed codes."
+  },
+  {
+    question: "What’s the correct code for a follow-up visit for a patient with Parkinson’s?",
+    answer: "For established patients, use codes 99211-99215. The specific code will depend on the complexity of the visit and the time spent, so thorough documentation is essential!"
+  },
+  {
+    question: "How do I code for a nerve conduction study?",
+    answer: "Use CPT codes 95907-95913, depending on the number of nerves tested. Accurate documentation is crucial for justifying the chosen code."
+  },
+  {
+    question: "What’s the CPT code for botulinum toxin injections for migraines?",
+    answer: "Use CPT code 64615 for botulinum toxin injections for chronic migraines. Document the specific injection sites and the amount used."
+  },
+  {
+    question: "How should I bill for a telemedicine follow-up for epilepsy management?",
+    answer: "Use the same E/M codes (99211-99215) as for in-person visits, adding the -95 modifier to indicate it was conducted via telemedicine."
+  },
+  {
+    question: "What’s the correct code for a lumbar puncture?",
+    answer: "Use CPT code 62270 for a diagnostic lumbar puncture. If the procedure is therapeutic, use 62272 and specify the purpose in your documentation."
+  },
+  {
+    question: "How do I bill for cognitive assessment and care planning?",
+    answer: "Use CPT code 99483 for cognitive assessment and care plan services, which require at least 50 minutes of face-to-face interaction with the patient."
+  },
+  {
+    question: "What’s the CPT code for vagus nerve stimulator programming?",
+    answer: "Use 95976 for the first 15 minutes of vagus nerve stimulator programming, and 95977 for each additional 15 minutes."
+  }
+];
+
+export default neurologyFaqs;

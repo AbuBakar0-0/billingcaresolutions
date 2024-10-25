@@ -1,45 +1,44 @@
 const painManagementFaqs = [
-    {
-      question: "What is pain management, and what specialists are involved in this field?",
-      answer: "Pain management is a multidisciplinary approach to diagnosing and treating chronic pain. Specialists involved include pain management physicians, anesthesiologists, neurologists, physiatrists, psychologists, and physical therapists. Their goal is to improve patients’ quality of life by effectively managing pain through various treatment modalities."
-    },
-    {
-      question: "What types of pain are typically addressed in pain management?",
-      answer: "Pain management addresses various types of pain, including acute pain (resulting from injury or surgery), chronic pain (lasting more than three months), neuropathic pain (due to nerve damage), and pain related to conditions such as arthritis, fibromyalgia, and cancer."
-    },
-    {
-      question: "What diagnostic methods are used in pain management?",
-      answer: "Diagnostic methods include a comprehensive patient history, physical examination, imaging studies (like X-rays, MRIs, or CT scans), nerve conduction studies, and diagnostic nerve blocks. These methods help identify the underlying cause of pain and guide treatment strategies."
-    },
-    {
-      question: "What are common non-invasive treatment options for pain management?",
-      answer: "Common non-invasive treatment options include physical therapy, chiropractic care, acupuncture, massage therapy, cognitive-behavioral therapy (CBT), transcutaneous electrical nerve stimulation (TENS), and pharmacological interventions such as NSAIDs, acetaminophen, and antidepressants."
-    },
-    {
-      question: "How do interventional procedures play a role in pain management?",
-      answer: "Interventional procedures, such as epidural steroid injections, nerve blocks, and joint injections, aim to provide targeted pain relief by delivering medication directly to the affected area. These procedures can reduce inflammation, block pain signals, and enhance mobility."
-    },
-    {
-      question: "What is the role of medications in pain management?",
-      answer: "Medications play a crucial role in pain management and can include over-the-counter pain relievers (like NSAIDs), prescription opioids for severe pain, anticonvulsants for neuropathic pain, and antidepressants to manage chronic pain. The choice of medication depends on the type and severity of pain."
-    },
-    {
-      question: "How is chronic pain different from acute pain?",
-      answer: "Acute pain is a temporary sensation often resulting from an injury or surgery, typically resolving as the underlying cause heals. Chronic pain, however, persists beyond the expected healing time, often continuing for months or years, and may not have a clear or identifiable cause."
-    },
-    {
-      question: "What lifestyle modifications can help in managing pain?",
-      answer: "Lifestyle modifications can include regular exercise, maintaining a healthy weight, practicing good sleep hygiene, engaging in stress-reduction techniques (such as mindfulness or yoga), and avoiding tobacco and excessive alcohol use. These changes can enhance overall well-being and reduce pain levels."
-    },
-    {
-      question: "How do pain management specialists address the psychological aspects of pain?",
-      answer: "Pain management specialists recognize the psychological impact of chronic pain and often incorporate psychological interventions such as cognitive-behavioral therapy (CBT), counseling, and support groups. These approaches help patients develop coping strategies and address issues like anxiety and depression related to chronic pain."
-    },
-    {
-      question: "What advancements are currently shaping the field of pain management?",
-      answer: "Advancements include the development of new minimally invasive techniques, such as radiofrequency ablation and neuromodulation therapies (like spinal cord stimulation), improved pharmacological options (including novel analgesics), and research into the genetics of pain to personalize treatment strategies for better outcomes."
-    }
-  ];
-  
-  export default painManagementFaqs;
-  
+  {
+    question: "What Are the Most Common CPT Codes Used in Pain Management?",
+    answer: "Common CPT codes include 64450 for injection of anesthetic agent, 62322 for injection of diagnostic or therapeutic substance, and 64633 for destruction by neurolytic agent."
+  },
+  {
+    question: "How Are CPT Codes Structured for Pain Management Billing?",
+    answer: "Pain Management CPT codes fall into ranges like 62310-62319 for epidural and subarachnoid injections, 64400-64530 for nerve blocks, and 63650-63688 for spinal cord stimulation procedures."
+  },
+  {
+    question: "What Are the Key Categories of CPT Codes Used in Pain Management?",
+    answer: "Main categories include Evaluation and Management, Anesthesia, Surgery, and Medicine."
+  },
+  {
+    question: "How Do Modifiers Impact Pain Management CPT Code Billing?",
+    answer: "Modifiers like -25 for significant, separately identifiable E/M services and -50 for bilateral procedures provide crucial billing details."
+  },
+  {
+    question: "What Are the Risks of Improper Use of CPT Modifiers in Pain Management?",
+    answer: "Incorrect modifier usage can lead to claim denials, audits, fines, and other penalties, making accuracy critical."
+  },
+  {
+    question: "How Can Pain Management Practices Stay Up-to-Date on CPT Code Changes?",
+    answer: "Regularly review the American Medical Association's (AMA) CPT updates and the National Correct Coding Initiative (NCCI) guide."
+  },
+  {
+    question: "What Is the Purpose of the -51 Modifier in Pain Management Billing?",
+    answer: "The -51 modifier indicates that multiple procedures were performed during the same session, allowing for appropriate reimbursement."
+  },
+  {
+    question: "How Are CPT Codes Used to Bill for Epidural and Spinal Injections in Pain Management?",
+    answer: "Common injection CPT codes include 62322 for injection of diagnostic or therapeutic substance and 62323 for substance injected into the epidural or subarachnoid space."
+  },
+  {
+    question: "What CPT Codes Are Used for Nerve Block Procedures in Pain Management?",
+    answer: "Relevant nerve block codes include 64450 for injection of anesthetic agent and 64633 for destruction by neurolytic agent."
+  },
+  {
+    question: "How Do Pain Management Practices Ensure Accurate Coding for Spinal Cord Stimulation Procedures?",
+    answer: "Key codes include 63650 for percutaneous implantation of neurostimulator electrode array and 63685 for insertion or replacement of spinal neurostimulator pulse generator."
+  }
+];
+
+export default painManagementFaqs;

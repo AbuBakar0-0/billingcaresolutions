@@ -4,6 +4,7 @@ import Hero from '../sections/TermsAndConditions/Hero';
 import TermsAndConditionsCard from '../components/TermsAndConditions/TermsAndConditionsCard';
 import HeadingLine from './../components/HeadingLine';
 import Footer from './../sections/Footer';
+import { Helmet } from 'react-helmet';
 
 function TermsaAndConditions() {
     useEffect(() => {
@@ -11,10 +12,17 @@ function TermsaAndConditions() {
     }, [])
     return (
         <>
+            <Helmet>
+                <title>Terms & Conditions - Billing Care Solutions</title>
+                <meta name="description" content="At Billing Care Solutions, our specialties lie in delivering precise, customized services that meet the specific needs of healthcare practices. Our deep industry knowledge, paired with cutting-edge solutions, allows us to address critical areas of healthcare management, ensuring optimized revenue and smooth operations." />
+                <meta property="og:title" content="Terms & Conditions - Billing Care Solutions" />
+                <meta property="og:description" content="At Billing Care Solutions, our specialties lie in delivering precise, customized services that meet the specific needs of healthcare practices. Our deep industry knowledge, paired with cutting-edge solutions, allows us to address critical areas of healthcare management, ensuring optimized revenue and smooth operations." />
+                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+            </Helmet>
             <Header />
             <Hero />
             <div className='w-full container flex flex-col justify-center items-center gap-4 mx-auto my-10'>
-                <div className='w-2/3 flex flex-col justify-center items-center gap-4 text-justify'>
+                <div className='w-2/3 flex flex-col justify-center items-center gap-4'>
                     <HeadingLine data={"Introduction"} />
                     <p>Welcome to Billing Care Solutions. These Terms and Conditions govern your use of our medical billing services. By accessing or using our services, you agree to comply with and be bound by these terms. If you do not agree with these Terms and Conditions, please do not use our services.</p>
 
@@ -57,27 +65,27 @@ function TermsaAndConditions() {
                     <HeadingLine data={"Termination"} />
                     <TermsAndConditionsCard tagline={"By Client: "} data={"The Client may terminate services with 30 days’ written notice."} />
                     <TermsAndConditionsCard tagline={"By Company: "} data={"Billing Care Solutions reserves the right to terminate this agreement for any reason with 30 days’ notice. Immediate termination may occur in the case of breach of contract or illegal activity by the Client."} />
-                    <TermsAndConditionsCard  data={"Upon termination, all outstanding invoices must be paid within 30 days."} />
-                    
+                    <TermsAndConditionsCard data={"Upon termination, all outstanding invoices must be paid within 30 days."} />
+
                     <HeadingLine data={"Dispute Resolution"} />
                     <TermsAndConditionsCard tagline={"Governing Law: "} data={"These terms are governed by the laws of the state in which Billing Care Solutions is registered."} />
                     <TermsAndConditionsCard tagline={"Dispute Resolution: "} data={"Any disputes arising out of or in connection with these terms shall be resolved through mediation. If mediation fails, disputes will be settled in a court of competent jurisdiction."} />
 
-                    
+
                     <HeadingLine data={"Amendments"} />
                     <TermsAndConditionsCard data={"Billing Care Solutions reserves the right to modify these Terms and Conditions at any time. Clients will be notified of any material changes 30 days prior to implementation. Continued use of our services after this period constitutes acceptance of the new terms."} />
 
                     <HeadingLine data={"Force Majeure"} />
                     <TermsAndConditionsCard data={"Billing Care Solutions is not liable for any failure or delay in performance due to causes beyond our reasonable control, including but not limited to acts of God, war, strikes, or governmental restrictions."} />
-                    
+
                     <HeadingLine data={"Entire Agreement"} />
                     <TermsAndConditionsCard data={"These Terms and Conditions, along with any signed agreements, constitute the entire agreement between Billing Care Solutions and the Client and supersede any prior agreements or understandings, whether written or oral.For more information on industry practices, HIPAA compliance, or related medical billing regulations, I recommend reviewing the American Medical Billing Association (AMBA) guidelines and the HIPAA Privacy Rule on the official Health and Human Services (HHS) website. You may also explore research on the evolution of medical billing in journals like the Journal of Health Economics."} />
-                    
+
 
                 </div>
 
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

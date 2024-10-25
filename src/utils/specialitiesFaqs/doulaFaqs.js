@@ -1,45 +1,44 @@
 const doulaMidwifeFaqs = [
-    {
-      question: "What is the difference between a doula and a midwife?",
-      answer: "A doula provides emotional, physical, and informational support during pregnancy, labor, and postpartum, but does not perform medical tasks. A midwife is a trained healthcare professional who can provide medical care during pregnancy, childbirth, and postpartum, such as monitoring fetal health, performing exams, and delivering the baby."
-    },
-    {
-      question: "What types of care do midwives provide during pregnancy?",
-      answer: "Midwives offer comprehensive care, including:<ul class='list-disc list-inside space-y-2'><li>Prenatal visits (monitoring fetal development and maternal health)</li><li>Routine tests and screenings (blood pressure checks, urine tests, ultrasound referrals)</li><li>Education on childbirth and breastfeeding</li><li>Labor and delivery care</li><li>Postpartum care and newborn assessments</li></ul>"
-    },
-    {
-      question: "Can a midwife handle a high-risk pregnancy?",
-      answer: "Midwives typically focus on low-risk pregnancies. If complications arise or a pregnancy becomes high-risk, a midwife will often collaborate with or refer the patient to an obstetrician or other medical specialists to ensure proper care."
-    },
-    {
-      question: "What role does a doula play during labor and delivery?",
-      answer: "A doula provides non-medical support during labor and delivery, which can include:<ul class='list-disc list-inside space-y-2'><li>Assisting with pain management techniques (breathing exercises, positioning)</li><li>Offering emotional support and encouragement</li><li>Communicating with the medical team to ensure the mother's preferences are understood</li><li>Helping the birthing partner stay involved and informed</li></ul>"
-    },
-    {
-      question: "Can a doula or midwife attend a hospital birth?",
-      answer: "Yes, both doulas and midwives can attend hospital births. Certified nurse midwives (CNMs) often have hospital privileges, while doulas act as part of the support team in collaboration with hospital staff. Some hospitals have specific policies, so it’s important to confirm with your healthcare provider."
-    },
-    {
-      question: "What is the difference between a certified nurse midwife (CNM) and a certified professional midwife (CPM)?",
-      answer: "Certified Nurse Midwives (CNMs) are registered nurses with additional training in midwifery and can work in hospitals, birthing centers, or home settings. They can prescribe medications and provide a full range of women’s healthcare. Certified Professional Midwives (CPMs) specialize in out-of-hospital births (such as home or birth center settings) and are trained in normal pregnancy and childbirth. They cannot practice in hospitals and have more limited prescriptive authority."
-    },
-    {
-      question: "What kinds of pain management do midwives and doulas support?",
-      answer: "Midwives can provide both natural pain relief options (position changes, hydrotherapy, breathing techniques) and medical pain relief like epidurals in a hospital setting. Doulas focus on supporting non-pharmacological methods, helping to manage pain through comfort measures, relaxation, and advocacy for the birthing person’s choices."
-    },
-    {
-      question: "Can a doula or midwife assist with a VBAC (Vaginal Birth After Cesarean)?",
-      answer: "Yes, both midwives and doulas can support a VBAC. A midwife can provide medical care during the labor and delivery if the pregnancy is considered low-risk, while a doula can offer emotional support, help with comfort techniques, and assist with communication between the family and medical staff. It’s essential to ensure the provider is experienced with VBACs."
-    },
-    {
-      question: "What happens if a complication arises during labor with a midwife?",
-      answer: "Midwives are trained to recognize complications during labor (e.g., stalled labor, fetal distress, high blood pressure). In the case of an emergency or complications beyond their scope, midwives will transfer care to a hospital or obstetrician for medical intervention, ensuring the safety of both mother and baby."
-    },
-    {
-      question: "What postpartum care do midwives and doulas provide?",
-      answer: "Midwives provide medical postpartum care, including checking on the mother’s physical recovery, monitoring for infections or complications, assessing breastfeeding, and providing newborn care. Doulas offer postpartum support that focuses on emotional well-being, help with breastfeeding, newborn care education, and support during the transition to parenthood, but do not provide medical care."
-    }
-  ];
-  
-  export default doulaMidwifeFaqs;
-  
+  {
+    question: "What Are Doula and Midwife Billing Services?",
+    answer: "Doula and midwife billing services facilitate the accurate coding, submission, and management of insurance claims for maternity care services. These services ensure that practitioners are reimbursed promptly and appropriately for the essential care they provide during pregnancy, childbirth, and postpartum."
+  },
+  {
+    question: "What CPT Codes Are Commonly Used for Midwife Prenatal Visits?",
+    answer: "Midwives typically use CPT codes 99201-99215 for prenatal visits, depending on the complexity and duration of the appointment. For example, code 99213 is often used for routine prenatal check-ups."
+  },
+  {
+    question: "Are There Specific CPT Codes for Doula Services?",
+    answer: "Currently, there are no specific CPT codes for doula services. Doulas often bill using itemized invoices or through emerging state-specific programs that recognize doula care."
+  },
+  {
+    question: "How Do I Bill for a Home Birth Attended by a Midwife?",
+    answer: "For a home birth, midwives commonly use CPT code 59400 for a vaginal delivery, which includes antepartum care, delivery, and postpartum care. However, some may use 59409 for the delivery only if antepartum and postpartum care are billed separately."
+  },
+  {
+    question: "Can I Use the Same CPT Codes for Both Doula and Midwife Services?",
+    answer: "No, doulas and midwives have different scopes of practice and billing methods. Midwives use medical CPT codes, while doulas typically don’t use CPT codes for billing."
+  },
+  {
+    question: "What CPT Code Should a Midwife Use for a Postpartum Visit?",
+    answer: "Midwives often use CPT code 59430 for postpartum care when it’s not included in a global maternity care package."
+  },
+  {
+    question: "How Do I Bill for a Midwife-Attended Water Birth?",
+    answer: "The CPT code for the delivery itself doesn’t change for a water birth. Use the appropriate delivery code (59400 for vaginal delivery) and document the water birth in the notes."
+  },
+  {
+    question: "Are There Any CPT Codes for Doula Support During Labor?",
+    answer: "While there are no specific CPT codes for doula labor support, some states are developing unique codes or modifiers for Medicaid billing of doula services during labor and delivery."
+  },
+  {
+    question: "What CPT Code Should a Midwife Use for an Initial Prenatal Visit?",
+    answer: "For an initial, comprehensive prenatal visit, midwives often use CPT code 99204 or 99205, depending on the complexity and time spent."
+  },
+  {
+    question: "How Do I Bill for a Midwife-Provided Ultrasound During Pregnancy?",
+    answer: "If a midwife performs an ultrasound, they would use the appropriate ultrasound CPT code, such as 76801 for a first-trimester ultrasound or 76805 for a second or third-trimester ultrasound."
+  }
+];
+
+export default doulaMidwifeFaqs;

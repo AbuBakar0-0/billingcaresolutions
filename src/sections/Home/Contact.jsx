@@ -34,7 +34,7 @@ function Contact() {
     return (
         <>
             <div className='flex flex-col gap-3 p-6 mx-16 rounded-lg shadow-lg mt-5 border-4 border-primary' style={{ backgroundImage: `url("./assets/Talk to expert billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                <p className='text-2xl font-semibold text-secondary underline'>Talk to an Expert</p>
+                <p className='text-2xl font-semibold text-secondary underline'>Schedule a Demo</p>
                 <p className='font-semibold'>We're available 24/7 - Schedule a call with one of our experts now.</p>
                 <form action="" className='flex flex-col justify-around gap-4'>
                     <div className='flex flex-wrap justify-between gap-4'>

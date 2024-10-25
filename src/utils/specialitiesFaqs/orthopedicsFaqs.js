@@ -1,45 +1,44 @@
-const orthopedicsFaqs = [
-    {
-      question: "What is orthopedics, and what do orthopedic surgeons specialize in?",
-      answer: "Orthopedics is a medical specialty focused on diagnosing, treating, and preventing musculoskeletal disorders, including injuries and diseases affecting bones, joints, muscles, ligaments, and tendons. Orthopedic surgeons specialize in surgical and non-surgical treatments for conditions such as fractures, arthritis, sports injuries, and spinal disorders."
-    },
-    {
-      question: "What types of conditions do orthopedic surgeons treat?",
-      answer: "Orthopedic surgeons treat a wide range of conditions, including fractures, arthritis, osteoporosis, tendonitis, ligament tears (such as ACL tears), carpal tunnel syndrome, herniated discs, and congenital deformities. They also address injuries related to sports and physical activity."
-    },
-    {
-      question: "What diagnostic tests are commonly used in orthopedics?",
-      answer: "Common diagnostic tests include X-rays for visualizing bone structures, MRI (Magnetic Resonance Imaging) for soft tissue evaluation, CT (Computed Tomography) scans for detailed imaging of complex fractures, and ultrasound for assessing soft tissue injuries. Physical examinations are also crucial in diagnosing orthopedic conditions."
-    },
-    {
-      question: "How do orthopedic surgeons treat fractures?",
-      answer: "Treatment for fractures may involve conservative methods such as immobilization with casts or splints, or surgical interventions like internal fixation (using plates, screws, or rods) to stabilize the broken bone. The choice of treatment depends on the type and location of the fracture, as well as the patient's overall health."
-    },
-    {
-      question: "What is arthroscopy, and when is it used?",
-      answer: "Arthroscopy is a minimally invasive surgical procedure that uses a small camera (arthroscope) to visualize and treat joint problems. It is commonly used for diagnosing and treating conditions in the knee, shoulder, hip, and ankle, such as meniscus tears, cartilage damage, and joint infections."
-    },
-    {
-      question: "What role do orthopedic surgeons play in joint replacement surgery?",
-      answer: "Orthopedic surgeons perform joint replacement surgeries (such as hip or knee replacements) to relieve pain and restore function in patients with severe joint damage, often due to arthritis or injury. The procedure involves removing the damaged joint surfaces and replacing them with artificial implants."
-    },
-    {
-      question: "How is arthritis managed in orthopedics?",
-      answer: "Arthritis management may involve a combination of non-surgical treatments such as physical therapy, medications (including anti-inflammatories and corticosteroids), lifestyle modifications, and joint injections. Surgical options may be considered if conservative treatments fail to provide relief."
-    },
-    {
-      question: "What is the importance of rehabilitation after orthopedic surgery?",
-      answer: "Rehabilitation is crucial for recovery after orthopedic surgery, as it helps restore mobility, strength, and function. Physical therapy programs are tailored to each patient's needs and may include exercises, manual therapy, and education on activity modifications to support healing and prevent future injuries."
-    },
-    {
-      question: "What are common sports injuries treated by orthopedic surgeons?",
-      answer: "Common sports injuries include ligament tears (such as ACL injuries), meniscus tears, tendonitis (such as Achilles or patellar tendonitis), fractures, dislocations, and muscle strains. Orthopedic surgeons develop treatment plans based on the specific injury and the athlete's goals for returning to activity."
-    },
-    {
-      question: "What advancements are currently shaping the field of orthopedics?",
-      answer: "Advancements include the use of robotic-assisted surgery for precision in joint replacements, regenerative medicine techniques (such as stem cell therapy) for healing soft tissue injuries, improved imaging technologies for accurate diagnosis, and personalized rehabilitation programs using data analytics and wearable technology to optimize recovery outcomes."
-    }
-  ];
-  
-  export default orthopedicsFaqs;
-  
+const orthopedicFaqs = [
+  {
+    question: "What are CPT codes in orthopedic billing?",
+    answer: "CPT codes are unique identifiers assigned to medical services and procedures in orthopedics, streamlining billing and ensuring accurate reimbursement."
+  },
+  {
+    question: "How often are orthopedic CPT codes updated?",
+    answer: "Orthopedic CPT codes are revised annually, making it essential to stay current with the National Correct Coding Initiative (NCCI) guide from CMS."
+  },
+  {
+    question: "What's the CPT code range for Evaluation and Management in orthopedics?",
+    answer: "The CPT code range 99201-99499 covers Evaluation and Management services for orthopedic care."
+  },
+  {
+    question: "Which CPT code is used for carpal tunnel release?",
+    answer: "CPT code 64721 is typically used for carpal tunnel release, also known as 'Median Nerve Transposition and/or Neuroplasty.'"
+  },
+  {
+    question: "What's the difference between Level 1 and Level 2 modifiers?",
+    answer: "Level 1 modifiers are numerical CPT modifiers governed by the AMA, while Level 2 (HCPCS) modifiers use alphanumeric combinations and are revised annually by CMS."
+  },
+  {
+    question: "How can misuse of modifiers affect orthopedic billing?",
+    answer: "Misusing modifiers can lead to severe penalties, including inquiries, fines, and claim cancellations, making accurate usage crucial."
+  },
+  {
+    question: "What's the purpose of the bilateral modifier (-50) in orthopedic coding?",
+    answer: "The -50 modifier indicates a procedure performed on both sides of the body, ensuring proper reimbursement for bilateral treatments."
+  },
+  {
+    question: "How do CPT codes contribute to orthopedic research and trends?",
+    answer: "Tracking frequently used CPT codes helps researchers analyze trends in orthopedic surgeries, potentially improving patient outcomes and guiding healthcare policies."
+  },
+  {
+    question: "What are some of the most common CPT codes for orthopedic surgeries?",
+    answer: "Common orthopedic surgery CPT codes include 11760 for nail bed repair, 25215 for corpectomy, and 64721 for carpal tunnel release."
+  },
+  {
+    question: "How do anesthesia CPT codes work in orthopedic billing?",
+    answer: "The anesthesia CPT code range 00100-01999 and 99100-99140 is used to bill for anesthesia services during orthopedic procedures."
+  }
+];
+
+export default orthopedicFaqs;

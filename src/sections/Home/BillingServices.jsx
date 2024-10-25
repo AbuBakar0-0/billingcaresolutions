@@ -1,5 +1,6 @@
 import React from 'react'
 import Counter from './Counter';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function BillingServices() {
     const data = [
@@ -13,10 +14,12 @@ function BillingServices() {
         "Revenue Cycle Management",
         "Timely AR Follow-Up",
         "Billing Specialists",
-        "Auditing Challenging Denials",
+        "Challenging Denials Auditing",
         "Credentialing Services",
         "Healthcare Data Analysis",
-        "Billing Strategy Consultation"
+        "Billing Strategy Consultation",
+        "Insurance Eligibility Verification",
+        "Patient Payment Solutions",
     ];
 
     const counterData = [
@@ -51,7 +54,7 @@ function BillingServices() {
             <div className='flex flex-wrap justify-center items-center md:p-8'>
                 {data.map((item) => (
                     <div className='w-full md:w-1/2 lg:w-1/4 flex flex-row justify-start items-center text-white'>
-                        <img src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='w-4 h-4' />
+                        <LazyLoadImage src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='w-4 h-4' />
                         <p className='p-2 text-lg'>{item}</p>
                     </div>
                 ))}

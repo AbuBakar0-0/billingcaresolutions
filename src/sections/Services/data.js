@@ -12,8 +12,6 @@ import revenueCycleManagementData from "../../utils/services/revenueCycleData";
 const services = [
   {
     title: "Medical Billing & Coding",
-    header:
-      "./assets/services/headers/medical billing billingcaresolution.com.webp",
     img: "./assets/what_do_we_offer/1.webp",
     icon: "./assets/services/icons/1.svg",
     data: medicalBillingAndCodingData,
@@ -26,8 +24,6 @@ const services = [
   },
   {
     title: "Revenue Cycle Management",
-    header:
-      "./assets/services/headers/Revenue cycle management billingcaresolution.com.webp",
     img: "./assets/what_do_we_offer/2.webp",
     icon: "./assets/services/icons/3.svg",
     data: revenueCycleManagementData,

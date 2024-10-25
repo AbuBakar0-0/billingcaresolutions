@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Hero() {
     const data = [
@@ -31,7 +32,7 @@ function Hero() {
                 <div className='container flex flex-col md:flex-row justify-center items-center rounded-2xl bg-white shadow-2xl p-10 md:p-10 -mt-32 gap-3'>
                     {data.map((item) => (
                         <div className='w-1/4 flex flex-col justify-center items-center'>
-                            <img src={item.img} alt="" className='size-20'/>
+                            <LazyLoadImage src={item.img} alt="" className='size-20'/>
                             <p className='text-secondary font-semibold text-center'>{item.title}</p>
                         </div>
                     ))}

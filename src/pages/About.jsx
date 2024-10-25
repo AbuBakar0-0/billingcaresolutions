@@ -9,6 +9,7 @@ import OurBestServices from '../sections/About/OurBestServices';
 import Milestones from '../sections/About/Milestones';
 import Stats from '../sections/About/Stats';
 import Clients from '../sections/About/Clients';
+import { Helmet } from 'react-helmet';
 
 function About() {
   useEffect(() => {
@@ -17,11 +18,20 @@ function About() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          About - Billing Care Solutions
+        </title>
+        <meta name="description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
+        <meta property="og:title" content="About - Billing Care Solutions" />
+        <meta property="og:description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
+        <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+      </Helmet>
       <Header />
       <Hero />
       <div className='container mx-auto'>
         <AboutCompany />
-        <OurVisionAndMission />
+        <OurVisionAndMission/>
         <Payoff />
         <OurBestServices />
         <Milestones />

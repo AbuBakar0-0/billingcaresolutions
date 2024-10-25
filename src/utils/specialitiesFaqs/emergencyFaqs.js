@@ -1,45 +1,44 @@
 const emergencyMedicineFaqs = [
-    {
-      question: "What is the primary goal of emergency medicine?",
-      answer: "The primary goal of emergency medicine is to provide immediate medical care to patients with acute illnesses or injuries, stabilizing their condition and addressing life-threatening issues as quickly as possible to ensure the best possible outcomes."
-    },
-    {
-      question: "What are the most common conditions treated in an emergency department (ED)?",
-      answer: "Common conditions treated in the ED include chest pain, respiratory distress, trauma (such as fractures and lacerations), stroke, severe allergic reactions, abdominal pain, and mental health crises."
-    },
-    {
-      question: "How does triage work in the emergency department?",
-      answer: "Triage is a systematic process used to prioritize patients based on the severity of their condition. Medical staff assess each patient upon arrival, categorizing them into levels of urgency to ensure that those needing immediate care are treated first."
-    },
-    {
-      question: "What role do emergency physicians play in disaster response?",
-      answer: "Emergency physicians are crucial in disaster response, providing critical care to victims, coordinating with other healthcare providers and emergency responders, and utilizing their skills in trauma management and resource allocation in high-stress situations."
-    },
-    {
-      question: "What is the difference between a Level I and Level IV trauma center?",
-      answer: "Level I trauma centers provide comprehensive care, including surgical specialties, critical care, and advanced diagnostic imaging, while Level IV trauma centers offer basic emergency care and stabilization for transfer to higher-level facilities when necessary."
-    },
-    {
-      question: "How are pain management and sedation handled in emergency medicine?",
-      answer: "Pain management in the ED is addressed using medications such as opioids, NSAIDs, or regional anesthesia, tailored to the patient's condition. Sedation may be used for procedures or to manage severely agitated patients, following established protocols to ensure safety."
-    },
-    {
-      question: "What are the protocols for managing a patient with a suspected stroke?",
-      answer: "The protocols for managing suspected stroke include using the FAST acronym (Face drooping, Arm weakness, Speech difficulties, Time to call emergency services), conducting a rapid neurological assessment, obtaining a CT scan to differentiate between ischemic and hemorrhagic stroke, and initiating appropriate treatments as soon as possible."
-    },
-    {
-      question: "What is the significance of rapid sequence intubation (RSI) in emergency medicine?",
-      answer: "Rapid sequence intubation (RSI) is a procedure used to secure the airway in critically ill or injured patients who cannot maintain their airway. It involves administering sedatives and paralytics to facilitate intubation quickly and safely while minimizing the risk of aspiration."
-    },
-    {
-      question: "How do emergency departments manage mental health emergencies?",
-      answer: "Emergency departments manage mental health emergencies by assessing the patient's safety and psychiatric needs, providing immediate stabilization, and involving psychiatric consultation or referral for ongoing care as necessary, while ensuring the safety of the patient and others."
-    },
-    {
-      question: "What is the role of point-of-care ultrasound (POCUS) in emergency medicine?",
-      answer: "Point-of-care ultrasound (POCUS) is used in emergency medicine to provide rapid, bedside imaging for assessing conditions such as cardiac tamponade, pulmonary edema, and trauma. It aids in diagnosis and guides management decisions quickly and efficiently."
-    }
-  ];
-  
-  export default emergencyMedicineFaqs;
-  
+  {
+    question: "What Is Emergency Medicine Billing?",
+    answer: "Emergency medicine billing involves the coding, submission, and management of claims for services rendered in emergency departments. It ensures that healthcare providers are reimbursed for the immediate care and treatment of patients in urgent medical situations."
+  },
+  {
+    question: "What Are the Most Common CPT Codes Used in Emergency Medicine Billing?",
+    answer: "The most frequently used CPT codes in emergency medicine billing include 99281-99285 (ED E/M), 99291-99292 (critical care), 96360-96377 (IV fluid/medication administration), and 73030, 73070, 73100 (radiological services)."
+  },
+  {
+    question: "How Do I Determine the Appropriate E/M Code for an Emergency Department Visit?",
+    answer: "To determine the correct E/M code, consider the patient’s presenting problem, medical decision-making complexity, and time spent providing care."
+  },
+  {
+    question: "What Are the Guidelines for Billing Critical Care Services in the Emergency Department?",
+    answer: "Critical care services are billed using 99291-99292. Document the duration and intensity of care, including life-threatening conditions and interventions."
+  },
+  {
+    question: "How Do I Bill for IV Fluid and Medication Administration in the Emergency Department?",
+    answer: "Bill IV fluid administration using 96360-96361 and medication administration using 96365-96377. Document the start/end times and the type/amount administered."
+  },
+  {
+    question: "What Are the Guidelines for Billing Radiological Services in the Emergency Department?",
+    answer: "Bill radiological services using CPT codes 73030, 73070, and 73100. Ensure documentation includes the medical necessity for the imaging performed."
+  },
+  {
+    question: "How Do I Bill for Laceration Repair in the Emergency Department?",
+    answer: "Bill laceration repair using CPT codes 12001-13160. Include documentation of wound characteristics and the repair technique used."
+  },
+  {
+    question: "What Are the Guidelines for Billing for Suture Removal in the Emergency Department?",
+    answer: "Bill suture removal using CPT code 99024. Document the medical necessity and the number of sutures removed."
+  },
+  {
+    question: "How Do I Bill for the Administration of Medications in the Emergency Department?",
+    answer: "The administration of medications can be billed using various CPT codes. Use 96360-96377 for IV fluid and medication administration, and 96372-96379 for subcutaneous, intramuscular, or intranasal medication administration."
+  },
+  {
+    question: "What Documentation Is Required for Emergency Medicine Billing?",
+    answer: "Accurate documentation is crucial for successful billing. Key documents include the patient’s medical history, details of the emergency encounter, any diagnostic tests performed, treatments provided, and discharge instructions. Thorough records support proper coding and justify claims."
+  }
+];
+
+export default emergencyMedicineFaqs;

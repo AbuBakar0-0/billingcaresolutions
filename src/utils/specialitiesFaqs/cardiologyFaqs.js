@@ -1,45 +1,44 @@
 const cardiologyFaqs = [
-    {
-      question: "What is an echocardiogram, and how is it used in diagnosing heart conditions?",
-      answer: "An echocardiogram is an ultrasound of the heart that provides detailed images of heart structures, helping cardiologists assess valve function, heart chambers, and detect conditions like heart failure or cardiomyopathy."
-    },
-    {
-      question: "How does coronary angiography assist in identifying heart blockages?",
-      answer: "Coronary angiography is an imaging test where contrast dye is injected into the coronary arteries, and X-rays are taken to visualize blockages, stenosis, or abnormalities in blood vessels that could lead to heart attacks."
-    },
-    {
-      question: "What is the role of Holter monitoring in diagnosing arrhythmias?",
-      answer: "A Holter monitor is a portable device that records a patient’s heart rhythm continuously for 24-48 hours, enabling cardiologists to detect irregular heartbeats, arrhythmias, or silent ischemia that may not show up in a standard ECG."
-    },
-    {
-      question: "How does a cardiac stress test help in evaluating coronary artery disease?",
-      answer: "A cardiac stress test measures heart function under physical stress, typically by having a patient walk on a treadmill while monitoring their ECG, heart rate, and blood pressure. This test helps detect reduced blood flow to the heart muscle during exertion."
-    },
-    {
-      question: "What is the difference between a stent and a balloon angioplasty?",
-      answer: "In balloon angioplasty, a balloon is inflated inside the narrowed artery to widen it, while a stent is a small metal mesh tube placed in the artery to keep it open after balloon angioplasty, preventing re-narrowing."
-    },
-    {
-      question: "How is heart failure managed using left ventricular assist devices (LVAD)?",
-      answer: "LVADs are mechanical pumps implanted in patients with advanced heart failure. These devices help the left ventricle pump blood to the rest of the body, improving circulation and relieving symptoms while patients await a heart transplant."
-    },
-    {
-      question: "What is cardiac ablation, and when is it performed?",
-      answer: "Cardiac ablation is a procedure that uses radiofrequency energy or cryotherapy to destroy small areas of heart tissue causing abnormal electrical signals, effectively treating arrhythmias such as atrial fibrillation or supraventricular tachycardia."
-    },
-    {
-      question: "How do beta-blockers improve heart health in patients with high blood pressure or heart disease?",
-      answer: "Beta-blockers reduce the workload on the heart by slowing the heart rate and lowering blood pressure. They are commonly prescribed to manage conditions like hypertension, angina, and post-heart attack recovery."
-    },
-    {
-      question: "What is the significance of ejection fraction in heart disease diagnosis?",
-      answer: "Ejection fraction (EF) measures the percentage of blood the left ventricle pumps out with each contraction. An EF below 40% may indicate heart failure, while a normal range is between 50-70%, helping cardiologists evaluate heart function."
-    },
-    {
-      question: "How do statins work in preventing cardiovascular disease?",
-      answer: "Statins are medications that lower LDL cholesterol levels by inhibiting the enzyme HMG-CoA reductase. By reducing cholesterol levels, statins help prevent the formation of plaques in arteries, reducing the risk of heart attacks and strokes."
-    }
-  ];
-  
-  export default cardiologyFaqs;
-  
+  {
+    question: "What Are the Key Challenges in Cardiology Medical Billing?",
+    answer: "Cardiology billing presents unique challenges, including complex coding requirements involving CPT, ICD-10, and HCPCS codes. Practices often face difficulties with insurance reimbursement variations and stringent compliance regulations. To navigate these challenges effectively, cardiology practices can implement robust billing systems, continuously update their knowledge on coding changes, and consider outsourcing billing services to specialized companies that focus on cardiology billing."
+  },
+  {
+    question: "What is CPT code 93000 used for in cardiology billing?",
+    answer: "CPT code 93000 is used for billing a routine EKG (Electrocardiogram) with a 12-lead tracing, including the interpretation and report. It is commonly billed when a doctor needs to evaluate the heart’s electrical activity."
+  },
+  {
+    question: "How is CPT code 93306 different from 93307 for echocardiograms?",
+    answer: "CPT code 93306 represents a complete echocardiogram with Doppler and color flow, while 93307 is for a basic transthoracic echocardiogram without Doppler or color flow. Choosing the right code depends on the type of heart imaging required."
+  },
+  {
+    question: "What services are included in CPT code 93015 for cardiac stress tests?",
+    answer: "CPT code 93015 covers a complete cardiovascular stress test, including supervision, interpretation, and the test itself. This code is commonly used for patients undergoing stress tests to evaluate heart function during exercise."
+  },
+  {
+    question: "When should CPT code 93458 be used in cardiology billing?",
+    answer: "CPT code 93458 is for cardiac catheterization with coronary angiography. It is used when a physician performs both left heart catheterization and coronary artery imaging, often for patients with suspected coronary artery disease."
+  },
+  {
+    question: "What does CPT code 92928 represent in cardiology billing?",
+    answer: "CPT code 92928 is used for percutaneous coronary intervention (PCI), specifically stent placement in a coronary artery. This is a common procedure for treating narrowed or blocked coronary arteries."
+  },
+  {
+    question: "How does CPT code 93750 differ from other cardiovascular monitoring codes?",
+    answer: "CPT code 93750 is for remote monitoring of implantable cardioverter-defibrillators (ICD), which tracks a patient’s heart condition from a distance. It’s used for billing the physician’s time spent reviewing and interpreting data from the device."
+  },
+  {
+    question: "Can CPT code 93005 be billed separately from 93000 in cardiology?",
+    answer: "CPT code 93005 is used for EKG tracing only, without interpretation. If the physician only performs the tracing and another doctor provides the interpretation, 93005 may be billed separately from 93000."
+  },
+  {
+    question: "What procedures are billed using CPT code 93510 for catheterization?",
+    answer: "CPT code 93510 is for left heart catheterization, a procedure used to assess the function of the heart’s left side. It is often used to diagnose coronary artery disease or heart valve issues."
+  },
+  {
+    question: "How is CPT code 33208 used for pacemaker implantation?",
+    answer: "CPT code 33208 covers the insertion of a dual-chamber pacemaker. It’s used when a cardiologist implants a pacemaker that regulates both the heart’s atria and ventricles."
+  }
+];
+
+export default cardiologyFaqs;

@@ -8,6 +8,7 @@ import SpecialitiesWeOffer from '../sections/Home/SpecialitiesWeOffer';
 import Stats from './../sections/About/Stats';
 import Testimonials from './../sections/Home/Testimonials';
 import Footer from './../sections/Footer';
+import { Helmet } from 'react-helmet';
 
 function Services() {
     useEffect(() => {
@@ -15,15 +16,22 @@ function Services() {
     }, [])
     return (
         <>
+            <Helmet>
+                <title>Services - Billing Care Solutions</title>
+                <meta name="description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
+                <meta property="og:title" content="Services - Billing Care Solutions" />
+                <meta property="og:description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
+                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+            </Helmet>
             <Header />
             <Hero />
-            <Clients/>
-            <OurDemandingServices/>
-            <WhyDoHealthcareProfessionals/>
-            <SpecialitiesWeOffer/>
-            <Testimonials/>
-            <Stats/>
-            <Footer/>
+            <Clients />
+            <OurDemandingServices />
+            <WhyDoHealthcareProfessionals />
+            <SpecialitiesWeOffer />
+            <Testimonials />
+            <Stats />
+            <Footer />
         </>
     )
 }

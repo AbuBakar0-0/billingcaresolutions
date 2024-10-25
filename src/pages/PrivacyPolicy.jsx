@@ -4,6 +4,7 @@ import Hero from './../sections/PrivacyPolicy/Hero';
 import Footer from './../sections/Footer';
 import HeadingLine from '../components/HeadingLine';
 import TermsAndConditionsCard from './../components/TermsAndConditions/TermsAndConditionsCard';
+import { Helmet } from 'react-helmet';
 
 function PrivacyPolicy() {
     useEffect(() => {
@@ -11,6 +12,13 @@ function PrivacyPolicy() {
     }, [])
     return (
         <>
+            <Helmet>
+                <title>Privacy Poilcy - Billing Care Solutions</title>
+                <meta name="description" content="BCS provides the most comprehensive and effective medical billing services, following HIPAA rules and regulations to secure protected health information." />
+                <meta property="og:title" content="Privacy Poilcy - Billing Care Solutions" />
+                <meta property="og:description" content="BCS provides the most comprehensive and effective medical billing services, following HIPAA rules and regulations to secure protected health information." />
+                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+            </Helmet>
             <Header />
             <Hero />
             <div className='w-full container flex flex-col justify-center items-center gap-4 mx-auto my-20'>

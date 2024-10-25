@@ -3,6 +3,7 @@ import Header from './../sections/Header';
 import Footer from './../sections/Footer';
 import Hero from '../sections/Contact/Hero';
 import ContactForm from '../components/Contact/ContactForm';
+import { Helmet } from 'react-helmet';
 
 function Contact() {
     useEffect(() => {
@@ -11,6 +12,13 @@ function Contact() {
 
     return (
         <>
+            <Helmet>
+                <title>Contact - Billing Care Solutions</title>
+                <meta name="description" content="Billing Care Solutions empower healthcare providers to transform their billing processes and maximize revenue potential. Our expert team excels in precision medical billing and coding and accurate claims submissions. We streamline revenue cycle management, effectively reducing Days in Accounts Receivable (AR) and accelerating cash flow." />
+                <meta property="og:title" content="Contact - Billing Care Solutions" />
+                <meta property="og:description" content="Billing Care Solutions empower healthcare providers to transform their billing processes and maximize revenue potential. Our expert team excels in precision medical billing and coding and accurate claims submissions. We streamline revenue cycle management, effectively reducing Days in Accounts Receivable (AR) and accelerating cash flow." />
+                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+            </Helmet>
             <Header />
             <Hero />
             <div className='w-full flex flex-wrap container mx-auto justify-center items-center py-16'>
@@ -50,7 +58,7 @@ function Contact() {
                             </svg>
                         </a>
                         <a href="https://www.threads.net/@billingcaresolutions?hl=en " className='flex justify-center items-center '>
-                            <svg aria-label="Threads" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" className='size-7 fill-secondary bg-white p-1 rounded-xl hover:bg-primary hover:fill-secondary size-8 hover:transition-all hover:duration-100 hover:border-white hover:border-4'><path class="x19hqcy" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path></svg>
+                            <svg aria-label="Threads" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" className='fill-secondary bg-white p-1 rounded-xl hover:bg-primary hover:fill-secondary size-8 hover:transition-all hover:duration-100 hover:border-white hover:border-4'><path class="x19hqcy" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path></svg>
                         </a>
                         <a href="https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 50 50" className='fill-secondary size-8 hover:fill-primary hover:bg-white hover:transition-all hover:duration-300 rounded-full hover:p-1'>
@@ -62,15 +70,13 @@ function Contact() {
             </div>
 
             <div className='w-full flex flex-row justify-center items-center container mx-auto gap-4 mb-20'>
-
-                <div className='w-1/2 flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100'>
+                <div className='w-1/2 h-auto flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100'>
                     <p className='text-3xl text-secondary font-semibold'>30 N GOULD, ST, STE R SHERIDAN, WY 82801</p>
-
-                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.167611283467!2d-106.95747832317349!3d44.79777267765548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1727975198066!5m2!1sen!2s" width="700" height="415" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='rounded my-5'></iframe>
+                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.167611283467!2d-106.95747832317349!3d44.79777267765548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1727975198066!5m2!1sen!2s" width="700" height="580" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className='rounded my-5'></iframe>
                 </div>
 
                 <div className="w-1/2 flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100">
-                    <ContactForm/>
+                    <ContactForm />
                 </div>
             </div>
             <Footer />

@@ -1,45 +1,44 @@
 const rheumatologyFaqs = [
-    {
-      question: "What is rheumatology, and what do rheumatologists specialize in?",
-      answer: "Rheumatology is a medical specialty focused on diagnosing and treating autoimmune and inflammatory diseases affecting the joints, muscles, and connective tissues. Rheumatologists specialize in conditions like rheumatoid arthritis, lupus, gout, and osteoarthritis, often managing chronic pain and mobility issues."
-    },
-    {
-      question: "What are common diseases treated by rheumatologists?",
-      answer: "Rheumatologists treat conditions such as rheumatoid arthritis, lupus, psoriatic arthritis, gout, ankylosing spondylitis, Sjögren's syndrome, vasculitis, fibromyalgia, and osteoarthritis. These diseases often cause joint pain, swelling, and systemic inflammation, requiring long-term management."
-    },
-    {
-      question: "What diagnostic tools are used in rheumatology?",
-      answer: "Common diagnostic tools include blood tests to measure inflammatory markers (e.g., CRP and ESR), autoantibodies (e.g., ANA, RF), imaging studies (X-rays, MRIs, ultrasounds) to assess joint damage, and joint fluid analysis to detect crystals or infection in conditions like gout."
-    },
-    {
-      question: "How are autoimmune diseases diagnosed in rheumatology?",
-      answer: "Autoimmune diseases are diagnosed through a combination of patient history, clinical examination, blood tests for specific antibodies (e.g., rheumatoid factor, anti-CCP for rheumatoid arthritis), and imaging to assess joint or organ damage. Rheumatologists may also perform a biopsy if needed."
-    },
-    {
-      question: "What treatment options are available for rheumatic diseases?",
-      answer: "Treatment options include disease-modifying antirheumatic drugs (DMARDs) like methotrexate, biologics targeting specific immune system components, nonsteroidal anti-inflammatory drugs (NSAIDs), corticosteroids, and physical therapy. Treatment is aimed at reducing inflammation, managing symptoms, and preventing further joint damage."
-    },
-    {
-      question: "What is the role of biologics in rheumatology?",
-      answer: "Biologics are a class of advanced drugs used to treat autoimmune diseases by specifically targeting immune system proteins involved in the disease process, such as TNF inhibitors and IL-6 blockers. They are particularly effective for conditions like rheumatoid arthritis and ankylosing spondylitis when traditional therapies fail."
-    },
-    {
-      question: "How do rheumatologists manage chronic pain in patients with rheumatic conditions?",
-      answer: "Rheumatologists manage chronic pain through a combination of medication (pain relievers, DMARDs, biologics), physical therapy, lifestyle modifications (such as exercise and diet), and sometimes integrative therapies like acupuncture or cognitive behavioral therapy to improve quality of life."
-    },
-    {
-      question: "What advancements are currently influencing the field of rheumatology?",
-      answer: "Advancements include new biologic drugs, the development of JAK inhibitors for inflammatory conditions, improved diagnostic techniques (e.g., advanced imaging and molecular testing), and personalized medicine approaches that tailor treatment based on genetic and molecular profiles of patients."
-    },
-    {
-      question: "How can patients with rheumatic diseases manage flare-ups?",
-      answer: "Patients can manage flare-ups by adjusting medication dosages as directed by their rheumatologist, applying heat or cold to affected joints, maintaining a healthy diet, and staying active with low-impact exercises. Stress management techniques are also essential in controlling autoimmune responses."
-    },
-    {
-      question: "How do rheumatologists collaborate with other healthcare professionals?",
-      answer: "Rheumatologists collaborate with primary care physicians, orthopedic surgeons, physical therapists, and other specialists like nephrologists or pulmonologists when autoimmune diseases affect multiple organ systems. This interdisciplinary approach ensures comprehensive management of both joint and systemic complications."
-    }
-  ];
-  
-  export default rheumatologyFaqs;
-  
+  {
+    question: "What is the importance of coding in rheumatology?",
+    answer: "Coding is crucial in rheumatology as it ensures accurate billing for services, aids in patient record management, and supports reimbursement for treatments provided to patients with rheumatic diseases."
+  },
+  {
+    question: "What are CPT codes, and why are they used in rheumatology?",
+    answer: "CPT codes are numeric codes used to describe medical, surgical, and diagnostic services. In rheumatology, they help standardize billing for procedures and assessments related to conditions like arthritis and lupus."
+  },
+  {
+    question: "How do ICD codes differ from CPT codes in rheumatology?",
+    answer: "ICD codes (International Classification of Diseases) classify and code diagnoses, while CPT codes specifically describe medical procedures and services. Both are essential for accurate billing and patient care documentation."
+  },
+  {
+    question: "What is the role of evaluation and management (E/M) codes in rheumatology?",
+    answer: "E/M codes are used to bill for patient visits and consultations, reflecting the complexity and time involved in evaluating and managing rheumatologic conditions."
+  },
+  {
+    question: "What is the significance of the 99201-99215 codes in rheumatology?",
+    answer: "These codes represent various levels of E/M services based on factors such as the complexity of medical decision-making and the extent of the history and examination performed."
+  },
+  {
+    question: "What does CPT code 20610 refer to in rheumatology?",
+    answer: "CPT code 20610 is for arthrocentesis (joint aspiration), a procedure where fluid is withdrawn from a joint space, commonly used in managing conditions like arthritis."
+  },
+  {
+    question: "How is CPT code 96413 relevant to rheumatology?",
+    answer: "CPT code 96413 is used for intravenous infusion of chemotherapy drugs, which may be applicable in treating certain rheumatologic diseases requiring such interventions."
+  },
+  {
+    question: "What is the purpose of CPT code 99203 in rheumatology?",
+    answer: "CPT code 99203 is for new patient visits that involve a detailed history, examination, and moderate medical decision-making, commonly used in initial rheumatology consultations."
+  },
+  {
+    question: "How do rheumatologists use CPT code 73560?",
+    answer: "CPT code 73560 is for X-rays of the knee, which can help diagnose conditions like osteoarthritis or other joint disorders in rheumatology."
+  },
+  {
+    question: "What are some common coding challenges in rheumatology?",
+    answer: "Common challenges include ensuring proper documentation for the complexity of cases, staying updated on coding changes, and accurately coding for multidisciplinary care."
+  }
+];
+
+export default rheumatologyFaqs;

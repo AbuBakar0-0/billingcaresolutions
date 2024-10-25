@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const OfferCards = ({ data }) => {
 
@@ -7,9 +8,9 @@ const OfferCards = ({ data }) => {
       <div class="flipper absolute w-80 h-[24rem] object-fit">
         {/* <!-- Front of the card --> */}
         <div class="front flex flex-col justify-between rounded-xl">
-          <img src={data.img} alt={data.title} className='w-max h-full rounded-t-xl' />
+          <LazyLoadImage src={data.img} alt={data.title} className='w-max h-full rounded-t-xl' />
           <div className='flex flex-row justify-start bg-gray-100 items-center rounded-b-xl'>
-            <img className='size-16 bg-secondary rounded-bl-xl p-2' src={data.icon} alt={data.title} />
+            <LazyLoadImage  className='size-16 bg-secondary rounded-bl-xl p-2' src={data.icon} alt={data.title} />
             <p className='w-4/5 px-4 font-bold'>{data.title}</p>
           </div>
         </div>

@@ -9,12 +9,16 @@ function Footer() {
       link: "/contact",
     },
     {
+      title: "Why Billing Care Solutions",
+      link: "/whybcs",
+    },
+    {
       title: "Specialities",
       link: "/specialities",
     },
     {
-      title: "Why Billing Care Solutions",
-      link: "/whybcs",
+      title: "Domain Area",
+      link: "/domain",
     },
     {
       title: "FAQs",

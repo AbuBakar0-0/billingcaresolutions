@@ -3,59 +3,62 @@ import SpecialityCard from './../../components/Home/SpecialityCard';
 import Heading from './../../components/Heading';
 import { Link } from 'react-router-dom';
 
+
+
 function SpecialitiesWeOffer() {
+    
     const data = [
         {
             title: "Durable Medical Equipment (DME)",
-            description: "We handle billing services for DME providers, ensuring accurate coding and timely submission of claims for equipment like wheelchairs, oxygen supplies, and prosthetics. Our services focus on maximizing reimbursements from Medicare and other insurance providers.",
+            description: "We manage billing services for DME providers, focusing on coding for wheelchairs (K0001-K0108), oxygen supplies (E0424-E0486), and prosthetics (L5000-L9900). Our expertise ensures reimbursements from Medicare and insurers. Staying updated on DMEPOS competitive bidding programs and regulatory changes helps us maximize reimbursements and ensure compliance for durable medical equipment providers.",
             link: "Link to DME services",
             image: "./assets/specialities_we_offer/1. DME billingcaresolutions.com.svg"
         },
         {
-            title: "Mental Health",
-            description: "Our billing services for mental health providers include handling claims for therapy sessions, psychiatric evaluations, and medication management. We specialize in mental health-specific coding (e.g., CPT and DSM-5 criteria) to ensure compliance and optimize revenue.",
+            title: "Mental Health Billing",
+            description: "Our specialized billing services for mental health practices cover therapy sessions (90832-90838), psychiatric evaluations (90791-90792), and medication management (99211-99215). We ensure accurate coding for mental health assessments (96150-96155) and maintain compliance with regulations. Our tailored billing strategies optimize revenue and help mental health providers manage their claims effectively and efficiently.",
             link: "Link to Mental Health services",
             image: "./assets/specialities_we_offer/2. Mental Health billingcaresolutions.com.svg"
         },
         {
-            title: "Radiology",
-            description: "We manage billing for radiology practices, processing claims for imaging procedures such as X-rays, MRIs, and CT scans. Our expertise includes accurate coding for diagnostic interpretations and technical components to maximize reimbursement.",
+            title: "Radiology Billing",
+            description: "We handle billing for radiology practices, managing imaging procedures like X-rays (70000-79999), MRIs (70336-70559), and CT scans (70450-70498). Our team ensures precise coding for both diagnostic interpretations and technical components (76377 for 3D rendering). By following radiology-specific guidelines, we help practices maximize reimbursements and streamline their revenue cycle operations.",
             link: "Link to Radiology services",
             image: "./assets/specialities_we_offer/3. Radiology billingcaresolutions.com.svg"
         },
         {
-            title: "Internal Medicine",
-            description: "We provide comprehensive billing services for internal medicine practices, covering office visits, preventive care, chronic disease management, and coordination with specialists. Our goal is to streamline billing processes and ensure timely payments.",
+            title: "Internal Medicine Billing",
+            description: "Our services for internal medicine billing include office visits (99201-99215), preventive care (99381-99397), and chronic disease management (99490-99491). We also manage coding for EKGs (93000-93010) and pulmonary function tests (94010-94799). Through accurate billing and adherence to internal medicine coding guidelines, we help practices improve financial performance and optimize revenue.",
             link: "Link to Internal Medicine services",
             image: "./assets/specialities_we_offer/4. Internal Medicine billingcaresolutions.com.svg"
         },
         {
-            title: "Cardiology",
-            description: "Our billing services for cardiology practices encompass diagnostic tests (e.g., EKG, echocardiography), procedures (e.g., cardiac catheterization, pacemaker insertion), and ongoing cardiovascular care. We optimize revenue by adhering to cardiology-specific coding and documentation requirements.",
+            title: "Cardiology Billing",
+            description: "We provide billing services for cardiology practices, managing diagnostic tests like EKGs (93000-93010) and echocardiography (93303-93355). Our expertise also covers cardiac catheterization (93451-93572) and cardiovascular care (99201-99215, 99291-99292). With cardiology-specific coding and documentation, we ensure maximum reimbursements and compliance for cardiology practices.",
             link: "Link to Cardiology services",
             image: "./assets/specialities_we_offer/5. Cardiology billingcaresolutions.com.svg"
         },
         {
-            title: "Physical Therapy",
-            description: "We specialize in billing for physical therapy practices, handling claims for therapeutic exercises, manual therapy, modalities (e.g., ultrasound, electrical stimulation), and functional assessments. Our services focus on maximizing reimbursements and reducing billing errors.",
+            title: "Physical Therapy Billing",
+            description: "Our billing services for physical therapy include coding for therapeutic exercises (97110), manual therapy (97140), and modalities (97010-97039). We also handle evaluations (97161-97163), re-evaluations (97164), and functional assessments (97750). By following physical therapy billing guidelines, we help practices optimize revenue and improve their financial processes efficiently.",
             link: "Link to Physical Therapy services",
             image: "./assets/specialities_we_offer/6. Physical Therapy billingcaresolution.com.svg"
         },
         {
-            title: "Plastic Surgery",
-            description: "Our billing services for plastic surgery practices cover elective and reconstructive procedures, cosmetic surgeries, and related services such as consultations and post-operative care. We ensure accurate coding and compliance with payer policies to optimize revenue.",
+            title: "Plastic Surgery Billing",
+            description: "We specialize in billing for plastic surgery practices, handling reconstructive surgeries (15002-15261), breast reconstruction (19357-19396), and skin grafts (15100-15278). Our expertise also covers cosmetic procedures, including facial surgeries (15820-15839). Through accurate coding and compliance with regulations, we help plastic surgery practices optimize revenue and manage their billing effectively.",
             link: "Link to Plastic Surgery services",
             image: "./assets/specialities_we_offer/7. Plastic Surgery billingcaresolutions.com.svg"
         },
         {
-            title: "Primary Care",
-            description: "We offer billing services tailored for primary care providers, managing claims for preventive care, acute illnesses, chronic disease management, vaccinations, and routine screenings. Our services aim to streamline revenue cycles and improve financial outcomes.",
+            title: "Primary Care Billing",
+            description: "Our primary care billing services cover preventive care (99381-99397), acute illnesses (99201-99215), and chronic disease management (99490-99491). We also manage coding for vaccinations (90460-90474) and routine screenings such as occult blood tests (82270). Our goal is to maximize revenue for primary care providers while ensuring accurate coding and regulatory compliance.",
             link: "Link to Primary Care services",
             image: "./assets/specialities_we_offer/8. Primary Care billingcaresolutions.com.svg"
         },
         {
-            title: "General Practice",
-            description: "Our billing services cater to general practice providers, handling a wide range of medical services including routine exams, minor procedures, acute and chronic disease management, and diverse patient needs. We focus on efficient billing processes to enhance revenue and practice efficiency.",
+            title: "General Practice Billing",
+            description: "Our billing services for general practice cover routine exams (99201-99215), minor procedures (10000-69990), and chronic disease management (99490-99491). We ensure compliance with industry guidelines and focus on optimizing revenue through accurate billing processes. By offering tailored solutions, we help general practice providers improve their financial performance and streamline their billing operations.",
             link: "Link to General Practice services",
             image: "./assets/specialities_we_offer/9. General Practice billingcaresolutions.com.svg"
         }

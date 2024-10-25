@@ -11,7 +11,10 @@ import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import TestimonialCard from './../../components/Home/TestimonialCard';
 
+
+
 const Testimonials = () => {
+    
     const data = [
         {
             name: "Linh Tran",

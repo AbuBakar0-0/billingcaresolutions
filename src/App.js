@@ -16,13 +16,17 @@ import ServiceDetails from "./pages/ServiceDetails";
 import ServiceDetails2 from "./pages/ServicesDetails2";
 import Contact from "./pages/Contact";
 import Articles from "./pages/Articles";
-import ArticleDetails from './pages/ArticleDetails';
+import ArticleDetails from "./pages/ArticleDetails";
+import Login from "./pages/adminPanel/Login";
+import Dashboard from "./pages/adminPanel/Dashboard";
+import Headers from "./pages/adminPanel/Headers";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          {/* --------------------------------client-side-------------------------------- */}
           <Route path="/" element={<Home />} />
           <Route path="/whybcs" element={<About />} />
           <Route path="/services" element={<Services />} />
@@ -43,6 +47,11 @@ function App() {
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* --------------------------------admin-side-------------------------------- */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/headers" element={<Headers />} />
 
         </Routes>
       </BrowserRouter>

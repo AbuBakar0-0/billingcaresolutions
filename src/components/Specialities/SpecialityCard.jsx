@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SpecialityCard = ({ data }) => {
     return (
@@ -8,7 +9,7 @@ const SpecialityCard = ({ data }) => {
                     {/* <!-- Front of the card --> */}
                     <div class="front flex flex-col justify-center shadow-xl p-5 rounded-xl">
                         <div className='w-full flex flex-col justify-center items-center gap-4 rounded-xl'>
-                            <img src={data.icon} alt="" className='size-32 my-5' />
+                            <LazyLoadImage src={data.icon} alt="" className='size-32 my-5' />
                             <p className='text-2xl text-center text-black'>{data.title}</p>
                         </div>
                     </div>

@@ -1,45 +1,44 @@
-const psychiatryFaqs = [
-    {
-      question: "What is psychiatry, and what do psychiatrists specialize in?",
-      answer: "Psychiatry is a branch of medicine focused on diagnosing, treating, and preventing mental health disorders. Psychiatrists are medical doctors who specialize in understanding the biological, psychological, and social factors that contribute to mental illnesses, allowing them to develop comprehensive treatment plans."
-    },
-    {
-      question: "What common mental health disorders do psychiatrists treat?",
-      answer: "Psychiatrists treat a variety of disorders, including depression, anxiety disorders, bipolar disorder, schizophrenia, personality disorders, obsessive-compulsive disorder (OCD), post-traumatic stress disorder (PTSD), and eating disorders. They address both acute and chronic mental health issues."
-    },
-    {
-      question: "What is the role of psychotherapy in psychiatric treatment?",
-      answer: "Psychotherapy, also known as talk therapy, is a key component of psychiatric treatment. It involves structured conversations between the psychiatrist and patient to explore thoughts, feelings, and behaviors, helping patients develop coping strategies, gain insights, and improve emotional well-being."
-    },
-    {
-      question: "How do psychiatrists assess and diagnose mental health conditions?",
-      answer: "Psychiatrists conduct comprehensive assessments that include patient interviews, psychological evaluations, and standardized assessment tools. They gather information on the patient's medical history, symptoms, and family background to formulate an accurate diagnosis and tailored treatment plan."
-    },
-    {
-      question: "What are the treatment options available in psychiatry?",
-      answer: "Treatment options include medication management (such as antidepressants, antipsychotics, and mood stabilizers), psychotherapy, lifestyle modifications (like exercise and nutrition), and alternative therapies (such as mindfulness and yoga). Psychiatrists often use a combination of these approaches for optimal care."
-    },
-    {
-      question: "What role do medications play in psychiatric treatment?",
-      answer: "Medications can help alleviate symptoms of mental health disorders by balancing neurotransmitters in the brain. Psychiatrists carefully prescribe and monitor medications to manage conditions effectively, considering factors such as side effects, interactions, and the individual needs of the patient."
-    },
-    {
-      question: "How can patients prepare for a psychiatric appointment?",
-      answer: "Patients should prepare by bringing a list of current medications, a record of symptoms and concerns, and any relevant medical history. Being open and honest about their mental health experiences and discussing any previous treatments can help the psychiatrist develop a more effective treatment plan."
-    },
-    {
-      question: "What is the significance of ongoing monitoring in psychiatric care?",
-      answer: "Ongoing monitoring is crucial to assess treatment efficacy, manage side effects, and make necessary adjustments to the treatment plan. Regular follow-up appointments allow psychiatrists to track patients' progress, address any emerging issues, and provide continuous support throughout the recovery process."
-    },
-    {
-      question: "What advancements are currently influencing the field of psychiatry?",
-      answer: "Advancements include improved understanding of the neurobiological basis of mental disorders, developments in psychopharmacology, the use of telepsychiatry for remote consultations, and the integration of technology in treatment (such as apps for mental health support and online therapy platforms)."
-    },
-    {
-      question: "How do psychiatrists collaborate with other healthcare professionals?",
-      answer: "Psychiatrists often collaborate with psychologists, social workers, primary care physicians, and other mental health professionals to provide holistic care. This interdisciplinary approach ensures that all aspects of a patient's mental and physical health are considered, leading to more comprehensive and effective treatment."
-    }
-  ];
-  
-  export default psychiatryFaqs;
-  
+const psychiatricFaqs = [
+  {
+    question: "What is the CPT code for a psychiatric diagnostic evaluation?",
+    answer: "The CPT code 90791 is used for a comprehensive psychiatric diagnostic evaluation, which includes a detailed assessment of a patient's mental health."
+  },
+  {
+    question: "How do I bill for psychotherapy sessions lasting 30 minutes?",
+    answer: "Use the CPT code 90832 for psychotherapy sessions that last approximately 30 minutes to ensure accurate billing."
+  },
+  {
+    question: "What CPT code is used for 45-minute psychotherapy sessions?",
+    answer: "Use CPT code 90834 for psychotherapy sessions that last about 45 minutes."
+  },
+  {
+    question: "Which code should I use for a medication management visit?",
+    answer: "The appropriate CPT code for medication management is 90863, specifically designed for pharmacologic management in psychiatry."
+  },
+  {
+    question: "What is the CPT code for family psychotherapy?",
+    answer: "Use CPT code 90846 for family psychotherapy without the patient present, and 90847 when the patient is included in the session."
+  },
+  {
+    question: "How do I bill for group therapy sessions in psychiatry?",
+    answer: "For group psychotherapy sessions, use CPT code 90853, which applies to sessions involving multiple patients."
+  },
+  {
+    question: "What is the CPT code for telehealth psychiatric services?",
+    answer: "When providing telehealth services, use CPT code 99441 for phone consultations, with additional codes depending on the service duration."
+  },
+  {
+    question: "Which code is used for a psychiatric re-evaluation?",
+    answer: "Use CPT code 99213 for established patients during a follow-up visit or re-evaluation."
+  },
+  {
+    question: "How do I bill for an initial psychiatric visit?",
+    answer: "For the first visit with a patient, use CPT code 90792, which covers a psychiatric diagnostic evaluation with medical services."
+  },
+  {
+    question: "What is the code for assessing a patient’s mental status?",
+    answer: "CPT code 96130 can be used for the administration of psychological testing and assessment of a patient's mental status."
+  }
+];
+
+export default psychiatricFaqs;

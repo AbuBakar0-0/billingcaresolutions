@@ -3,27 +3,43 @@ import Header from '../sections/Header';
 import HeadingLine from './../components/HeadingLine';
 import Footer from './../sections/Footer';
 import { Link, useLocation } from 'react-router-dom';
-import blogs from '../sections/Blogs/data';
+// import blogs from '../sections/Blogs/data';
 import ContactForm from '../components/Contact/ContactForm';
+import axios from 'axios';
+import BASE_URL from '../utils/globals';
+import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function BlogDetails() {
 
     const query = new URLSearchParams(useLocation().search);
     const index = query.get('index');
 
-    const data = blogs[index];
+    const [blog, setBlog] = useState([]);
 
-    // Extract the first 5 blogs for Recent Blogs section
-    const itemsToDisplay = blogs.slice(0, 5);
+    const [data, setData] = useState([]);
 
-    // Table of Contents items
     const [tocItems, setTocItems] = useState([]);
 
     useEffect(() => {
-        if (data.description) {
+        const fetchBlogs = async () => {
+            try {
+                var response = await axios.get(`${BASE_URL}/getBlog.php?id=${index}`);
+                setBlog(response.data);
+
+                response = await axios.get(`http://localhost/web/bcs/getAllBlogs.php`);
+                setData(response.data);
+            } catch (err) {
+                console.error("Error fetching blogs:", err);
+            }
+        };
+
+        fetchBlogs();
+
+        if (blog.description) {
             // Extract headings (h2) from the description passed via location.state
             const parser = new DOMParser();
-            const doc = parser.parseFromString(data.description, 'text/html');
+            const doc = parser.parseFromString(blog.description, 'text/html');
             const headings = Array.from(doc.querySelectorAll('h2')).map((heading) => ({
                 id: heading.id || heading.textContent.replace(/\s+/g, '-').toLowerCase(), // Generate id if not present
                 text: heading.textContent,
@@ -31,31 +47,40 @@ function BlogDetails() {
 
             setTocItems(headings);
         }
-    }, [data.description]);
+    }, [blog.description]);
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
+
+    const itemsToDisplay = data.slice(0, 5);
     return (
         <>
+            <Helmet>
+                <title>Blogs - Billing Care Solutions</title>
+                <meta name="description" content="Billing Care Solutions commit to unraveling the complexities of healthcare management with precision and expertise. Our blog serves as your ultimate resource for insights that illuminate the path to operational excellence and financial success in the ever-evolving healthcare landscape. Dive into our expert commentary and best practices designed to empower healthcare practices to thrive." />
+                <meta property="og:title" content="Blogs - Billing Care Solutions" />
+                <meta property="og:description" content="Billing Care Solutions commit to unraveling the complexities of healthcare management with precision and expertise. Our blog serves as your ultimate resource for insights that illuminate the path to operational excellence and financial success in the ever-evolving healthcare landscape. Dive into our expert commentary and best practices designed to empower healthcare practices to thrive." />
+                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+            </Helmet>
             <Header />
             {/* <Hero title={"BCS Insights"} /> */}
             <div className="w-full container mx-auto flex flex-col justify-center items-center p-10">
-                
+
                 <div className='w-full flex flex-row justify-center items-center space-x-3 text-primary font-custom text-3xl md:text-5xl font-medium p-4'>
                     <div className='bg-secondary w-[3rem] h-[0.3rem] rounded-full'></div>
-                    <p className='text-center md:text-left font-custom'>{data.title}</p>
+                    <p className='text-center md:text-left font-custom'>{blog.title}</p>
                     <div className='bg-secondary w-[3rem] h-[0.3rem] rounded-full'></div>
                 </div>
                 <div className="w-full flex flex-col md:flex-row justify-between items-start gap-4 mt-5">
                     <div className="w-full md:w-3/4 flex flex-col justify-center items-start">
-                        <img src={`${data.image}`} alt="" className="w-full" />
+                        <LazyLoadImage  src={`${blog.image}`} alt="" className="w-full" />
 
                         {/* Render Blog Content */}
                         <div className="mt-10">
                             <div
                                 className="article-content"
-                                dangerouslySetInnerHTML={{ __html: data.description }}
+                                dangerouslySetInnerHTML={{ __html: blog.description }}
                             />
                         </div>
                     </div>
@@ -82,7 +107,7 @@ function BlogDetails() {
                             {itemsToDisplay.map((item, index) => (
                                 <Link to={`/blogdetails?index=${item.id}`}>
                                     <div className="w-full p-2 flex flex-row justify-start items-center gap-4">
-                                        <img src={`${item.image}`} alt="" className="w-28" />
+                                        <LazyLoadImage  src={`${item.image}`} alt="" className="w-28" />
                                         <p className="text-secondary text-xs font-semibold underline">{item.title}</p>
                                     </div>
                                 </Link>
@@ -91,7 +116,7 @@ function BlogDetails() {
 
                         {/* Contact Us Section */}
                         <div className="w-full flex flex-col justify-center items-center gap-4 p-5 shadow-lg rounded-lg border-[1px] border-gray-100">
-                            <ContactForm/>
+                            <ContactForm />
                         </div>
                     </div>
                 </div>

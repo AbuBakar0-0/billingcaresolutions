@@ -1,13 +1,18 @@
 import React from 'react'
 import Heading from './../Heading';
 import ServicesCard from './ServicesCard';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 function WhyDoHealthcareProfessionals() {
+    // useEffect(() => {
+    //     
+    // }, []);
     const data = [
         {
             id: 1,
             title: "15 Minutes Free Consultancy",
-            img: "./assets/why_choose_billing_care_solutions/1. Rapid Revenue Recovery billingcaresolutions.com.svg",
+            img: "./assets/why_choose_billing_care_solutions/free-consultation-billingcaresolutions.com.svg",
             description: ""
         },
         {
@@ -31,7 +36,7 @@ function WhyDoHealthcareProfessionals() {
         {
             id: 5,
             title: "Revenue Boost",
-            img: "./assets/why_choose_billing_care_solutions/5. Electronic Payment billingcaresolutions.com.svg",
+            img: "./assets/why_choose_billing_care_solutions/1. Rapid Revenue Recovery billingcaresolutions.com.svg",
             description: "45%"
         },
         {
@@ -43,7 +48,7 @@ function WhyDoHealthcareProfessionals() {
         {
             id: 7,
             title: "Fast Revenue Restoration",
-            img: "./assets/why_choose_billing_care_solutions/7. Client Retention billingcaresolutions.com.svg",
+            img: "./assets/why_choose_billing_care_solutions/5. Electronic Payment billingcaresolutions.com.svg",
             description: "20 Days"
         },
         {

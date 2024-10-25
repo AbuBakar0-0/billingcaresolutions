@@ -1,45 +1,44 @@
 const geriatricsFaqs = [
-    {
-      question: "What is geriatrics, and why is it important?",
-      answer: "Geriatrics is a medical specialty focused on the health care of older adults, addressing the unique medical, social, and psychological needs that arise with aging. It is important because it aims to improve the quality of life and functional ability of older adults, promoting healthy aging and independence."
-    },
-    {
-      question: "What are common health issues that geriatric patients face?",
-      answer: "Common health issues include chronic diseases (such as diabetes, hypertension, and arthritis), cognitive impairments (like dementia), mobility issues, falls, sensory impairments (vision and hearing loss), and polypharmacy (the use of multiple medications)."
-    },
-    {
-      question: "How do geriatricians assess the health of older adults?",
-      answer: "Geriatricians conduct comprehensive assessments that include medical history, physical examination, functional assessments (evaluating activities of daily living), cognitive evaluations, and social assessments to understand the patient’s overall health and needs."
-    },
-    {
-      question: "What is the role of polypharmacy in geriatric care?",
-      answer: "Polypharmacy refers to the concurrent use of multiple medications, which is common in older adults due to multiple chronic conditions. Geriatricians carefully review medications to minimize adverse effects, drug interactions, and unnecessary prescriptions, aiming for medication optimization."
-    },
-    {
-      question: "How do geriatricians manage chronic pain in older adults?",
-      answer: "Management of chronic pain may involve a multidisciplinary approach, including medications (non-opioid analgesics, anti-inflammatories), physical therapy, occupational therapy, and lifestyle modifications. Geriatricians focus on individualized treatment plans to enhance quality of life while minimizing risks."
-    },
-    {
-      question: "What are the signs of cognitive decline, and how are they evaluated?",
-      answer: "Signs of cognitive decline may include memory loss, confusion, difficulty with problem-solving, and changes in behavior. Geriatricians evaluate cognitive function using standardized tests, neurological examinations, and assessments of daily living activities to identify the extent and cause of decline."
-    },
-    {
-      question: "How does the geriatrician approach fall prevention in older adults?",
-      answer: "Fall prevention strategies include assessing the patient’s risk factors (such as balance issues, medication effects, and environmental hazards), recommending physical therapy, home modifications (like removing tripping hazards), and educating patients and caregivers about safety practices."
-    },
-    {
-      question: "What role does nutrition play in the health of older adults?",
-      answer: "Proper nutrition is vital for maintaining health and preventing malnutrition in older adults. Geriatricians assess dietary habits, recommend appropriate dietary modifications, and may work with dietitians to ensure adequate nutrient intake, addressing issues such as weight loss or swallowing difficulties."
-    },
-    {
-      question: "How do geriatricians support mental health in older adults?",
-      answer: "Geriatricians evaluate mental health issues such as depression and anxiety, which are common in older adults. They provide treatment through counseling, medication management, and referrals to mental health specialists, focusing on improving emotional well-being and social support."
-    },
-    {
-      question: "What is the significance of advance care planning in geriatrics?",
-      answer: "Advance care planning involves discussing and documenting patients' preferences for future medical care, particularly in the context of serious illness. Geriatricians facilitate these conversations, ensuring that patients’ values and wishes are respected in their healthcare decisions as they age."
-    }
-  ];
-  
-  export default geriatricsFaqs;
-  
+  {
+    question: "What is geriatrics billing?",
+    answer: "Geriatrics billing involves using specific codes and regulations to manage healthcare services for older adults, ensuring accurate reimbursement for their unique needs."
+  },
+  {
+    question: "How do I bill for a new geriatric patient visit?",
+    answer: "Use CPT codes 99202-99205, based on the complexity of medical decision-making and time spent."
+  },
+  {
+    question: "What code should I use for a follow-up visit with an established geriatric patient?",
+    answer: "Use CPT codes 99211-99215, depending on the complexity of the visit."
+  },
+  {
+    question: "Can I bill separately for advance care planning with a geriatric patient?",
+    answer: "Yes, use CPT code 99497 for the initial 30 minutes, and 99498 for each additional 30 minutes."
+  },
+  {
+    question: "How do I bill for a home visit to a new geriatric patient?",
+    answer: "Use CPT codes 99341-99345, based on medical decision-making and time spent."
+  },
+  {
+    question: "What code should I use for a home visit to an established geriatric patient?",
+    answer: "Use CPT codes 99347-99350, based on the complexity and time of the visit."
+  },
+  {
+    question: "Can I bill for chronic care management of a geriatric patient?",
+    answer: "Yes, use codes 99490, 99487, and 99489 based on time and complexity."
+  },
+  {
+    question: "How do I bill for transitional care management after a geriatric patient is discharged?",
+    answer: "Use CPT codes 99495 or 99496, depending on medical decision-making complexity."
+  },
+  {
+    question: "What code should I use for a medication review with a geriatric patient?",
+    answer: "Use CPT codes 99605-99607 for medication therapy management (MTM) services."
+  },
+  {
+    question: "Can I bill separately for a geriatric patient's care planning conference?",
+    answer: "Yes, use CPT codes 99366-99368 for medical team conferences without the patient present."
+  }
+];
+
+export default geriatricsFaqs;

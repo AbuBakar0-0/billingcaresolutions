@@ -11,30 +11,59 @@ import Testimonials from './../sections/Home/Testimonials';
 import BillingServices from './../sections/Home/BillingServices';
 import HoverSlider from './../components/Home/HoverSlider';
 import Footer from './../sections/Footer';
-
-
+import { Helmet } from 'react-helmet';
+import { RingLoader } from 'react-spinners';
+import { useState } from 'react';
 
 function Home() {
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3500)
     window.scrollTo(0, 0);
-}, [])
+  }, [])
+
   return (
     <>
-      <div className=''>
-        <Header/>
-        <Hero />
-        <Contact />
-        <WhoWeAre />
-        <WhatWeProvide />
-        <WhyChooseUs />
-        <SpecialitiesWeOffer />
-        <Softwares />
-        <BillingServices />
-        <HoverSlider />
-        <Testimonials />
-        <Footer/>
-      </div>
+      <Helmet>
+        <title>Billing Care Solutions</title>
+        <meta name="description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
+        <meta property="og:title" content="Home - Billing Care Solutions" />
+        <meta property="og:description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
+        <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
 
+      </Helmet>
+      {
+        loading ?
+          <>
+            <div className='flex flex-col h-screen w-full justify-center items-center bg-secondary'>
+              <RingLoader
+                color="#ffffff"
+                loading={loading}
+                size={100}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            </div>
+          </> :
+          <div className=''>
+            <Header />
+            <Hero />
+            <Contact />
+            <WhoWeAre />
+            <WhatWeProvide />
+            <WhyChooseUs />
+            <SpecialitiesWeOffer  />
+            <Softwares />
+            <BillingServices />
+            <HoverSlider />
+            <Testimonials />
+            <Footer />
+          </div>
+      }
     </>
 
   )

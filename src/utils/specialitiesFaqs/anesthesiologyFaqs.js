@@ -1,56 +1,44 @@
 const anesthesiologyFaqs = [
-    {
-      question:
-        "What is the difference between general anesthesia and regional anesthesia?",
-      answer:
-        "General anesthesia renders a patient completely unconscious during surgery, while regional anesthesia numbs a specific area of the body, such as in spinal or epidural anesthesia.",
-    },
-    {
-      question: "How is anesthesia dosage determined for each patient?",
-      answer:
-        "The anesthesiologist considers factors such as the patient's weight, age, medical history, type of surgery, and overall health to determine the appropriate dosage of anesthesia.",
-    },
-    {
-      question: "What are the risks associated with general anesthesia?",
-      answer:
-        "Risks include allergic reactions, respiratory issues, cardiovascular complications, post-operative confusion (especially in older patients), and rare complications like malignant hyperthermia.",
-    },
-    {
-      question: "How do anesthesiologists monitor patients during surgery?",
-      answer:
-        "Anesthesiologists use various monitoring devices such as electrocardiograms (ECG), pulse oximetry, capnography, blood pressure monitors, and temperature probes to track vital signs and ensure patient safety.",
-    },
-    {
-      question: "What is malignant hyperthermia and how is it managed?",
-      answer:
-        "Malignant hyperthermia is a rare, life-threatening reaction to certain anesthetic agents, characterized by rapid muscle breakdown and fever. It is treated with dantrolene and immediate cooling measures.",
-    },
-    {
-      question: "How long does it take to recover from anesthesia after surgery?",
-      answer:
-        "Recovery times vary depending on the type of anesthesia used, the duration of the surgery, and the patient's health. General anesthesia typically takes several hours for full recovery, though residual effects may last for up to 24 hours.",
-    },
-    {
-      question: "What is the role of local anesthetics in pain management?",
-      answer:
-        "Local anesthetics block nerve conduction in a specific area of the body, providing pain relief during minor procedures and postoperative pain management without affecting the patient’s consciousness.",
-    },
-    {
-      question: "Can anesthesia affect memory or cognitive function long-term?",
-      answer:
-        "Postoperative cognitive dysfunction (POCD) can occur, especially in elderly patients. While most cognitive issues resolve over time, rare cases can experience long-term effects.",
-    },
-    {
-      question: "How is the airway managed during general anesthesia?",
-      answer:
-        "Anesthesiologists may use an endotracheal tube, laryngeal mask airway, or other airway devices to maintain a clear airway, ensuring adequate ventilation during surgery.",
-    },
-    {
-      question: "What are the latest advancements in anesthesia technology?",
-      answer:
-        "Recent advancements include target-controlled infusion systems, depth-of-anesthesia monitors (such as BIS), ultrasound-guided regional anesthesia, and improvements in anesthesia drugs with shorter half-lives and fewer side effects.",
-    },
-  ];
-  
-  export default anesthesiologyFaqs;
-  
+  {
+    question: "What Are the Key Components of Anesthesia Billing?",
+    answer: "Anesthesia billing involves several essential components, including the accurate coding of services, documentation of anesthesia time, and consideration of the patient’s medical history. Anesthesia providers must use specific CPT codes that correspond to the type of anesthesia administered, such as general, regional, or monitored anesthesia care, ensuring compliance with payer requirements."
+  },
+  {
+    question: "How Do Anesthesia Billing and Coding Differ from Other Medical Specialties?",
+    answer: "Anesthesia billing is distinct due to its reliance on time-based codes and the need for precise documentation of the anesthesia provider's services. Unlike many other specialties, anesthesia billing involves multiple codes, such as CPT codes 00100-01999, which cover various surgical procedures. Furthermore, billing for anesthesia often requires separate billing for the surgical procedure itself, highlighting the need for specialized knowledge."
+  },
+  {
+    question: "What Are Common CPT Codes Used in Anesthesia Billing?",
+    answer: "Commonly used CPT codes in anesthesia billing include 00100 (anesthesia for procedures on the head and neck), 00400 (anesthesia for thoracic procedures), and 01967 (anesthesia for labor and delivery). Accurate coding of these services is crucial for appropriate reimbursement and adherence to compliance guidelines."
+  },
+  {
+    question: "What CPT Code Is Used for Anesthesia During Salivary Gland Biopsies?",
+    answer: "CPT code 00100 is used for anesthesia services related to procedures like salivary gland aspirations and removal."
+  },
+  {
+    question: "Who Can Bill Using CPT Code 00100?",
+    answer: "Anesthesiologists and other medical professionals providing anesthesia services are authorized to bill using CPT code 00100."
+  },
+  {
+    question: "What Types of Neck Procedures Require Anesthesia Coded as 00300?",
+    answer: "CPT code 00300 covers operations involving the integumentary system, muscles, and nerves of the skull, neck, and posterior trunk."
+  },
+  {
+    question: "How Long Does Anesthesia Typically Last for 00300 Procedures?",
+    answer: "The duration of anesthesia for CPT code 00300 procedures varies depending on the complexity of the operation."
+  },
+  {
+    question: "What Body Regions Are Covered Under CPT Code 00400?",
+    answer: "CPT code 00400 covers anesthesia services for procedures involving the extremities, anterior trunk, and perineum."
+  },
+  {
+    question: "What Procedures Are Included in CPT Code 00520?",
+    answer: "CPT code 00520 is used for anesthesia services related to closed chest procedures, such as bronchoscopy."
+  },
+  {
+    question: "What Types of Lower Abdominal Procedures Require Anesthesia Coded as 00840?",
+    answer: "CPT code 00840 is used for anesthesia services related to intraperitoneal operations, such as laparoscopy."
+  }
+];
+
+export default anesthesiologyFaqs;
