@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from '../sections/ServiceDetails/Hero'
 import { useLocation } from 'react-router-dom';
 import Header from './../sections/Header';
@@ -7,8 +7,12 @@ import HeadingLine from './../components/HeadingLine';
 import services from '../sections/Services/data';
 import { Helmet } from 'react-helmet';
 import ContactForm from '../components/Contact/ContactForm';
+import ExpansionTile from '../components/FaqDetails/ExpansionTile';
+import Heading from '../components/Heading';
+import faqs from '../sections/Faqs/data';
 
 function ServiceDetails2() {
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -16,6 +20,15 @@ function ServiceDetails2() {
     const index = query.get('index');
 
     const data = services[index].data;
+    const faqss = faqs[index];
+
+    const [openIndex, setOpenIndex] = useState(null);
+
+
+    const handleToggle = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
     return (
         <>
             <Helmet>
@@ -74,6 +87,18 @@ function ServiceDetails2() {
                     </div>
                 </div>
             </div >
+            <Heading data={data.title + " FAQ's"} />
+            <div className='container mx-auto flex flex-col justify-between items-center gap-4 mb-10'>
+                {faqss.questions.map((item, index) => (
+                    <ExpansionTile
+                        key={index}
+                        data={item}
+                        isOpen={openIndex === index}
+                        onClick={() => handleToggle(index)}
+                    />
+                ))}
+            </div>
+
             <Footer />
         </>
     )

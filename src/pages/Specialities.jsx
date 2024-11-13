@@ -37,7 +37,7 @@ function Specialities() {
         {
             title: "Chiropractic",
             icon: "./assets/specialities/icons/Chiropractic.svg",
-            img: "./assets/specialities/images/Chiropractic.webp"
+            img: "./assets/specialities/images/chiropractic.webp"
         },
         {
             title: "Critical Care Medicine",
@@ -52,7 +52,7 @@ function Specialities() {
         {
             title: "Dermatology",
             icon: "./assets/specialities/icons/Dermatology.svg",
-            img: "./assets/specialities/images/Dermatology.webp"
+            img: "./assets/specialities/images/dermatology.webp"
         },
         {
             title: "DME",
@@ -62,7 +62,7 @@ function Specialities() {
         {
             title: "Doula / Midwife",
             icon: "./assets/specialities/icons/Doula.svg",
-            img: "./assets/specialities/images/doula.webp"
+            img: "./assets/specialities/images/Doula.webp"
         },
         {
             title: "Emergency Medicine",
@@ -87,12 +87,12 @@ function Specialities() {
         {
             title: "General Surgery",
             icon: "./assets/specialities/icons/General Surgery.svg",
-            img: "./assets/specialities/images/GeneralSurgery.webp"
+            img: "./assets/specialities/images/generalsurgery.webp"
         },
         {
             title: "Gynecology",
             icon: "./assets/specialities/icons/Gynecology.svg",
-            img: "./assets/specialities/images/Gynecology.webp"
+            img: "./assets/specialities/images/gynecology.webp"
         },
         {
             title: "Geriatrics",
@@ -102,7 +102,7 @@ function Specialities() {
         {
             title: "Home Health",
             icon: "./assets/specialities/icons/Home Health.svg",
-            img: "./assets/specialities/images/HomeHealth.webp"
+            img: "./assets/specialities/images/homehealth.webp"
         },
         {
             title: "Infectious Diseases",
@@ -117,12 +117,12 @@ function Specialities() {
         {
             title: "Laboratory",
             icon: "./assets/specialities/icons/Laboratory.svg",
-            img: "./assets/specialities/images/Laboratory.webp"
+            img: "./assets/specialities/images/laboratory.webp"
         },
         {
             title: "Nephrology",
             icon: "./assets/specialities/icons/nephrology.svg",
-            img: "./assets/specialities/images/Nephrology.webp"
+            img: "./assets/specialities/images/nephrology.webp"
         },
         {
             title: "Neurology",
@@ -157,12 +157,12 @@ function Specialities() {
         {
             title: "Otolaryngology (ENT)",
             icon: "./assets/specialities/icons/Otolaryngology.svg",
-            img: "./assets/specialities/images/Otolaryngology.webp"
+            img: "./assets/specialities/images/otolaryngology.webp"
         },
         {
             title: "Pain Management",
             icon: "./assets/specialities/icons/Pain Management.svg",
-            img: "./assets/specialities/images/PainManagement.webp"
+            img: "./assets/specialities/images/painmanagement.webp"
         },
         {
             title: "Pediatrics",
@@ -177,12 +177,12 @@ function Specialities() {
         {
             title: "Physical Therapy",
             icon: "./assets/specialities_we_offer/6. Physical Therapy billingcaresolution.com.svg",
-            img: "./assets/specialities/images/PhysicalTherapy.webp"
+            img: "./assets/specialities/images/physicaltherapy.webp"
         },
         {
             title: "Plastic Surgery",
             icon: "./assets/specialities_we_offer/7. Plastic Surgery billingcaresolutions.com.svg",
-            img: "./assets/specialities/images/PlasticSurgery.webp"
+            img: "./assets/specialities/images/plasticsurgery.webp"
         },
         {
             title: "Podiatry",
@@ -202,22 +202,22 @@ function Specialities() {
         {
             title: "Radiology",
             icon: "./assets/specialities_we_offer/3. Radiology billingcaresolutions.com.svg",
-            img: "./assets/specialities/images/Radiology.webp"
+            img: "./assets/specialities/images/radiology.webp"
         },
         {
             title: "Rheumatology",
             icon: "./assets/specialities/icons/Rheumatology.svg",
-            img: "./assets/specialities/images/Rheumatology.webp"
+            img: "./assets/specialities/images/rheumatology.webp"
         },
         {
             title: "Sleep Medicine",
             icon: "./assets/specialities/icons/Sleep Medicine.svg",
-            img: "./assets/specialities/images/SleepMedicine.webp"
+            img: "./assets/specialities/images/sleepmedicine.webp"
         },
         {
             title: "Urgent Care",
             icon: "./assets/specialities/icons/Urgent Care.svg",
-            img: "./assets/specialities/images/UrgentCare.webp"
+            img: "./assets/specialities/images/urgentcare.webp"
         },
         {
             title: "Urology",
@@ -227,7 +227,7 @@ function Specialities() {
         {
             title: "Vascular Surgery",
             icon: "./assets/specialities/icons/Vascular Surgery.svg",
-            img: "./assets/specialities/images/VascularSurgery.webp"
+            img: "./assets/specialities/images/vascularsurgery.webp"
         }
     ];
 

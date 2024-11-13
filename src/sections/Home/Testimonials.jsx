@@ -52,7 +52,7 @@ const Testimonials = () => {
             <div className='px-10 py-14' style={{ backgroundImage: `url("./assets/Testimonial billingcaresolution.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                 <div className='flex flex-row justify-center items-center space-x-3 text-white font-custom text-xl md:text-3xl font-medium pb-6'>
                     <div className='bg-white w-[2rem] h-[0.2rem]'></div>
-                    <p>Client's Reviews</p>
+                    <p className='text-3xl md:text-4xl'>Client's Reviews</p>
                     <div className='bg-white w-[2rem] h-[0.2rem]'></div>
                 </div>
                 <Swiper
@@ -63,7 +63,7 @@ const Testimonials = () => {
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
-                    }}
+                    }} 
                     breakpoints={{
                         640: {
                             slidesPerView: 1,

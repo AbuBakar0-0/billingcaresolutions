@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      
       fontFamily: {
         custom: ["CustomFont", "sans-serif"],
       },
@@ -13,6 +14,7 @@ module.exports = {
       },
       animation: {
         "glow-border": "glow-border 2s infinite",
+        'bounce-three': 'bounce 1s ease-in-out 3',
       },
       keyframes: {
         "glow-border": {

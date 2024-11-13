@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import BASE_URL from './../utils/globals';
 import { Helmet } from 'react-helmet';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Blogs() {
     const [data, setData] = useState([]); // Store blogs data
@@ -64,7 +63,7 @@ function Blogs() {
                     {currentBlogs.map((item, index) => (
                         <Link to={`/blogdetails?index=${item.id}`} key={index}>
                             <div className='w-96 min-h-[31rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
-                                <LazyLoadImage  src={`${item.image}`} alt="" className='rounded-t-lg' />
+                                <img  src={`${item.image}`} alt="Billing Care Solutions" className='rounded-t-lg' />
                                 <div className='w-full p-4 flex flex-col'>
                                     <p className='w-full text-lg font-custom font-semibold text-secondary h-20'>{item.title}</p>
                                     <div

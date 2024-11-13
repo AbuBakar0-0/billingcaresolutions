@@ -35,8 +35,8 @@ function Stats() {
     return (
         <>
             <div className='w-full flex flex-col justify-center items-center gap-3 my-10'>
-                <Heading data={'Our Company’s statistics'} />
-                <div className='w-full flex flex-wrap justify-center items-center gap-3 '>
+                <Heading data={'Our Company’s Statistics'} />
+                <div className='w-full flex flex-wrap justify-center items-center gap-3'>
                     {data.map((item) => (
                         <StatsCard title={item.title} description={item.description} img={item.img}/>
                     ))}

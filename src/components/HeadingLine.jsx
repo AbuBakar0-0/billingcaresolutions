@@ -2,9 +2,9 @@ import React from 'react'
 
 const HeadingLine = ({data}) => {
     let color='primary text-3xl';
-    if(data==="Why Choose"){
-        color='primary text-4xl';
-    }
+    // if(data==="Why Choose"){
+    //     color='primary text-4xl';
+    // }
     return (
         <>
             <div className={`w-full flex flex-row justify-start items-center gap-3 text-${color} font-custom font-medium`}>

@@ -22,7 +22,7 @@ function TermsaAndConditions() {
             <Header />
             <Hero />
             <div className='w-full container flex flex-col justify-center items-center gap-4 mx-auto my-10'>
-                <div className='w-2/3 flex flex-col justify-center items-center gap-4'>
+                <div className='w-2/3 flex flex-col justify-center items-center gap-4 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>
                     <HeadingLine data={"Introduction"} />
                     <p>Welcome to Billing Care Solutions. These Terms and Conditions govern your use of our medical billing services. By accessing or using our services, you agree to comply with and be bound by these terms. If you do not agree with these Terms and Conditions, please do not use our services.</p>
 

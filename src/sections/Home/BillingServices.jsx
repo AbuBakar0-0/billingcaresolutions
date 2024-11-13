@@ -1,6 +1,5 @@
 import React from 'react'
 import Counter from './Counter';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function BillingServices() {
     const data = [
@@ -48,14 +47,14 @@ function BillingServices() {
         <div className='flex flex-col justify-center items-center p-10' style={{ backgroundImage: `url("./assets/billingcaresolutions.com (2).webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             <div className='flex flex-row justify-center items-center space-x-3 text-white font-custom text-xl md:text-5xl text-center font-medium'>
                 <div className='bg-white w-[2rem] h-[0.2rem]'></div>
-                    <p>Let Us Handle Your Billing Services!</p>
+                    <p className='text-3xl md:text-4xl'>Let Us Handle Your Billing Services!</p>
                 <div className='bg-white w-[2rem] h-[0.2rem]'></div>
             </div>
             <div className='flex flex-wrap justify-center items-center md:p-8'>
                 {data.map((item) => (
                     <div className='w-full md:w-1/2 lg:w-1/4 flex flex-row justify-start items-center text-white'>
-                        <LazyLoadImage src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='w-4 h-4' />
-                        <p className='p-2 text-lg'>{item}</p>
+                        <img src="./assets/Arrow billingcaresolutions.com.svg" alt="Billing Care Solutions" className='w-4 h-4' />
+                        <p className='p-2 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>{item}</p>
                     </div>
                 ))}
             </div>

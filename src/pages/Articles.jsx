@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Hero from './../sections/Articles/Hero';
 import articles from '../sections/Articles/data';
 import { Helmet } from 'react-helmet';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Articles() {
     const [currentPage, setCurrentPage] = useState(1);
@@ -40,7 +39,7 @@ function Articles() {
                 {currentArticle.map((item, index) => (
                     <Link to={`/articleDetails?index=${item.id}`} key={index}>
                         <div className='w-96 min-h-[31rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
-                            <LazyLoadImage  src={`${item.image}`} alt="" className='rounded-t-lg min-h-[18rem]' />
+                            <img  src={`${item.image}`} alt="Billing Care Solutions" className='rounded-t-lg min-h-[18rem]' />
                             <div className='w-full p-4 flex flex-col'>
                                 <p className='w-full text-lg font-custom font-semibold text-secondary h-20'>{item.title}</p>
                                 <div

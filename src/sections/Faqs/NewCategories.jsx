@@ -17,7 +17,7 @@ function NewCategories() {
                         <div className={`bg-primary w-[2rem] h-[0.2rem]`}></div>
                     </div>
                     <div className='font-custom text-xl'>
-                        View our all <a href="" className='text-secondary'>features and benefits</a> to get started
+                        View our all <a href="#" className='text-secondary'>features and benefits</a> to get started
                     </div>
 
                 </div>

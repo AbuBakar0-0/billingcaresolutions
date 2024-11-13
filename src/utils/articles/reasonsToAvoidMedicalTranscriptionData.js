@@ -1,6 +1,6 @@
 const reasonsToAvoidMedicalTranscriptionData = {
     id: 2,
-    date: "2024/10/04",
+    date: "10/04/2024",
     title: "Reasons to Avoid Medical Transcription in Behavioral Health",
     image: "./assets/articles/Reasons_to_Avoid_Medical_Transcription_in_Behavioral_Health.jpg",
     description: `

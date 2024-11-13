@@ -8,7 +8,6 @@ import ContactForm from '../components/Contact/ContactForm';
 import axios from 'axios';
 import BASE_URL from '../utils/globals';
 import { Helmet } from 'react-helmet';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function BlogDetails() {
 
@@ -65,7 +64,8 @@ function BlogDetails() {
             </Helmet>
             <Header />
             {/* <Hero title={"BCS Insights"} /> */}
-            <div className="w-full container mx-auto flex flex-col justify-center items-center p-10">
+            <div className="w-full container mx-auto flex flex-col justify-center items-center p-10 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight
+">
 
                 <div className='w-full flex flex-row justify-center items-center space-x-3 text-primary font-custom text-3xl md:text-5xl font-medium p-4'>
                     <div className='bg-secondary w-[3rem] h-[0.3rem] rounded-full'></div>
@@ -74,7 +74,7 @@ function BlogDetails() {
                 </div>
                 <div className="w-full flex flex-col md:flex-row justify-between items-start gap-4 mt-5">
                     <div className="w-full md:w-3/4 flex flex-col justify-center items-start">
-                        <LazyLoadImage  src={`${blog.image}`} alt="" className="w-full" />
+                        <img  src={`${blog.image}`} alt="Billing Care Solutions" className="w-full" />
 
                         {/* Render Blog Content */}
                         <div className="mt-10">
@@ -107,7 +107,7 @@ function BlogDetails() {
                             {itemsToDisplay.map((item, index) => (
                                 <Link to={`/blogdetails?index=${item.id}`}>
                                     <div className="w-full p-2 flex flex-row justify-start items-center gap-4">
-                                        <LazyLoadImage  src={`${item.image}`} alt="" className="w-28" />
+                                        <img  src={`${item.image}`} alt="Billing Care Solutions" className="w-28" />
                                         <p className="text-secondary text-xs font-semibold underline">{item.title}</p>
                                     </div>
                                 </Link>

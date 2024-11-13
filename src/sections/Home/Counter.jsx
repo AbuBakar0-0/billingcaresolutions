@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Counter = ({ title, number, image }) => {
     const [counter, setCounter] = useState(0);
@@ -61,7 +60,7 @@ const Counter = ({ title, number, image }) => {
 
     return (
         <div className='w-full md:w-1/6 flex flex-row justify-center md:justify-center items-center space-y-4 md:space-y-0'>
-            <LazyLoadImage src={image} alt="" className='w-12 h-12 mx-4' />
+            <img src={image} alt="Billing Care Solutions" className='w-12 h-12 mx-4' />
             <div className="flex flex-col items-center justify-center w-4/5" ref={counterRef}>
                 <p className="text-6xl font-bold text-primary">
                     {counter}

@@ -1,5 +1,4 @@
 import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Hero() {
     const data = [
@@ -22,17 +21,17 @@ function Hero() {
     ]
     return (
         <>
-            <div className='bg-secondary text-white'>
-                <div className='container mx-auto min-h-[30rem] flex flex-col justify-center items-center gap-4 text-center'>
-                    <h1 className='text-5xl font-bold font-custom'>Why Billing Care Solutions Stands Out</h1>
-                    <p className='text-lg w-full md:w-1/2 p-2 font-custom'>Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes.</p>
+            <div className='bg-secondary text-white' style={{ backgroundImage: `url("./assets/headers/why BCS-billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' , backgroundPosition:"center"}}>
+                <div className='container mx-auto min-h-[24rem] flex flex-col justify-center items-center gap-4 text-center p-4'>
+                    <h1 className='text-4xl font-bold font-custom w-full uppercase '>Why Billing Care Solutions Stands Out</h1>
+                    <p className='text-lg w-full md:w-1/2 font-custom'>Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes.</p>
                 </div>
             </div>
             <div className='w-full flex justify-center items-center p-10'>
-                <div className='container flex flex-col md:flex-row justify-center items-center rounded-2xl bg-white shadow-2xl p-10 md:p-10 -mt-32 gap-3'>
+                <div className='container flex flex-col md:flex-row justify-center items-center rounded-2xl bg-white shadow-2xl p-10 md:p-10 md:-mt-28 gap-3'>
                     {data.map((item) => (
                         <div className='w-1/4 flex flex-col justify-center items-center'>
-                            <LazyLoadImage src={item.img} alt="" className='size-20'/>
+                            <img src={item.img} alt="Billing Care Solutions" className='size-20'/>
                             <p className='text-secondary font-semibold text-center'>{item.title}</p>
                         </div>
                     ))}

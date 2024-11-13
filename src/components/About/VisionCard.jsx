@@ -1,5 +1,4 @@
 import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const VisionCard = ({ title, description, img }) => {
 
@@ -7,10 +6,10 @@ const VisionCard = ({ title, description, img }) => {
         <>
             <div className='w-full flex flex-col gap-3'>
                 <div className='flex justify-center items-center'>
-                    <LazyLoadImage src={img} alt="" className='size-24' />
+                    <img src={img} alt="Billing Care Solutions" className='size-24' />
                 </div>
                 <p className='w-full text-lg font-semibold text-secondary text-center'>{title}</p>
-                <p className='p-4'>{description}</p>
+                <p className='p-5 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tighter'>{description}</p>
             </div>
         </>
     )

@@ -22,7 +22,7 @@ function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3500)
+    }, 4000)
     window.scrollTo(0, 0);
   }, [])
 
@@ -49,7 +49,7 @@ function Home() {
               />
             </div>
           </> :
-          <div className=''>
+          <div className='font-custom'>
             <Header />
             <Hero />
             <Contact />

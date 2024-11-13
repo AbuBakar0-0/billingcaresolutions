@@ -21,7 +21,7 @@ function PrivacyPolicy() {
             </Helmet>
             <Header />
             <Hero />
-            <div className='w-full container flex flex-col justify-center items-center gap-4 mx-auto my-20'>
+            <div className='w-full container flex flex-col justify-center items-center gap-4 mx-auto my-20 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>
                 <div className='w-2/3 flex flex-col justify-center items-center gap-4 text-justify'>
                     <p className='w-full'>
                         At Billing Care Solutions, we value your privacy and are committed to protecting the personal and sensitive information you provide to us. This Privacy Policy outlines how we collect, use, and safeguard your information, in compliance with the Health Insurance Portability and Accountability Act (HIPAA) and other applicable privacy laws.

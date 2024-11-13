@@ -1,5 +1,5 @@
 const physiciansCredentialingData = {
-  title: "Physicians Credentialing Services",
+  title: "Enrollment & Credentialing Services",
   header: "./assets/services/headers/medical credentailing billingcaresolution.com.webp",
   description: "Transform your practice’s efficiency with Billing Care Solutions’ specialized Provider Credentialing Services. Our expert team is dedicated to simplifying the credentialing process, ensuring that your practice adheres to industry compliance standards while enhancing financial performance.",
   content: {

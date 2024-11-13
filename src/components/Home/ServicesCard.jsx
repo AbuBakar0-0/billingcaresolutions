@@ -1,10 +1,9 @@
 import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ServicesCard = ({data}) => {
     return (
         <div className='w-full min-h-36 md:w-1/5 md:h-44 flex flex-col justify-center items-center font-bold text-center my-2 mx-1 hover:animate-glow-border'>
-            <LazyLoadImage src={data.img} alt="" className='w-16 h-16'/>
+            <img src={data.img} alt="Billing Care Solutions" className='w-16 h-16'/>
             {
                 data.id<5?
                 <p className='text-lg mt-2 h-6' >{data.title}</p>

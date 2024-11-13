@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Login() {
     const navigate = useNavigate();
@@ -22,7 +21,7 @@ function Login() {
         <>
             <div class="h-screen flex justify-center items-center">
                 <div class="flex flex-col md:flex-row w-4/5 bg-white rounded-xl md:p-20  justify-between items-center">
-                    <LazyLoadImage src="./assets/Logo billingcaresolutions.com.svg" alt="" class="w-2/3 md:w-1/3 h-auto" />
+                    <img src="./assets/Logo billingcaresolutions.com.svg" alt="Billing Care Solutions" class="w-2/3 md:w-1/3 h-auto" />
                     <div class="hidden md:flex w-[0.5px] h-96 bg-[#c60001]"></div>
                     <form method="POST" class="md:w-1/2 flex flex-col gap-3 pb-10 md:pb-0" onSubmit={handleSubmit}>
                         <h1 class="text-xl font-bold leading-tight tracking-tight text-secondary md:text-2xl">

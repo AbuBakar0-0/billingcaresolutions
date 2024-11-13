@@ -27,7 +27,7 @@ function FaqsDetails() {
                 <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
             </Helmet>
             <Header />
-            <Hero title={data.title} description={data.description} />
+            <Hero title={data.title} description={data.description} image={data.header}/>
             <FaqQuestions data={data} />
             <NewCategories />
             <Footer />

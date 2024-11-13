@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const HoverSlider = () => {
   const [sliderWidth, setSliderWidth] = useState(50);
@@ -34,7 +33,7 @@ const HoverSlider = () => {
   return (
     <div className='flex flex-col justify-center items-center p-10'>
       <div className='w-full flex flex-row justify-between items-center'>
-        <LazyLoadImage src="./assets/hover_slider/user billingcaresolutions.com.webp" alt="" className='w-1/6 mt-[0.132rem]' />
+        <img src="./assets/hover_slider/user billingcaresolutions.com.webp" alt="Billing Care Solutions" className='w-1/6 mt-[0.132rem]' />
         <div
           className="relative w-4/6 h-[500px] overflow-hidden mx-auto object-cover"
           onMouseMove={handleMouseMove}
@@ -42,7 +41,7 @@ const HoverSlider = () => {
           onTouchMove={handleTouchMove}
         >
           <div className="absolute top-0 left-0 w-full h-full">
-            <LazyLoadImage 
+            <img 
              src="./assets/hover_slider/Without BCS billingcaresolutions.com.webp"
               alt="Without BCS billingcaresolutions.com"
               className="absolute top-0 left-0 w-full h-full object-contain lg:object-cover"
@@ -54,7 +53,7 @@ const HoverSlider = () => {
               clipPath: `polygon(0 0, ${sliderWidth}% 0, ${sliderWidth}% 100%, 0 100%)`,
             }}
           >
-            <LazyLoadImage 
+            <img 
              src="./assets/hover_slider/With BCS billingcaresolutions.com.webp"
               alt="With BCS billingcaresolutions.com"
               className="absolute top-0 left-0 w-full h-full object-contain lg:object-cover"
@@ -67,7 +66,7 @@ const HoverSlider = () => {
             <div className='h-1/3 bg-secondary w-2 rounded-2xl'></div>
           </div>
         </div>
-        <LazyLoadImage src="./assets/hover_slider/success billingcaresolutions.com.webp" alt="" className='w-1/6 mt-[0rem]' />
+        <img src="./assets/hover_slider/success billingcaresolutions.com.webp" alt="Billing Care Solutions" className='w-1/6 mt-[0rem]' />
       </div>
       <Link to="/contact" className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>
         Talk to an Expert --

@@ -1,7 +1,6 @@
 // MySwiper.js
 import React from 'react';
 import {SwiperSlide } from 'swiper/react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -17,11 +16,11 @@ const TestimonialCard = ({ data }) => {
             <SwiperSlide className="flex items-center justify-center">
                 <div className='h-44 w-full flex flex-col justify-start items-start border-4 border-primary rounded-2xl p-4'>
                     <div className='flex flex-row items-center justify-between text-white w-full'>
-                        <p>{data.name}</p>
-                        <LazyLoadImage src="./assets/google.png" alt="" className='w-8 h-8' />
+                        <p className='text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>{data.name}</p>
+                        <img src="./assets/google.png" alt="Billing Care Solutions" className='w-8 h-8' />
                     </div>
-                    <LazyLoadImage src="./assets/stars.png" alt="" className='h-4 w-max' />
-                    <div className='text-white font-sm overflow-y-auto my-2'>
+                    <img src="./assets/stars.png" alt="Billing Care Solutions" className='h-4 w-max' />
+                    <div className='text-white text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight overflow-y-auto my-2 pr-3'>
                         {data.feedback}
                     </div>
                 </div>

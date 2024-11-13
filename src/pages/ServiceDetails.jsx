@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from '../sections/ServiceDetails/Hero'
 import { useLocation } from 'react-router-dom';
 import Header from './../sections/Header';
@@ -7,6 +7,9 @@ import HeadingLine from './../components/HeadingLine';
 import services from '../sections/Services/data';
 import { Helmet } from 'react-helmet';
 import ContactForm from '../components/Contact/ContactForm';
+import faqs from '../sections/Faqs/data';
+import ExpansionTile from '../components/FaqDetails/ExpansionTile';
+import Heading from '../components/Heading';
 
 function ServiceDetails() {
     useEffect(() => {
@@ -16,7 +19,16 @@ function ServiceDetails() {
     const index = query.get('index');
 
     const data = services[index].data;
-    console.log(data);
+    const faqss = faqs[index];
+
+    const [openIndex, setOpenIndex] = useState(null);
+
+
+    const handleToggle = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+
     return (
         <>
             <Helmet>
@@ -29,7 +41,7 @@ function ServiceDetails() {
             <Header />
             <Hero title={data.title} image={data.header} description={data.description} />
             <div className='w-full container flex flex-col md:flex-row justify-center items-start gap-4 mx-auto p-10'>
-                <div className='w-full md:w-3/4 flex flex-col justify-start items-start gap-4'>
+                <div className='w-full md:w-3/4 flex flex-col justify-start items-start gap-4 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>
                     <HeadingLine data={data.content.title} />
                     <p>{data.content.description}</p>
                     <HeadingLine data={data.sub_content_1.title} />
@@ -43,7 +55,7 @@ function ServiceDetails() {
                     <HeadingLine data={data.sub_content_2.title} />
                     <ul className='w-full gap-2'>
                         {data.sub_content_2.data.map((item) => (
-                            <>
+                            <> 
                                 <li><span className='text-secondary font-semibold mr-2'>{item.title}:</span>{item.description}</li>
                             </>
                         ))}
@@ -64,6 +76,17 @@ function ServiceDetails() {
                     </div>
                 </div>
             </div >
+            <Heading data={data.title+" FAQ's"} />
+            <div className='container mx-auto flex flex-col justify-between items-center gap-4 mb-10 px-10'>
+                {faqss.questions.map((item, index) => (
+                    <ExpansionTile
+                        key={index}
+                        data={item}
+                        isOpen={openIndex === index}
+                        onClick={() => handleToggle(index)}
+                    />
+                ))}
+            </div>
             <Footer />
         </>
     )

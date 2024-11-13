@@ -30,16 +30,16 @@ function Payoff() {
         <>
             <div className='w-full flex flex-col justify-center items-center p-10'>
                 <div className='w-full flex flex-col md:flex-row justify-between items-center gap-3'>
-                    <div className='w-full md:w-1/4 flex flex-row justify-start items-center gap-3'>
-                        <p className='text-2xl font-semibold text-secondary'>What's the payoff?</p>
+                    <div className='w-full md:w-1/3 flex flex-row justify-start items-center gap-3'>
+                        <p className='text-3xl md:text-4xl font-semibold text-secondary'>What's the payoff?</p>
                         <div className={`bg-primary w-[0.2rem] h-[2rem]`}></div>
                     </div>
-                    <div className='w-full'>
+                    <div className='w-full text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>
                         <p>Our comprehensive solutions, underpinned by industry expertise and state-of-the-art technology, empower you to concentrate on providing exceptional patient care while we optimize your billing and revenue generation processes.
                         </p>
                     </div>
                 </div>
-                <div className='flex flex-wrap justify-center items-center gap-3 mt-10'>
+                <div className='flex flex-wrap justify-center items-center gap-3 mt-10 '>
                     {data.map((item) => (
                         <PayoffCard data={item} />
                     ))}

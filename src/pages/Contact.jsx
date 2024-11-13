@@ -21,7 +21,7 @@ function Contact() {
             </Helmet>
             <Header />
             <Hero />
-            <div className='w-full flex flex-wrap container mx-auto justify-center items-center py-16'>
+            <div className='w-full flex flex-wrap container mx-auto justify-center items-center p-16'>
                 <div className='w-full md:w-1/3 flex flex-col justify-center items-start'>
                     <p className='text-secondary font-custom text-lg'>Phone</p>
                     <p className='text-primary font-custom text-3xl'>(302) 244-0434</p>
@@ -30,7 +30,7 @@ function Contact() {
                     <p className='text-secondary font-custom text-lg'>Email</p>
                     <p className='text-primary font-custom text-3xl'>info@billingcaresolutions.com</p>
                 </div>
-                <div className='w-full md:w-1/3 flex flex-col justify-center items-start'>
+                <div className='w-full md:w-1/3 flex flex-col justify-center items-center'>
                     <div className='flex flex-row items-center space-x-2'>
                         <a href="https://www.facebook.com/BillingCareSolutions">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 50 50" className='fill-secondary size-8 hover:fill-primary hover:bg-white hover:transition-all hover:duration-300 rounded-full hover:p-1' >
@@ -72,7 +72,7 @@ function Contact() {
             <div className='w-full flex flex-row justify-center items-center container mx-auto gap-4 mb-20'>
                 <div className='w-1/2 h-auto flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100'>
                     <p className='text-3xl text-secondary font-semibold'>30 N GOULD, ST, STE R SHERIDAN, WY 82801</p>
-                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.167611283467!2d-106.95747832317349!3d44.79777267765548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1727975198066!5m2!1sen!2s" width="700" height="580" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className='rounded my-5'></iframe>
+                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.167611283467!2d-106.95747832317349!3d44.79777267765548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1727975198066!5m2!1sen!2s" width="600" height="628" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className='rounded my-5'></iframe>
                 </div>
 
                 <div className="w-1/2 flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100">

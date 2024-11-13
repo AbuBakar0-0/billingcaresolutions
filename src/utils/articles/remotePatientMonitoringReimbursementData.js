@@ -1,6 +1,6 @@
 const remotePatientMonitoringReimbursementData = {
     id: 1,
-    date: "2024/10/04",
+    date: "10/04/2024",
     title: "Remote Patient Monitoring (RPM) Reimbursement 2024",
     image: "./assets/articles/Remote_Patient_Monitoring_RPM_Reimbursement_2024.jpg",
     description: `

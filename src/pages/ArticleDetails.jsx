@@ -6,7 +6,6 @@ import { Link, useLocation } from 'react-router-dom';
 import articles from '../sections/Articles/data';
 import ContactForm from '../components/Contact/ContactForm';
 import { Helmet } from 'react-helmet';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ArticleDetails() {
 
@@ -58,19 +57,19 @@ function ArticleDetails() {
                 </div>
                 <div className="w-full flex flex-col md:flex-row justify-between items-start gap-4 mt-5">
                     <div className="w-full md:w-3/4 flex flex-col justify-center items-start">
-                        <LazyLoadImage  src={`${data.image}`} alt="" className="w-full" />
+                        <img  src={`${data.image}`} alt="Billing Care Solutions" className="w-full" />
 
                         {/* Render Blog Content */}
                         <div className="mt-10">
                             <div
-                                className="article-content"
+                                className="article-content text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight"
                                 dangerouslySetInnerHTML={{ __html: data.description }}
                             />
                         </div>
                     </div>
 
                     {/* Sidebar with TOC and Recent Blogs */}
-                    <div className="w-full md:w-1/5 hidden md:flex flex-col justify-between items-center gap-4">
+                    <div className="w-full md:w-1/5 hidden md:flex flex-col justify-between items-center gap-4 ">
                         {/* Table of Contents Section */}
                         <div className="w-full flex flex-col justify-center items-center gap-4 p-5 shadow-lg rounded-lg border-[1px] border-gray-100">
                             <HeadingLine data="Table of Contents" />
@@ -91,7 +90,7 @@ function ArticleDetails() {
                             {itemsToDisplay.map((item, index) => (
                                 <Link to={`/articleDetails?index=${item.id}`}>
                                     <div className="w-full p-2 flex flex-row justify-start items-center gap-4">
-                                        <LazyLoadImage  src={`${item.image}`} alt="" className="w-28" />
+                                        <img  src={`${item.image}`} alt="Billing Care Solutions" className="w-28" />
                                         <p className="text-secondary text-xs font-semibold underline">{item.title}</p>
                                     </div>
                                 </Link>

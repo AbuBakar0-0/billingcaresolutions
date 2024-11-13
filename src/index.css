@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-justify {
+  text-align: justify;
+  text-justify: distribute;
+  text-align-last: left;
+}
+
 /* src/index.css */
 @font-face {
   font-family: "CustomFont";
- src: url("../public/assets/fonts/Gabarito-VariableFont_wght.ttf")
+  src: url("../public/assets/fonts/Gabarito-VariableFont_wght.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -129,7 +135,7 @@
   }
 }
 
-.diagonalimg{
+.diagonalimg {
   background-image: linear-gradient(320deg, #4ec39e 60%, #0073b9 40%);
 }
 
@@ -139,7 +145,7 @@
 }
 
 /* HTML: <div class="loader"></div> */
-.loader {   
+.loader {
   width: 80px;
   aspect-ratio: 1;
   padding: 10px;
@@ -156,33 +162,43 @@
   border-radius: 50%;
   background: #ff00ff;
   grid-area: 1/1;
-  -webkit-mask-size:100% 20px,100% 100%;
-  -webkit-mask-repeat:no-repeat;
-  -webkit-mask-composite:destination-out;
-  mask-composite:exclude;
+  -webkit-mask-size: 100% 20px, 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 .loader:before {
-  -webkit-mask-image:
-    linear-gradient(#000 0 0),
-    linear-gradient(#000 0 0);
+  -webkit-mask-image: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
   animation: l8-1 2s infinite;
 }
 .loader:after {
-  -webkit-mask-image:
-    linear-gradient(#000 0 0);
-  animation:
-    l8-1 2s  infinite,
-    l8-2 .5s infinite cubic-bezier(0.5,200,0.5,-200);
+  -webkit-mask-image: linear-gradient(#000 0 0);
+  animation: l8-1 2s infinite,
+    l8-2 0.5s infinite cubic-bezier(0.5, 200, 0.5, -200);
 }
 
-@keyframes l8-1{
-  0%   {-webkit-mask-position:0 20% ,0 0}
-  20%  {-webkit-mask-position:0 80% ,0 0}
-  40%  {-webkit-mask-position:0 100%,0 0}
-  60%  {-webkit-mask-position:0 0%  ,0 0}
-  80%  {-webkit-mask-position:0 35% ,0 0}
-  100% {-webkit-mask-position:0 0   ,0 0}
+@keyframes l8-1 {
+  0% {
+    -webkit-mask-position: 0 20%, 0 0;
+  }
+  20% {
+    -webkit-mask-position: 0 80%, 0 0;
+  }
+  40% {
+    -webkit-mask-position: 0 100%, 0 0;
+  }
+  60% {
+    -webkit-mask-position: 0 0%, 0 0;
+  }
+  80% {
+    -webkit-mask-position: 0 35%, 0 0;
+  }
+  100% {
+    -webkit-mask-position: 0 0, 0 0;
+  }
 }
-@keyframes l8-2{
-  100% {transform:translate(0.1px)} 
+@keyframes l8-2 {
+  100% {
+    transform: translate(0.1px);
+  }
 }

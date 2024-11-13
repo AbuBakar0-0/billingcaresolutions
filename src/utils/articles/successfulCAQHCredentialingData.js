@@ -1,6 +1,6 @@
 const successfulCAQHCredentialingData = {
     id: 0,
-    date: "2024/10/04",
+    date: "10/04/2024",
     title: "Successful CAQH Credentialing for Providers",
     image: "./assets/articles/Successful_CAQH_credentialing_for_providers.webp",
     description: `

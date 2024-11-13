@@ -5,7 +5,6 @@ import Footer from './../Footer';
 import HeadingLine from './../../components/HeadingLine';
 import SpecialityFaqCard from './../../components/Specialities/SpecialityFaqCard';
 import { useState } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SpecialitiesDetailsContent = ({ data }) => {
 
@@ -20,7 +19,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
         <>
             <div className='w-full flex flex-col md:flex-row justify-center items-center p-10 container mx-auto gap-4'>
                 <div className='md:w-1/2'>
-                    <LazyLoadImage  src={data.image} alt="" />
+                    <img  src={data.image} alt="Billing Care Solutions" />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-start gap-4'>
                     <Heading data={data.content.sub_content_1.title} />
@@ -28,8 +27,8 @@ const SpecialitiesDetailsContent = ({ data }) => {
                     <ul className='w-full flex flex-col justify-center items-start gap-4 '>
                         {data.content.sub_content_1.details.data.map((item) => (
                             <>
-                                <li className='flex flex-row gap-3 justify-center items-center'>
-                                    <LazyLoadImage  src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='size-4' />
+                                <li className='flex flex-row gap-3 justify-center items-center text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>
+                                    <img  src="./assets/Arrow billingcaresolutions.com.svg" alt="Billing Care Solutions" className='size-4' />
                                     <p className='font-semibold text-secondary'>{item.title}: &nbsp;
                                         <span
                                             className=" text-black font-normal"
@@ -40,17 +39,17 @@ const SpecialitiesDetailsContent = ({ data }) => {
                             </>
                         ))}
                     </ul>
-                    <button className='w-36 bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>Call us</button>
+                    
                 </div>
             </div>
 
-            <div className='w-full flex flex-col justify-between items-center gap-4'>
+            <div className='w-full flex flex-col justify-between items-center gap-4 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight'>
                 <Heading data={data.content.sub_content_2.title} />
                 <p className='-mt-5 text-center'>{data.content.sub_content_2.details.title}</p>
                 <div className='w-full flex flex-wrap justify-center md:justify-center items-start gap-4 text-justify container mx-auto p-5'>
                     {data.content.sub_content_2.details.data.map((item) => (
                         <>
-                            <div className='w-64 min-h-80 bg-gray-200 flex flex-col justify-start items-center p-5 pt-10 text-center gap-2 group hover:bg-secondary hover:transition-all hover:duration-300 hover:ease-in-out rounded-2xl'>
+                            <div className='w-64 min-h-96 bg-gray-200 flex flex-col justify-start items-center p-5 pt-10 text-center gap-2 group hover:bg-secondary hover:transition-all hover:duration-300 hover:ease-in-out rounded-2xl'>
                                 <div className='h-12 w-12 flex justify-center items-center'>
                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="146.000000pt" height="215.000000pt" viewBox="0 0 146.000000 215.000000"
@@ -84,14 +83,14 @@ const SpecialitiesDetailsContent = ({ data }) => {
             </div>
             {
                 data.content.sub_content_3 !== undefined ?
-                    <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10 p-10'>
+                    <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10 p-10 '>
                         <HeadingLine data={data.content.sub_content_3.title} />
                         <p className='text-center'>{data.content.sub_content_3.details.title}</p>
                         <ul className='flex flex-col justify-center items-start gap-4'>
                             {data.content.sub_content_3.details.data.map((item) => (
                                 <>
-                                    <li className='w-full flex flex-col md:flex-row gap-2 justify-start items-center'>
-                                        <LazyLoadImage  src="./assets/Arrow billingcaresolutions.com.svg" alt="" className='size-4' />
+                                    <li className='w-full flex flex-col md:flex-row gap-2 justify-start items-center '>
+                                        <img  src="./assets/Arrow billingcaresolutions.com.svg" alt="Billing Care Solutions" className='size-4' />
                                         <p className='w-full text-secondary font-semibold text-xl'>{item.title}: <span className='font-normal text-black'>{item.description}</span></p>
                                     </li>
                                 </>
@@ -105,8 +104,9 @@ const SpecialitiesDetailsContent = ({ data }) => {
                 <Heading data="What Clients Say About Us" />
                 <div className='w-full flex flex-wrap justify-center items-start gap-4 text-justify p-10'>
                     {data.testimonials.map((item) => (
-                        <div className='md:w-[49.2%] bg-gray-100 flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start p-8 rounded-lg gap-4'>
-                            <LazyLoadImage  src="./assets/specialities/testimonial.png" alt="" className='size-20' />
+                        <div className='md:w-[49.2%] bg-gray-100 flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start p-8 rounded-lg gap-4 text-justify text-md lg:text-lg whitespace-normal break-words tracking-tight
+'>
+                            <img  src="./assets/specialities/testimonial.png" alt="Billing Care Solutions" className='size-20' />
                             <div className='w-full flex flex-col gap-2'>
                                 <p className='text-secondary font-semibold font-custom'>{item.title}</p>
                                 <p>{item.description}</p>
@@ -119,7 +119,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
             <Stats />
 
             {
-                data.faqs !== undefined ? <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10'>
+                data.faqs !== undefined ? <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10 px-10'>
                     <Heading data="Frequently Asked Questions" />
                     {data.faqs.map((item, index) => (
                         <SpecialityFaqCard

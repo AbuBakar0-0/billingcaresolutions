@@ -1,4 +1,3 @@
-import "./App.css";
 import Home from "../src/pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
@@ -20,6 +19,7 @@ import ArticleDetails from "./pages/ArticleDetails";
 import Login from "./pages/adminPanel/Login";
 import Dashboard from "./pages/adminPanel/Dashboard";
 import Headers from "./pages/adminPanel/Headers";
+import Forbidden from "./pages/Forbidden";
 
 function App() {
   return (
@@ -53,6 +53,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/headers" element={<Headers />} />
 
+          {/* Catch-all route for undefined paths */}
+          <Route path="*" element={<Forbidden />} />
         </Routes>
       </BrowserRouter>
     </>
