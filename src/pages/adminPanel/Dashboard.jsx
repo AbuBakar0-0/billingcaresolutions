@@ -7,8 +7,7 @@ import AllBlogs from './AllBlogs';
 
 const Dashboard = () => {
   return (
-    <Router>
-      <div className="flex">
+    <div className="flex">
         <SidePanel />
         <div className="flex-1">
           <Routes>
@@ -19,7 +18,6 @@ const Dashboard = () => {
           </Routes>
         </div>
       </div>
-    </Router>
   );
 };
 

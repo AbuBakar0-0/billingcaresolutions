@@ -234,13 +234,13 @@ function Specialities() {
 
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Specialities - Billing Care Solutions</title>
                 <meta name="description" content="At Billing Care Solutions, our specialties lie in delivering precise, customized services that meet the specific needs of healthcare practices. Our deep industry knowledge, paired with cutting-edge solutions, allows us to address critical areas of healthcare management, ensuring optimized revenue and smooth operations." />
                 <meta property="og:title" content="Specialities - Billing Care Solutions" />
                 <meta property="og:description" content="At Billing Care Solutions, our specialties lie in delivering precise, customized services that meet the specific needs of healthcare practices. Our deep industry knowledge, paired with cutting-edge solutions, allows us to address critical areas of healthcare management, ensuring optimized revenue and smooth operations." />
                 <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet>
+            </Helmet> */}
             <Header />
             <Hero />
             <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>

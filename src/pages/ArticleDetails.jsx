@@ -39,14 +39,14 @@ function ArticleDetails() {
     }, [])
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Articles - Billing Care Solutions</title>
                 <meta name="description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
                 <meta property="og:title" content="Articles - Billing Care Solutions" />
                 <meta property="og:description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
                 <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
             </Helmet>
-            <Header />
+            <Header /> */}
             {/* <Hero title={"BCS Insights"} /> */}
             <div className="w-full container mx-auto flex flex-col justify-center items-center p-10">
 

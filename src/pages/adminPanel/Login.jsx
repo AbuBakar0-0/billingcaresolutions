@@ -10,7 +10,7 @@ function Login() {
         const obj = Object.fromEntries(formData.entries());
 
         console.log(obj);
-        if (obj['email'] == 'admin@gmail.com' && obj['password'] == '12345678') {
+        if (obj['email'] == 'admin@gmail.com' && obj['password'] == '123123123') {
             navigate("/dashboard");
         }
         else {

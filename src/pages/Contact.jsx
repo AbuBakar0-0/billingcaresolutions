@@ -12,13 +12,13 @@ function Contact() {
 
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Contact - Billing Care Solutions</title>
                 <meta name="description" content="Billing Care Solutions empower healthcare providers to transform their billing processes and maximize revenue potential. Our expert team excels in precision medical billing and coding and accurate claims submissions. We streamline revenue cycle management, effectively reducing Days in Accounts Receivable (AR) and accelerating cash flow." />
                 <meta property="og:title" content="Contact - Billing Care Solutions" />
                 <meta property="og:description" content="Billing Care Solutions empower healthcare providers to transform their billing processes and maximize revenue potential. Our expert team excels in precision medical billing and coding and accurate claims submissions. We streamline revenue cycle management, effectively reducing Days in Accounts Receivable (AR) and accelerating cash flow." />
                 <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet>
+            </Helmet> */}
             <Header />
             <Hero />
             <div className='w-full flex flex-wrap container mx-auto justify-center items-center p-16'>

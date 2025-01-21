@@ -68,7 +68,7 @@ function DomainArea() {
 
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>
                     Domain Area - Billing Care Solutions
                 </title>
@@ -76,7 +76,7 @@ function DomainArea() {
                 <meta property="og:title" content="Domain Area - Billing Care Solutions" />
                 <meta property="og:description" content="At Billing Care Solutions, we excel in navigating the intricacies of healthcare management through our comprehensive domain areas. Our expertise spans the entire revenue cycle, ensuring that healthcare practices achieve optimal financial performance and operational excellence. Experience unparalleled expertise in healthcare management with Billing Care Solutions. Together, we’ll drive success in your practice!" />
                 <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet>
+            </Helmet> */}
             <Header />
             <Hero />
             <Contact />

@@ -12,13 +12,13 @@ function PrivacyPolicy() {
     }, [])
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Privacy Poilcy - Billing Care Solutions</title>
                 <meta name="description" content="BCS provides the most comprehensive and effective medical billing services, following HIPAA rules and regulations to secure protected health information." />
                 <meta property="og:title" content="Privacy Poilcy - Billing Care Solutions" />
                 <meta property="og:description" content="BCS provides the most comprehensive and effective medical billing services, following HIPAA rules and regulations to secure protected health information." />
                 <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet>
+            </Helmet> */}
             <Header />
             <Hero />
             <div className='w-full container flex flex-col justify-center items-center gap-4 mx-auto my-20 text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>

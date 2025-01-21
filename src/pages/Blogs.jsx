@@ -42,13 +42,13 @@ function Blogs() {
 
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Blogs - Billing Care Solutions</title>
                 <meta name="description" content="Billing Care Solutions commit to unraveling the complexities of healthcare management with precision and expertise. Our blog serves as your ultimate resource for insights that illuminate the path to operational excellence and financial success in the ever-evolving healthcare landscape. Dive into our expert commentary and best practices designed to empower healthcare practices to thrive." />
                 <meta property="og:title" content="Blogs - Billing Care Solutions" />
                 <meta property="og:description" content="Billing Care Solutions commit to unraveling the complexities of healthcare management with precision and expertise. Our blog serves as your ultimate resource for insights that illuminate the path to operational excellence and financial success in the ever-evolving healthcare landscape. Dive into our expert commentary and best practices designed to empower healthcare practices to thrive." />
                 <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet>
+            </Helmet> */}
             <Header />
             <Hero />
             <Heading data={"Latest Blogs"} />

@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 
 function Clients() {
-  useEffect(() => {
-    
-}, []);
+
   return (
     <>
       <div className='w-full flex flex-col md:flex-row justify-between items-center gap-3 my-10 p-10'>
