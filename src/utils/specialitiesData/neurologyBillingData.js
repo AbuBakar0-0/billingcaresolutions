@@ -3,8 +3,8 @@ import neurologyFaqs from "./../specialitiesFaqs/neurologyFaqs";
 const neurologyBillingData = {
   faqs: neurologyFaqs,
   title: "Neurology Billing Services",
-  header: "./assets/specialities/headers/Neurology.webp",
-  image: "./assets/specialities/cardImages/Neurology.webp", // Placeholder image reference
+  header: "/assets/specialities/headers/Neurology.webp",
+  image: "/assets/specialities/cardImages/Neurology.webp", // Placeholder image reference
   short_description:
     "Neurology billing involves the submission of claims to insurance providers for reimbursement related to neurological conditions. Accurate coding is vital, as it directly impacts payment and can prevent claim denials. The two primary coding systems used are the International Classification of Diseases, Tenth Revision (ICD-10) and the Current Procedural Terminology (CPT).",
 

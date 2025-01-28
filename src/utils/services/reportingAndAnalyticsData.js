@@ -1,6 +1,6 @@
 const reportingAndAnalyticsData = {
   title: "Reporting and Analytics",
-  header: "./assets/services/headers/Reporting & Analytics billingcaresolution.com.webp",
+  header: "/assets/services/headers/Reporting & Analytics billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we provide cutting-edge Reporting and Analytics services that offer a comprehensive view of your revenue cycle. Our advanced tools deliver actionable insights, empowering you to make informed decisions that enhance financial performance.",
   content: {
     title: "Unlock Strategic Insights with Advanced Reporting and Analytics",

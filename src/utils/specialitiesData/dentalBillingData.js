@@ -3,8 +3,8 @@ import dentalCareFaqs from "./../specialitiesFaqs/dentalFaqs";
 const dentalBillingData = {
   faqs: dentalCareFaqs, // assuming FAQs for dental billing are available
   title: "Dental Billing Services",
-  header: "./assets/specialities/headers/Dental.webp", // Placeholder header image
-  image: "./assets/specialities/cardImages/Dental.webp", // Placeholder image reference
+  header: "/assets/specialities/headers/Dental.webp", // Placeholder header image
+  image: "/assets/specialities/cardImages/Dental.webp", // Placeholder image reference
   short_description:
     "Effective dental billing and coding are crucial for a successful dental practice, ensuring timely reimbursement and compliance with insurance regulations. Accurate documentation and reporting of dental procedures using Current Dental Terminology (CDT) codes are essential for optimizing revenue.",
 

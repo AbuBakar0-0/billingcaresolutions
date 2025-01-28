@@ -3,8 +3,8 @@ import nephrologyFaqs from "./../specialitiesFaqs/nephrologyFaqs";
 const nephrologyBillingData = {
   faqs: nephrologyFaqs,
   title: "Nephrology Billing Services",
-  header:"./assets/specialities/headers/nephrology.webp",
-  image: "./assets/specialities/cardImages/Nephrology.webp",
+  header:"/assets/specialities/headers/nephrology.webp",
+  image: "/assets/specialities/cardImages/Nephrology.webp",
   short_description:
     "Nephrology billing is a vital aspect of healthcare management, dedicated to the coding and billing processes related to kidney health and treatment services. This specialized field encompasses a range of procedures, including dialysis, kidney biopsies, and consultations, each requiring precise coding to ensure accurate reimbursement. Familiarity with key CPT and ICD-10 codes, particularly those for chronic kidney disease and dialysis treatments, is essential for medical billers and healthcare providers.",
 

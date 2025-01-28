@@ -4,8 +4,8 @@ import entFaqs from "../specialitiesFaqs/otolaryngologyFaqs";
 const otolaryngologyBillingData = {
   faqs: entFaqs,
   title: "Otolaryngology (ENT) Billing Services",
-  header:"./assets/specialities/headers/Otolaryngology (ENT).webp",
-  image: "./assets/specialities/cardImages/Otolaryngology (ENT).webp",
+  header:"/assets/specialities/headers/Otolaryngology (ENT).webp",
+  image: "/assets/specialities/cardImages/Otolaryngology (ENT).webp",
   short_description:
     "Otolaryngology, or Ear, Nose, and Throat (ENT) medicine, focuses on diagnosing and treating conditions related to the head and neck. Effective billing and coding for otolaryngology services are crucial for ensuring accurate reimbursement and maintaining the financial health of your practice.",
 

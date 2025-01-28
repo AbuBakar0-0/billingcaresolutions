@@ -3,8 +3,8 @@ import gynecologyFaqs from "./../specialitiesFaqs/gynecologyFaqs";
 const gynecologyBillingData = {
   faqs: gynecologyFaqs,
   title: "Gynecology Billing Services",
-  header: "./assets/specialities/headers/Gynecology.webp",
-  image: "./assets/specialities/cardImages/Gynecology.webp", // Placeholder image reference
+  header: "/assets/specialities/headers/Gynecology.webp",
+  image: "/assets/specialities/cardImages/Gynecology.webp", // Placeholder image reference
   short_description:
     "Gynecology billing is a specialized area of medical billing focused on the financial aspects of women’s health services. With a wide range of procedures and codes related to gynecology, accurate coding and billing are crucial for proper reimbursement and compliance with healthcare regulations.",
 

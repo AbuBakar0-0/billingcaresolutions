@@ -3,8 +3,8 @@ import painManagementFaqs from "./../specialitiesFaqs/painFaqs";
 const painManagementBillingData = {
   faqs: painManagementFaqs,
   title: "Pain Management Billing Services",
-  header:"./assets/specialities/headers/Pain Management.webp",
-  image: "./assets/specialities/cardImages/Pain Management.webp",
+  header:"/assets/specialities/headers/Pain Management.webp",
+  image: "/assets/specialities/cardImages/Pain Management.webp",
   short_description:
     "Pain management is a vital specialty in healthcare, dedicated to diagnosing and alleviating both acute and chronic pain conditions. Accurate billing in this field is essential to ensure that healthcare providers receive fair compensation for their services.",
 

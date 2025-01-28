@@ -1,6 +1,6 @@
 const medicalBillingAndCodingForAuditsData = {
   title: "Medical Billing and Coding for Audits",
-  header: "./assets/services/headers/medical billing audit billingcaresolution.com.webp",
+  header: "/assets/services/headers/medical billing audit billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we offer specialized medical billing and coding services designed for audit readiness. Our proactive approach ensures accurate billing practices and coding compliance, minimizing audit risks and maximizing reimbursement outcomes.",
   content: {
     title: "Ensure Precision and Compliance with Expert Billing and Coding Services",

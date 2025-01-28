@@ -13,10 +13,16 @@ const SpecialityCard = ({ data }) => {
                         </div>
                     </div>
                     {/* <!-- Back of the card --> */}
+                    {/* <div class="back w-72 h-[22rem]  flex flex-col justify-center items-start text-white rounded-xl" style={{ backgroundImage: `url("${data.background_image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                        <div className='w-full h-full flex flex-col justify-center items-start p-10 bg-opacity-80 rounded-xl'>
+                        </div>
+                    </div> */}
+
                     <div class="back w-72 h-[22rem]  flex flex-col justify-center items-start text-white rounded-xl" style={{ backgroundImage: `url("${data.img}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                         <div className='w-full h-full flex flex-col justify-center items-start p-10 bg-opacity-80 rounded-xl'>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </>

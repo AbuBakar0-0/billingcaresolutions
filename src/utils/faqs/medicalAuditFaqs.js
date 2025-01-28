@@ -1,8 +1,8 @@
 const medicalAuditFaqs = {
   id: 3,
   title: "Medical Billing and Coding Audits",
-  icon: "./assets/services/icons/4.svg",
-  header:"./assets/services/headers/medical billing audit billingcaresolution.com.webp",
+  icon: "/assets/services/icons/4.svg",
+  header:"/assets/services/headers/medical billing audit billingcaresolution.com.webp",
   description:
     "At BCS, our medical billing and coding audits play a crucial role in helping healthcare providers maintain compliance with regulatory standards, enhance billing accuracy, and maximize revenue. Through comprehensive reviews of medical records, coding practices, and claims, we ensure that the appropriate codes are used for services rendered and that claims align with payer guidelines.",
   questions: [

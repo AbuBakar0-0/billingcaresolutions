@@ -3,8 +3,8 @@ import doulaMidwifeFaqs from "./../specialitiesFaqs/doulaFaqs";
 const doulaMidwifeBillingData = {
   faqs: doulaMidwifeFaqs,
   title: "Doula and Midwife Billing Services",
-  header: "./assets/specialities/headers/Doula.webp",
-  image: "./assets/specialities/cardImages/Doula  Midwife.webp", // Placeholder for the image reference
+  header: "/assets/specialities/headers/Doula.webp",
+  image: "/assets/specialities/cardImages/Doula  Midwife.webp", // Placeholder for the image reference
   short_description:
     "Doula and midwife billing is an important topic for families seeking personalized care during pregnancy and childbirth. Doula services provide invaluable emotional and physical support, while midwife care focuses on comprehensive prenatal, delivery, and postnatal services. Understanding how billing works for these services is crucial for families, as it can help them navigate insurance coverage, out-of-pocket expenses, and reimbursement options. By prioritizing transparent billing practices, doulas and midwives can make their services more accessible, ensuring that all families receive the birth support they need for a positive experience.",
 

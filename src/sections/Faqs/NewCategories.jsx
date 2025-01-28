@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function NewCategories() {
     const data = [
-        { title: "Blogs & Articles", icon: "./assets/faqs/blog and article billingcaresolutions.com.svg", link: "/blogs", },
-        { title: "Service Features", icon: "./assets/faqs/service features billingcaresolutions.com.svg", link: "/services", },
-        { title: "Talk to sales", icon: "./assets/faqs/talk to sales billingcaresolutions.com.svg", link: "/contact", },
+        { title: "Blogs & Articles", icon: "/assets/faqs/blog and article billingcaresolutions.com.svg", link: "/blogs", },
+        { title: "Service Features", icon: "/assets/faqs/service features billingcaresolutions.com.svg", link: "/services", },
+        { title: "Talk to sales", icon: "/assets/faqs/talk to sales billingcaresolutions.com.svg", link: "/contact", },
     ];
     return (
         <>

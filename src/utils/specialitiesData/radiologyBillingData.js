@@ -3,8 +3,8 @@ import radiologyFaqs from "./../specialitiesFaqs/radiologyFaqs";
 const radiologyBillingData = {
   faqs: radiologyFaqs,
   title: "Radiology Billing Services",
-  header:"./assets/specialities/headers/Radiology.webp",
-  image: "./assets/specialities/cardImages/Radiology.webp", // Placeholder for the image reference
+  header:"/assets/specialities/headers/Radiology.webp",
+  image: "/assets/specialities/cardImages/Radiology.webp", // Placeholder for the image reference
   short_description:
     "Radiology billing is a vital aspect of healthcare finance, focusing on the processes involved in coding and billing for diagnostic imaging services such as X-rays, CT scans, MRIs, and ultrasounds. This specialized field requires a thorough understanding of both medical coding and the intricacies of insurance reimbursement to ensure that healthcare providers receive appropriate compensation for their services.",
 

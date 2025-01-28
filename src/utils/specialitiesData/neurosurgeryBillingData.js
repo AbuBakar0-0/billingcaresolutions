@@ -3,8 +3,8 @@ import neurosurgeryFaqs from "./../specialitiesFaqs/neurosurgeryFaqs";
 const neurosurgeryBillingData = {
   faqs: neurosurgeryFaqs,
   title: "Neurosurgery Billing Services",
-  header: "./assets/specialities/headers/Neurosurgery.webp",
-  image: "./assets/specialities/cardImages/Neurosurgery.webp",
+  header: "/assets/specialities/headers/Neurosurgery.webp",
+  image: "/assets/specialities/cardImages/Neurosurgery.webp",
   short_description:
     "Neurosurgery is a specialized medical discipline focused on diagnosing and treating conditions affecting the nervous system, including the brain, spinal cord, and peripheral nerves. The complexities of neurosurgical procedures necessitate precise billing and coding practices to ensure fair reimbursement for healthcare providers.",
 

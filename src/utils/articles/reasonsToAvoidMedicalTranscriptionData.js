@@ -2,7 +2,7 @@ const reasonsToAvoidMedicalTranscriptionData = {
     id: 2,
     date: "10/04/2024",
     title: "Reasons to Avoid Medical Transcription in Behavioral Health",
-    image: "./assets/articles/Reasons_to_Avoid_Medical_Transcription_in_Behavioral_Health.jpg",
+    image: "/assets/articles/Reasons_to_Avoid_Medical_Transcription_in_Behavioral_Health.jpg",
     description: `
         <div class="flex flex-col gap-4">
             <p>Medical transcription involves the process of transforming audio recordings from healthcare providers into written text. This includes physician notes, diagnostic reports, patient histories, and other essential medical documentation. Transcriptionists, either manually or through speech recognition technology, convert these recordings into readable records.</p>

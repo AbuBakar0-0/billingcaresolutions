@@ -1,6 +1,6 @@
 const revenueCycleManagementData = {
   title: "Revenue Cycle Management (RCM)",
-  header: "./assets/services/headers/Revenue cycle management billingcaresolution.com.webp",
+  header: "/assets/services/headers/Revenue cycle management billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we offer specialized Revenue Cycle Management (RCM) services that enhance your financial processes, ensuring accuracy from patient registration to final payment collection. Our extensive expertise empowers healthcare providers to optimize their revenue cycle, minimize errors, and boost overall profitability.",
   content: {
     title: "Streamline Your Financial Processes with Specialized RCM Services",

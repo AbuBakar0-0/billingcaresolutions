@@ -3,8 +3,8 @@ import obGynFaqs from "./../specialitiesFaqs/obGynFaqs";
 const obGynBillingData = {
   faqs: obGynFaqs,
   title: "Obstetrics and Gynecology (OB/GYN) Billing Services",
-  header:"./assets/specialities/headers/Obstetrics.webp",
-  image: "./assets/specialities/cardImages/Obstetrics and Gynecology.webp",
+  header:"/assets/specialities/headers/Obstetrics.webp",
+  image: "/assets/specialities/cardImages/Obstetrics and Gynecology.webp",
   short_description:
     "OB/GYN billing is a specialized area of medical billing that focuses on the financial aspects of obstetric and gynecological services. This field requires a thorough understanding of complex coding systems, particularly the Current Procedural Terminology (CPT) codes that categorize various procedures and services related to women’s health.",
 

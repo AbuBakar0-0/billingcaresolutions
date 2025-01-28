@@ -3,8 +3,8 @@ import geriatricsFaqs from "./../specialitiesFaqs/geriatricsFaqs";
 const geriatricsBillingData = {
   faqs: geriatricsFaqs,
   title: "Geriatrics Billing Services",
-  header: "./assets/specialities/headers/Geriatrics.webp",
-  image: "./assets/specialities/cardImages/Geriatrics.webp", // Placeholder image reference
+  header: "/assets/specialities/headers/Geriatrics.webp",
+  image: "/assets/specialities/cardImages/Geriatrics.webp", // Placeholder image reference
   short_description:
     "Geriatrics billing involves specific codes and regulations designed to accommodate the unique healthcare needs of older adults. With an aging population, understanding these billing practices is crucial for healthcare providers to ensure proper reimbursement and compliance.",
 

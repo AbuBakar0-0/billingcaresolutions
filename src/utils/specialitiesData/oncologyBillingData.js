@@ -3,8 +3,8 @@ import oncologyFaqs from "./../specialitiesFaqs/oncologyFaqs";
 const oncologyBillingData = {
   faqs: oncologyFaqs,
   title: "Oncology Billing Services",
-  header:"./assets/specialities/headers/Oncology.webp",
-  image: "./assets/specialities/cardImages/Oncology.webp",
+  header:"/assets/specialities/headers/Oncology.webp",
+  image: "/assets/specialities/cardImages/Oncology.webp",
   short_description:
     "Oncology billing is a specialized area of medical billing focused on the financial aspects of cancer care. Due to the complexity of oncology services, it requires precise coding, a deep understanding of treatment modalities, and compliance with regulations. This guide offers a comprehensive overview of oncology billing, ensuring that patients receive necessary care without undue financial burden.",
 

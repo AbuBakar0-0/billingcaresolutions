@@ -3,8 +3,8 @@ import rheumatologyFaqs from "./../specialitiesFaqs/rheumatologyFaqs";
 const rheumatologyBillingData = {
   faqs: rheumatologyFaqs,
   title: "Rheumatology Billing Services",
-  header:"./assets/specialities/headers/Rheumatology.webp",
-  image: "./assets/specialities/cardImages/Rheumatology.webp", // Placeholder for the image reference
+  header:"/assets/specialities/headers/Rheumatology.webp",
+  image: "/assets/specialities/cardImages/Rheumatology.webp", // Placeholder for the image reference
   short_description:
     "Rheumatology billing is a specialized area within the healthcare billing system that focuses on the financial processes associated with diagnosing and treating autoimmune and inflammatory conditions, such as arthritis and lupus. Accurate billing is essential for ensuring that rheumatologists are compensated appropriately while navigating the complexities of insurance claims and regulations. Understanding these intricacies is crucial for maintaining financial health in this specialized field.",
 

@@ -1,6 +1,6 @@
 const vobData = {
   title: "Verification & Prior Authorization Services",
-  header: "./assets/services/headers/verification and piror authorization billingcaresolution.com.webp",
+  header: "/assets/services/headers/verification and piror authorization billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we provide efficient Verification & Prior Authorization services to ensure timely approvals and accurate processing. Our expert team manages these processes to improve service efficiency and patient care.",
   content: {
     title: "Streamline Verification and Prior Authorization with Expert Solutions",

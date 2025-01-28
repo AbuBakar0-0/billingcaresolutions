@@ -4,8 +4,8 @@ import dmeFaqs from "./../specialitiesFaqs/dMEFaqs";
 const dmeBillingData = {
   faqs: dmeFaqs,
   title: "DME Billing Services",
-  header:"./assets/specialities/headers/DME.webp",
-  image: "./assets/specialities/cardImages/DME.webp",
+  header:"/assets/specialities/headers/DME.webp",
+  image: "/assets/specialities/cardImages/DME.webp",
   short_description:
     "Durable Medical Equipment (DME) billing involves processing claims for essential equipment such as wheelchairs, CPAP machines, crutches, hospital beds, and other long-term use devices designed to support patient health and mobility. Expanding this further to Durable Medical Equipment, Prosthetics, Orthotics, and Supplies (DMEPOS) includes a wider range of items, such as prosthetic limbs and orthotic devices. Accurate billing for DMEPOS requires familiarity with coding systems, adherence to payer regulations, securing prior authorizations, and managing equipment rentals while staying updated on CMS guidelines and policies. Outsourcing DMEPOS billing ensures professional and compliant claim submissions, reduces denials, and maximizes revenue outcomes.",
 

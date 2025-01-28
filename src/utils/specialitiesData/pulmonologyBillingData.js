@@ -3,8 +3,8 @@ import pulmonologyFaqs from "./../specialitiesFaqs/pulmonologyFaqs";
 const pulmonologyBillingData = {
   faqs: pulmonologyFaqs,
   title: "Pulmonology Billing Services",
-  header: "./assets/specialities/headers/Pulmonology.webp",
-  image: "./assets/specialities/cardImages/Pulmonology.webp",
+  header: "/assets/specialities/headers/Pulmonology.webp",
+  image: "/assets/specialities/cardImages/Pulmonology.webp",
   short_description:
     "Pulmonology billing is a critical aspect of healthcare that focuses on the financial transactions associated with services provided by pulmonologists, specialists in respiratory health. This process involves coding and documenting various procedures, evaluations, and treatments related to lung diseases and disorders. Given the complexity of respiratory care and diverse insurance policies, a thorough understanding of pulmonology billing is essential for ensuring timely reimbursements and compliance with healthcare regulations.",
 

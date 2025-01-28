@@ -3,8 +3,8 @@ import behavioralHealthFaqs from "../specialitiesFaqs/behavioralFaqs";
 const behavioralHealthBillingData = {
   faqs: behavioralHealthFaqs,
   title: "Behavioral Health Billing Services",
-  header:"./assets/specialities/headers/Behavioral Health.webp",
-  image: "./assets/specialities/cardImages/Behavioral Health.webp",
+  header:"/assets/specialities/headers/Behavioral Health.webp",
+  image: "/assets/specialities/cardImages/Behavioral Health.webp",
   short_description:
     "Behavioral health billing requires precision, expertise, and a deep understanding of complex regulations to maximize reimbursement. Effective billing harmonizes patient eligibility verification, prior authorization, and accurate CPT code assignment, ensuring seamless reimbursement for mental health services, substance abuse treatment, and counseling.",
 

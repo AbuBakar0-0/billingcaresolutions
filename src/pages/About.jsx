@@ -25,7 +25,7 @@ function About() {
         <meta name="description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
         <meta property="og:title" content="About - Billing Care Solutions" />
         <meta property="og:description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
-        <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+        <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
       </Helmet> */}
       <Header />
       <Hero />

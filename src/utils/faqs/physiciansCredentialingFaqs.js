@@ -1,8 +1,8 @@
 const physiciansCredentialingFaqs = {
   id: 1,
   title: "Physicians Credentialing FAQs",
-  icon: "./assets/services/icons/2.svg",
-  header:"./assets/services/headers/medical credentailing billingcaresolution.com.webp",
+  icon: "/assets/services/icons/2.svg",
+  header:"/assets/services/headers/medical credentailing billingcaresolution.com.webp",
   description:
     "BCS expertly manages the entire revenue cycle, from patient onboarding to final remittance. Seamless claims processing, accurate payment allocation, and proactive denial resolution drive faster reimbursements and reduce financial setbacks. Advanced reporting and strategic follow-ups enhance cash flow, enabling financial success and regulatory compliance.",
   questions: [

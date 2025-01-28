@@ -17,7 +17,7 @@ function PrivacyPolicy() {
                 <meta name="description" content="BCS provides the most comprehensive and effective medical billing services, following HIPAA rules and regulations to secure protected health information." />
                 <meta property="og:title" content="Privacy Poilcy - Billing Care Solutions" />
                 <meta property="og:description" content="BCS provides the most comprehensive and effective medical billing services, following HIPAA rules and regulations to secure protected health information." />
-                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
             </Helmet> */}
             <Header />
             <Hero />

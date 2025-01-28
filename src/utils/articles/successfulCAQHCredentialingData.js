@@ -2,7 +2,7 @@ const successfulCAQHCredentialingData = {
     id: 0,
     date: "10/04/2024",
     title: "Successful CAQH Credentialing for Providers",
-    image: "./assets/articles/Successful_CAQH_credentialing_for_providers.webp",
+    image: "/assets/articles/Successful_CAQH_credentialing_for_providers.webp",
     description: `
         <div class="flex flex-col gap-4">
             <p>CAQH, or the Council for Affordable Quality Healthcare, is a non-profit entity focused on simplifying healthcare administration through standardized credentialing processes for healthcare providers. By centralizing provider data, CAQH ensures accuracy and compliance with industry regulations, which helps reduce billing discrepancies and improves patient care. Regularly updating CAQH records is essential for maintaining compliance and building strong relationships between providers and payers. While the credentialing process through CAQH is generally free, providers may encounter fees from health plans or licensing boards. To enroll, healthcare providers must fill out an application, obtain a unique CAQH ID, and submit the required documentation for verification. CAQH plays a crucial role in enhancing administrative operations within the healthcare sector, making enrollment vital for providers.</p>

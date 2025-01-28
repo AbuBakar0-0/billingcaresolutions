@@ -3,8 +3,8 @@ import plasticSurgeryFaqs from "./../specialitiesFaqs/plasticSurgeryFaqs";
 const plasticSurgeryBillingData = {
   faqs: plasticSurgeryFaqs,
   title: "Plastic Surgery Billing Services",
-  header:"./assets/specialities/headers/Plastic Surgery.webp",
-  image: "./assets/specialities/cardImages/Plastic Surgery.webp",
+  header:"/assets/specialities/headers/Plastic Surgery.webp",
+  image: "/assets/specialities/cardImages/Plastic Surgery.webp",
   short_description:
     "Plastic surgery billing involves the processes of submitting and following up on claims with health insurance companies for procedures related to cosmetic and reconstructive surgery. Given the specialized nature of plastic surgery, billing requires a unique understanding of medical codes, insurance policies, and patient care standards. Proper billing not only ensures reimbursement for services rendered but also helps maintain compliance with healthcare regulations.",
 

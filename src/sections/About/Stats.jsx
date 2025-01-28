@@ -8,27 +8,27 @@ function Stats() {
     const data = [
         {
             title: "Geographic Reach",
-            img: "./assets/about-us/48 states.svg",
+            img: "/assets/about-us/48 states.svg",
             description: "50 states",
         },
         {
             title: "Healthcare Network",
-            img: "./assets/about-us/1,200+ healthcare providers.svg",
+            img: "/assets/about-us/1,200+ healthcare providers.svg",
             description: "1,200+ healthcare providers",
         },
         {
             title: "Specialty Expertise",
-            img: "./assets/about-us/over 35 medical specialties.svg",
+            img: "/assets/about-us/over 35 medical specialties.svg",
             description: "Over 35 medical specialties",
         },
         {
             title: "Claim Approval Rate",
-            img: "./assets/about-us/97 acceptance rate.svg",
+            img: "/assets/about-us/97 acceptance rate.svg",
             description: "97% acceptance rate",
         },
         {
             title: "Regulatory Compliance",
-            img: "./assets/about-us/compliance record.svg",
+            img: "/assets/about-us/compliance record.svg",
             description: "100% compliance record",
         },
     ]

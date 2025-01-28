@@ -3,8 +3,8 @@ import physicalTherapyFaqs from "./../specialitiesFaqs/physicalFaqs";
 const physicalTherapyBillingData = {
   faqs: physicalTherapyFaqs,
   title: "Physical Therapy Billing Services",
-  header:"./assets/specialities/headers/Physical Therapy.webp",
-  image: "./assets/specialities/cardImages/Physical Therapy.webp", 
+  header:"/assets/specialities/headers/Physical Therapy.webp",
+  image: "/assets/specialities/cardImages/Physical Therapy.webp", 
   short_description:
     "Physical therapy billing is a vital component of the healthcare system, ensuring that therapists receive fair compensation for their essential services. This process involves a series of coding and documentation practices designed to help healthcare providers navigate the complexities of reimbursement. As healthcare regulations and policies evolve, understanding physical therapy billing is crucial for success in this field.",
 

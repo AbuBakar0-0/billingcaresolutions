@@ -3,8 +3,8 @@ import pediatricsFaqs from "./../specialitiesFaqs/pediatricsFaqs";
 const pediatricsBillingData = {
   faqs: pediatricsFaqs,
   title: "Pediatrics Billing Services",
-  header:"./assets/specialities/headers/Pediatrics.webp",
-  image: "./assets/specialities/cardImages/Pediatrics.webp",
+  header:"/assets/specialities/headers/Pediatrics.webp",
+  image: "/assets/specialities/cardImages/Pediatrics.webp",
   short_description:
     "Pediatric billing and coding is a specialized process dedicated to documenting and billing healthcare services provided to children, from newborns to young adults up to 18 years old. This field requires a thorough understanding of pediatric-specific codes and guidelines to facilitate effective communication between healthcare providers and insurance companies, ensuring accurate reimbursement.",
 

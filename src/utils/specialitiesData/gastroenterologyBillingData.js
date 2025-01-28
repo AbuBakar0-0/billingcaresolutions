@@ -3,8 +3,8 @@ import gastroenterologyFaqs from "./../specialitiesFaqs/gastroenterologyFaqs";
 const gastroenterologyBillingData = {
   faqs: gastroenterologyFaqs,
   title: "Gastroenterology Billing Services",
-  header:"./assets/specialities/headers/Gastroenterology.webp",
-  image: "./assets/specialities/cardImages/Gastroenterology.webp",
+  header:"/assets/specialities/headers/Gastroenterology.webp",
+  image: "/assets/specialities/cardImages/Gastroenterology.webp",
   short_description:
     "Gastroenterology billing is a specialized process that requires comprehensive knowledge of medical codes and digestive health treatments. Gastroenterologists manage a range of conditions from the esophagus to the colon, making efficient billing practices essential for timely reimbursements and patient trust.",
 

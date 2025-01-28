@@ -3,8 +3,8 @@ import ophthalmologyFaqs from "./../specialitiesFaqs/ophthalmologyFaqs";
 const ophthalmologyBillingData = {
   faqs: ophthalmologyFaqs,
   title: "Ophthalmology Billing Services",
-  header:"./assets/specialities/headers/Ophthalmology.webp",
-  image: "./assets/specialities/cardImages/Ophthalmology.webp",
+  header:"/assets/specialities/headers/Ophthalmology.webp",
+  image: "/assets/specialities/cardImages/Ophthalmology.webp",
   short_description:
     "Ophthalmology billing is a vital component of managing a successful ophthalmology practice. With the complexities of the healthcare landscape, understanding the nuances of ophthalmology billing can significantly impact your revenue cycle and patient satisfaction.",
 

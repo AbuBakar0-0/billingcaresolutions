@@ -3,8 +3,8 @@ import homeHealthFaqs from "./../specialitiesFaqs/homeHealthFaqs";
 const homeHealthBillingData = {
   faqs: homeHealthFaqs,
   title: "Home Health Billing Services",
-  header:"./assets/specialities/headers/Home Health.webp",
-  image: "./assets/specialities/cardImages/Home Health.webp",
+  header:"/assets/specialities/headers/Home Health.webp",
+  image: "/assets/specialities/cardImages/Home Health.webp",
   short_description:
     "Home health billing involves the process of charging for healthcare services provided to patients in their homes. Proper billing ensures that healthcare providers are reimbursed by Medicare or other insurers, which can be complex due to specific regulations and documentation requirements.",
 

@@ -3,8 +3,8 @@ import vascularSurgeryFaqs from "./../specialitiesFaqs/vascularSurgeryFaqs";
 const vascularSurgeryBillingData = {
   faqs: vascularSurgeryFaqs,
   title: "Vascular Surgery Billing Services",
-  header:"./assets/specialities/headers/Vascular Surgery.webp",
-  image: "./assets/specialities/cardImages/Vascular Surgery.webp", // Placeholder for the image reference
+  header:"/assets/specialities/headers/Vascular Surgery.webp",
+  image: "/assets/specialities/cardImages/Vascular Surgery.webp", // Placeholder for the image reference
   short_description:
     "Vascular surgery billing is a specialized area within healthcare finance that focuses on the financial aspects of services provided for the treatment of vascular conditions. This includes surgeries and interventions related to arteries, veins, and lymphatic systems. As vascular procedures become more advanced and prevalent, efficient billing practices are crucial for ensuring that healthcare providers receive timely reimbursements while maintaining transparency for patients. Accurate billing in vascular surgery involves navigating complex coding systems and adhering to regulations, significantly impacting the revenue cycle of surgical practices.",
 

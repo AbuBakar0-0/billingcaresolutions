@@ -21,7 +21,7 @@ function SpecialitiesDetails() {
                 <meta name="description" content="At Billing Care Solutions, our specialties lie in delivering precise, customized services that meet the specific needs of healthcare practices. Our deep industry knowledge, paired with cutting-edge solutions, allows us to address critical areas of healthcare management, ensuring optimized revenue and smooth operations." />
                 <meta property="og:title" content="Specialities - Billing Care Solutions" />
                 <meta property="og:description" content="At Billing Care Solutions, our specialties lie in delivering precise, customized services that meet the specific needs of healthcare practices. Our deep industry knowledge, paired with cutting-edge solutions, allows us to address critical areas of healthcare management, ensuring optimized revenue and smooth operations." />
-                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
             </Helmet> */}
             <Header />
             <Hero title={data.title} img={data.header} short_description={data.short_description} />

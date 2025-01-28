@@ -1,8 +1,8 @@
 const consultationFaqs = {
   id: 6,
   title: "Consultation Services FAQs",
-  icon: "./assets/services/icons/8.svg",
-  header:"./assets/services/headers/Consultation services billingcaresolution.com.webp",
+  icon: "/assets/services/icons/8.svg",
+  header:"/assets/services/headers/Consultation services billingcaresolution.com.webp",
   description:
     "BCS offers expert consultation to navigate healthcare management complexities. Providing tailored advice on billing processes, compliance strategies, and operational efficiency, BCS delivers actionable insights and innovative solutions. This strategic guidance helps optimize practices, enhance revenue, and achieve regulatory excellence.",
   questions: [

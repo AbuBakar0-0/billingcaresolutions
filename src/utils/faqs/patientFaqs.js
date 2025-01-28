@@ -1,8 +1,8 @@
 const patientFaqs = {
   id: 9,
   title: "Patient Help Support FAQs",
-  icon: "./assets/services/icons/10.svg",
-  header:"./assets/services/headers/patient help support billingcaresolution.com.webp",
+  icon: "/assets/services/icons/10.svg",
+  header:"/assets/services/headers/patient help support billingcaresolution.com.webp",
   description:
     "BCS delivers comprehensive patient support, enhancing the healthcare experience with empathy and efficiency. From insurance inquiries to billing questions, BCS provides expert assistance tailored to patient needs. This prompt and compassionate support streamlines patient interactions and allows providers to focus on exceptional care.",
   questions: [

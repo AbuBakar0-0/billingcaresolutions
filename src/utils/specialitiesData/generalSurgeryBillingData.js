@@ -3,8 +3,8 @@ import generalSurgeryFaqs from "./../specialitiesFaqs/generalSurgeryFaqs";
 const generalSurgeryBillingData = {
   faqs: generalSurgeryFaqs,
   title: "General Surgery Billing Services",
-  header:"./assets/specialities/headers/General Surgery.webp",
-  image: "./assets/specialities/cardImages/General Surgery.webp",
+  header:"/assets/specialities/headers/General Surgery.webp",
+  image: "/assets/specialities/cardImages/General Surgery.webp",
   short_description:
     "General surgery billing is a vital component of modern healthcare systems, ensuring prompt reimbursement for surgical practices. This complex process involves the meticulous submission and tracking of medical claims with health insurance providers. Streamlining general surgery billing optimizes revenue and reduces claim denials, allowing healthcare providers to focus on delivering exceptional patient care.",
 

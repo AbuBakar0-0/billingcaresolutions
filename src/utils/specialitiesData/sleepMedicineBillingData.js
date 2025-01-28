@@ -3,8 +3,8 @@ import sleepMedicineFaqs from "./../specialitiesFaqs/sleepMedicineFaqs";
 const sleepMedicineBillingData = {
   faqs: sleepMedicineFaqs,
   title: "Sleep Medicine Billing Services",
-  header:"./assets/specialities/headers/Sleep Medicine.webp",
-  image: "./assets/specialities/cardImages/Sleep Medicine.webp", // Placeholder for the image reference
+  header:"/assets/specialities/headers/Sleep Medicine.webp",
+  image: "/assets/specialities/cardImages/Sleep Medicine.webp", // Placeholder for the image reference
   short_description:
     "Sleep medicine billing refers to the specialized process of coding and billing for healthcare services associated with diagnosing and treating sleep disorders. As conditions like sleep apnea, insomnia, and narcolepsy become more prevalent, effective billing practices are essential for healthcare providers. Accurate billing ensures prompt reimbursements, compliance with healthcare regulations, and ultimately enhances the quality of patient care.",
 

@@ -3,8 +3,8 @@ import allergyAndImmunologyFaqs from "../specialitiesFaqs/allergyFaqs";
 const allergyBillingData = {
   faqs: allergyAndImmunologyFaqs,
   title: "Allergy and Immunology Billing Services",
-  header:"./assets/specialities/headers/AllergyandImmunology.webp",
-  image: "./assets/specialities/cardImages/allergy.webp",
+  header:"/assets/specialities/headers/AllergyandImmunology.webp",
+  image: "/assets/specialities/cardImages/allergy.webp",
   short_description:
     "Effective billing for allergy testing and immunotherapy demands strict adherence to Medicare guidelines and CPT coding regulations to ensure accurate reimbursement. Understanding the key codes involved is essential for healthcare providers.",
 

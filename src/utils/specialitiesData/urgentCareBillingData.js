@@ -3,8 +3,8 @@ import urgentCareFaqs from "./../specialitiesFaqs/urgentCareFaqs";
 const urgentCareBillingData = {
   faqs: urgentCareFaqs,
   title: "Urgent Care Billing Services",
-  header:"./assets/specialities/headers/Urgent Care.webp",
-  image: "./assets/specialities/cardImages/Urgent Care.webp", // Placeholder for the image reference
+  header:"/assets/specialities/headers/Urgent Care.webp",
+  image: "/assets/specialities/cardImages/Urgent Care.webp", // Placeholder for the image reference
   short_description:
     "Urgent care billing is a crucial aspect of the healthcare system, focusing on the financial management of services provided in urgent care settings. These facilities serve as convenient alternatives to emergency rooms, addressing non-life-threatening conditions promptly. Effective billing practices are essential to ensure these centers receive appropriate reimbursements while maintaining transparency for patients. By adopting efficient billing strategies, urgent care centers can enhance their revenue cycles and improve overall patient satisfaction.",
 

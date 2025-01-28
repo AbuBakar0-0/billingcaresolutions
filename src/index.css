@@ -11,8 +11,7 @@
 /* src/index.css */
 @font-face {
   font-family: "CustomFont";
-  src: url("../public/assets/fonts/GillSansMTPro-Medium.otf")
-    format("truetype");
+  src: url("../public/assets/fonts/GillSansMTPro-Medium.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -205,4 +204,20 @@ body {
   100% {
     transform: translate(0.1px);
   }
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
 }

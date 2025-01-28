@@ -1,8 +1,8 @@
 const arFaqs = {
   id: 5,
   title: "AR & Denial Management FAQs",
-  icon: "./assets/services/icons/6.svg",
-  header:"./assets/services/headers/AR & Denial Management Services billingcaresolution.com.webp",
+  icon: "/assets/services/icons/6.svg",
+  header:"/assets/services/headers/AR & Denial Management Services billingcaresolution.com.webp",
   description:
     "BCS enhances financial performance with expert AR and denial management services. By meticulously managing accounts receivable and strategically resolving denials, BCS ensures streamlined revenue cycles and maximized cash flow. Proactive denial management and sophisticated analytics turn financial challenges into growth opportunities.",
   questions: [

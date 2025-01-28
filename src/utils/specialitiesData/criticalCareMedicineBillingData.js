@@ -3,8 +3,8 @@ import criticalCareFaqs from "../specialitiesFaqs/criticalFaqs";
 const criticalCareMedicineBillingData = {
   faqs: criticalCareFaqs,
   title: "Critical Care Medicine Billing Services",
-  header: "./assets/specialities/headers/Critical Care Medicine.webp",
-  image: "./assets/specialities/cardImages/Critical Care Medicine.webp",
+  header: "/assets/specialities/headers/Critical Care Medicine.webp",
+  image: "/assets/specialities/cardImages/Critical Care Medicine.webp",
   short_description:
     "Billing for Critical Care Medicine involves specialized procedures designed to manage and document services provided to patients experiencing severe and potentially life-threatening conditions. This intricate area of healthcare requires precise coding, along with a thorough understanding of regulations, to ensure accurate reimbursement from insurers. Implementing effective billing strategies in critical care is crucial for maintaining the financial health of medical facilities while ensuring that high-quality patient care remains the top priority.",
 

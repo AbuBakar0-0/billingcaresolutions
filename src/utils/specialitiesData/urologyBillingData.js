@@ -3,8 +3,8 @@ import urologyFaqs from "./../specialitiesFaqs/urologyFaqs";
 const urologyBillingData = {
   faqs: urologyFaqs,
   title: "Urology Billing Services",
-  header:"./assets/specialities/headers/Urology.webp",
-  image: "./assets/specialities/cardImages/Urology.webp", // Placeholder for the image reference
+  header:"/assets/specialities/headers/Urology.webp",
+  image: "/assets/specialities/cardImages/Urology.webp", // Placeholder for the image reference
   short_description:
     "Urology billing is a specialized field within healthcare finance focusing on the coding and billing for services related to diagnosing and treating urinary tract disorders and male reproductive issues. With the increasing complexity of healthcare regulations and a rise in urology cases, efficient billing practices are crucial. Proper billing ensures that urology practices receive timely reimbursements while maintaining transparency and trust with patients. Effective urology billing involves understanding various codes, procedures, and regulations, allowing practices to optimize their revenue cycles and enhance patient satisfaction.",
 

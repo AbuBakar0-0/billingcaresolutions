@@ -1,6 +1,6 @@
 const consultationData = {
   title: "Consultation Services",
-  header: "./assets/services/headers/Consultation services billingcaresolution.com.webp",
+  header: "/assets/services/headers/Consultation services billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we offer tailored Consultation Services designed to enhance your billing and revenue cycle operations. Our expert guidance helps you tackle challenges, implement best practices, and achieve optimal efficiency.",
   content: {
     title: "Elevate Your Practice with Expert Consultation and Strategic Guidance",

@@ -1,6 +1,6 @@
 const complianceData = {
   title: "Compliance Assistance",
-  header: "./assets/services/headers/compliance billingcaresolution.com.webp",
+  header: "/assets/services/headers/compliance billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we provide comprehensive Compliance Assistance to ensure your practice adheres to regulatory standards and best practices. Our expert support helps you navigate complex regulations while maintaining operational excellence.",
   content: {
     title: "Achieve Seamless Compliance with Expert Assistance",

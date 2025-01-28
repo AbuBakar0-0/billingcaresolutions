@@ -3,8 +3,8 @@ import infectiousDiseaseFaqs from "./../specialitiesFaqs/infectiousDiseasesFaqs"
 const infectiousDiseaseBillingData = {
   faqs: infectiousDiseaseFaqs,
   title: "Infectious Diseases Billing Services",
-  header:"./assets/specialities/headers/Infectious Diseases.webp",
-  image: "./assets/specialities/cardImages/Infectious Diseases.webp",
+  header:"/assets/specialities/headers/Infectious Diseases.webp",
+  image: "/assets/specialities/cardImages/Infectious Diseases.webp",
   short_description:
     "Infectious disease billing is a specialized area of medical billing that focuses on the unique coding and documentation associated with diagnosing and treating infectious diseases. This aspect of billing is crucial for healthcare providers, as it ensures they receive appropriate reimbursement for their services, ultimately impacting both financial health and the quality of patient care.",
 

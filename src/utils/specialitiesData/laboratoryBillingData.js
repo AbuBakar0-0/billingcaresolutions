@@ -3,8 +3,8 @@ import laboratoryServicesFaqs from "./../specialitiesFaqs/laboratoryFaqs";
 const laboratoryBillingData = {
   faqs: laboratoryServicesFaqs,
   title: "Laboratory Billing Services",
-  header: "./assets/specialities/headers/Laboratory.webp",
-  image: "./assets/specialities/cardImages/Laboratory.webp", // Placeholder image reference
+  header: "/assets/specialities/headers/Laboratory.webp",
+  image: "/assets/specialities/cardImages/Laboratory.webp", // Placeholder image reference
   short_description:
     "Laboratory billing is a critical aspect of the healthcare sector, essential for maintaining the financial health of medical facilities, including clinics and laboratories. This complex process involves multiple steps, such as patient registration, insurance verification, service coding, claim submission, and diligent follow-up. Effective laboratory billing is integral to revenue cycle management, ensuring that healthcare providers receive appropriate compensation for their services. Any errors or inefficiencies in this process can lead to significant financial setbacks, highlighting the importance of expertise in both billing and coding.",
 

@@ -1,8 +1,8 @@
 const complianceFaqs = {
   id: 8,
   title: "Compliance Assistance FAQs",
-  icon: "./assets/services/icons/9.svg",
-  header: "./assets/services/headers/compliance billingcaresolution.com.webp",
+  icon: "/assets/services/icons/9.svg",
+  header: "/assets/services/headers/compliance billingcaresolution.com.webp",
   description:
     "BCS provides robust compliance assistance to navigate complex healthcare regulations. Expert guidance on regulatory requirements, policy updates, and best practices ensures strict adherence to industry standards. Proactive risk management and audit readiness safeguard your organization, optimizing processes and maintaining regulatory excellence.",
   questions: [

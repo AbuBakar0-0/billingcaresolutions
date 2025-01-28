@@ -3,8 +3,8 @@ import orthopedicsFaqs from "./../specialitiesFaqs/orthopedicsFaqs";
 const orthopedicBillingData = {
   faqs: orthopedicsFaqs,
   title: "Orthopedics Billing Services",
-  header:"./assets/specialities/headers/Orthopedics.webp",
-  image: "./assets/specialities/cardImages/Orthopedics.webp",
+  header:"/assets/specialities/headers/Orthopedics.webp",
+  image: "/assets/specialities/cardImages/Orthopedics.webp",
   short_description:
     "Orthopedic billing is a specialized process focused on managing financial transactions related to orthopedic services. With the increasing complexity of healthcare regulations and coding systems, it is essential for orthopedic practices to understand the intricacies of this field. Accurate coding is critical to prevent claim denials and ensure compliance with healthcare regulations.",
 

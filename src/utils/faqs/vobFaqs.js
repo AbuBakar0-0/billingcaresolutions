@@ -1,8 +1,8 @@
 const vobFaqs = {
   id: 7,
   title: "Verification & Prior Authorization FAQs",
-  icon: "./assets/services/icons/7.svg",
-  header:"./assets/services/headers/verification and piror authorization billingcaresolution.com.webp",
+  icon: "/assets/services/icons/7.svg",
+  header:"/assets/services/headers/verification and piror authorization billingcaresolution.com.webp",
   description:
     "BCS ensures unparalleled precision in verification and prior authorization. Rigorous patient eligibility checks and meticulous management of authorization requests streamline approvals, reduce claim rejections, and accelerate patient access to services. BCS’s expert handling supports optimal revenue flow and operational excellence.",
   questions: [

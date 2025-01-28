@@ -3,8 +3,8 @@ import internalMedicineFaqs from "./../specialitiesFaqs/internalMedicineFaqs";
 const internalMedicineBillingData = {
   faqs: internalMedicineFaqs,
   title: "Internal Medicine Billing Services",
-  header: "./assets/specialities/headers/Internal Medicine.webp",
-  image: "./assets/specialities/cardImages/Internal Medicine.webp",
+  header: "/assets/specialities/headers/Internal Medicine.webp",
+  image: "/assets/specialities/cardImages/Internal Medicine.webp",
   short_description:
     "Internal medicine billing is an essential aspect of the healthcare system, ensuring that physicians who specialize in adult diseases receive appropriate compensation for their services. Accurate billing is critical for maintaining a steady revenue flow and providing quality care for complex medical issues.",
 

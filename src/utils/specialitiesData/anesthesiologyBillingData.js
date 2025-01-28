@@ -2,9 +2,9 @@ import anesthesiologyFaqs from "./../specialitiesFaqs/anesthesiologyFaqs";
 
 const anesthesiologyBillingData = {
   faqs: anesthesiologyFaqs,
-  header: "./assets/specialities/headers/Anesthesiology.webp",
+  header: "/assets/specialities/headers/Anesthesiology.webp",
   title: "Anesthesiology Billing Services",
-  image: "./assets/specialities/cardImages/Anesthesiology.webp",
+  image: "/assets/specialities/cardImages/Anesthesiology.webp",
   short_description:
     "Anesthesia billing and coding requires precision and expertise to navigate complex reimbursement regulations, ensuring accurate payment for life-saving procedures. Effective anesthesia billing harmonizes medical coding (CPT, ICD-10), patient eligibility verification, and insurance payer guidelines.",
 

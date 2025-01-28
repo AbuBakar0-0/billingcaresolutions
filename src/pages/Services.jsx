@@ -21,7 +21,7 @@ function Services() {
                 <meta name="description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
                 <meta property="og:title" content="Services - Billing Care Solutions" />
                 <meta property="og:description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
-                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
             </Helmet> */}
             <Header />
             <Hero />

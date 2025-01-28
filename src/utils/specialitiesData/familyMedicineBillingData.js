@@ -3,8 +3,8 @@ import familyMedicineFaqs from "./../specialitiesFaqs/familyFaqs";
 const familyMedicineBillingData = {
   faqs: familyMedicineFaqs,
   title: "Family Medicine Billing Services",
-  header: "./assets/specialities/headers/Family Medicine.webp",
-  image: "./assets/specialities/cardImages/Family Medicine.webp",
+  header: "/assets/specialities/headers/Family Medicine.webp",
+  image: "/assets/specialities/cardImages/Family Medicine.webp",
   short_description:
     "Family medicine billing is a specialized process that empowers healthcare providers to optimize revenue cycle management, streamline administrative tasks, and enhance patient care. By leveraging advanced technology and expert knowledge, family medicine billing solutions ensure accurate and efficient claims processing, insurance verification, payment posting, and denial management. This comprehensive approach maximizes financial stability, reduces regulatory compliance risks, and boosts practice profitability, allowing family medicine practitioners to focus on delivering high-quality, patient-centered care.",
 

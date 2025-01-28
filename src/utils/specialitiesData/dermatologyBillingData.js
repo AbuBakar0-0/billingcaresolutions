@@ -2,8 +2,8 @@ import dermatologyFaqs from "./../specialitiesFaqs/dermatologyFaqs";
 const dermatologyBillingData = {
   faqs: dermatologyFaqs,
   title: "Dermatology Billing Services",
-  header: "./assets/specialities/headers/Dermatology.webp",
-  image: "./assets/specialities/cardImages/Dermatology.webp", // Placeholder image reference
+  header: "/assets/specialities/headers/Dermatology.webp",
+  image: "/assets/specialities/cardImages/Dermatology.webp", // Placeholder image reference
   short_description:
     "Dermatology medical billing requires an in-depth understanding of complex coding systems, insurance regulations, and the distinction between medically necessary and cosmetic services. While medical dermatology services are typically reimbursed by insurance, cosmetic services are billed directly to patients. To ensure seamless reimbursement, dermatology billers must be well-versed in common skin-related diagnoses, including benign and malignant masses, and must understand coding terminology related to procedures.",
 

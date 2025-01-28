@@ -66,12 +66,12 @@ function Achievements() {
                     ))}
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
-                    <img src="./assets/about-us/Accuracy-and-Precision-billingcaresolutions.com.webp" alt="Billing Care Solutions" className='p-10' />
+                    <img src="/assets/about-us/Accuracy-and-Precision-billingcaresolutions.com.webp" alt="Billing Care Solutions" className='p-10' />
                 </div>
             </div>
             <div className='w-full flex flex-col md:flex-row justify-between items-center'>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
-                    <img src="./assets/about-us/Expansion-and-Advancement-billingcaresolutions.com.webp" alt="Billing Care Solutions" className='p-10' />
+                    <img src="/assets/about-us/Expansion-and-Advancement-billingcaresolutions.com.webp" alt="Billing Care Solutions" className='p-10' />
                 </div>
                 <div className='w-full md:w-1/2 flex flex-col justify-center items-center border-r-8 border-secondary p-5 gap-3'>
                     <p className='w-full text-2xl font-semibold text-left text-secondary'>Expansion and Advancement </p>

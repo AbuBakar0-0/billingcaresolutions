@@ -1,8 +1,8 @@
 const reportingFaqs = {
   id: 4,
   title: "Reporting & Analytics FAQs",
-  icon: "./assets/services/icons/5.svg",
-  header:"./assets/services/headers/Reporting & Analytics billingcaresolution.com.webp",
+  icon: "/assets/services/icons/5.svg",
+  header:"/assets/services/headers/Reporting & Analytics billingcaresolution.com.webp",
   description:
     "BCS delivers sophisticated reporting and analytics that turn complex data into actionable insights. Utilizing advanced analytical tools, BCS provides a comprehensive view of financial and operational performance. This data-driven approach helps healthcare providers make informed decisions, identify trends, and optimize strategies for enhanced success.",
   questions: [

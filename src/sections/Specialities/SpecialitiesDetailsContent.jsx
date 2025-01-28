@@ -28,7 +28,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
                         {data.content.sub_content_1.details.data.map((item) => (
                             <>
                                 <li className='flex flex-row gap-3 justify-center items-center text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>
-                                    <img  src="./assets/Arrow billingcaresolutions.com.svg" alt="Billing Care Solutions" className='size-4' />
+                                    <img  src="/assets/Arrow billingcaresolutions.com.svg" alt="Billing Care Solutions" className='size-4' />
                                     <p className='font-semibold text-secondary'>{item.title}: &nbsp;
                                         <span
                                             className=" text-black font-normal"
@@ -90,7 +90,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
                             {data.content.sub_content_3.details.data.map((item) => (
                                 <>
                                     <li className='w-full flex flex-col md:flex-row gap-2 justify-start items-center '>
-                                        <img  src="./assets/Arrow billingcaresolutions.com.svg" alt="Billing Care Solutions" className='size-4' />
+                                        <img  src="/assets/Arrow billingcaresolutions.com.svg" alt="Billing Care Solutions" className='size-4' />
                                         <p className='w-full text-secondary font-semibold text-lg'>{item.title}: <span className='font-normal text-black'>{item.description}</span></p>
                                     </li>
                                 </>
@@ -106,7 +106,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
                     {data.testimonials.map((item) => (
                         <div className='md:w-[49.2%] bg-gray-100 flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start p-8 rounded-lg gap-4 text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight
 '>
-                            <img  src="./assets/specialities/testimonial.png" alt="Billing Care Solutions" className='size-20' />
+                            <img  src="/assets/specialities/testimonial.png" alt="Billing Care Solutions" className='size-20' />
                             <div className='w-full flex flex-col gap-2'>
                                 <p className='text-secondary font-semibold font-custom'>{item.title}</p>
                                 <p>{item.description}</p>
@@ -120,7 +120,7 @@ const SpecialitiesDetailsContent = ({ data }) => {
 
             {
                 data.faqs !== undefined ? <div className='w-full flex flex-col justify-center items-start gap-4 container mx-auto my-10 px-10'>
-                    <Heading data="Frequently Asked Questions" />
+                    <Heading data="Frequently Asked Questions " />
                     {data.faqs.map((item, index) => (
                         <SpecialityFaqCard
                             key={index}

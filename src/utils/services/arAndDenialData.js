@@ -1,6 +1,6 @@
 const arAndDenialData = {
   title: "Advanced AR & Denial Management",
-  header: "./assets/services/headers/AR & Denial Management Services billingcaresolution.com.webp",
+  header: "/assets/services/headers/AR & Denial Management Services billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we provide Advanced AR & Denial Management services designed to enhance your accounts receivable processes and significantly reduce claim denials. Our proactive approach ensures efficient revenue cycle management and improved financial outcomes.",
   content: {
     title: "Optimize Collections and Minimize Denials with Expert AR Management",

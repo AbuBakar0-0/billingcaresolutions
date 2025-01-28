@@ -1,6 +1,6 @@
 const patientHelpData = {
   title: "Patient Help Support",
-  header: "./assets/services/headers/patient help support billingcaresolution.com.webp",
+  header: "/assets/services/headers/patient help support billingcaresolution.com.webp",
   description: "At Billing Care Solutions, we offer dedicated Patient Help Support to assist with billing inquiries, claims issues, and payment processing. Our services improve patient satisfaction and streamline the billing experience.",
   content: {
     title: "Enhance Patient Experience with Comprehensive Help Support",

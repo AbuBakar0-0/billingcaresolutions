@@ -3,8 +3,8 @@ import endocrinologyFaqs from "./../specialitiesFaqs/endocrinologyFaqs";
 const endocrinologyMedicalBillingData = {
   faqs: endocrinologyFaqs,
   title: "Endocrinology Billing Solutions",
-  header: "./assets/specialities/headers/Endocrinology.webp",
-  image: "./assets/specialities/cardImages/Endocrinology.webp",
+  header: "/assets/specialities/headers/Endocrinology.webp",
+  image: "/assets/specialities/cardImages/Endocrinology.webp",
   short_description:
     "Endocrinology billing is a specialized area of medical billing that deals with the diagnosis, treatment, and management of disorders related to the endocrine system. Proper billing practices are crucial for endocrinologists to ensure accurate reimbursement and maintain a healthy practice.",
 

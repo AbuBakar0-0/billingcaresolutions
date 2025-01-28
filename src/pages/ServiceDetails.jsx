@@ -36,11 +36,11 @@ function ServiceDetails() {
                 <meta name="description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
                 <meta property="og:title" content="Services - Billing Care Solutions" />
                 <meta property="og:description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
-                <meta property="og:image" content="./assets/BCS Logo billingcaresolutions.com.svg" />
+                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
             </Helmet> */}
             <Header />
             <Hero title={data.title} image={data.header} description={data.description} />
-            <div className='w-full container flex flex-col md:flex-row justify-center items-start gap-4 mx-auto p-10'>
+            <div className='w-full container flex flex-col md:flex-row justify-center items-start gap-4 mx-auto p-10 '>
                 <div className='w-full md:w-3/4 flex flex-col justify-start items-start gap-4 text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>
                     <HeadingLine data={data.content.title} />
                     <p>{data.content.description}</p>
@@ -77,7 +77,7 @@ function ServiceDetails() {
                 </div>
             </div >
             <Heading data={data.title+" FAQ's"} />
-            <div className='container mx-auto flex flex-col justify-between items-center gap-4 mb-10 px-10'>
+            <div className='w-full flex flex-col justify-between items-center gap-4 mb-10 px-10'>
                 {faqss.questions.map((item, index) => (
                     <ExpansionTile
                         key={index}

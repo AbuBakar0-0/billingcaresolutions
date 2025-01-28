@@ -1,6 +1,6 @@
 const medicalBillingAndCodingData = {
     title: "Medical Billing & Coding Services",
-    header: "./assets/services/headers/medical billing billingcaresolution.com.webp",
+    header: "/assets/services/headers/medical billing billingcaresolution.com.webp",
     description:"Our Medical Billing and Coding services utilize the latest coding systems, including Current Procedural Terminology (CPT), International Classification of Diseases (ICD-10), and Healthcare Common Procedure Coding System (HCPCS) codes. We employ experienced certified coders who specialize in various medical specialties, ensuring accurate coding that reflects the services provided. Our meticulous coding processes lead to reduced claim denials, optimized reimbursement, and compliance with Medicare and Medicaid guidelines.",
     content: {
       title: "Elevate Your Practice’s Revenue with Precision Billing & Coding Solutions",

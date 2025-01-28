@@ -7,7 +7,7 @@ const SpecialityFaqCard = ({ data, isOpen, onClick }) => {
         className="p-4 cursor-pointer bg-gray-200 hover:bg-gray-300 rounded-t-lg"
         onClick={onClick}
       >
-        <h2 className="text-md font-semibold text-gray-800">{data.question}</h2>
+        <h2 className="text-sm font-semibold text-gray-800">{data.question}</h2>
       </div>
       <div
         className={`overflow-hidden  ${isOpen ? 'max-h-screen transition-all duration-500 ease-in-out' : 'max-h-0'

@@ -2,7 +2,7 @@ const remotePatientMonitoringReimbursementData = {
     id: 1,
     date: "10/04/2024",
     title: "Remote Patient Monitoring (RPM) Reimbursement 2024",
-    image: "./assets/articles/Remote_Patient_Monitoring_RPM_Reimbursement_2024.jpg",
+    image: "/assets/articles/Remote_Patient_Monitoring_RPM_Reimbursement_2024.jpg",
     description: `
         <div class="flex flex-col gap-4">
             <p>Remote Patient Monitoring (RPM) has emerged as a critical component in modern healthcare, allowing providers to track patients’ health data remotely, improving care coordination, and enhancing patient outcomes. With the continuous advancements in telehealth, RPM reimbursement policies have evolved to reflect these innovations, especially in 2024, where changes have been made to improve accessibility and efficiency. This article dives into the key aspects of RPM reimbursement for 2024 and its impact on healthcare providers.</p>

@@ -3,8 +3,8 @@ import cardiologyFaqs from "./../specialitiesFaqs/cardiologyFaqs";
 const cardiologyBillingData = {
   faqs: cardiologyFaqs,
   title: "Cardiology Billing Services",
-  header: "./assets/specialities/headers/Cardiology.webp",
-  image: "./assets/specialities/cardImages/Cardiology.webp", 
+  header: "/assets/specialities/headers/Cardiology.webp",
+  image: "/assets/specialities/cardImages/Cardiology.webp", 
   short_description:
     "Cardiology medical billing is a complex process that involves submitting and managing claims for various cardiovascular treatments, including diagnostic testing, interventional procedures, surgical services, consultations, and medication management. Accurate coding using CPT and ICD-10 systems, as well as compliance with regulatory requirements, are crucial for ensuring timely reimbursement for cardiology practices, hospitals, and clinics.",
 

@@ -3,8 +3,8 @@ import emergencyMedicineFaqs from "./../specialitiesFaqs/emergencyFaqs";
 const emergencyMedicineBillingData = {
   faqs: emergencyMedicineFaqs,
   title: "Emergency Medicine Billing Services",
-  header:"./assets/specialities/headers/emergency_medicines.webp",
-  image: "./assets/specialities/cardImages/Emergency Medicine.webp",
+  header:"/assets/specialities/headers/emergency_medicines.webp",
+  image: "/assets/specialities/cardImages/Emergency Medicine.webp",
   short_description:
     "Emergency medicine billing is a specialized area focused on accurately coding and billing for services provided in emergency departments. This field requires a deep understanding of CPT codes, ICD-10 codes, and HCPCS codes, alongside payer-specific regulations to ensure compliance and optimal reimbursement. Effective emergency medicine billing minimizes denials and enhances revenue cycle management, making it critical for healthcare facilities to streamline their billing processes.",
 

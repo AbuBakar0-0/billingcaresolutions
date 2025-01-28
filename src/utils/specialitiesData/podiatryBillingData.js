@@ -3,8 +3,8 @@ import podiatryFaqs from "./../specialitiesFaqs/podiatryFaqs";
 const podiatryBillingData = {
   faqs: podiatryFaqs,
   title: "Podiatry Billing Services",
-  header: "./assets/specialities/headers/Podiatry.webp",
-  image: "./assets/specialities/cardImages/Podiatry.webp",
+  header: "/assets/specialities/headers/Podiatry.webp",
+  image: "/assets/specialities/cardImages/Podiatry.webp",
   short_description:
     "Podiatry billing is a crucial element in ensuring that podiatrists are properly compensated for their specialized services. At Billing Care Solutions, we focus on precise coding and thorough documentation to navigate the complexities of insurance reimbursement effectively. Understanding the intricacies of podiatry billing is essential for both healthcare providers and administrative teams, especially as the healthcare landscape evolves.",
 

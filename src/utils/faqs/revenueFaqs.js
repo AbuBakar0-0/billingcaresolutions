@@ -1,8 +1,8 @@
 const revenueFaqs = {
   id: 2,
   title: "Revenue Cycle Management FAQs",
-  icon: "./assets/services/icons/3.svg",
-  header:"./assets/services/headers/Revenue cycle management billingcaresolution.com.webp",
+  icon: "/assets/services/icons/3.svg",
+  header:"/assets/services/headers/Revenue cycle management billingcaresolution.com.webp",
   description:
     "BCS streamlines the credentialing process with precision and efficiency. From verifying qualifications to conducting comprehensive compliance assessments, BCS ensures seamless and expedited credentialing. This service removes administrative barriers, allowing physicians to focus on patient care while upholding the highest standards of regulatory compliance.",
   questions: [

@@ -3,8 +3,8 @@ import chiropracticFaqs from "./../specialitiesFaqs/chiropracticFaqs";
 const chiropracticBillingData = {
   faqs: chiropracticFaqs,
   title: "Chiropractic Billing Services",
-  header: "./assets/specialities/headers/Chiropractic.webp", // Placeholder header image
-  image: "./assets/specialities/cardImages/Chiropractic.webp", 
+  header: "/assets/specialities/headers/Chiropractic.webp", // Placeholder header image
+  image: "/assets/specialities/cardImages/Chiropractic.webp", 
   short_description:
     "Chiropractic billing and coding involve translating spinal manipulation, adjustments, and other services into universal codes for insurance reimbursement. Accurate documentation and coding are crucial for optimizing reimbursement and maintaining a healthy revenue cycle.",
 

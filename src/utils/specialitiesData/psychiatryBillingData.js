@@ -3,8 +3,8 @@ import psychiatryFaqs from "./../specialitiesFaqs/psychiatryFaqs";
 const psychiatryBillingData = {
   faqs: psychiatryFaqs,
   title: "Psychiatry Billing Services",
-  header:"./assets/specialities/headers/Psychiatry.webp",
-  image: "./assets/specialities/cardImages/Psychiatry.webp", // Placeholder for the image reference
+  header:"/assets/specialities/headers/Psychiatry.webp",
+  image: "/assets/specialities/cardImages/Psychiatry.webp", // Placeholder for the image reference
   short_description:
     "Psychiatry billing is a vital component of mental health care that ensures psychiatrists receive appropriate reimbursement for their services. This intricate process involves coding, documentation, and submission of claims to insurance providers, which can often be complex due to varying regulations and insurance policies. As mental health awareness grows, understanding the nuances of psychiatry billing is essential for healthcare providers and administrative staff alike.",
 

@@ -80,7 +80,7 @@ const Header = () => {
                 <div className="flex justify-between h-16">
                     <div className="w-full flex flex-row justify-between">
                         <div className="w-4/5 lg:w-1/5 flex-shrink-0 flex items-center">
-                            <img className="h-full w-auto" src="./assets/BCS Logo billingcaresolutions.com.svg" alt="Logo" />
+                            <img className="h-full w-auto" src="/assets/BCS Logo billingcaresolutions.com.svg" alt="Logo" />
                         </div>
                         <div className="hidden lg:flex lg:space-x-8 items-center w-3/5 justify-center">
                             <Link to='/' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Home</Link>
@@ -97,7 +97,7 @@ const Header = () => {
 
                                 </button>
                                 <div className={`p-2 absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-20 transition-all duration-100 ${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`} onMouseOver={() => displaySubMenu(1)} onMouseOut={() => displaySubMenu(0)}>
-                                    <Link to="/blogs" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Blog</Link>
+                                    <Link to="/blogs" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Blogs</Link>
                                     <Link to="/faqs" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">FAQ's</Link>
                                     <Link to="/articles" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Articles</Link>
                                     <Link to="/termsandconditions" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Terms & Conditions</Link>
