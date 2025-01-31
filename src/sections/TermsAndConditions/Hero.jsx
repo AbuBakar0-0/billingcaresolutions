@@ -1,13 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { supabase } from '../../lib/supabase';
 
 function Hero() {
+
+
+    const [loading, setLoading] = useState(false);
+    const [header, setHeadersData] = useState([]);
+    // Fetch data from Supabase
+    useEffect(() => {
+        const fetchHeaderData = async () => {
+            try {
+                setLoading(true);
+                // Fetch the header data where type is 'whybcs'
+                const { data: headerData, error: headerError } = await supabase
+                    .from('headers')
+                    .select('*')
+                    .eq('type', 'termsConditions')
+                    .single(); // We expect only one record
+
+                if (headerError) throw headerError;
+
+                setHeadersData(headerData);
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching header data:", error);
+            }
+        };
+
+        fetchHeaderData();
+    }, []);
+
+
     return (
         <>
-            <div className='bg-secondary text-white' style={{ backgroundImage: `url("/assets/headers/terms and condition billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: "center" }}>
+            <div className='bg-secondary text-white' style={{ backgroundImage: `url("${header.background_image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: "center" }}>
                 <div className='container mx-auto md:min-h-[24rem] md:max-h-[24rem] flex flex-col md:flex-row justify-start items-center gap-4 text-center lg:p-10'>
                     <div className='w-full md:w-1/2 flex flex-col justify-start items-start text-left gap-3 py-20 scale-[0.85] text-md md:scale-100 ml-10'>
-                        <h1 className='w-full uppercase text-5xl font-bold text-left'>Terms And Conditions</h1>
-                        <p className='text-justify'>BCS USA LLC shall have the exclusive right to provide billing services for the Client.</p>
+                        <h1 className='w-full uppercase text-5xl font-bold text-left'>{header.heading}</h1>
+                        <p className='text-justify'>{header.description}</p>
                     </div>
                     <div className='w-full md:w-1/2'>
                     </div>

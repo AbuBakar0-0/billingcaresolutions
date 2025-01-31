@@ -22,7 +22,7 @@ function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000)
+    }, 3000)
     window.scrollTo(0, 0);
   }, [])
 
@@ -55,7 +55,7 @@ function Home() {
             <WhoWeAre />
             <WhatWeProvide />
             <WhyChooseUs />
-            <SpecialitiesWeOffer  />
+            <SpecialitiesWeOffer />
             <Softwares />
             <BillingServices />
             <HoverSlider />

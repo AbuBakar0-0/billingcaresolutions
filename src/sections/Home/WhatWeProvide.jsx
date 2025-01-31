@@ -1,10 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import OfferCards from './../../components/Home/OfferCards';
 import { Link } from 'react-router-dom';
+import { supabase } from '../../lib/supabase';
 
 function WhatWeProvide() {
 
     const [showMore, setShowMore] = useState(false);
+
+    const [services, setServices] = useState([]);
+    
+        useEffect(() => {
+            // Fetch existing slides from Supabase
+            const fetchSlides = async () => {
+                const { data, error } = await supabase.from("what_we_provide").select("*").order("service_no");
+                if (error) {
+                    console.error("Error fetching slides:", error.message);
+                } else {
+                    setServices(data || []);
+                }
+    
+            };
+    
+            fetchSlides();
+        }, []);
 
     const data = [
         {
@@ -85,7 +103,7 @@ function WhatWeProvide() {
         setShowMore(!showMore);
     };
 
-    var itemsToDisplay = showMore ? data : data.slice(0, 5);
+    var itemsToDisplay = showMore ? services : services.slice(0, 5);
 
 
     return (
@@ -105,7 +123,7 @@ function WhatWeProvide() {
                 </div>
                 <div className='w-full flex flex-wrap justify-center md:justify-around p-5 mb-10 transition-all duration-300 ease-in-out'>
                     {itemsToDisplay.map((item, index) => (
-                        <Link to={item.title === "Medical Billing & Coding" ? `/servicesDetails?index=${index}` : `/serviceDetails?index=${index}`}>
+                        <Link to={``}>
                             <OfferCards key={index} data={item} />
                         </Link>
                     ))}

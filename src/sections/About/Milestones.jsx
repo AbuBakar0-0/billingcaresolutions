@@ -1,10 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Heading from '../../components/Heading';
 import MilestoneCard from '../../components/About/MilestoneCard';
+import { useState } from 'react';
+import { supabase } from './../../lib/supabase';
+import Loader from './../../components/ui/Loader';
 
 
 function Achievements() {
-    
+
+    const [loading, setLoading] = useState(false);
+    const [milestones1, setMilestones1] = useState([]);
+    const [milestones2, setMilestones2] = useState([]);
+
+    useEffect(() => {
+        const fetchHeaderData = async () => {
+            try {
+                setLoading(true);
+                // Fetch the header data where type is 'whybcs'
+                const { data: type1Data, error: error1 } = await supabase
+                    .from('milestones')
+                    .select('*').eq("type", "01"); // We expect only one record
+                if (error1) throw error1;
+
+                setMilestones1(type1Data);
+
+                const { data: type2Data, error: error2 } = await supabase
+                    .from('milestones')
+                    .select('*').eq("type", "02"); // We expect only one record
+                if (error2) throw error2;
+
+                setMilestones2(type2Data);
+
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching header data:", error);
+            }
+        };
+
+        fetchHeaderData();
+    }, []);
+
     const acdata = [
         {
             title: "Average Time to Resolution",
@@ -49,39 +84,71 @@ function Achievements() {
             description: "95%",
             width: "95",
         },
-        
+
     ]
     return (
-        <>
-            <div className='w-full flex flex-col justify-center items-center gap-3 text-center p-5'>
-                <Heading data={'Our Milestones'} />
-                <p className='w-full md:w-1/2 text-center text-sm lg:text-md whitespace-normal break-words tracking-tight'>Our unwavering dedication to excellence in Medical Billing has resulted in exceptional industry recognition and numerous prestigious awards. Some of our notable accomplishments:</p>
-            </div>
-            <div className='w-full flex flex-col md:flex-row justify-between items-center'>
-                <div className='w-full md:w-1/2 flex flex-col justify-center items-center border-l-8 border-secondary p-5 gap-3'>
-                    <p className='w-full text-2xl font-semibold text-left text-secondary'>Accuracy and Precision</p>
-                    <p className='text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>We pride ourselves on maintaining exceptional accuracy and operational efficiency in our Medical Billing processes, ensuring timely reimbursements for our clients. Our commitment to meticulous process management and adherence to industry standards has led to a significant reduction in error rates, well below the national benchmark.</p>
-                    {acdata.map((item) => (
-                        <MilestoneCard data={item} />
-                    ))}
+        loading ? <></> :
+            <>
+                <div className='w-full flex flex-col justify-center items-center gap-3 text-center p-5'>
+                    <Heading data={'Our Milestones'} />
+                    <p className='w-full md:w-1/2 text-center text-sm lg:text-md whitespace-normal break-words tracking-tight'>
+                        {milestones1.map((item, index) => (
+                            <>
+                                {item.main_description}
+                            </>
+                        ))}
+                    </p>
                 </div>
-                <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
-                    <img src="/assets/about-us/Accuracy-and-Precision-billingcaresolutions.com.webp" alt="Billing Care Solutions" className='p-10' />
+                <div className='w-full flex flex-col md:flex-row justify-between items-center'>
+                    <div className='w-full md:w-1/2 flex flex-col justify-center items-center border-l-8 border-secondary p-5 gap-3'>
+                        <p className='w-full text-2xl font-semibold text-left text-secondary'>
+                            {milestones1.map((item, index) => (
+                                <>
+                                    {item.title}
+                                </>
+                            ))}
+                        </p>
+                        <p className='text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>
+                            {milestones1.map((item, index) => (
+                                <>
+                                    {item.description}
+                                </>
+                            ))}
+                        </p>
+                        {milestones1.map((item) => (
+                            <MilestoneCard data={item} />
+                        ))}
+                    </div>
+                    <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
+                        {milestones1.map((item, index) => (
+                            item.image == "" || item.image == null ? null : <img src={item.image} alt="Billing Care Solutions" className='p-10' />))
+                        }
+                    </div>
                 </div>
-            </div>
-            <div className='w-full flex flex-col md:flex-row justify-between items-center'>
-                <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
-                    <img src="/assets/about-us/Expansion-and-Advancement-billingcaresolutions.com.webp" alt="Billing Care Solutions" className='p-10' />
+                <div className='w-full flex flex-col md:flex-row justify-between items-center'>
+                    <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
+                        {milestones2.map((item, index) => (
+                            item.image == "" || item.image == null ? null : <img src={item.image} alt="Billing Care Solutions" className='p-10' />))
+                        }
+                    </div>
+                    <div className='w-full md:w-1/2 flex flex-col justify-center items-center border-r-8 border-secondary p-5 gap-3'>
+                        <p className='w-full text-2xl font-semibold text-left text-secondary'>{milestones2.map((item, index) => (
+                            <>
+                                {item.title}
+                            </>
+                        ))} </p>
+                        <p className='text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>
+                            {milestones2.map((item, index) => (
+                                <>
+                                    {item.description}
+                                </>
+                            ))}</p>
+                        {milestones2.map((item) => (
+                            <MilestoneCard data={item} />
+                        ))}
+                    </div>
                 </div>
-                <div className='w-full md:w-1/2 flex flex-col justify-center items-center border-r-8 border-secondary p-5 gap-3'>
-                    <p className='w-full text-2xl font-semibold text-left text-secondary'>Expansion and Advancement </p>
-                    <p className='text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>Our track record of success and commitment to quality has driven substantial growth and diversification in our client base and service portfolio. Our ability to adapt to evolving industry demands and anticipate client needs has positioned us as a leader in the Medical Billing field.</p>
-                    {addata.map((item) => (
-                        <MilestoneCard data={item} />
-                    ))}
-                </div>
-            </div>
-        </>
+            </>
     )
 }
 

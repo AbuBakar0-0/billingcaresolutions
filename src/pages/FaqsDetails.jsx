@@ -1,38 +1,69 @@
-import React, { useEffect } from 'react'
-import Hero from '../sections/FaqDetails/Hero'
-import Header from './../sections/Header';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import FaqQuestions from '../sections/FaqDetails/FaqQuestions';
+import Hero from '../sections/FaqDetails/Hero';
 import NewCategories from '../sections/Faqs/NewCategories';
 import Footer from '../sections/Footer';
-import faqs from '../sections/Faqs/data';
-import { useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import Header from './../sections/Header';
+import { supabase } from '../lib/supabase';
+import Loader from './../components/ui/Loader';
 
 function FaqsDetails() {
+    const { id } = useParams();
+    const [loading, setLoading] = useState(true);  // Start with loading state as true
+    const [faqs, setFaqs] = useState([]);
+    const [service, setService] = useState(null);
+
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [])
-    const query = new URLSearchParams(useLocation().search);
-    const index = query.get('index');
 
-    const data = faqs[index];
+        const fetchHeaderData = async () => {
+            try {
+                // Fetch service details by ID
+                const { data: serviceData, error: serviceError } = await supabase
+                    .from('services')
+                    .select('*')
+                    .eq('id', id)
+                    .single();
+
+                if (serviceError) throw serviceError;
+
+                // Fetch FAQs related to the service
+                const { data: faqData, error: faqError } = await supabase
+                    .from('service_faqs')
+                    .select('*')
+                    .eq('service_id', id);
+
+                if (faqError) throw faqError;
+
+                setService(serviceData);
+                setFaqs(faqData);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            } finally {
+                setLoading(false);  // Always stop loading, even if there's an error
+            }
+        };
+
+        fetchHeaderData();
+    }, [id]);  // Add id as dependency to refetch data on id change
 
     return (
         <>
-            {/* <Helmet>
-                <title>FAQs - Billing Care Solutions</title>
-                <meta name="description" content="Billing Care Solutions know that clear information helps clients make better choices. Our FAQs section provides straightforward answers to common questions about our services and the healthcare billing process. Whether you want to learn about provider enrollment, understand revenue cycle management, or find out how we ensure billing compliance, you’ll get the information you need to handle your healthcare management effectively." />
-                <meta property="og:title" content="FAQs - Billing Care Solutions" />
-                <meta property="og:description" content="Billing Care Solutions know that clear information helps clients make better choices. Our FAQs section provides straightforward answers to common questions about our services and the healthcare billing process. Whether you want to learn about provider enrollment, understand revenue cycle management, or find out how we ensure billing compliance, you’ll get the information you need to handle your healthcare management effectively." />
-                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet> */}
             <Header />
-            <Hero title={data.title} description={data.description} image={data.header}/>
-            <FaqQuestions data={data} />
-            <NewCategories />
+            {loading ? <Loader /> : (
+                <>
+                    {/* Render Hero only if service is available */}
+                    {service && (
+                        <Hero service={service} />
+                    )}
+                    <FaqQuestions data={faqs} service={service} />
+                    <NewCategories />
+                </>
+            )}
             <Footer />
         </>
-    )
+    );
 }
 
-export default FaqsDetails
+export default FaqsDetails;

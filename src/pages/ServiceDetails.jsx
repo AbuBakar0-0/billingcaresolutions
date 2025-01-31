@@ -1,95 +1,195 @@
-import React, { useEffect, useState } from 'react'
-import Hero from '../sections/ServiceDetails/Hero'
-import { useLocation } from 'react-router-dom';
-import Header from './../sections/Header';
-import Footer from './../sections/Footer';
-import HeadingLine from './../components/HeadingLine';
-import services from '../sections/Services/data';
-import { Helmet } from 'react-helmet';
-import ContactForm from '../components/Contact/ContactForm';
-import faqs from '../sections/Faqs/data';
-import ExpansionTile from '../components/FaqDetails/ExpansionTile';
-import Heading from '../components/Heading';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { supabase } from "../lib/supabase";
+import Header from "../sections/Header";
+import Footer from "../sections/Footer";
+import Hero from "../sections/ServiceDetails/Hero";
+import ContactForm from "./../components/Contact/ContactForm";
+import ExpansionTile from "./../components/FaqDetails/ExpansionTile";
+import Heading from "./../components/Heading";
+import HeadingLine from "./../components/HeadingLine";
 
 function ServiceDetails() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
-    const query = new URLSearchParams(useLocation().search);
-    const index = query.get('index');
+  const { id: serviceName } = useParams();
+  const [service, setService] = useState(null);
+  const [faqs, setFaqs] = useState([]);
+  const [subcontent1, setSubContent1] = useState([]);
+  const [subcontent2, setSubContent2] = useState([]);
+  const [subcontent3, setSubContent3] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    const data = services[index].data;
-    const faqss = faqs[index];
+  useEffect(() => {
+    window.scrollTo(0, 0);
 
-    const [openIndex, setOpenIndex] = useState(null);
+    const fetchServiceDetails = async () => {
+      var serviceId = "";
+      setLoading(true);
+      try {
+        // Fetch Service
+        const { data: serviceData, error: serviceError } = await supabase
+          .from("services")
+          .select("*")
+          .eq("title", serviceName)
+          .single();
+        if (serviceError) throw serviceError;
+        setService(serviceData);
+        serviceId = serviceData.id;
 
+        // Fetch Service FAQs
+        const { data: faqsData, error: faqsError } = await supabase
+          .from("service_faqs")
+          .select("*")
+          .eq("service_id", serviceId);
+        if (faqsError) throw faqsError;
+        setFaqs(faqsData || []);
 
-    const handleToggle = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
+        // Fetch Specialities Content
+        const { data: subContentData1, error: subContentError1 } =
+          await supabase
+            .from("service_content")
+            .select("*")
+            .eq("service_id", serviceId)
+            .eq("content_no", 1);
+        if (subContentError1) throw subContentError1;
+        setSubContent1(subContentData1 || []);
+
+        const { data: subContentData2, error: subContentError2 } =
+          await supabase
+            .from("service_content")
+            .select("*")
+            .eq("service_id", serviceId)
+            .eq("content_no", 2);
+        if (subContentError2) throw subContentError2;
+        setSubContent2(subContentData2 || []);
+
+        const { data: subContentData3, error: subContentError3 } =
+          await supabase
+            .from("service_content")
+            .select("*")
+            .eq("service_id", serviceId)
+            .eq("content_no", 3);
+        if (subContentError3) throw subContentError3;
+        setSubContent3(subContentData3 || []);
+      } catch (error) {
+        console.error("Error fetching service details:", error.message);
+      } finally {
+        setLoading(false);
+      }
     };
 
+    fetchServiceDetails();
+  }, [serviceName]);
 
-    return (
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <>
+      <Header />
+      {loading ? (
+        <div className="w-full flex justify-center items-center h-96">
+          <div className="loader"></div>{" "}
+        </div>
+      ) : (
         <>
-            {/* <Helmet>
-                <title>Services - Billing Care Solutions</title>
-                <meta name="description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
-                <meta property="og:title" content="Services - Billing Care Solutions" />
-                <meta property="og:description" content="Billing Care Solutions recognize the uniqueness of each healthcare practice. We collaborate with our clients to create customized solutions that meet their specific needs. Whether the goal is to boost financial performance, improve patient satisfaction, or optimize operations, our extensive bilingual healthcare management services are designed to help achieve these objectives." />
-                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet> */}
-            <Header />
-            <Hero title={data.title} image={data.header} description={data.description} />
-            <div className='w-full container flex flex-col md:flex-row justify-center items-start gap-4 mx-auto p-10 '>
-                <div className='w-full md:w-3/4 flex flex-col justify-start items-start gap-4 text-justify text-sm lg:text-md whitespace-normal break-words tracking-tight'>
-                    <HeadingLine data={data.content.title} />
-                    <p>{data.content.description}</p>
-                    <HeadingLine data={data.sub_content_1.title} />
-                    <ul className='w-full gap-2'>
-                        {data.sub_content_1.data.map((item) => (
-                            <>
-                                <li><span className='text-secondary font-semibold mr-2'>{item.title}:</span>{item.description}</li>
-                            </>
-                        ))}
-                    </ul>
-                    <HeadingLine data={data.sub_content_2.title} />
-                    <ul className='w-full gap-2'>
-                        {data.sub_content_2.data.map((item) => (
-                            <> 
-                                <li><span className='text-secondary font-semibold mr-2'>{item.title}:</span>{item.description}</li>
-                            </>
-                        ))}
-                    </ul>
-                    <HeadingLine data={data.sub_content_3.title} />
-                    <ul className='w-full gap-2'>
-                        {data.sub_content_3.data.map((item) => (
-                            <>
-                                <li><span className='text-secondary font-semibold mr-2'>{item.title}:</span>{item.description}</li>
-                            </>
-                        ))}
-                    </ul>
+          <Hero
+            title={service.title}
+            image={service.header}
+            description={service.description}
+          />
+          <div className="w-full container flex flex-col md:flex-row justify-center items-start gap-2 mx-auto p-10">
+            <div className="md:w-3/4 flex flex-col justify-center items-center gap-4">
+              <HeadingLine data={service.content_title} />
+              <p className="w-full text-start">{service.content_description}</p>
 
-                </div>
-                <div className='w-full md:w-1/4 flex flex-col justify-start items-start'>
-                    <div className="w-full flex flex-col justify-center items-center gap-4 p-5 shadow-lg rounded-lg border-[1px] border-gray-100">
-                        <ContactForm />
+              <HeadingLine data={subcontent1[0].subcontent_title ?? ""} />
+              <div className="w-full flex flex-col justify-start items-start gap-4">
+                {subcontent1.length > 0 && (
+                  <>
+                    <div className="w-full flex flex-wrap justify-start items-start">
+                      <ul className="text-md">
+                        {subcontent1.map((item) => (
+                          <>
+                            <div
+                              className={`${item.detail_title == null ||
+                                item.detail_title == ""
+                                ? ""
+                                : "my-4"
+                                }`}
+                            >
+                              <li className="text-2xl text-secondary">
+                                {item.detail_title}
+                              </li>
+                              <li>{item.detail_description}</li>
+                            </div>
+                            <li>
+                              <span className="text-secondary font-semibold mr-2">
+                                {item.title}:
+                              </span>
+                              {item.description}
+                            </li>
+                          </>
+                        ))}
+                      </ul>
                     </div>
-                </div>
-            </div >
-            <Heading data={data.title+" FAQ's"} />
-            <div className='w-full flex flex-col justify-between items-center gap-4 mb-10 px-10'>
-                {faqss.questions.map((item, index) => (
-                    <ExpansionTile
-                        key={index}
-                        data={item}
-                        isOpen={openIndex === index}
-                        onClick={() => handleToggle(index)}
-                    />
-                ))}
+                  </>
+                )}
+              </div>
+              <HeadingLine data={subcontent2[0].title ?? ""} />
+              <ul className="w-full text-md">
+                {subcontent2.length > 0 && (
+                  subcontent2.map((item, index) => (
+                    <>
+                      <li>
+                        <span className="text-secondary font-semibold mr-2">
+                          {item.title}
+                        </span>
+                        {item.description}
+                      </li>
+                    </>
+                  )))}
+              </ul>
+              <HeadingLine data={subcontent3[0].title ?? ""} />
+              <ul className="w-full text-md">
+                {subcontent3.length > 0 && (
+                  subcontent3.map((item, index) => (
+                    <>
+                      <li>
+                        <span className="text-secondary font-semibold mr-2">
+                          {item.title}:
+                        </span>
+                        {item.description}
+                      </li>
+                    </>
+                  )))}
+              </ul>
             </div>
-            <Footer />
+            <div className="w-full md:w-1/4 flex flex-col justify-start items-start">
+              <div className="w-full flex flex-col justify-center items-center gap-4 p-5 shadow-lg rounded-lg border-[1px] border-gray-100">
+                <ContactForm />
+              </div>
+            </div>
+          </div>
+          <Heading data={service.title + " FAQ's"} />
+          <div className="w-full flex flex-col justify-between items-center gap-4 mb-10 px-10">
+            {faqs.map((item, index) => (
+              <ExpansionTile
+                key={index}
+                data={item}
+                isOpen={openIndex === index}
+                onClick={() => handleToggle(index)}
+              />
+            ))}
+          </div>
         </>
-    )
+      )}
+
+      <Footer />
+    </>
+  );
 }
 
-export default ServiceDetails
+export default ServiceDetails;

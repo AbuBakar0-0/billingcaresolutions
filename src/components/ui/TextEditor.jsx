@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import ReactQuill, { Quill } from "react-quill-new";
-import "react-quill-new/dist/quill.snow.css";
+import ReactQuill from "react-quill-new";
 
 // Add a custom color picker button
 const CustomColorPicker = ({ quill }) => {

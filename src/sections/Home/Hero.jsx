@@ -6,6 +6,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import HeroSlide from './../../components/Home/HeroSlide';
+import { supabase } from '../../lib/supabase';
 
 const Hero = () => {
   const [init, setInit] = useState(false);
@@ -90,40 +91,31 @@ const Hero = () => {
   );
 
 
-  const data = [
-    {
-      title: "Expert Medical Billing and Coding through Billing Care Solutions.",
-      titleColor: "#ffffff",
-      description: "Expert Medical Billing and Coding Services Optimize Revenue Cycle Management with Precision and Efficiency, Ensuring Streamlined Healthcare Operations.",
-      descriptionColor: "#ffffff",
-      link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
-      image: "/assets/hero/Medical Billing Slide 2 billingcaresolutions.com.webp",
-    },
-    {
-      title: "Billing Care Solutions is Excellent in Provider Enrollment & Credentialing",
-      titleColor: "#4ec39e",
-      description: "Our Comprehensive Provider Enrollment and Credentialing Services Ensure Seamless Integration into Healthcare Billing Systems, Optimizing Efficiency and Compliance.",
-      descriptionColor: "#0073b9",
-      link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
-      image: "/assets/hero/Credentialing Slide 3 billingcaresolutions.com.webp",
-    },
-    {
-      title: "Simplify Prior Authorization with Billing Care Solutions.",
-      titleColor: "#ffffff",
-      description: "Transforming Healthcare Billing with Streamlined Prior Authorization Solutions, Ensuring Efficient and Effective Patient Care Management.",
-      descriptionColor: "#ffffff",
-      link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
-      image: "/assets/hero/Prior Authorization Slide 4 billingcaresolutions.com.webp",
-    },
-    {
-      title: "Business Intelligence Reporting Made Easy with Billing Care Solutions.",
-      titleColor: "#4ec39e",
-      description: "Our Business Intelligence Reporting Service Offers Deep Data Analysis, Empowering Informed Decision-Making and Operational Efficiency.",
-      descriptionColor: "#0073b9",
-      link: "https://www.youtube.com/channel/UCyRZuBQv0paVu9vE674zFpw",
-      image: "/assets/hero/Business Intelligence Reporting Slide 5 billingcaresolutions.com.webp",
-    }
-  ];
+  const [loading, setLoading] = useState(true);
+  const [slide, setSlides] = useState([]);
+  const [restOfSlides, setRestOfSlides] = useState([]);
+
+  useEffect(() => {
+    // Fetch existing slides from Supabase
+    const fetchSlides = async () => {
+      const { data, error } = await supabase.from("first_slide").select("*").single();
+      if (error) {
+        console.error("Error fetching slides:", error.message);
+      } else {
+        setSlides(data || []);
+      }
+
+      const { data: restData, error: restError } = await supabase.from("rest_of_slides").select("*").order("slide_no");
+      if (error) {
+        console.error("Error fetching slides:", error.message);
+      } else {
+        setRestOfSlides(restData || []);
+      }
+      setLoading(false);
+    };
+
+    fetchSlides();
+  }, []);
 
 
   return (
@@ -180,14 +172,14 @@ const Hero = () => {
             options={options}
             className='z-0'
           />
-          <div className='z-10 w-full h-[26rem] lg:h-[37rem] flex flex-col justify-center items-center p-10' style={{ backgroundImage: `url("/assets/hero/Logo Slide 1 billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-            <img src="/assets/BCS Logo billingcaresolutions.com.svg" alt="Billing Care Solutions" className='w-full md:w-1/2 h-auto animate-bounce-three slide-content' />
-            <h1 className='text-sm md:text-2xl slide-content text-center'>Get hassle-free payments with Billing Care Solutions.</h1>
+          <div className='z-10 w-full h-[26rem] lg:h-[37rem] flex flex-col justify-center items-center p-10' style={{ backgroundImage: `url("${slide.bg_image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+            <img src={slide.logo} className='w-full md:w-1/2 h-auto animate-bounce-three slide-content' />
+            <h1 className='text-sm md:text-2xl slide-content text-center'>{slide.tagline}</h1>
           </div>
         </SwiperSlide>
-        {data.map((item) => (
+        {restOfSlides.map((item, index) => (
           <SwiperSlide>
-            <HeroSlide title={item.title} description={item.description} link={item.link} image={item.image} titleColor={item.titleColor} descriptionColor={item.descriptionColor}/>
+            <HeroSlide title={item.title} description={item.description} link={item.link} image={item.bg_image} titleColor={index % 2 != 0 ? "#ffffff" : "#4ec39e"} descriptionColor={index % 2 != 0 ? "#ffffff" : "#0073b9"} />
           </SwiperSlide>
         ))}
       </Swiper>

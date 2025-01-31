@@ -1,11 +1,9 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../sections/Blogs/Hero';
 import Heading from './../components/Heading';
-import Header from './../sections/Header';
-import BASE_URL from './../utils/globals';
 import { supabase } from './../lib/supabase';
+import Header from './../sections/Header';
 
 function Blogs() {
     const [data, setData] = useState([]); // Store blogs data

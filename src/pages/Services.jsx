@@ -11,6 +11,8 @@ import Footer from './../sections/Footer';
 import { Helmet } from 'react-helmet';
 
 function Services() {
+
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
