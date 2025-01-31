@@ -2,14 +2,11 @@ import React, { useEffect, useState } from "react";
 import { supabase } from "../../../lib/supabase";
 import DashboardLayout from "../layout";
 
-const AddWhatWeProvide = () => {
+const AddNewToBcs = () => {
   const [serviceData, setServiceData] = useState({
     title: "",
     icon_file: null,
-    image_file: null,
-    description: "",
     link: "",
-    service_no: 0,
   });
   const [services, setServices] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -18,9 +15,7 @@ const AddWhatWeProvide = () => {
   useEffect(() => {
     // Fetch existing services from Supabase
     const fetchServices = async () => {
-      const { data, error } = await supabase
-        .from("what_we_provide")
-        .select("*");
+      const { data, error } = await supabase.from("new_to_bcs").select("*");
       if (error) {
         console.error("Error fetching services:", error.message);
       } else {
@@ -65,22 +60,20 @@ const AddWhatWeProvide = () => {
     setIsSubmitting(true);
 
     try {
-      const iconUrl = serviceData.icon_file ? await uploadToCloudinary(serviceData.icon_file) : null;
-      const imageUrl = serviceData.image_file ? await uploadToCloudinary(serviceData.image_file) : null;
+      const iconUrl = serviceData.icon_file
+        ? await uploadToCloudinary(serviceData.icon_file)
+        : null;
 
       const payload = {
         title: serviceData.title,
         icon: iconUrl,
-        image: imageUrl,
-        description: serviceData.description,
         link: serviceData.link,
-        service_no: serviceData.service_no,
       };
 
       if (editingServiceId) {
         // Update an existing service
         const { error } = await supabase
-          .from("what_we_provide")
+          .from("new_to_bcs")
           .update(payload)
           .eq("id", editingServiceId);
 
@@ -100,7 +93,7 @@ const AddWhatWeProvide = () => {
       } else {
         // Insert a new service
         const { data, error } = await supabase
-          .from("what_we_provide")
+          .from("new_to_bcs")
           .insert(payload)
           .select();
 
@@ -116,10 +109,7 @@ const AddWhatWeProvide = () => {
       setServiceData({
         title: "",
         icon_file: null,
-        image_file: null,
-        description: "",
         link: "",
-        service_no: serviceData.service_no + 1, // Increment service_no after each submit
       });
     } catch (error) {
       console.error("Error saving service:", error.message);
@@ -133,20 +123,14 @@ const AddWhatWeProvide = () => {
     setServiceData({
       title: service.title,
       icon_file: service.icon,
-      image_file: service.image,
-      description: service.description,
       link: service.link,
-      service_no: service.service_no,
     });
     setEditingServiceId(service.id);
   };
 
   const handleDelete = async (id) => {
     try {
-      const { error } = await supabase
-        .from("what_we_provide")
-        .delete()
-        .eq("id", id);
+      const { error } = await supabase.from("new_to_bcs").delete().eq("id", id);
 
       if (error) {
         throw error;
@@ -163,7 +147,7 @@ const AddWhatWeProvide = () => {
   return (
     <DashboardLayout>
       <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Add Service</h1>
+        <h1 className="text-2xl font-bold mb-4">Add New To BCS</h1>
 
         {/* Service Form */}
         <form onSubmit={handleSubmit}>
@@ -205,43 +189,6 @@ const AddWhatWeProvide = () => {
             />
           </div>
 
-          {/* Image Upload */}
-          <div className="mb-4">
-            <label
-              htmlFor="image"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Image
-            </label>
-            <input
-              type="file"
-              id="image"
-              name="image_file"
-              onChange={handleFileChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              accept="image/*"
-            />
-          </div>
-
-          {/* Description */}
-          <div className="mb-4">
-            <label
-              htmlFor="description"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Description
-            </label>
-            <textarea
-              id="description"
-              name="description"
-              value={serviceData.description}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter description"
-              required
-            />
-          </div>
-
           {/* Link */}
           <div className="mb-4">
             <label
@@ -261,30 +208,12 @@ const AddWhatWeProvide = () => {
             />
           </div>
 
-          {/* Service Number */}
-          <div className="mb-4">
-            <label
-              htmlFor="service_no"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Service Number
-            </label>
-            <input
-              type="number"
-              id="service_no"
-              name="service_no"
-              value={serviceData.service_no}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter service number"
-              required
-            />
-          </div>
-
           {/* Submit Button */}
           <button
             type="submit"
-            className={`w-full ${isSubmitting ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600"} text-white py-2 rounded-md`}
+            className={`w-full ${
+              isSubmitting ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600"
+            } text-white py-2 rounded-md`}
             disabled={isSubmitting}
           >
             {isSubmitting ? "Submitting..." : "Save Service"}
@@ -305,13 +234,13 @@ const AddWhatWeProvide = () => {
                 >
                   <div>
                     <div className="flex gap-4">
-                      <img src={service.icon} alt="" className="size-8 bg-secondary" />
-                      <img src={service.image} alt="" className="size-8" />
+                      <img
+                        src={service.icon}
+                        alt=""
+                        className="size-8"
+                      />
                     </div>
                     <h3 className="text-lg font-medium">{service.title}</h3>
-                    <p className="text-sm text-gray-600">
-                      {service.description}
-                    </p>
                   </div>
                   <div className="flex space-x-4">
                     <button
@@ -337,7 +266,4 @@ const AddWhatWeProvide = () => {
   );
 };
 
-export default AddWhatWeProvide;
-
-
-
+export default AddNewToBcs;

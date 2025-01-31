@@ -223,7 +223,6 @@ const services = [
     },
 ];
 
-
 function ContactForm() {
     const [phone, setPhone] = useState("");
     const [checkbox, setCheckbox] = useState(false);
@@ -251,17 +250,15 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Basic validation for required fields
         if (!lastName.trim() || !firstName.trim() || !phone.trim() || !email.trim()) {
-            alert('Please fill in all required fields (marked with *)');
+            alert("Please fill in all required fields (marked with *)");
             return;
         }
 
-        // Handle service value
         const serviceValue = selectedOption === "others" ? otherText : selectedOption;
 
-        // Prepare email parameters
         const templateParams = {
+            to_email: "billingcaresolutions@gmail.com",
             lastName: lastName,
             firstName: firstName,
             phone: phone,
@@ -270,36 +267,34 @@ function ContactForm() {
             specialty: selectedSpecialty,
             state: selectedState,
             message: message,
-            optIn: checkbox ? 'Yes' : 'No'
+            optIn: checkbox ? "Yes" : "No",
         };
 
-        // Send email using EmailJS
-        emailjs.send(
-            "service_87nknvq",
-            "template_urd6s7j",
-            templateParams,
-        )
-        .then((response) => {
-            alert('Message sent successfully!');
-            // Reset form fields
-            setLastName("");
-            setFirstName("");
-            setPhone("");
-            setEmail("");
-            setSelectedOption("");
-            setOtherText("");
-            setSelectedSpecialty("");
-            setSelectedState("");
-            setMessage("");
-            setCheckbox(false);
-        })
-        .catch((error) => {
-            console.error('Error sending email:', error);
-            alert('Error sending message. Please try again.');
-        });
+        emailjs
+            .send(
+                "service_5qe514z",
+                "template_m4vazqe",
+                templateParams,
+                "J8mPA0rHkN5D87yHl"
+            )
+            .then((response) => {
+                alert("Message sent successfully!");
+                setLastName("");
+                setFirstName("");
+                setPhone("");
+                setEmail("");
+                setSelectedOption("");
+                setOtherText("");
+                setSelectedSpecialty("");
+                setSelectedState("");
+                setMessage("");
+                setCheckbox(false);
+            })
+            .catch((error) => {
+                console.error("Error sending email:", error);
+                alert("Error sending message. Please try again.");
+            });
     };
-
-    // ... (keep the existing state, speciality, services arrays as they are)
 
     return (
         <>
@@ -415,7 +410,7 @@ function ContactForm() {
                 </div>
             </form>
         </>
-    )
+    );
 }
 
 export default ContactForm;

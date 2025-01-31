@@ -33,7 +33,7 @@ function Hero() {
         <>
             <div className='bg-secondary text-white' style={{ backgroundImage: `url("${header.background_image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: "center" }}>
                 <div className='container mx-auto md:min-h-[24rem] md:max-h-[24rem] flex flex-col md:flex-row justify-start items-center gap-4 text-center lg:p-10'>
-                    <div className='w-full md:w-1/2 flex flex-col justify-start items-start text-left gap-3 py-20 scale-[0.85] md:scale-100 ml-10'>
+                    <div className='w-full md:w-1/2 flex flex-col justify-start items-start text-left gap-3 py-20 scale-[0.85] md:scale-100 md:ml-10'>
                         <p className='w-full uppercase text-lg font-semibold'>{header.mini_heading}</p>
                         <h1 className='w-full uppercase text-4xl font-bold'>{header.heading}</h1>
                         <p className='text-justify'>{header.description}</p>

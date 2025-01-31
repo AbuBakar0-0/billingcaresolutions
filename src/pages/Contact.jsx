@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
-import Header from './../sections/Header';
-import Footer from './../sections/Footer';
-import Hero from '../sections/Contact/Hero';
+import React, { useEffect } from 'react';
 import ContactForm from '../components/Contact/ContactForm';
-import { Helmet } from 'react-helmet';
+import Hero from '../sections/Contact/Hero';
+import Footer from './../sections/Footer';
+import Header from './../sections/Header';
 
 function Contact() {
     useEffect(() => {
@@ -12,23 +11,16 @@ function Contact() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Contact - Billing Care Solutions</title>
-                <meta name="description" content="Billing Care Solutions empower healthcare providers to transform their billing processes and maximize revenue potential. Our expert team excels in precision medical billing and coding and accurate claims submissions. We streamline revenue cycle management, effectively reducing Days in Accounts Receivable (AR) and accelerating cash flow." />
-                <meta property="og:title" content="Contact - Billing Care Solutions" />
-                <meta property="og:description" content="Billing Care Solutions empower healthcare providers to transform their billing processes and maximize revenue potential. Our expert team excels in precision medical billing and coding and accurate claims submissions. We streamline revenue cycle management, effectively reducing Days in Accounts Receivable (AR) and accelerating cash flow." />
-                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet> */}
             <Header />
             <Hero />
-            <div className='w-full flex flex-wrap container mx-auto justify-center items-center p-16'>
-                <div className='w-full md:w-1/3 flex flex-col justify-center items-start'>
-                    <p className='text-secondary font-custom text-md'>Phone</p>
-                    <p className='text-primary font-custom text-2xl'>(302) 244-0434</p>
+            <div className='w-full flex flex-wrap container mx-auto justify-center gap-4 items-center p-10 md:p-16'>
+                <div className='w-full md:w-1/3 flex flex-col justify-center items-center md:items-start'>
+                    <p className='w-full text-left text-secondary font-custom text-md'>Phone</p>
+                    <p className='w-full text-left text-primary font-custom text-2xl'>(302) 244-0434</p>
                 </div>
-                <div className='w-full md:w-1/3 flex flex-col justify-center items-start'>
-                    <p className='text-secondary font-custom text-md'>Email</p>
-                    <p className='text-primary font-custom text-2xl'>info@billingcaresolutions.com</p>
+                <div className='w-full md:w-1/3 flex flex-col justify-center md:items-start'>
+                    <p className='w-full text-left text-secondary font-custom text-md'>Email</p>
+                    <p className='w-full text-left text-primary font-custom text-2xl'>info@billingcaresolutions.com</p>
                 </div>
                 <div className='w-full md:w-1/3 flex flex-col justify-center items-center'>
                     <div className='flex flex-row items-center space-x-2'>
@@ -69,13 +61,13 @@ function Contact() {
                 </div>
             </div>
 
-            <div className='w-full flex flex-row justify-center items-center container mx-auto gap-4 mb-20'>
-                <div className='w-1/2 h-auto flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100'>
+            <div className='w-full flex flex-col md:flex-row justify-center items-center container mx-auto gap-4 mb-20'>
+                <div className='w-full md:w-1/2 h-auto flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100'>
                     <p className='text-2xl text-secondary font-semibold'>30 N GOULD, ST, STE R SHERIDAN, WY 82801</p>
-                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.167611283467!2d-106.95747832317349!3d44.79777267765548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1727975198066!5m2!1sen!2s" width="600" height="628" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className='rounded my-5'></iframe>
+                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.167611283467!2d-106.95747832317349!3d44.79777267765548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e0!3m2!1sen!2s!4v1727975198066!5m2!1sen!2s" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className='rounded my-5 w-full md:h-[41rem]'></iframe>
                 </div>
 
-                <div className="w-1/2 flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100">
+                <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-4 p-10 shadow-lg rounded-lg border-[1px] border-gray-100">
                     <ContactForm />
                 </div>
             </div>

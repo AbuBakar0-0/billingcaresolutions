@@ -44,13 +44,6 @@ function Blogs() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Blogs - Billing Care Solutions</title>
-                <meta name="description" content="Billing Care Solutions commit to unraveling the complexities of healthcare management with precision and expertise. Our blog serves as your ultimate resource for insights that illuminate the path to operational excellence and financial success in the ever-evolving healthcare landscape. Dive into our expert commentary and best practices designed to empower healthcare practices to thrive." />
-                <meta property="og:title" content="Blogs - Billing Care Solutions" />
-                <meta property="og:description" content="Billing Care Solutions commit to unraveling the complexities of healthcare management with precision and expertise. Our blog serves as your ultimate resource for insights that illuminate the path to operational excellence and financial success in the ever-evolving healthcare landscape. Dive into our expert commentary and best practices designed to empower healthcare practices to thrive." />
-                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet> */}
             <Header />
             <Hero />
             <Heading data={"Latest Blogs"} />
@@ -63,11 +56,11 @@ function Blogs() {
             ) : (
                 <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
                     {currentBlogs.map((item, index) => (
-                        <Link to={`/blogdetails/${item.id}`} key={index}>
-                            <div className='w-96 min-h-[31rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
+                        <Link to={`/blogdetails/${item.id}`} key={index} className='w-full md:w-[48%] lg:w-[30%] p-5'>
+                            <div className=' lg:min-h-[30rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
                                 <img src={`${item.image}`} alt="Billing Care Solutions" className='rounded-t-lg' />
                                 <div className='w-full p-4 flex flex-col'>
-                                    <p className='w-full text-md font-custom font-semibold text-secondary h-20'>{item.title}</p>
+                                    <p className='w-full text-lg font-custom font-semibold text-secondary h-16'>{item.title}</p>
                                     <div
                                         className="overflow-hidden h-12"
                                         dangerouslySetInnerHTML={{ __html: item.description }}

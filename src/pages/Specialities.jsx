@@ -39,7 +39,7 @@ function Specialities() {
             <Hero />
             {loading ?
                 <div className="w-full flex justify-center items-center h-96">
-                    <div className="loader"></div> {/* You can replace this with any loader UI */}
+                    <div className="loader"></div> 
                 </div>
                 :
                 <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>

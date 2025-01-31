@@ -18,6 +18,7 @@ import Loader from '../../components/ui/Loader';
 const Testimonials = () => {
     const [loading, setLoading] = useState(false);
     const [testimonials, setTestimonials] = useState([]);
+    const [bgImage, setBgImage] = useState("");
 
     useEffect(() => {
         const fetchHeaderData = async () => {
@@ -30,6 +31,15 @@ const Testimonials = () => {
                 if (headerError) throw headerError;
 
                 setTestimonials(data);
+
+                const { data: bgData, error: bgError } = await supabase.from("background_images").select("*").eq('type', "testimonials").single();
+                if (bgError) {
+                    console.error("Error fetching slides:", bgError.message);
+                } else {
+                    setBgImage(bgData || []);
+                }
+
+
                 setLoading(false);
             } catch (error) {
                 console.error("Error fetching header data:", error);
@@ -45,7 +55,7 @@ const Testimonials = () => {
         loading ? <Loader /> :
             <>
 
-                <div className='px-10 py-14' style={{ backgroundImage: `url("/assets/Testimonial billingcaresolution.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                <div className='px-10 py-14' style={{ backgroundImage: `url("${bgImage.background_image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                     <div className='flex flex-row justify-center items-center space-x-3 text-white font-custom text-lg md:text-2xl font-medium pb-6'>
                         <div className='bg-white w-[2rem] h-[0.2rem]'></div>
                         <p className='text-2xl md:text-3xl'>Client's Reviews</p>

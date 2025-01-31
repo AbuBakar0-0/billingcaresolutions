@@ -45,13 +45,6 @@ function Articles() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Articles - Billing Care Solutions</title>
-                <meta name="description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
-                <meta property="og:title" content="Articles - Billing Care Solutions" />
-                <meta property="og:description" content="Billing Care Solutions redefines excellence with its pioneering technology, impeccable claims precision, and unwavering commitment to compliance, driving unparalleled efficiency and swift financial outcomes." />
-                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet> */}
             <Header />
             <Hero />
             <Heading data={"Latest Articles"} />
@@ -62,11 +55,11 @@ function Articles() {
             ) : (
                 <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
                     {currentArticles.map((item, index) => (
-                        <Link to={`/articleDetails/${item.id}`} key={index}>
-                            <div className='w-96 min-h-[32rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
-                                <img src={`${item.image}`} alt="Billing Care Solutions" className='rounded-t-lg h-64 w-auto' />
+                        <Link to={`/articleDetails/${item.id}`} key={index} className='w-full md:w-[48%] lg:w-[30%] p-5'>
+                            <div className=' lg:min-h-[31rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
+                                <img src={`${item.image}`} alt="Billing Care Solutions" className='rounded-t-lg' />
                                 <div className='w-full p-4 flex flex-col'>
-                                    <p className='w-full text-md font-custom font-semibold text-secondary h-20'>{item.title}</p>
+                                    <p className='w-full text-lg font-custom font-semibold text-secondary h-16'>{item.title}</p>
                                     <div
                                         className="overflow-hidden h-12"
                                         dangerouslySetInnerHTML={{ __html: item.description }}

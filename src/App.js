@@ -80,6 +80,9 @@ import TermsConditionsPage from "./pages/(adminPanel)/TermsConditionsPage/TermsC
 import ContactPage from "./pages/(adminPanel)/ContactPage/ContactPage";
 import AddPrivacyPolicy from "./pages/(adminPanel)/PrivacyPolicyPage/AddPrivacyPolicy";
 import AddTermsConditions from "./pages/(adminPanel)/TermsConditionsPage/AddTermsConditions";
+import AddNewToBcs from "./pages/(adminPanel)/FaqsPage/AddNewToBcs";
+import AllBackgroundImages from "./pages/(adminPanel)/BackgroundImages/AllBackgroundImages";
+import AddBackgroundImage from "./pages/(adminPanel)/BackgroundImages/AddBackgroundImage";
 
 
 function App() {
@@ -156,6 +159,7 @@ function App() {
 
           {/* --------------------------------FAQS PAGE-side-------------------------------- */}
           <Route path="/faqsPage" element={<FaqsPage />} />
+          <Route path="/addNewToBcs" element={<AddNewToBcs />} />
 
           {/* --------------------------------Privacy Policy PAGE-side-------------------------------- */}
           <Route path="/privacyPolicyPage" element={<PrivacyPolicyPage />} />
@@ -186,6 +190,12 @@ function App() {
           <Route path="/whyHealthCareProviders" element={<AddWhyHealthCareProviders />} />
           <Route path="/globalSpecialities" element={<AddSpecialtiesWeOffer />} />
           <Route path="/globalTestimonials" element={<AddGlobalTestimonials />} />
+
+          {/* --------------------------------Background Images-side-------------------------------- */}
+          <Route path="/backgroundImages" element={<AllBackgroundImages />} />
+          <Route path="/addBackgroundImages/:type" element={<AddBackgroundImage />} />
+          
+
 
           {/* Catch-all route for undefined paths */}
           <Route path="*" element={<Forbidden />} />

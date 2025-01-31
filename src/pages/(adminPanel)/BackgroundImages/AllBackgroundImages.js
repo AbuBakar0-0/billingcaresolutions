@@ -2,14 +2,15 @@ import React from "react";
 import DashboardLayout from "../layout";
 import { Link } from "react-router-dom";
 
-export default function FaqsPage() {
+export default function AllBackgroundImages() {
   const cardLinks = [
-    { name: "Header", link: "/allHeaders/faqs" },
-    { name: "New to BCS", link: "/addNewToBcs" },
+    { name: "Testimonials", link: "/addBackgroundImages/testimonials" },
+    { name: "Talk To Expert", link: "/addBackgroundImages/talkToExpert" },
+    { name: "Let Us Handle", link: "/addBackgroundImages/letusHandle" },
   ];
   return (
     <DashboardLayout>
-      <h1 className="text-2xl font-bold">Faqs</h1>
+      <h1 className="text-2xl font-bold">Background Images</h1>
       <div className="w-full flex flex-wrap justify-start items-center gap-4 mt-10">
         {cardLinks.map((item, index) => (
           <Link to={item.link} key={index}>

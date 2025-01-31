@@ -1,9 +1,11 @@
+import md5 from "md5";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const DashboardLayout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navigate = useNavigate();
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
@@ -28,7 +30,12 @@ const DashboardLayout = ({ children }) => {
     { name: "Terms & Conditions", link: "/termsConditionsPage" },
     { name: "Privacy Policy", link: "/privacyPolicyPage" },
     { name: "Contact Us", link: "/contactPage" },
+    { name: "Background Images", link: "/backgroundImages" },
   ];
+
+  if (localStorage.getItem("token") !== md5(md5("billingcaresolutions"))) {
+    navigate("/login");
+  }
 
   return (
     <div className="flex h-screen overflow-hidden">
@@ -38,9 +45,14 @@ const DashboardLayout = ({ children }) => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300 ease-in-out overflow-y-auto h-screen`}
       >
-        <div className="bg-white p-4">
-          <img src="/assets/BCS Logo billingcaresolutions.com.svg" alt="Logo" />
-        </div>
+        <Link to="/">
+          <div className="bg-white p-4">
+            <img
+              src="/assets/BCS Logo billingcaresolutions.com.svg"
+              alt="Logo"
+            />
+          </div>
+        </Link>
         <div className="p-4">
           <nav>
             {navlinks.map((item, index) => (

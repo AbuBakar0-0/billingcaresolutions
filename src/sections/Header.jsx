@@ -137,16 +137,17 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <div className="relative group">
+            <div className={`w-full lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="w-full px-2 pt-2 pb-3 space-y-1 sm:px-3">
 
-                    </div>
                     <Link to="/" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Home</Link>
                     <Link to="/whybcs" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Why BCS</Link>
                     <Link to="/services" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Services</Link>
                     <Link to="/specialities" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Specialities</Link>
                     <Link to="/domain" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Domain Area</Link>
+                    <Link to="/contact" className="bg-secondary text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Contact Us</Link>
+
+
                     <button className="flex flex-row items-center text-grays-900 px-3 py-2 rounded-md text-base font-medium hover:text-secondary" onClick={() => displaySubMenu(4)}>
                         <p>Resources</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
@@ -154,15 +155,13 @@ const Header = () => {
                         </svg>
                     </button>
                     <div className={`${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-                        <Link to="/blogs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Blog</Link>
+                        <Link to="/blogs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Blogs</Link>
                         <Link to="/faqs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">FAQ's</Link>
                         <Link to="/articles" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Articles</Link>
                         <Link to="/termsandconditions" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Terms & Conditions</Link>
                         <Link to="/privacypolicy" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Privacy Policy</Link>
                     </div>
-                    <div className='w-full flex items-center'>
-                        <Link to="/contact" className='w-full bg-secondary text-white px-3 py-2 rounded-xl'>Contact Us</Link>
-                    </div>
+
                 </div>
             </div>
         </nav>

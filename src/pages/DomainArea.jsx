@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Header from './../sections/Header';
+import React, { useEffect, useState } from 'react';
 import DomainCard from '../components/DomainArea/DomainCard';
-import Contact from './../sections/Home/Contact';
-import Footer from '../sections/Footer';
 import Hero from '../sections/DomainArea/Hero';
-import { Helmet } from 'react-helmet';
+import Footer from '../sections/Footer';
 import { supabase } from './../lib/supabase';
+import Header from './../sections/Header';
+import Contact from './../sections/Home/Contact';
 
 
 
@@ -43,15 +42,6 @@ function DomainArea() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>
-                    Domain Area - Billing Care Solutions
-                </title>
-                <meta name="description" content="At Billing Care Solutions, we excel in navigating the intricacies of healthcare management through our comprehensive domain areas. Our expertise spans the entire revenue cycle, ensuring that healthcare practices achieve optimal financial performance and operational excellence. Experience unparalleled expertise in healthcare management with Billing Care Solutions. Together, we’ll drive success in your practice!" />
-                <meta property="og:title" content="Domain Area - Billing Care Solutions" />
-                <meta property="og:description" content="At Billing Care Solutions, we excel in navigating the intricacies of healthcare management through our comprehensive domain areas. Our expertise spans the entire revenue cycle, ensuring that healthcare practices achieve optimal financial performance and operational excellence. Experience unparalleled expertise in healthcare management with Billing Care Solutions. Together, we’ll drive success in your practice!" />
-                <meta property="og:image" content="/assets/BCS Logo billingcaresolutions.com.svg" />
-            </Helmet> */}
             <Header />
             <Hero />
             <Contact />

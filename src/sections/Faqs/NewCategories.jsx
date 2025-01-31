@@ -1,13 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TopCategoriesCard from './../../components/Faqs/TopCategoriesCard';
 import { Link } from 'react-router-dom';
+import { supabase } from '../../lib/supabase';
 
 function NewCategories() {
-    const data = [
-        { title: "Blogs & Articles", icon: "/assets/faqs/blog and article billingcaresolutions.com.svg", link: "/blogs", },
-        { title: "Service Features", icon: "/assets/faqs/service features billingcaresolutions.com.svg", link: "/services", },
-        { title: "Talk to sales", icon: "/assets/faqs/talk to sales billingcaresolutions.com.svg", link: "/contact", },
-    ];
+
+
+    const [loading, setLoading] = useState(false);
+    const [services, setServices] = useState([]);
+    // Fetch data from Supabase
+    useEffect(() => {
+        const fetchHeaderData = async () => {
+            try {
+                setLoading(true);
+                // Fetch the header data where type is 'whybcs'
+                const { data: headerData, error: headerError } = await supabase
+                    .from('new_to_bcs')
+                    .select('*');
+
+                if (headerError) throw headerError;
+
+                setServices(headerData);
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching header data:", error);
+            }
+        };
+
+        fetchHeaderData();
+    }, []);
+
+    
     return (
         <>
             <div className='w-full container mx-auto flex flex-col justify-center items-center p-10'>
@@ -22,9 +45,9 @@ function NewCategories() {
 
                 </div>
                 <div className='w-full flex flex-wrap justify-center items-center p-10 gap-5'>
-                    {data.map((item) => (
+                    {services.map((item) => (
                         <>
-                            <Link to={item.link}>
+                            <Link to={`/${item.link}`}>
                                 <TopCategoriesCard data={item} />
                             </Link>
                         </>

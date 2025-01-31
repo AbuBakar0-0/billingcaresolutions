@@ -1,7 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { supabase } from '../../lib/supabase';
 
 function Contact() {
     const [phoneNumber, setPhoneNumber] = useState('');
+
+    const [loading, setLoading] = useState(false);
+    const [bgImage, setBgImage] = useState("");
+
+    useEffect(() => {
+        const fetchHeaderData = async () => {
+            try {
+                const { data: bgData, error: bgError } = await supabase.from("background_images").select("*").eq('type', "talkToExpert").single();
+                if (bgError) {
+                    console.error("Error fetching slides:", bgError.message);
+                } else {
+                    setBgImage(bgData || []);
+                }
+
+
+                setLoading(false);
+            } catch (bgError) {
+                console.error("Error fetching header data:", bgError);
+            }
+        };
+
+        fetchHeaderData();
+    }, []);
+
 
     const formatPhoneNumber = (value) => {
         if (!value) return value;
@@ -33,7 +58,7 @@ function Contact() {
 
     return (
         <>
-            <div className='flex flex-col gap-3 p-6 mx-16 rounded-lg shadow-lg mt-5 border-4 border-primary' style={{ backgroundImage: `url("/assets/Talk to expert billingcaresolutions.com.webp")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+            <div className='flex flex-col gap-3 p-6 mx-16 rounded-lg shadow-lg mt-5 border-4 border-primary' style={{ backgroundImage: `url("${bgImage.background_image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                 <p className='text-2xl font-semibold text-secondary underline'>Schedule a Demo</p>
                 <p className='font-semibold text-sm lg:text-md'>We're available 24/7 - Schedule a call with one of our experts now.</p>
                 <form action="" className='flex flex-col justify-around gap-4'>

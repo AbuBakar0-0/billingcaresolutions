@@ -18,7 +18,7 @@ export default function HomePage() {
 ];
   return (
     <DashboardLayout>
-      <h1 className="text-2xl font-bold">Faqs</h1>
+      <h1 className="text-2xl font-bold">Home Page</h1>
       <div className="w-full flex flex-wrap justify-start items-center gap-4 mt-10">
         {cardLinks.map((item, index) => (
           <Link to={item.link} key={index}>
