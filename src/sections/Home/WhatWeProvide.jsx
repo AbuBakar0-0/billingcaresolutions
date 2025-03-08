@@ -8,21 +8,29 @@ function WhatWeProvide() {
     const [showMore, setShowMore] = useState(false);
 
     const [services, setServices] = useState([]);
-    
-        useEffect(() => {
-            // Fetch existing slides from Supabase
-            const fetchSlides = async () => {
-                const { data, error } = await supabase.from("what_we_provide").select("*").order("service_no");
-                if (error) {
-                    console.error("Error fetching slides:", error.message);
-                } else {
-                    setServices(data || []);
-                }
-    
-            };
-    
-            fetchSlides();
-        }, []);
+
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const fetchHeaderData = async () => {
+            try {
+                setLoading(true);
+                // Fetch the header data where type is 'whybcs'
+                const { data, error: headerError } = await supabase
+                    .from('services')
+                    .select('*').order("service_no"); // We expect only one record
+                if (headerError) throw headerError;
+
+                setServices(data);
+                setLoading(false);
+            } catch (error) {
+                console.error("Error fetching header data:", error);
+            }
+        };
+
+        fetchHeaderData();
+    }, []);
+
 
 
     const toggleShowMore = () => {
@@ -49,8 +57,24 @@ function WhatWeProvide() {
                 </div>
                 <div className='w-full flex flex-wrap justify-center md:justify-around p-5 mb-10 transition-all duration-300 ease-in-out'>
                     {itemsToDisplay.map((item, index) => (
-                        <Link to={`/serviceDetails/${item.link}`}>
-                            <OfferCards key={index} data={item} />
+                        <Link to={`/serviceDetails/${item.title}`}>
+                            <div className="flip-container size-64 relative my-3">
+                                <div className="flipper absolute size-64 object-fit">
+                                    {/* Front of the card */}
+                                    <div className="front flex flex-col justify-center shadow-xl p-5 rounded-xl">
+                                        <div className='w-full flex flex-col justify-center items-center gap-4 rounded-xl'>
+                                            <img src={item.icon} alt="Billing Care Solutions" className='size-20 my-5 rounded-xl' />
+                                            <p className='text-center text-sm lg:text-md whitespace-normal break-words tracking-tight'>{item.title}</p>
+                                            <button className='px-4 py-2 text-white bg-secondary rounded-lg'>Explore More</button>
+                                        </div>
+                                    </div>
+                                    {/* Back of the card */}
+                                    <div className="back w-6size-64 h-[22rem] flex flex-col justify-center items-start text-white rounded-xl" style={{ backgroundImage: `url("${item.image}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                                        <div className='w-full h-full flex flex-col justify-center items-start p-10 bg-opacity-60 rounded-xl'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </Link>
                     ))}
                 </div>

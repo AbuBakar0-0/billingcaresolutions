@@ -87,7 +87,7 @@ function BlogDetails() {
                         <div className="w-full md:w-3/4 flex flex-col justify-center items-start">
                             <img src={`${blog.image}`} alt="Billing Care Solutions" className="w-full" />
                             <div
-                                className="article-content mt-10"
+                                className="article-content mt-10 leading-8"
                                 dangerouslySetInnerHTML={{ __html: blog.description }}
                             />
                         </div>
