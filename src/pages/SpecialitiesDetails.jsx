@@ -5,9 +5,10 @@ import Footer from '../sections/Footer';
 import Header from '../sections/Header';
 import SpecialitiesDetailsContent from '../sections/Specialities/SpecialitiesDetailsContent';
 import Hero from '../sections/SpecialitiesDetails/Hero';
+import Loader from '../components/ui/Loader';
 
 function SpecialitiesDetails() {
-    const { id } = useParams();
+    const { id: title } = useParams();
 
     const [speciality, setSpeciality] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ function SpecialitiesDetails() {
                 const { data: specialityData, error: specialityError } = await supabase
                     .from("specialities")
 
-                    .select("*").eq("id", id).single();
+                    .select("*").eq("title", title).single();
                 if (specialityError) throw specialityError;
 
                 console.log(specialityData);
@@ -40,7 +41,7 @@ function SpecialitiesDetails() {
         <>
             <Header />
             <Hero title={speciality.title} img={speciality.header} short_description={speciality.short_description} />
-            <SpecialitiesDetailsContent id={id} />
+            {loading ? <Loader /> : <SpecialitiesDetailsContent specialityId={speciality.id} />}
             <Footer />
         </>
     )

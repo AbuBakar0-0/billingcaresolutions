@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import Heading from '../../components/Heading';
 import Loader from '../../components/ui/Loader';
 import { supabase } from '../../lib/supabase';
 import SpecialityFaqCard from './../../components/Specialities/SpecialityFaqCard';
 import Stats from './../About/Stats';
 
-const SpecialitiesDetailsContent = ({ id }) => {
+const SpecialitiesDetailsContent = ({ specialityId }) => {
 
-    const { id: specialityId } = useParams();
     const [speciality, setSpeciality] = useState(null);
     const [faqs, setFaqs] = useState([]);
     const [testimonials, setTestimonials] = useState([]);
@@ -24,13 +22,13 @@ const SpecialitiesDetailsContent = ({ id }) => {
             setLoading(true);
             try {
                 // Fetch Service
-                const { data: serviceData, error: serviceError } = await supabase
+                const { data: specialityData, error: serviceError } = await supabase
                     .from("specialities")
                     .select("*")
                     .eq("id", specialityId)
                     .single();
                 if (serviceError) throw serviceError;
-                setSpeciality(serviceData);
+                setSpeciality(specialityData);
 
                 // Fetch Service FAQs
                 const { data: faqsData, error: faqsError } = await supabase
@@ -82,7 +80,7 @@ const SpecialitiesDetailsContent = ({ id }) => {
         };
 
         fetchServiceDetails();
-    }, [specialityId]);
+    }, []);
 
 
     const [openIndex, setOpenIndex] = useState(null);

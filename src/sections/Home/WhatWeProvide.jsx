@@ -57,7 +57,7 @@ function WhatWeProvide() {
                 </div>
                 <div className='w-full flex flex-wrap justify-center md:justify-around p-5 mb-10 transition-all duration-300 ease-in-out'>
                     {itemsToDisplay.map((item, index) => (
-                        <Link to={`/serviceDetails/${item.title}`}>
+                        <Link to={`/service-details/${item.title}`}>
                             <div className="flip-container size-64 relative my-3">
                                 <div className="flipper absolute size-64 object-fit">
                                     {/* Front of the card */}

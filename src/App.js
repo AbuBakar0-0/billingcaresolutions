@@ -92,20 +92,20 @@ function App() {
         <Routes>
           {/* --------------------------------client-side-------------------------------- */}
           <Route path="/" element={<Home />} />
-          <Route path="/whybcs" element={<About />} />
+          <Route path="/why-bcs" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/serviceDetails/:id" element={<ServiceDetails />} />
+          <Route path="/service-details/:id" element={<ServiceDetails />} />
           <Route path="/specialities" element={<Specialities />} />
-          <Route path="/specialitiesDetails/:id" element={<SpecialitiesDetails />} />
-          <Route path="/domain" element={<DomainArea />} />
+          <Route path="/specialities-details/:id" element={<SpecialitiesDetails />} />
+          <Route path="/domain-areas" element={<DomainArea />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/faqDetails/:id" element={<FaqsDetails />} />
+          <Route path="/faq-details/:id" element={<FaqsDetails />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogdetails/:id" element={<BlogDetails />} />
+          <Route path="/blog-details/:id" element={<BlogDetails />} />
           <Route path="/articles" element={<Articles />} />
-          <Route path="/articledetails/:id" element={<ArticleDetails />} />
-          <Route path="/termsandconditions" element={<TermsAndConditions />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/article-details/:id" element={<ArticleDetails />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
 
           {/* --------------------------------admin-side-------------------------------- */}
@@ -195,8 +195,6 @@ function App() {
           <Route path="/backgroundImages" element={<AllBackgroundImages />} />
           <Route path="/addBackgroundImages/:type" element={<AddBackgroundImage />} />
           
-
-
           {/* Catch-all route for undefined paths */}
           <Route path="*" element={<Forbidden />} />
 

@@ -64,7 +64,7 @@ const FaqQuestions = ({ data, service }) => {
                         </div>
                         <div className='hidden md:flex w-full flex-wrap justify-center items-center p-10 gap-5 container mx-auto'>
                             {itemsToDisplay.map((item, index) => (
-                                <Link key={index} to={`/faqDetails/${item.id}`}>
+                                <Link key={index} to={`/faq-details/${item.id}`}>
                                     <TopCategoriesCard data={item} />
                                 </Link>
                             ))}

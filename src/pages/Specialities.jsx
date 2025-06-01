@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SpecialityCard from '../components/Specialities/SpecialityCard';
 import Hero from '../sections/Specialities/Hero';
@@ -20,6 +20,7 @@ function Specialities() {
                 const { data: specialityData, error: specialityError } = await supabase
                     .from("specialities")
                     .select("*")
+                    .order("title", { ascending: true });
                 if (specialityError) throw specialityError;
                 setSpeciality(specialityData);
             } catch (error) {
@@ -39,12 +40,12 @@ function Specialities() {
             <Hero />
             {loading ?
                 <div className="w-full flex justify-center items-center h-96">
-                    <div className="loader"></div> 
+                    <div className="loader"></div>
                 </div>
                 :
                 <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
-                    {speciality.map((item, index) => (
-                        <Link to={`/specialitiesDetails/${item.id}`}>
+                    {speciality.map((item) => (
+                        <Link to={`/specialities-details/${item.title}`}>
                             <SpecialityCard data={item} />
                         </Link>
                     ))}

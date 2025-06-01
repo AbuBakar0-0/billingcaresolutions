@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { supabase } from "../lib/supabase";
-import Header from "../sections/Header";
 import Footer from "../sections/Footer";
+import Header from "../sections/Header";
 import Hero from "../sections/ServiceDetails/Hero";
 import ContactForm from "./../components/Contact/ContactForm";
 import ExpansionTile from "./../components/FaqDetails/ExpansionTile";

@@ -391,10 +391,10 @@ function ContactForm() {
                     {checkbox && (
                         <div className='text-secondary'>
                             By Checking this, you agree to &nbsp;
-                            <Link to='/termsandconditions' className='text-primary underline'>
+                            <Link to='/terms-and-conditions' className='text-primary underline'>
                                 terms & conditions
                             </Link> & &nbsp;
-                            <Link to='/privacypolicy' className='text-primary underline'>
+                            <Link to='/privacy-policy' className='text-primary underline'>
                                 privacy policy
                             </Link> of Billing Care Solutions
                         </div>

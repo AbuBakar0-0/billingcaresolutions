@@ -18,7 +18,7 @@ function Footer() {
     },
     {
       title: "Why Billing Care Solutions",
-      link: "/whybcs",
+      link: "/why-bcs",
     },
     {
       title: "Specialities",
@@ -26,7 +26,7 @@ function Footer() {
     },
     {
       title: "Domain Area",
-      link: "/domain",
+      link: "/domain-areas",
     },
     {
       title: "FAQs",
@@ -41,27 +41,27 @@ function Footer() {
   const services = [
     {
       title: "Medical Billing and Coding Services",
-      link: "/servicesDetails?index=0",
+      link: "/service-details/Medical%20Billing%20&%20Coding",
     },
     {
       title: "Credentialing Services",
-      link: "/serviceDetails?index=1",
+      link: "/service-details/Credentialing%20Services",
     },
     {
       title: "Revenue Cycle Management Services",
-      link: "/serviceDetails?index=2",
+      link: "/service-details/Revenue%20Cycle%20Management",
     },
     {
       title: "AR & Denial Management Services",
-      link: "/serviceDetails?index=5",
+      link: "/service-details/AR%20&%20Denial%20Management",
     },
     {
       title: "Billing & Coding Audit Services",
-      link: "/serviceDetails?index=3",
+      link: "/service-details/Billing%20and%20Coding%20Audits",
     },
     {
       title: "Verification & Prior Authorization Services",
-      link: "/serviceDetails?index=6",
+      link: "/service-details/VOB%20&%20Prior%20Authorization",
     },
   ];
 

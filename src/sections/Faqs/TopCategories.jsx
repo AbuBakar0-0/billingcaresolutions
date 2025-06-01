@@ -42,7 +42,7 @@ function TopCategories() {
                     </div>
                     <div className='w-full flex flex-wrap justify-center items-center p-10 gap-5'>
                         {services.map((item, index) => (
-                            <Link to={`/faqDetails/${item.id}`}>
+                            <Link to={`/faq-details/${item.id}`}>
                                 <TopCategoriesCard data={item} />
                             </Link>
                         ))}

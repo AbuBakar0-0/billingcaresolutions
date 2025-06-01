@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import DashboardLayout from "../layout";
-import TextEditor from "../../../components/ui/TextEditor";
 import axios from "axios";
+import { useState } from "react";
+import ReactQuillEditor from "../../../components/ui/TextEditor";
 import { supabase } from "../../../lib/supabase";
-
+import DashboardLayout from "../layout";
 
 const AddBlogs = () => {
   const [formData, setFormData] = useState({
@@ -24,10 +23,10 @@ const AddBlogs = () => {
     }
   };
 
-  const handleQuillChange = (value, id) => {
+  const handleQuillChange = (value) => {
     setFormData((prevData) => ({
       ...prevData,
-      [id]: value,
+      description: value,
     }));
   };
 
@@ -36,21 +35,21 @@ const AddBlogs = () => {
     setIsSubmitting(true);
 
     try {
-      // Upload image to Cloudinary if provided
+      // Upload image to Cloudinary
       let imageUrl = null;
       if (formData.image) {
-        const imageformData = new FormData();
-        imageformData.append("file", formData.image);
-        imageformData.append("upload_preset", "ml_default");
+        const imageFormData = new FormData();
+        imageFormData.append("file", formData.image);
+        imageFormData.append("upload_preset", "ml_default");
 
         const response = await axios.post(
           "https://api.cloudinary.com/v1_1/dnfd5idsi/image/upload",
-          imageformData
+          imageFormData
         );
         imageUrl = response.data.secure_url;
       }
 
-      // Insert blog data into the 'blogs' table
+      // Insert blog into Supabase
       const { error: insertError } = await supabase.from("blogs").insert({
         title: formData.title,
         description: formData.description,
@@ -58,9 +57,7 @@ const AddBlogs = () => {
         date: formData.date,
       });
 
-      if (insertError) {
-        throw insertError;
-      }
+      if (insertError) throw insertError;
 
       alert("Blog added successfully!");
       setFormData({
@@ -79,15 +76,12 @@ const AddBlogs = () => {
 
   return (
     <DashboardLayout>
-      <div className="">
+      <div>
         <h1 className="text-2xl font-bold mb-4">Add Blogs</h1>
         <form onSubmit={handleSubmit}>
           {/* Title */}
           <div className="mb-4">
-            <label
-              htmlFor="title"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
               Title
             </label>
             <input
@@ -104,10 +98,7 @@ const AddBlogs = () => {
 
           {/* Image */}
           <div className="mb-4">
-            <label
-              htmlFor="image"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-1">
               Upload Image
             </label>
             <input
@@ -122,10 +113,7 @@ const AddBlogs = () => {
 
           {/* Date */}
           <div className="mb-4">
-            <label
-              htmlFor="date"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">
               Date
             </label>
             <input
@@ -141,20 +129,12 @@ const AddBlogs = () => {
 
           {/* Description */}
           <div className="mb-4">
-            <label
-              htmlFor="description"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
               Description
             </label>
-            <TextEditor
-              type="description"
-              id="description"
-              name="description"
+            <ReactQuillEditor
               value={formData.description}
               onChange={handleQuillChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
             />
           </div>
 

@@ -12,8 +12,8 @@ import { FaYoutube } from "react-icons/fa";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const [display, setDisplay] = useState(false);
+    const [servicesDisplay, setServicesDisplay] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -33,6 +33,34 @@ const Header = () => {
             setDisplay(!display);
         }
     }
+
+    const displayServicesSubMenu = (index) => {
+        if (index === 0) {
+            setServicesDisplay(false);
+        }
+        else if (index === 1) {
+            setServicesDisplay(true);
+        }
+        else if (index === 2) {
+            setServicesDisplay(false);
+        }
+        else {
+            setServicesDisplay(!servicesDisplay);
+        }
+    }
+
+    const services = [
+        "Medical Billing & Coding",
+        "Credentialing Services",
+        "Revenue Cycle Management",
+        "Billing and Coding Audits",
+        "Reporting and Analytics",
+        "AR & Denial Management",
+        "VOB & Prior Authorization",
+        "Consultation Services",
+        "Compliance Assistance",
+        "Patient Help Support",
+    ]
 
 
     return (
@@ -84,24 +112,42 @@ const Header = () => {
                         </div>
                         <div className="hidden lg:flex lg:space-x-8 items-center w-3/5 justify-center">
                             <Link to='/' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Home</Link>
-                            <Link to='/whybcs' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Why BCS</Link>
-                            <Link to='/services' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Services</Link>
+                            <Link to='/why-bcs' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Why BCS</Link>
+
+                            {/* Services Dropdown */}
+                            <div className="relative group">
+                                <button className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary" onMouseOver={() => displayServicesSubMenu(1)} onMouseOut={() => displayServicesSubMenu(2)}>
+                                    <p>Services</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div className={`p-2 absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-20 transition-all duration-100 ${servicesDisplay ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`} onMouseOver={() => displayServicesSubMenu(1)} onMouseOut={() => displayServicesSubMenu(0)}>
+                                    {services.map((item) => (
+                                        <>
+                                            <Link to={`/service-details/${item}`} className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">{item}</Link>
+                                        </>
+                                    ))}
+                                </div>
+                            </div>
+
                             <Link to='/specialities' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Specialities</Link>
-                            <Link to='/domain' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Domain Area</Link>
+                            <Link to='/domain-areas' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Domain Area</Link>
+
+                            {/* Resources Dropdown */}
                             <div className="relative group">
                                 <button className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary" onMouseOver={() => displaySubMenu(1)} onMouseOut={() => displaySubMenu(2)}>
                                     <p>Resources</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
-
                                 </button>
                                 <div className={`p-2 absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-20 transition-all duration-100 ${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`} onMouseOver={() => displaySubMenu(1)} onMouseOut={() => displaySubMenu(0)}>
                                     <Link to="/blogs" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Blogs</Link>
                                     <Link to="/faqs" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">FAQ's</Link>
                                     <Link to="/articles" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Articles</Link>
-                                    <Link to="/termsandconditions" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Terms & Conditions</Link>
-                                    <Link to="/privacypolicy" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Privacy Policy</Link>
+                                    <Link to="/terms-and-conditions" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Terms & Conditions</Link>
+                                    <Link to="/privacy-policy" className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">Privacy Policy</Link>
                                 </div>
                             </div>
 
@@ -137,31 +183,45 @@ const Header = () => {
                 </div>
             </div>
 
+            {/* Mobile Menu */}
             <div className={`w-full lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="w-full px-2 pt-2 pb-3 space-y-1 sm:px-3">
-
                     <Link to="/" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Home</Link>
-                    <Link to="/whybcs" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Why BCS</Link>
-                    <Link to="/services" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Services</Link>
+                    <Link to="/why-bcs" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Why BCS</Link>
+
+                    {/* Mobile Services Dropdown */}
+                    <button className="flex flex-row items-center text-grays-900 px-3 py-2 rounded-md text-base font-medium hover:text-secondary w-full text-left" onClick={() => displayServicesSubMenu(4)}>
+                        <p>Services</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div className={`pl-4 transition-all duration-300 overflow-hidden ${servicesDisplay ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                        {services.map((item) => (
+                          <>
+                        <Link to={`/service-details/${item}`} className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">{item}</Link>
+                          </>
+                        ))}
+                    </div>
+
                     <Link to="/specialities" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Specialities</Link>
-                    <Link to="/domain" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Domain Area</Link>
+                    <Link to="/domain-areas" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Domain Area</Link>
                     <Link to="/contact" className="bg-secondary text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Contact Us</Link>
 
-
-                    <button className="flex flex-row items-center text-grays-900 px-3 py-2 rounded-md text-base font-medium hover:text-secondary" onClick={() => displaySubMenu(4)}>
+                    {/* Mobile Resources Dropdown */}
+                    <button className="flex flex-row items-center text-grays-900 px-3 py-2 rounded-md text-base font-medium hover:text-secondary w-full text-left" onClick={() => displaySubMenu(4)}>
                         <p>Resources</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
-                    <div className={`${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-                        <Link to="/blogs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Blogs</Link>
-                        <Link to="/faqs" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">FAQ's</Link>
-                        <Link to="/articles" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Articles</Link>
-                        <Link to="/termsandconditions" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Terms & Conditions</Link>
-                        <Link to="/privacypolicy" className="block px-3 py-2 text-grays-900 rounded-md text-base font-medium hover:text-secondary">Privacy Policy</Link>
+                    <div className={`pl-4 transition-all duration-300 overflow-hidden ${display ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <Link to="/blogs" className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">Blogs</Link>
+                        <Link to="/faqs" className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">FAQ's</Link>
+                        <Link to="/articles" className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">Articles</Link>
+                        <Link to="/terms-and-conditions" className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">Terms & Conditions</Link>
+                        <Link to="/privacy-policy" className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">Privacy Policy</Link>
                     </div>
-
                 </div>
             </div>
         </nav>

@@ -107,7 +107,7 @@ function BlogDetails() {
                             <div className="w-full flex flex-col justify-center items-center gap-4 p-5 shadow-lg rounded-lg border-[1px] border-gray-100">
                                 <HeadingLine data="Recent Articles" />
                                 {itemsToDisplay.map((item, index) => (
-                                    <Link to={`/articleDetails/${item.id}`} key={index}>
+                                    <Link to={`/article-details/${item.id}`} key={index}>
                                         <div className="w-full p-2 flex flex-row justify-start items-center gap-4">
                                             <img src={`${item.image}`} alt="Billing Care Solutions" className="w-28" />
                                             <p className="text-secondary text-xs font-semibold underline text-left">{item.title}</p>
