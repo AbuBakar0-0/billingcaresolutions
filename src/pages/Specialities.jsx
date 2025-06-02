@@ -45,7 +45,7 @@ function Specialities() {
                 :
                 <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
                     {speciality.map((item) => (
-                        <Link to={`/specialities-details/${item.title}`}>
+                        <Link to={`/specialities-details/${item.slug}`}>
                             <SpecialityCard data={item} />
                         </Link>
                     ))}

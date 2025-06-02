@@ -20,7 +20,7 @@ function BlogDetails() {
                 const { data: blogData, error: blogError } = await supabase
                     .from('blogs')
                     .select('*')
-                    .eq('title', title);
+                    .eq('slug', title);
 
                 if (blogError) throw blogError;
 

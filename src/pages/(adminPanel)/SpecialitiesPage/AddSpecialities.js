@@ -73,6 +73,7 @@ const AddSpecialities = () => {
           card_image: cardImageUrl,
           header: headerUrl,
           background_image: backgroundImageUrl,
+          slug: slugify(formData.title)
         })
         .select("*");
 

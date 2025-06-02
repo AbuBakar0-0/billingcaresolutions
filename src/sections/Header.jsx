@@ -50,17 +50,18 @@ const Header = () => {
     }
 
     const services = [
-        "Medical Billing & Coding",
-        "Credentialing Services",
-        "Revenue Cycle Management",
-        "Billing and Coding Audits",
-        "Reporting and Analytics",
-        "AR & Denial Management",
-        "VOB & Prior Authorization",
-        "Consultation Services",
-        "Compliance Assistance",
-        "Patient Help Support",
-    ]
+  { name: "Medical Billing & Coding", slug: "medical-billing-coding" },
+  { name: "Credentialing Services", slug: "credentialing-services" },
+  { name: "Revenue Cycle Management", slug: "revenue-cycle-management" },
+  { name: "Billing and Coding Audits", slug: "billing-and-coding-audits" },
+  { name: "Reporting and Analytics", slug: "reporting-and-analytics" },
+  { name: "AR & Denial Management", slug: "ar-denial-management" },
+  { name: "VOB & Prior Authorization", slug: "vob-prior-authorization" },
+  { name: "Consultation Services", slug: "consultation-services" },
+  { name: "Compliance Assistance", slug: "compliance-assistance" },
+  { name: "Patient Help Support", slug: "patient-help-support" },
+];
+
 
 
     return (
@@ -117,7 +118,7 @@ const Header = () => {
                             {/* Services Dropdown */}
                             <div className="relative group">
                                 <button className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary" onMouseOver={() => displayServicesSubMenu(1)} onMouseOut={() => displayServicesSubMenu(2)}>
-                                    <p>Services</p>
+                                    <Link to="/services">Services</Link>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
@@ -125,7 +126,7 @@ const Header = () => {
                                 <div className={`p-2 absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-20 transition-all duration-100 ${servicesDisplay ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`} onMouseOver={() => displayServicesSubMenu(1)} onMouseOut={() => displayServicesSubMenu(0)}>
                                     {services.map((item) => (
                                         <>
-                                            <Link to={`/service-details/${item}`} className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">{item}</Link>
+                                            <Link to={`/service-details/${item.slug}`} className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">{item.name}</Link>
                                         </>
                                     ))}
                                 </div>
@@ -191,7 +192,7 @@ const Header = () => {
 
                     {/* Mobile Services Dropdown */}
                     <button className="flex flex-row items-center text-grays-900 px-3 py-2 rounded-md text-base font-medium hover:text-secondary w-full text-left" onClick={() => displayServicesSubMenu(4)}>
-                        <p>Services</p>
+                        <Link to="/services">Services</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
@@ -199,7 +200,7 @@ const Header = () => {
                     <div className={`pl-4 transition-all duration-300 overflow-hidden ${servicesDisplay ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                         {services.map((item) => (
                           <>
-                        <Link to={`/service-details/${item}`} className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">{item}</Link>
+                        <Link to={`/service-details/${item.slug}`} className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">{item.name}</Link>
                           </>
                         ))}
                     </div>

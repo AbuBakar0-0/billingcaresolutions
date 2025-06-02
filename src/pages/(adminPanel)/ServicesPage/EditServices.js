@@ -45,6 +45,7 @@ const EditServices = () => {
         content_description: data.content_description,
         faqs_header_description: data.faqs_header_description || "", // Make sure to handle this field
         service_no: data.service_no || "", // Make sure to handle this field
+        slug: slugify(formData.title)
       });
     };
 

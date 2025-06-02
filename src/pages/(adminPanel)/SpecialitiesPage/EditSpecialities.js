@@ -95,6 +95,7 @@ const EditSpecialities = () => {
           icon: iconUrl,
           card_image: cardImageUrl,
           header: headerUrl,
+          slug: slugify(formData.title)
         })
         .eq("id", specialityId);
 

@@ -73,6 +73,7 @@ const AddServices = () => {
           content_description: formData.content_description,
           service_no: formData.service_no, // Insert the service_no
           faqs_header_description: formData.faqs_header_description, // Insert faqs_header_description
+          slug: slugify(formData.title)
         })
         .select("*");
 

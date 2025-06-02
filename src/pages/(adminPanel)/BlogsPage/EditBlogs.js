@@ -89,6 +89,7 @@ const EditBlogs = () => {
           description: formData.description,
           image: imageUrl,
           date: formData.date,
+          slug: slugify(formData.title)
         })
         .eq("id", id);
 

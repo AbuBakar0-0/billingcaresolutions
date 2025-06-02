@@ -3,6 +3,7 @@ import { useState } from "react";
 import ReactQuillEditor from "../../../components/ui/TextEditor";
 import { supabase } from "../../../lib/supabase";
 import DashboardLayout from "../layout";
+import slugify from "slugify";
 
 const AddBlogs = () => {
   const [formData, setFormData] = useState({
@@ -55,6 +56,7 @@ const AddBlogs = () => {
         description: formData.description,
         image: imageUrl,
         date: formData.date,
+        slug: slugify(formData.title)
       });
 
       if (insertError) throw insertError;

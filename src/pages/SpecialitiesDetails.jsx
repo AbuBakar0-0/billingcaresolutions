@@ -21,7 +21,7 @@ function SpecialitiesDetails() {
                 const { data: specialityData, error: specialityError } = await supabase
                     .from("specialities")
 
-                    .select("*").eq("title", title).single();
+                    .select("*").eq("slug", title).single();
                 if (specialityError) throw specialityError;
 
                 console.log(specialityData);

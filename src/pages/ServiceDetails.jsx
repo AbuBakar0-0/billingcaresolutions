@@ -29,7 +29,7 @@ function ServiceDetails() {
         const { data: serviceData, error: serviceError } = await supabase
           .from("services")
           .select("*")
-          .eq("title", serviceName)
+          .eq("slug", serviceName)
           .single();
         if (serviceError) throw serviceError;
         setService(serviceData);
