@@ -4,6 +4,7 @@ import DashboardLayout from "../layout";
 import TextEditor from "../../../components/ui/TextEditor";
 import axios from "axios";
 import { supabase } from "../../../lib/supabase";
+import slugify from "slugify";
 
 const EditBlogs = () => {
   const { id } = useParams();

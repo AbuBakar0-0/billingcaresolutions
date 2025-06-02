@@ -3,6 +3,7 @@ import DashboardLayout from "../layout";
 import axios from "axios";
 import { supabase } from "../../../lib/supabase";
 import { Link } from "react-router-dom";
+import slugify from "slugify";
 
 const AddSpecialities = () => {
   const [formData, setFormData] = useState({
