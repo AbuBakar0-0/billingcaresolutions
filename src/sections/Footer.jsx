@@ -41,27 +41,27 @@ function Footer() {
   const services = [
     {
       title: "Medical Billing and Coding Services",
-      link: "/service-details/medical-billing-coding",
+      link: "/services/medical-billing-coding",
     },
     {
       title: "Credentialing Services",
-      link: "/service-details/credentialing-services",
+      link: "/services/credentialing-services",
     },
     {
       title: "Revenue Cycle Management Services",
-      link: "/service-details/revenue-cycle-management",
+      link: "/services/revenue-cycle-management",
     },
     {
       title: "AR & Denial Management Services",
-      link: "/service-details/ar-denial-management",
+      link: "/services/ar-denial-management",
     },
     {
       title: "Billing & Coding Audit Services",
-      link: "/service-details/billing-and-coding-audits",
+      link: "/services/billing-and-coding-audits",
     },
     {
       title: "Verification & Prior Authorization Services",
-      link: "/service-details/vob-prior-authorization",
+      link: "/services/vob-prior-authorization",
     },
   ];
 

@@ -23,7 +23,7 @@ function FaqsDetails() {
                 const { data: serviceData, error: serviceError } = await supabase
                     .from('services')
                     .select('*')
-                    .eq('id', id)
+                    .eq('slug', id)
                     .single();
 
                 if (serviceError) throw serviceError;
@@ -32,7 +32,7 @@ function FaqsDetails() {
                 const { data: faqData, error: faqError } = await supabase
                     .from('service_faqs')
                     .select('*')
-                    .eq('service_id', id);
+                    .eq('service_id', serviceData.id);
 
                 if (faqError) throw faqError;
 

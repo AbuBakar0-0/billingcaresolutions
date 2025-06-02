@@ -1,5 +1,5 @@
 import md5 from "md5";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -10,7 +10,6 @@ function Login() {
     const formData = new FormData(e.target);
     const obj = Object.fromEntries(formData.entries());
 
-    console.log(obj);
     if (obj["email"] == "admin@gmail.com" && obj["password"] == "123123123") {
       localStorage.setItem("token", md5(md5("billingcaresolutions")));
       navigate("/allBlogs");

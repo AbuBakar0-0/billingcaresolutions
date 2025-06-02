@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import DashboardLayout from "../layout";
-import TextEditor from "../../../components/ui/TextEditor";
 import axios from "axios";
-import { supabase } from "../../../lib/supabase";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import slugify from "slugify";
+import { supabase } from "../../../lib/supabase";
+import DashboardLayout from "../layout";
+import ReactQuillEditor from "../../../components/ui/TextEditor";
 
 const EditBlogs = () => {
   const { id } = useParams();
@@ -46,7 +46,7 @@ const EditBlogs = () => {
     fetchBlog();
   }, [id]);
 
-  const handleChange = (e) => {
+ const handleChange = (e) => {
     const { name, value, type, files } = e.target;
     if (type === "file") {
       setFormData({ ...formData, [name]: files[0] });
@@ -55,12 +55,13 @@ const EditBlogs = () => {
     }
   };
 
-  const handleQuillChange = (value, id) => {
+  const handleQuillChange = (value) => {
     setFormData((prevData) => ({
       ...prevData,
-      [id]: value,
+      description: value,
     }));
   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -108,15 +109,12 @@ const EditBlogs = () => {
 
   return (
     <DashboardLayout>
-      <div className="">
-        <h1 className="text-2xl font-bold mb-4">Edit Blog</h1>
+      <div>
+        <h1 className="text-2xl font-bold mb-4">Add Blogs</h1>
         <form onSubmit={handleSubmit}>
           {/* Title */}
           <div className="mb-4">
-            <label
-              htmlFor="title"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
               Title
             </label>
             <input
@@ -133,11 +131,8 @@ const EditBlogs = () => {
 
           {/* Image */}
           <div className="mb-4">
-            <label
-              htmlFor="image"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Upload New Image
+            <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-1">
+              Upload Image
             </label>
             <input
               type="file"
@@ -151,10 +146,7 @@ const EditBlogs = () => {
 
           {/* Date */}
           <div className="mb-4">
-            <label
-              htmlFor="date"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">
               Date
             </label>
             <input
@@ -170,20 +162,12 @@ const EditBlogs = () => {
 
           {/* Description */}
           <div className="mb-4">
-            <label
-              htmlFor="description"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
               Description
             </label>
-            <TextEditor
-              type="description"
-              id="description"
-              name="description"
+            <ReactQuillEditor
               value={formData.description}
               onChange={handleQuillChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
             />
           </div>
 

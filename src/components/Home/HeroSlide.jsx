@@ -1,4 +1,3 @@
-import React from 'react'
 
 const HeroSlide = ({ title, description, link, image, titleColor, descriptionColor }) => {
     return (

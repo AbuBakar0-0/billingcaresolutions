@@ -76,6 +76,21 @@
         white-space: nowrap;
         border: 0;
       }
+
+      /* Real media query: adjust font and padding on small screens */
+      @media screen and (max-width: 768px) {
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+      }
     </style>
 
     <!-- Styles and Scripts -->
@@ -97,14 +112,14 @@
     </noscript>
 
     <nav class="visually-hidden">
+      <a href="/">Home</a>
       <a href="/about">About Us</a>
       <a href="/services">Services</a>
-      <a href="/contact">Contact</a>
-      <a href="/blog">Blog</a>
-    </nav>
-    <nav class="visually-hidden">
-      <a href="/about">About Us</a>
-      <a href="/services">Services</a>
+      <a href="/specialities">Specialities</a>
+      <a href="/faqs">Faqs</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/domain-areas">Domain Areas</a>
+      <a href="/articles">Articles</a>
       <a href="/contact">Contact</a>
       <a href="/blog">Blog</a>
     </nav>
@@ -113,3 +128,10 @@
     <div id="root"></div>
   </body>
 </html>
+
+
+google-site-verification=3RERpTs9_W5_dlp7ErX9YIKSxufPpOdJ2I6JM7WsVO4
+
+v=spf1 ip4:66.29.130.217 +a +mx +ip4:68.65.120.246 +ip4:10.10.10.12 include:spf.web-hosting.com +ip4:68.65.120.250 +ip4:68.65.120.251 ~all
+
+billingcaresolutions.com.

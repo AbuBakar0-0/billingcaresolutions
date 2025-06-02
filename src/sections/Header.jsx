@@ -126,14 +126,14 @@ const Header = () => {
                                 <div className={`p-2 absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-20 transition-all duration-100 ${servicesDisplay ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`} onMouseOver={() => displayServicesSubMenu(1)} onMouseOut={() => displayServicesSubMenu(0)}>
                                     {services.map((item) => (
                                         <>
-                                            <Link to={`/service-details/${item.slug}`} className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">{item.name}</Link>
+                                            <Link to={`/services/${item.slug}`} className="block px-4 py-2 text-xs text-grays-700 hover:text-secondary">{item.name}</Link>
                                         </>
                                     ))}
                                 </div>
                             </div>
 
                             <Link to='/specialities' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Specialities</Link>
-                            <Link to='/domain-areas' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Domain Area</Link>
+                            <Link to='/domain-areas' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Domain Areas</Link>
 
                             {/* Resources Dropdown */}
                             <div className="relative group">
@@ -200,13 +200,13 @@ const Header = () => {
                     <div className={`pl-4 transition-all duration-300 overflow-hidden ${servicesDisplay ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                         {services.map((item) => (
                           <>
-                        <Link to={`/service-details/${item.slug}`} className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">{item.name}</Link>
+                        <Link to={`/services/${item.slug}`} className="block px-3 py-2 text-grays-900 rounded-md text-sm font-medium hover:text-secondary">{item.name}</Link>
                           </>
                         ))}
                     </div>
 
                     <Link to="/specialities" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Specialities</Link>
-                    <Link to="/domain-areas" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Domain Area</Link>
+                    <Link to="/domain-areas" className="text-grays-900 block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Domain Areas</Link>
                     <Link to="/contact" className="bg-secondary text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary">Contact Us</Link>
 
                     {/* Mobile Resources Dropdown */}

@@ -55,7 +55,7 @@ function Articles() {
             ) : (
                 <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
                     {currentArticles.map((item, index) => (
-                        <Link to={`/article-details/${item.id}`} key={index} className='w-full md:w-[48%] lg:w-[30%] p-5'>
+                        <Link to={`/article/${item.id}`} key={index} className='w-full md:w-[48%] lg:w-[30%] p-5'>
                             <div className=' lg:min-h-[31rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
                                 <img src={`${item.image}`} alt="Billing Care Solutions" className='rounded-t-lg' />
                                 <div className='w-full p-4 flex flex-col'>

@@ -94,16 +94,16 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/why-bcs" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/service-details/:id" element={<ServiceDetails />} />
+          <Route path="/services/:id" element={<ServiceDetails />} />
           <Route path="/specialities" element={<Specialities />} />
-          <Route path="/specialities-details/:id" element={<SpecialitiesDetails />} />
+          <Route path="/specialities/:id" element={<SpecialitiesDetails />} />
           <Route path="/domain-areas" element={<DomainArea />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/faq-details/:id" element={<FaqsDetails />} />
+          <Route path="/faq/:id" element={<FaqsDetails />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blog-details/:id" element={<BlogDetails />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/articles" element={<Articles />} />
-          <Route path="/article-details/:id" element={<ArticleDetails />} />
+          <Route path="/article/:id" element={<ArticleDetails />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
