@@ -109,7 +109,7 @@ const Header = () => {
                 <div className="flex justify-between h-16">
                     <div className="w-full flex flex-row justify-between">
                         <div className="w-4/5 lg:w-1/5 flex-shrink-0 flex items-center">
-                            <img className="h-full w-auto" src="/assets/BCS Logo billingcaresolutions.com.svg" alt="Logo" />
+                            <Link to="/" className="h-full w-auto"><img src="/assets/BCS Logo billingcaresolutions.com.svg" alt="Logo" className="h-full w-auto"/></Link>
                         </div>
                         <div className="hidden lg:flex lg:space-x-8 items-center w-3/5 justify-center">
                             <Link to='/' className="text-secondary inline-flex items-center p-2 font-semibold hover:text-primary">Home</Link>
