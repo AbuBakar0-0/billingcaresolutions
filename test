@@ -135,3 +135,6 @@ google-site-verification=3RERpTs9_W5_dlp7ErX9YIKSxufPpOdJ2I6JM7WsVO4
 v=spf1 ip4:66.29.130.217 +a +mx +ip4:68.65.120.246 +ip4:10.10.10.12 include:spf.web-hosting.com +ip4:68.65.120.250 +ip4:68.65.120.251 ~all
 
 billingcaresolutions.com.
+
+
+/home/billqgus/public_html

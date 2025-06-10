@@ -110,7 +110,7 @@ const EditBlogs = () => {
   return (
     <DashboardLayout>
       <div>
-        <h1 className="text-2xl font-bold mb-4">Add Blogs</h1>
+        <h1 className="text-2xl font-bold mb-4">Edit Blogs</h1>
         <form onSubmit={handleSubmit}>
           {/* Title */}
           <div className="mb-4">

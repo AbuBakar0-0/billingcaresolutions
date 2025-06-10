@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaArrowRight } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 const HoverSlider = () => {
@@ -15,9 +16,9 @@ const HoverSlider = () => {
     const containerRect = event.currentTarget.getBoundingClientRect();
     const offsetX = event.clientX - containerRect.left;
     const widthPercent = (offsetX / containerRect.width) * 100;
-    if(widthPercent < 50){
+    if (widthPercent < 50) {
       setSliderWidth(0); // Default to middle when mouse leaves
-    } else{
+    } else {
       setSliderWidth(100);
     }
   };
@@ -41,8 +42,8 @@ const HoverSlider = () => {
           onTouchMove={handleTouchMove}
         >
           <div className="absolute top-0 left-0 w-full h-full">
-            <img 
-             src="/assets/hover_slider/Without BCS billingcaresolutions.com.webp"
+            <img
+              src="/assets/hover_slider/Without BCS billingcaresolutions.com.webp"
               alt="Without BCS billingcaresolutions.com"
               className="absolute top-0 left-0 w-full h-full object-contain lg:object-cover"
             />
@@ -53,8 +54,8 @@ const HoverSlider = () => {
               clipPath: `polygon(0 0, ${sliderWidth}% 0, ${sliderWidth}% 100%, 0 100%)`,
             }}
           >
-            <img 
-             src="/assets/hover_slider/With BCS billingcaresolutions.com.webp"
+            <img
+              src="/assets/hover_slider/With BCS billingcaresolutions.com.webp"
               alt="With BCS billingcaresolutions.com"
               className="absolute top-0 left-0 w-full h-full object-contain lg:object-cover"
             />
@@ -68,8 +69,10 @@ const HoverSlider = () => {
         </div>
         <img src="/assets/hover_slider/success billingcaresolutions.com.webp" alt="Billing Care Solutions" className='w-1/6 mt-[0rem]' />
       </div>
-      <Link to="/contact" className='bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>
-        Talk to an Expert --
+      <Link to="/contact" className='flex flex-row justify-center items-center gap-4 bg-secondary text-white px-4 py-3 rounded-xl hover:bg-primary hover:transition-all hover:duration-300 hover:ease-in-out'>
+        <span>Talk to an Expert </span>
+        <FaArrowRight />
+
       </Link>
     </div>
   );

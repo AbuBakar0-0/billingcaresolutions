@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import DashboardLayout from "../layout";
-import TextEditor from "../../../components/ui/TextEditor";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import slugify from "slugify";
 import { supabase } from "../../../lib/supabase";
+import DashboardLayout from "../layout";
+import ReactQuillEditor from "../../../components/ui/TextEditor";
 
 const EditArticles = () => {
-  const {id} = useParams();
+  const { id } = useParams();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     title: "",
@@ -18,8 +19,8 @@ const EditArticles = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    // Fetch article data by ID
-    const fetchArticle = async () => {
+    // Fetch blog data by ID
+    const fetchBlog = async () => {
       try {
         const { data, error } = await supabase
           .from("articles")
@@ -37,15 +38,15 @@ const EditArticles = () => {
         });
         setInitialImage(data.image); // Set initial image URL
       } catch (err) {
-        console.error("Error fetching article:", err.message);
-        alert("Failed to fetch article data.");
+        console.error("Error fetching blog:", err.message);
+        alert("Failed to fetch blog data.");
       }
     };
 
-    fetchArticle();
+    fetchBlog();
   }, [id]);
 
-  const handleChange = (e) => {
+ const handleChange = (e) => {
     const { name, value, type, files } = e.target;
     if (type === "file") {
       setFormData({ ...formData, [name]: files[0] });
@@ -54,12 +55,13 @@ const EditArticles = () => {
     }
   };
 
-  const handleQuillChange = (value, id) => {
+  const handleQuillChange = (value) => {
     setFormData((prevData) => ({
       ...prevData,
-      [id]: value,
+      description: value,
     }));
   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -81,7 +83,7 @@ const EditArticles = () => {
         imageUrl = response.data.secure_url;
       }
 
-      // Update article data in Supabase
+      // Update blog data in Supabase
       const { error: updateError } = await supabase
         .from("articles")
         .update({
@@ -89,6 +91,7 @@ const EditArticles = () => {
           description: formData.description,
           image: imageUrl,
           date: formData.date,
+          slug: slugify(formData.title)
         })
         .eq("id", id);
 
@@ -97,8 +100,8 @@ const EditArticles = () => {
       alert("Article updated successfully!");
       navigate("/allArticles"); // Redirect to articles list
     } catch (error) {
-      console.error("Error updating article:", error.message);
-      alert("Failed to update article. Please try again.");
+      console.error("Error updating blog:", error.message);
+      alert("Failed to update blog. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -106,15 +109,12 @@ const EditArticles = () => {
 
   return (
     <DashboardLayout>
-      <div className="">
-        <h1 className="text-2xl font-bold mb-4">Edit Article</h1>
+      <div>
+        <h1 className="text-2xl font-bold mb-4">Edit Articles</h1>
         <form onSubmit={handleSubmit}>
           {/* Title */}
           <div className="mb-4">
-            <label
-              htmlFor="title"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
               Title
             </label>
             <input
@@ -131,11 +131,8 @@ const EditArticles = () => {
 
           {/* Image */}
           <div className="mb-4">
-            <label
-              htmlFor="image"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Upload New Image
+            <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-1">
+              Upload Image
             </label>
             <input
               type="file"
@@ -149,10 +146,7 @@ const EditArticles = () => {
 
           {/* Date */}
           <div className="mb-4">
-            <label
-              htmlFor="date"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">
               Date
             </label>
             <input
@@ -168,20 +162,12 @@ const EditArticles = () => {
 
           {/* Description */}
           <div className="mb-4">
-            <label
-              htmlFor="description"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
+            <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
               Description
             </label>
-            <TextEditor
-              type="description"
-              id="description"
-              name="description"
+            <ReactQuillEditor
               value={formData.description}
               onChange={handleQuillChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
             />
           </div>
 

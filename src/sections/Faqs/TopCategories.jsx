@@ -18,7 +18,6 @@ function TopCategories() {
                     .from('services')
                     .select('*')
                     .order("service_no"); // We expect only one record
-
                 if (headerError) throw headerError;
 
                 setServices(headerData);
@@ -41,8 +40,8 @@ function TopCategories() {
                         <div className={`bg-primary w-[2rem] h-[0.2rem]`}></div>
                     </div>
                     <div className='w-full flex flex-wrap justify-center items-center p-10 gap-5'>
-                        {`services`.map((item, index) => (
-                            <Link to={`/faq/${item.slug}`}>
+                        {services.map((item) => (
+                            <Link to={`/faqs/${item.slug}`} key={item.slug}>
                                 <TopCategoriesCard data={item} />
                             </Link>
                         ))}

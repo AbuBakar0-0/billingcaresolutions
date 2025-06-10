@@ -9,6 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 import { BsFillThreadsFill } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
+import WhatsAppButton from '../components/Whatsapp-Button';
 
 function Footer() {
   const quicklinks = [
@@ -144,6 +145,7 @@ function Footer() {
       <div className='border-t-2 border-white flex items-center justify-center w-full bg-secondary text-white p-2 text-xs text-center'>
         Copyright © 2025 All rights reserved | Designed and Developed by Billing Care Solutions
       </div>
+      <WhatsAppButton />
     </>
   )
 }

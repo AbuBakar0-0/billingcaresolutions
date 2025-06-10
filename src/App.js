@@ -99,11 +99,11 @@ function App() {
           <Route path="/specialities/:id" element={<SpecialitiesDetails />} />
           <Route path="/domain-areas" element={<DomainArea />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/faq/:id" element={<FaqsDetails />} />
+          <Route path="/faqs/:id" element={<FaqsDetails />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blog/:id" element={<BlogDetails />} />
+          <Route path="/blogs/:id" element={<BlogDetails />} />
           <Route path="/articles" element={<Articles />} />
-          <Route path="/article/:id" element={<ArticleDetails />} />
+          <Route path="/articles/:id" element={<ArticleDetails />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />

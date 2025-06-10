@@ -38,19 +38,66 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Billing Care Solutions",
-        "url": "https://www.billingcaresolutions.com",
-        "logo": "https://www.billingcaresolutions.com/logo.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-302-244-0434",
-          "contactType": "Customer Service"
-        },
-        "sameAs": [
-          "https://www.facebook.com/BillingCareSolutions",
-          "https://www.instagram.com/billingcaresolutions/",
-          "https://x.com/billing_care"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Billing Care Solutions",
+            "url": "https://www.billingcaresolutions.com",
+            "logo": "https://www.billingcaresolutions.com/logo.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-302-244-0434",
+              "contactType": "Customer Service"
+            },
+            "sameAs": [
+              "https://www.facebook.com/BillingCareSolutions",
+              "https://www.instagram.com/billingcaresolutions/",
+              "https://x.com/billing_care"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://www.billingcaresolutions.com",
+            "name": "Billing Care Solutions",
+            "hasPart": [
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/about/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/services/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/specialities/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/domain-areas/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/faqs/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/privacy-policy/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/articles/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/contact/"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://www.billingcaresolutions.com/blog/"
+              }
+            ]
+          }
         ]
       }
     </script>
@@ -75,21 +122,6 @@
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
         border: 0;
-      }
-
-      /* Real media query: adjust font and padding on small screens */
-      @media screen and (max-width: 768px) {
-        .visually-hidden {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border: 0;
-        }
       }
     </style>
 
