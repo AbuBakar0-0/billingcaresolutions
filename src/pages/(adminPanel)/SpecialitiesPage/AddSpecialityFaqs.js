@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import DashboardLayout from "../layout";
 import { supabase } from "../../../lib/supabase";
 import { useParams } from "react-router-dom";
+import ReactQuillEditor from "../../../components/ui/TextEditor";
 
 const AddSpecialityFaqs = () => {
   const { id: specialityId } = useParams();
@@ -20,7 +21,8 @@ const AddSpecialityFaqs = () => {
     const fetchFaqs = async () => {
       const { data, error } = await supabase
         .from("speciality_faqs")
-        .select("*").eq("speciality_id", specialityId);
+        .select("*")
+        .eq("speciality_id", specialityId);
       if (error) {
         console.error("Error fetching FAQs:", error.message);
       } else {
@@ -89,6 +91,13 @@ const AddSpecialityFaqs = () => {
     setEditingFaqId(faq.id);
   };
 
+  const handleQuillChange = (value) => {
+    setFaqData((prevData) => ({
+      ...prevData,
+      answer: value,
+    }));
+  };
+
   const handleDelete = async (id) => {
     try {
       const { error } = await supabase
@@ -138,20 +147,15 @@ const AddSpecialityFaqs = () => {
           {/* Answer */}
           <div className="mb-4">
             <label
-              htmlFor="answer"
+              htmlFor="description"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
               Answer
             </label>
-            <textarea
-              id="answer"
-              name="answer"
+            <ReactQuillEditor
               value={faqData.answer}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter answer"
-              required
-            ></textarea>
+              onChange={handleQuillChange}
+            />
           </div>
 
           {/* Submit Button */}
