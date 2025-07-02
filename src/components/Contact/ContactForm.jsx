@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import HeadingLine from '../HeadingLine';
@@ -226,6 +225,7 @@ const services = [
 function ContactForm() {
     const [phone, setPhone] = useState("");
     const [checkbox, setCheckbox] = useState(false);
+    const [checkbox2, setCheckbox2] = useState(false);
     const [lastName, setLastName] = useState("");
     const [firstName, setFirstName] = useState("");
     const [email, setEmail] = useState("");
@@ -236,6 +236,7 @@ function ContactForm() {
     const [otherText, setOtherText] = useState("");
 
     const handleCheckbox = () => setCheckbox(!checkbox);
+    const handleCheckbox2 = () => setCheckbox2(!checkbox2);
 
     const handlePhoneChange = (e) => {
         let input = e.target.value.replace(/\D/g, "");
@@ -333,8 +334,8 @@ function ContactForm() {
                         placeholder="Email *"
                         required
                     />
-                    <select 
-                        value={selectedOption} 
+                    <select
+                        value={selectedOption}
                         onChange={(e) => setSelectedOption(e.target.value)}
                         className='px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary'
                     >
@@ -353,8 +354,8 @@ function ContactForm() {
                             placeholder='Please Specify'
                         />
                     )}
-                    <select 
-                        value={selectedSpecialty} 
+                    <select
+                        value={selectedSpecialty}
                         onChange={(e) => setSelectedSpecialty(e.target.value)}
                         className='px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary'
                     >
@@ -363,8 +364,8 @@ function ContactForm() {
                             <option key={item.title} value={item.title}>{item.title}</option>
                         ))}
                     </select>
-                    <select 
-                        value={selectedState} 
+                    <select
+                        value={selectedState}
                         onChange={(e) => setSelectedState(e.target.value)}
                         className='px-3 py-2 border-2 rounded-2xl w-full focus:border-secondary focus:ring-2 outline-primary'
                     >
@@ -381,16 +382,21 @@ function ContactForm() {
                         placeholder="Describe your message here..."
                     />
                     <div className='w-full flex gap-4 justify-start'>
-                        <input 
-                            type="checkbox" 
-                            checked={checkbox} 
-                            onChange={handleCheckbox} 
+                        <input
+                            type="checkbox"
+                            checked={checkbox2}
+                            onChange={handleCheckbox2}
                         />
-                        <span>Opt-in to receive text message updates</span>
+                        <span>I would like to receive offers and news</span>
                     </div>
-                    {checkbox && (
+                    <div className='w-full flex gap-4 justify-start'>
+                        <input
+                            type="checkbox"
+                            checked={checkbox}
+                            onChange={handleCheckbox}
+                        />
                         <div className='text-secondary'>
-                            By Checking this, you agree to &nbsp;
+                            I accept the  &nbsp;
                             <Link to='/terms-and-conditions' className='text-primary underline'>
                                 terms & conditions
                             </Link> & &nbsp;
@@ -398,12 +404,22 @@ function ContactForm() {
                                 privacy policy
                             </Link> of Billing Care Solutions
                         </div>
-                    )}
+
+                    </div>
+                    <span className='text-sm'>
+                        By providing your phone number you agree to receive informational text
+                        messages from Billing Care Solutions. Messages Frequency will vary. Msg & data rates may apply.
+                    </span>
                 </div>
                 <div className="w-full">
                     <button
                         type="submit"
-                        className="px-3 py-2 rounded-2xl w-full bg-secondary text-white"
+                        className={`px-3 py-2 rounded-2xl w-full ${
+                            checkbox 
+                                ? 'bg-secondary text-white' 
+                                : 'bg-gray-400 text-gray-600 cursor-not-allowed'
+                        }`}
+                        disabled={!checkbox}
                     >
                         Submit
                     </button>

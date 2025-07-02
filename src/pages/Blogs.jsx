@@ -57,10 +57,10 @@ function Blogs() {
                 <div className='w-full flex flex-wrap justify-center gap-4 my-10 transition-all duration-300 ease-in-out container mx-auto'>
                     {currentBlogs.map((item, index) => (
                         <Link to={`/blogs/${item.slug}`} key={index} className='w-full md:w-[48%] lg:w-[30%] p-5'>
-                            <div className=' lg:min-h-[30rem] rounded-lg shadow-lg flex flex-col justify-start items-center'>
+                            <div className='rounded-lg shadow-lg flex flex-col justify-start items-center'>
                                 <img src={`${item.image}`} alt="Billing Care Solutions" className='rounded-t-lg' />
                                 <div className='w-full p-4 flex flex-col'>
-                                    <p className='w-full text-lg font-custom font-semibold text-secondary h-16'>{item.title}</p>
+                                    <p className='w-full text-lg font-custom font-semibold text-secondary line-clamp-2'>{item.title}</p>
                                     <div
                                         className="overflow-hidden h-12"
                                         dangerouslySetInnerHTML={{ __html: item.description }}
